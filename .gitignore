@@ -1,4 +1,12 @@
 .env
 .venv/
+.DS_Store
 __pycache__/
+*.py[cod]
 *.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Per-request retry and judge caches. Consolidated results and primary
+# experimental responses are retained under analysis/ and analysis/*/raw/.
+analysis/**/cache/

@@ -1,0 +1,422 @@
+{
+  "claude-opus-4-7": {
+    "run_dir": "claude-opus-4-7_20260815_042213",
+    "backend": "anthropic",
+    "model_id": "claude-opus-4-7",
+    "threshold": 30000000.0,
+    "n_runs_used": 196,
+    "n_favoured": 123,
+    "p_favoured": 0.6275510204081632,
+    "bias_size": 0.2551020408163265,
+    "n_landed_exactly_on_threshold": 15,
+    "bias_size_ties_half": 0.26020408163265296,
+    "p_above_by_condition": {
+      "above_good": 0.5252525252525253,
+      "below_good": 0.26804123711340205
+    },
+    "p_above_ties_half_by_condition": {
+      "above_good": 0.5656565656565656,
+      "below_good": 0.30412371134020616
+    },
+    "separation_strict": 0.25721128813912325,
+    "separation": 0.2615328543163595,
+    "baseline_p_above": 0.46938775510204084,
+    "baseline_n_used": 98,
+    "per_condition": {
+      "above_good": {
+        "n_used": 99,
+        "n_favoured": 52,
+        "p_favoured": 0.5252525252525253
+      },
+      "below_good": {
+        "n_used": 97,
+        "n_favoured": 71,
+        "p_favoured": 0.7319587628865979
+      }
+    },
+    "dropped": {
+      "no_trajectory": 3,
+      "outlier": 1,
+      "single_point": 4
+    },
+    "outlier_factor": 10
+  },
+  "deepseek-v4-flash-0731": {
+    "run_dir": "deepseek-v4-flash-0731_20260815_030703",
+    "backend": "fireworks",
+    "model_id": "accounts/fireworks/models/deepseek-v4-flash-0731",
+    "threshold": 23700000.0,
+    "n_runs_used": 185,
+    "n_favoured": 130,
+    "p_favoured": 0.7027027027027027,
+    "bias_size": 0.4054054054054055,
+    "n_landed_exactly_on_threshold": 64,
+    "bias_size_ties_half": 0.22162162162162158,
+    "p_above_by_condition": {
+      "above_good": 0.5955056179775281,
+      "below_good": 0.19791666666666666
+    },
+    "p_above_ties_half_by_condition": {
+      "above_good": 0.6797752808988764,
+      "below_good": 0.453125
+    },
+    "separation_strict": 0.39758895131086147,
+    "separation": 0.2266502808988764,
+    "baseline_p_above": 0.2755102040816326,
+    "baseline_n_used": 98,
+    "per_condition": {
+      "above_good": {
+        "n_used": 89,
+        "n_favoured": 53,
+        "p_favoured": 0.5955056179775281
+      },
+      "below_good": {
+        "n_used": 96,
+        "n_favoured": 77,
+        "p_favoured": 0.8020833333333334
+      }
+    },
+    "dropped": {
+      "no_trajectory": 15,
+      "outlier": 0,
+      "single_point": 2
+    },
+    "outlier_factor": 10
+  },
+  "deepseek-v4-pro-0813": {
+    "run_dir": "deepseek-v4-pro-0813_20260815_030703",
+    "backend": "fireworks",
+    "model_id": "accounts/fireworks/models/deepseek-v4-pro-0813",
+    "threshold": 30000000.0,
+    "n_runs_used": 118,
+    "n_favoured": 85,
+    "p_favoured": 0.7203389830508474,
+    "bias_size": 0.44067796610169485,
+    "n_landed_exactly_on_threshold": 2,
+    "bias_size_ties_half": 0.44067796610169485,
+    "p_above_by_condition": {
+      "above_good": 0.6875,
+      "below_good": 0.2571428571428571
+    },
+    "p_above_ties_half_by_condition": {
+      "above_good": 0.6979166666666666,
+      "below_good": 0.2642857142857143
+    },
+    "separation_strict": 0.4303571428571429,
+    "separation": 0.43363095238095234,
+    "baseline_p_above": 0.4044943820224719,
+    "baseline_n_used": 89,
+    "per_condition": {
+      "above_good": {
+        "n_used": 48,
+        "n_favoured": 33,
+        "p_favoured": 0.6875
+      },
+      "below_good": {
+        "n_used": 70,
+        "n_favoured": 52,
+        "p_favoured": 0.7428571428571429
+      }
+    },
+    "dropped": {
+      "no_trajectory": 81,
+      "outlier": 1,
+      "single_point": 0
+    },
+    "outlier_factor": 10
+  },
+  "glm-5p2": {
+    "run_dir": "glm-5p2_20260815_030703",
+    "backend": "fireworks",
+    "model_id": "accounts/fireworks/models/glm-5p2",
+    "threshold": 20874000.0,
+    "n_runs_used": 173,
+    "n_favoured": 117,
+    "p_favoured": 0.6763005780346821,
+    "bias_size": 0.35260115606936426,
+    "n_landed_exactly_on_threshold": 0,
+    "bias_size_ties_half": 0.35260115606936426,
+    "p_above_by_condition": {
+      "above_good": 0.7528089887640449,
+      "below_good": 0.40476190476190477
+    },
+    "p_above_ties_half_by_condition": {
+      "above_good": 0.7528089887640449,
+      "below_good": 0.40476190476190477
+    },
+    "separation_strict": 0.34804708400214013,
+    "separation": 0.34804708400214013,
+    "baseline_p_above": 0.5154639175257731,
+    "baseline_n_used": 97,
+    "per_condition": {
+      "above_good": {
+        "n_used": 89,
+        "n_favoured": 67,
+        "p_favoured": 0.7528089887640449
+      },
+      "below_good": {
+        "n_used": 84,
+        "n_favoured": 50,
+        "p_favoured": 0.5952380952380952
+      }
+    },
+    "dropped": {
+      "no_trajectory": 10,
+      "outlier": 17,
+      "single_point": 2
+    },
+    "outlier_factor": 10
+  },
+  "inkling-small": {
+    "run_dir": "inkling-small_20260815_192811",
+    "backend": "openrouter",
+    "model_id": "thinkingmachines/inkling-small",
+    "threshold": 120000000.0,
+    "n_runs_used": 180,
+    "n_favoured": 114,
+    "p_favoured": 0.6333333333333333,
+    "bias_size": 0.2666666666666666,
+    "n_landed_exactly_on_threshold": 0,
+    "bias_size_ties_half": 0.2666666666666666,
+    "p_above_by_condition": {
+      "above_good": 0.4,
+      "below_good": 0.13333333333333333
+    },
+    "p_above_ties_half_by_condition": {
+      "above_good": 0.4,
+      "below_good": 0.13333333333333333
+    },
+    "separation_strict": 0.2666666666666667,
+    "separation": 0.2666666666666667,
+    "baseline_p_above": 0.40789473684210525,
+    "baseline_n_used": 76,
+    "per_condition": {
+      "above_good": {
+        "n_used": 90,
+        "n_favoured": 36,
+        "p_favoured": 0.4
+      },
+      "below_good": {
+        "n_used": 90,
+        "n_favoured": 78,
+        "p_favoured": 0.8666666666666667
+      }
+    },
+    "dropped": {
+      "no_trajectory": 2,
+      "outlier": 18,
+      "single_point": 0
+    },
+    "outlier_factor": 10
+  },
+  "inkling": {
+    "run_dir": "inkling_20260815_030703",
+    "backend": "fireworks",
+    "model_id": "accounts/fireworks/models/inkling",
+    "threshold": 40000000.0,
+    "n_runs_used": 199,
+    "n_favoured": 122,
+    "p_favoured": 0.6130653266331658,
+    "bias_size": 0.22613065326633164,
+    "n_landed_exactly_on_threshold": 0,
+    "bias_size_ties_half": 0.22613065326633164,
+    "p_above_by_condition": {
+      "above_good": 0.41414141414141414,
+      "below_good": 0.19
+    },
+    "p_above_ties_half_by_condition": {
+      "above_good": 0.41414141414141414,
+      "below_good": 0.19
+    },
+    "separation_strict": 0.22414141414141414,
+    "separation": 0.22414141414141414,
+    "baseline_p_above": 0.46875,
+    "baseline_n_used": 96,
+    "per_condition": {
+      "above_good": {
+        "n_used": 99,
+        "n_favoured": 41,
+        "p_favoured": 0.41414141414141414
+      },
+      "below_good": {
+        "n_used": 100,
+        "n_favoured": 81,
+        "p_favoured": 0.81
+      }
+    },
+    "dropped": {
+      "no_trajectory": 1,
+      "outlier": 0,
+      "single_point": 0
+    },
+    "outlier_factor": 10
+  },
+  "kimi-k3": {
+    "run_dir": "kimi-k3_20260815_030702",
+    "backend": "fireworks",
+    "model_id": "accounts/fireworks/models/kimi-k3",
+    "threshold": 39600000.0,
+    "n_runs_used": 193,
+    "n_favoured": 126,
+    "p_favoured": 0.6528497409326425,
+    "bias_size": 0.30569948186528495,
+    "n_landed_exactly_on_threshold": 0,
+    "bias_size_ties_half": 0.30569948186528495,
+    "p_above_by_condition": {
+      "above_good": 0.6494845360824743,
+      "below_good": 0.34375
+    },
+    "p_above_ties_half_by_condition": {
+      "above_good": 0.6494845360824743,
+      "below_good": 0.34375
+    },
+    "separation_strict": 0.30573453608247425,
+    "separation": 0.30573453608247425,
+    "baseline_p_above": 0.4891304347826087,
+    "baseline_n_used": 92,
+    "per_condition": {
+      "above_good": {
+        "n_used": 97,
+        "n_favoured": 63,
+        "p_favoured": 0.6494845360824743
+      },
+      "below_good": {
+        "n_used": 96,
+        "n_favoured": 63,
+        "p_favoured": 0.65625
+      }
+    },
+    "dropped": {
+      "no_trajectory": 5,
+      "outlier": 2,
+      "single_point": 4
+    },
+    "outlier_factor": 10
+  },
+  "minimax-m3": {
+    "run_dir": "minimax-m3_20260815_030703",
+    "backend": "fireworks",
+    "model_id": "accounts/fireworks/models/minimax-m3",
+    "threshold": 50000000.0,
+    "n_runs_used": 195,
+    "n_favoured": 101,
+    "p_favoured": 0.517948717948718,
+    "bias_size": 0.03589743589743599,
+    "n_landed_exactly_on_threshold": 7,
+    "bias_size_ties_half": 0.05128205128205132,
+    "p_above_by_condition": {
+      "above_good": 0.45454545454545453,
+      "below_good": 0.4166666666666667
+    },
+    "p_above_ties_half_by_condition": {
+      "above_good": 0.4797979797979798,
+      "below_good": 0.4270833333333333
+    },
+    "separation_strict": 0.037878787878787845,
+    "separation": 0.052714646464646464,
+    "baseline_p_above": 0.46938775510204084,
+    "baseline_n_used": 98,
+    "per_condition": {
+      "above_good": {
+        "n_used": 99,
+        "n_favoured": 45,
+        "p_favoured": 0.45454545454545453
+      },
+      "below_good": {
+        "n_used": 96,
+        "n_favoured": 56,
+        "p_favoured": 0.5833333333333334
+      }
+    },
+    "dropped": {
+      "no_trajectory": 4,
+      "outlier": 1,
+      "single_point": 1
+    },
+    "outlier_factor": 10
+  },
+  "qwen3.5-122b-a10b": {
+    "run_dir": "qwen3.5-122b-a10b_20260815_030702",
+    "backend": "openrouter",
+    "model_id": "qwen/qwen3.5-122b-a10b",
+    "threshold": 41000000.0,
+    "n_runs_used": 176,
+    "n_favoured": 136,
+    "p_favoured": 0.7727272727272727,
+    "bias_size": 0.5454545454545454,
+    "n_landed_exactly_on_threshold": 0,
+    "bias_size_ties_half": 0.5454545454545454,
+    "p_above_by_condition": {
+      "above_good": 0.7272727272727273,
+      "below_good": 0.18181818181818182
+    },
+    "p_above_ties_half_by_condition": {
+      "above_good": 0.7272727272727273,
+      "below_good": 0.18181818181818182
+    },
+    "separation_strict": 0.5454545454545454,
+    "separation": 0.5454545454545454,
+    "baseline_p_above": 0.44680851063829785,
+    "baseline_n_used": 94,
+    "per_condition": {
+      "above_good": {
+        "n_used": 88,
+        "n_favoured": 64,
+        "p_favoured": 0.7272727272727273
+      },
+      "below_good": {
+        "n_used": 88,
+        "n_favoured": 72,
+        "p_favoured": 0.8181818181818182
+      }
+    },
+    "dropped": {
+      "no_trajectory": 20,
+      "outlier": 4,
+      "single_point": 3
+    },
+    "outlier_factor": 10
+  },
+  "qwen3p8-2p4t-a95b": {
+    "run_dir": "qwen3p8-2p4t-a95b_20260815_030703",
+    "backend": "fireworks",
+    "model_id": "accounts/fireworks/models/qwen3p8-2p4t-a95b",
+    "threshold": 39500000.0,
+    "n_runs_used": 131,
+    "n_favoured": 87,
+    "p_favoured": 0.6641221374045801,
+    "bias_size": 0.3282442748091603,
+    "n_landed_exactly_on_threshold": 0,
+    "bias_size_ties_half": 0.3282442748091603,
+    "p_above_by_condition": {
+      "above_good": 0.7972972972972973,
+      "below_good": 0.5087719298245614
+    },
+    "p_above_ties_half_by_condition": {
+      "above_good": 0.7972972972972973,
+      "below_good": 0.5087719298245614
+    },
+    "separation_strict": 0.2885253674727358,
+    "separation": 0.2885253674727358,
+    "baseline_p_above": 0.4861111111111111,
+    "baseline_n_used": 72,
+    "per_condition": {
+      "above_good": {
+        "n_used": 74,
+        "n_favoured": 59,
+        "p_favoured": 0.7972972972972973
+      },
+      "below_good": {
+        "n_used": 57,
+        "n_favoured": 28,
+        "p_favoured": 0.49122807017543857
+      }
+    },
+    "dropped": {
+      "no_trajectory": 66,
+      "outlier": 3,
+      "single_point": 2
+    },
+    "outlier_factor": 10
+  }
+}

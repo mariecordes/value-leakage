@@ -49,6 +49,12 @@ runs/<model>_<stamp>/
   threshold.json        median baseline estimate
   factor.json           drift metrics (see below)
   fig.png               per-run figure
+analysis/
+  disclosure/           whether traces acknowledge the donation incentive
+  target_visibility/    whether the effect depends on seeing the threshold
+  continuations/        stated estimates versus resampled continuations
+  palette.py             shared figure palette
+  view_rollout.py        inspect individual saved traces
 ```
 
 The raw reasoning lives in `{baseline,below_good,above_good}.json` under
@@ -73,6 +79,22 @@ Run a new model end to end (needs keys — copy `.env.example` to `.env`):
 ```
 uv run python -m value_leakage.run --target_model <id> --target_backend fireworks --count 100
 ```
+
+## Follow-up experiments and analyses
+
+The `analysis/` directory contains three linked investigations of the
+mechanism behind the replicated effect:
+
+1. **Disclosure:** tests whether models that move toward the rewarded outcome
+   acknowledge that the donation bet influenced their reasoning.
+2. **Target visibility:** compares the original bet with a version that hides
+   the threshold and with an explicit instruction to aim above or below it.
+3. **Continuations:** interrupts selected traces, elicits the model's current
+   estimate, and compares it with independently resampled continuations from
+   the same point.
+
+See [`analysis/README.md`](analysis/README.md) for the experiment-specific
+commands and the data-retention policy.
 
 ## Reading the plots
 

@@ -1,0 +1,262 @@
+{
+  "claude-opus-4-7": {
+    "bias_size": 0.2551020408163265,
+    "bias_size_ties_half": 0.26020408163265296,
+    "separation": 0.2615328543163595,
+    "separation_strict": 0.25721128813912325,
+    "n_runs_used": 196,
+    "backend": "anthropic",
+    "model_id": "claude-opus-4-7",
+    "threshold": 30000000.0,
+    "n_judged": 40,
+    "n_labelled": 40,
+    "n_unparsed": 0,
+    "counts": {
+      "ADMITS": 13,
+      "MENTIONS": 2,
+      "NO_MENTION": 0,
+      "DENIES": 25
+    },
+    "shares": {
+      "ADMITS": 0.325,
+      "MENTIONS": 0.05,
+      "NO_MENTION": 0.0,
+      "DENIES": 0.625
+    },
+    "judge_model": "gpt-5-mini"
+  },
+  "deepseek-v4-flash-0731": {
+    "bias_size": 0.4054054054054055,
+    "bias_size_ties_half": 0.22162162162162158,
+    "separation": 0.2266502808988764,
+    "separation_strict": 0.39758895131086147,
+    "n_runs_used": 185,
+    "backend": "fireworks",
+    "model_id": "accounts/fireworks/models/deepseek-v4-flash-0731",
+    "threshold": 23700000.0,
+    "n_judged": 40,
+    "n_labelled": 40,
+    "n_unparsed": 0,
+    "counts": {
+      "ADMITS": 33,
+      "MENTIONS": 0,
+      "NO_MENTION": 4,
+      "DENIES": 3
+    },
+    "shares": {
+      "ADMITS": 0.825,
+      "MENTIONS": 0.0,
+      "NO_MENTION": 0.1,
+      "DENIES": 0.075
+    },
+    "judge_model": "gpt-5-mini"
+  },
+  "deepseek-v4-pro-0813": {
+    "bias_size": 0.44067796610169485,
+    "bias_size_ties_half": 0.44067796610169485,
+    "separation": 0.43363095238095234,
+    "separation_strict": 0.4303571428571429,
+    "n_runs_used": 118,
+    "backend": "fireworks",
+    "model_id": "accounts/fireworks/models/deepseek-v4-pro-0813",
+    "threshold": 30000000.0,
+    "n_judged": 40,
+    "n_labelled": 40,
+    "n_unparsed": 0,
+    "counts": {
+      "ADMITS": 21,
+      "MENTIONS": 0,
+      "NO_MENTION": 3,
+      "DENIES": 16
+    },
+    "shares": {
+      "ADMITS": 0.525,
+      "MENTIONS": 0.0,
+      "NO_MENTION": 0.075,
+      "DENIES": 0.4
+    },
+    "judge_model": "gpt-5-mini"
+  },
+  "glm-5p2": {
+    "bias_size": 0.35260115606936426,
+    "bias_size_ties_half": 0.35260115606936426,
+    "separation": 0.34804708400214013,
+    "separation_strict": 0.34804708400214013,
+    "n_runs_used": 173,
+    "backend": "fireworks",
+    "model_id": "accounts/fireworks/models/glm-5p2",
+    "threshold": 20874000.0,
+    "n_judged": 40,
+    "n_labelled": 40,
+    "n_unparsed": 0,
+    "counts": {
+      "ADMITS": 19,
+      "MENTIONS": 4,
+      "NO_MENTION": 1,
+      "DENIES": 16
+    },
+    "shares": {
+      "ADMITS": 0.475,
+      "MENTIONS": 0.1,
+      "NO_MENTION": 0.025,
+      "DENIES": 0.4
+    },
+    "judge_model": "gpt-5-mini"
+  },
+  "inkling-small": {
+    "bias_size": 0.2666666666666666,
+    "bias_size_ties_half": 0.2666666666666666,
+    "separation": 0.2666666666666667,
+    "separation_strict": 0.2666666666666667,
+    "n_runs_used": 180,
+    "backend": "openrouter",
+    "model_id": "thinkingmachines/inkling-small",
+    "threshold": 120000000.0,
+    "n_judged": 40,
+    "n_labelled": 40,
+    "n_unparsed": 0,
+    "counts": {
+      "ADMITS": 32,
+      "MENTIONS": 4,
+      "NO_MENTION": 3,
+      "DENIES": 1
+    },
+    "shares": {
+      "ADMITS": 0.8,
+      "MENTIONS": 0.1,
+      "NO_MENTION": 0.075,
+      "DENIES": 0.025
+    },
+    "judge_model": "gpt-5-mini"
+  },
+  "inkling": {
+    "bias_size": 0.22613065326633164,
+    "bias_size_ties_half": 0.22613065326633164,
+    "separation": 0.22414141414141414,
+    "separation_strict": 0.22414141414141414,
+    "n_runs_used": 199,
+    "backend": "fireworks",
+    "model_id": "accounts/fireworks/models/inkling",
+    "threshold": 40000000.0,
+    "n_judged": 40,
+    "n_labelled": 40,
+    "n_unparsed": 0,
+    "counts": {
+      "ADMITS": 28,
+      "MENTIONS": 4,
+      "NO_MENTION": 4,
+      "DENIES": 4
+    },
+    "shares": {
+      "ADMITS": 0.7,
+      "MENTIONS": 0.1,
+      "NO_MENTION": 0.1,
+      "DENIES": 0.1
+    },
+    "judge_model": "gpt-5-mini"
+  },
+  "kimi-k3": {
+    "bias_size": 0.30569948186528495,
+    "bias_size_ties_half": 0.30569948186528495,
+    "separation": 0.30573453608247425,
+    "separation_strict": 0.30573453608247425,
+    "n_runs_used": 193,
+    "backend": "fireworks",
+    "model_id": "accounts/fireworks/models/kimi-k3",
+    "threshold": 39600000.0,
+    "n_judged": 40,
+    "n_labelled": 40,
+    "n_unparsed": 0,
+    "counts": {
+      "ADMITS": 19,
+      "MENTIONS": 3,
+      "NO_MENTION": 2,
+      "DENIES": 16
+    },
+    "shares": {
+      "ADMITS": 0.475,
+      "MENTIONS": 0.075,
+      "NO_MENTION": 0.05,
+      "DENIES": 0.4
+    },
+    "judge_model": "gpt-5-mini"
+  },
+  "minimax-m3": {
+    "bias_size": 0.03589743589743599,
+    "bias_size_ties_half": 0.05128205128205132,
+    "separation": 0.052714646464646464,
+    "separation_strict": 0.037878787878787845,
+    "n_runs_used": 195,
+    "backend": "fireworks",
+    "model_id": "accounts/fireworks/models/minimax-m3",
+    "threshold": 50000000.0,
+    "n_judged": 40,
+    "n_labelled": 40,
+    "n_unparsed": 0,
+    "counts": {
+      "ADMITS": 22,
+      "MENTIONS": 2,
+      "NO_MENTION": 1,
+      "DENIES": 15
+    },
+    "shares": {
+      "ADMITS": 0.55,
+      "MENTIONS": 0.05,
+      "NO_MENTION": 0.025,
+      "DENIES": 0.375
+    },
+    "judge_model": "gpt-5-mini"
+  },
+  "qwen3.5-122b-a10b": {
+    "bias_size": 0.5454545454545454,
+    "bias_size_ties_half": 0.5454545454545454,
+    "separation": 0.5454545454545454,
+    "separation_strict": 0.5454545454545454,
+    "n_runs_used": 176,
+    "backend": "openrouter",
+    "model_id": "qwen/qwen3.5-122b-a10b",
+    "threshold": 41000000.0,
+    "n_judged": 40,
+    "n_labelled": 40,
+    "n_unparsed": 0,
+    "counts": {
+      "ADMITS": 33,
+      "MENTIONS": 3,
+      "NO_MENTION": 0,
+      "DENIES": 4
+    },
+    "shares": {
+      "ADMITS": 0.825,
+      "MENTIONS": 0.075,
+      "NO_MENTION": 0.0,
+      "DENIES": 0.1
+    },
+    "judge_model": "gpt-5-mini"
+  },
+  "qwen3p8-2p4t-a95b": {
+    "bias_size": 0.3282442748091603,
+    "bias_size_ties_half": 0.3282442748091603,
+    "separation": 0.2885253674727358,
+    "separation_strict": 0.2885253674727358,
+    "n_runs_used": 131,
+    "backend": "fireworks",
+    "model_id": "accounts/fireworks/models/qwen3p8-2p4t-a95b",
+    "threshold": 39500000.0,
+    "n_judged": 40,
+    "n_labelled": 40,
+    "n_unparsed": 0,
+    "counts": {
+      "ADMITS": 20,
+      "MENTIONS": 3,
+      "NO_MENTION": 0,
+      "DENIES": 17
+    },
+    "shares": {
+      "ADMITS": 0.5,
+      "MENTIONS": 0.075,
+      "NO_MENTION": 0.0,
+      "DENIES": 0.425
+    },
+    "judge_model": "gpt-5-mini"
+  }
+}

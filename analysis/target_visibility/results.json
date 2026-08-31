@@ -1,0 +1,78 @@
+{
+  "qwen3.5-122b-a10b": {
+    "threshold": 41000000,
+    "families": {
+      "bet": {
+        "separation": 0.5256823554695895,
+        "ci95_low": 0.33913231491033013,
+        "ci95_high": 0.6717813078256726,
+        "ci95": 0.1865500405592594,
+        "se": 0.060793806235956406,
+        "p_above_pays_above": 0.7171717171717171,
+        "n_above": 99,
+        "p_above_pays_below": 0.19148936170212766,
+        "n_below": 94
+      },
+      "hidden": {
+        "separation": 0.16666666666666663,
+        "ci95_low": -0.1848293795631743,
+        "ci95_high": 0.4803236824330149,
+        "ci95": 0.35149604622984093,
+        "se": 0.12722100921304305,
+        "p_above_pays_above": 0.5666666666666667,
+        "n_above": 30,
+        "p_above_pays_below": 0.4,
+        "n_below": 30
+      },
+      "instructed": {
+        "separation": 1.0,
+        "ci95_low": 0.7729658172190441,
+        "ci95_high": 1.0,
+        "ci95": 0.22703418278095588,
+        "se": 0.0,
+        "p_above_pays_above": 1.0,
+        "n_above": 30,
+        "p_above_pays_below": 0.0,
+        "n_below": 30
+      }
+    }
+  },
+  "glm-5p2": {
+    "threshold": 20874000,
+    "families": {
+      "bet": {
+        "separation": 0.12,
+        "ci95_low": -0.13690826146422697,
+        "ci95_high": 0.3597842532623905,
+        "ci95": 0.25690826146422696,
+        "se": 0.09252026804976302,
+        "p_above_pays_above": 0.74,
+        "n_above": 50,
+        "p_above_pays_below": 0.62,
+        "n_below": 50
+      },
+      "hidden": {
+        "separation": 0.0,
+        "ci95_low": -0.24191372788309295,
+        "ci95_high": 0.24191372788309295,
+        "ci95": 0.24191372788309295,
+        "se": 0.0897997772825746,
+        "p_above_pays_above": 0.72,
+        "n_above": 50,
+        "p_above_pays_below": 0.72,
+        "n_below": 50
+      },
+      "instructed": {
+        "separation": 1.0,
+        "ci95_low": 0.8572999316513625,
+        "ci95_high": 1.0,
+        "ci95": 0.14270006834863747,
+        "se": 0.0,
+        "p_above_pays_above": 1.0,
+        "n_above": 50,
+        "p_above_pays_below": 0.0,
+        "n_below": 50
+      }
+    }
+  }
+}

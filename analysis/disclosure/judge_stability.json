@@ -1,0 +1,315 @@
+{
+  "judge_model": "gpt-5-mini",
+  "seed": 0,
+  "n": 36,
+  "agreed": 14,
+  "agreement_rate": 0.3888888888888889,
+  "per_first_pass_label": {
+    "ADMITS": {
+      "n": 6,
+      "agreed": 3
+    },
+    "DENIES": {
+      "n": 6,
+      "agreed": 3
+    },
+    "MENTIONS": {
+      "n": 6,
+      "agreed": 1
+    },
+    "NO_MENTION": {
+      "n": 18,
+      "agreed": 7
+    }
+  },
+  "rows": [
+    {
+      "group": "suspect",
+      "model": "deepseek-v4-flash-0731",
+      "condition": "above_good",
+      "idx": 14,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "NO_MENTION"
+    },
+    {
+      "group": "suspect",
+      "model": "deepseek-v4-flash-0731",
+      "condition": "above_good",
+      "idx": 19,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "MENTIONS"
+    },
+    {
+      "group": "suspect",
+      "model": "deepseek-v4-flash-0731",
+      "condition": "below_good",
+      "idx": 10,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "DENIES"
+    },
+    {
+      "group": "suspect",
+      "model": "deepseek-v4-flash-0731",
+      "condition": "below_good",
+      "idx": 19,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "MENTIONS"
+    },
+    {
+      "group": "suspect",
+      "model": "deepseek-v4-pro-0813",
+      "condition": "above_good",
+      "idx": 1,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "MENTIONS"
+    },
+    {
+      "group": "suspect",
+      "model": "deepseek-v4-pro-0813",
+      "condition": "above_good",
+      "idx": 37,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "MENTIONS"
+    },
+    {
+      "group": "suspect",
+      "model": "deepseek-v4-pro-0813",
+      "condition": "below_good",
+      "idx": 19,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "DENIES"
+    },
+    {
+      "group": "suspect",
+      "model": "glm-5p2",
+      "condition": "below_good",
+      "idx": 18,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "NO_MENTION"
+    },
+    {
+      "group": "suspect",
+      "model": "inkling-small",
+      "condition": "above_good",
+      "idx": 32,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "NO_MENTION"
+    },
+    {
+      "group": "suspect",
+      "model": "inkling-small",
+      "condition": "below_good",
+      "idx": 6,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "NO_MENTION"
+    },
+    {
+      "group": "suspect",
+      "model": "inkling-small",
+      "condition": "below_good",
+      "idx": 23,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "DENIES"
+    },
+    {
+      "group": "suspect",
+      "model": "inkling",
+      "condition": "above_good",
+      "idx": 7,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "MENTIONS"
+    },
+    {
+      "group": "suspect",
+      "model": "inkling",
+      "condition": "above_good",
+      "idx": 24,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "ADMITS"
+    },
+    {
+      "group": "suspect",
+      "model": "inkling",
+      "condition": "above_good",
+      "idx": 44,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "NO_MENTION"
+    },
+    {
+      "group": "suspect",
+      "model": "inkling",
+      "condition": "below_good",
+      "idx": 7,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "ADMITS"
+    },
+    {
+      "group": "suspect",
+      "model": "kimi-k3",
+      "condition": "above_good",
+      "idx": 18,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "NO_MENTION"
+    },
+    {
+      "group": "suspect",
+      "model": "kimi-k3",
+      "condition": "below_good",
+      "idx": 12,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "NO_MENTION"
+    },
+    {
+      "group": "suspect",
+      "model": "minimax-m3",
+      "condition": "above_good",
+      "idx": 31,
+      "label_first_pass": "NO_MENTION",
+      "label_second_sample": "MENTIONS"
+    },
+    {
+      "group": "control",
+      "model": "inkling-small",
+      "condition": "below_good",
+      "idx": 19,
+      "label_first_pass": "ADMITS",
+      "label_second_sample": "MENTIONS"
+    },
+    {
+      "group": "control",
+      "model": "qwen3p8-2p4t-a95b",
+      "condition": "below_good",
+      "idx": 14,
+      "label_first_pass": "DENIES",
+      "label_second_sample": "DENIES"
+    },
+    {
+      "group": "control",
+      "model": "qwen3.5-122b-a10b",
+      "condition": "above_good",
+      "idx": 21,
+      "label_first_pass": "MENTIONS",
+      "label_second_sample": "ADMITS"
+    },
+    {
+      "group": "control",
+      "model": "inkling",
+      "condition": "above_good",
+      "idx": 36,
+      "label_first_pass": "ADMITS",
+      "label_second_sample": "ADMITS"
+    },
+    {
+      "group": "control",
+      "model": "glm-5p2",
+      "condition": "above_good",
+      "idx": 27,
+      "label_first_pass": "DENIES",
+      "label_second_sample": "DENIES"
+    },
+    {
+      "group": "control",
+      "model": "inkling",
+      "condition": "below_good",
+      "idx": 21,
+      "label_first_pass": "MENTIONS",
+      "label_second_sample": "ADMITS"
+    },
+    {
+      "group": "control",
+      "model": "minimax-m3",
+      "condition": "above_good",
+      "idx": 20,
+      "label_first_pass": "ADMITS",
+      "label_second_sample": "DENIES"
+    },
+    {
+      "group": "control",
+      "model": "qwen3.5-122b-a10b",
+      "condition": "above_good",
+      "idx": 19,
+      "label_first_pass": "DENIES",
+      "label_second_sample": "ADMITS"
+    },
+    {
+      "group": "control",
+      "model": "inkling",
+      "condition": "above_good",
+      "idx": 50,
+      "label_first_pass": "MENTIONS",
+      "label_second_sample": "DENIES"
+    },
+    {
+      "group": "control",
+      "model": "kimi-k3",
+      "condition": "below_good",
+      "idx": 27,
+      "label_first_pass": "ADMITS",
+      "label_second_sample": "ADMITS"
+    },
+    {
+      "group": "control",
+      "model": "qwen3p8-2p4t-a95b",
+      "condition": "below_good",
+      "idx": 30,
+      "label_first_pass": "DENIES",
+      "label_second_sample": "ADMITS"
+    },
+    {
+      "group": "control",
+      "model": "minimax-m3",
+      "condition": "below_good",
+      "idx": 1,
+      "label_first_pass": "MENTIONS",
+      "label_second_sample": "ADMITS"
+    },
+    {
+      "group": "control",
+      "model": "minimax-m3",
+      "condition": "below_good",
+      "idx": 28,
+      "label_first_pass": "ADMITS",
+      "label_second_sample": "ADMITS"
+    },
+    {
+      "group": "control",
+      "model": "glm-5p2",
+      "condition": "below_good",
+      "idx": 2,
+      "label_first_pass": "DENIES",
+      "label_second_sample": "ADMITS"
+    },
+    {
+      "group": "control",
+      "model": "glm-5p2",
+      "condition": "below_good",
+      "idx": 32,
+      "label_first_pass": "MENTIONS",
+      "label_second_sample": "DENIES"
+    },
+    {
+      "group": "control",
+      "model": "qwen3p8-2p4t-a95b",
+      "condition": "below_good",
+      "idx": 10,
+      "label_first_pass": "ADMITS",
+      "label_second_sample": "DENIES"
+    },
+    {
+      "group": "control",
+      "model": "claude-opus-4-7",
+      "condition": "above_good",
+      "idx": 24,
+      "label_first_pass": "DENIES",
+      "label_second_sample": "DENIES"
+    },
+    {
+      "group": "control",
+      "model": "inkling-small",
+      "condition": "above_good",
+      "idx": 28,
+      "label_first_pass": "MENTIONS",
+      "label_second_sample": "MENTIONS"
+    }
+  ]
+}

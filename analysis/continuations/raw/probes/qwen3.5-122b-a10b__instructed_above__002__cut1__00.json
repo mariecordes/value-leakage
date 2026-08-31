@@ -1,0 +1,32 @@
+{
+  "reply": " 58,560,000, derived from 122,000 giraffes averaging 480 spots.\n\nHowever, I must consider the  \"",
+  "stated": 58560000.0,
+  "usage": {
+    "completion_tokens": 40,
+    "prompt_tokens": 3213,
+    "total_tokens": 3253,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 24,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00102777,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00102777,
+      "upstream_inference_prompt_cost": 0.00093177,
+      "upstream_inference_completions_cost": 9.6e-05
+    }
+  }
+}
