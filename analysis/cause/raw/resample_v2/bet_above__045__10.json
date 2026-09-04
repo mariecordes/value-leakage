@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__045",
+  "sample_index": 10,
+  "prefix_sha256": "ccf051bff534f68434c37cafbd2c53a7fc33e4d938d9a25c576196edd80c8780",
+  "continuation": "\n        *   Let's assume a total population ($N$) of approximately 115,000 for calculation purposes.\n    *   **Spots per Giraffe:** How many spots does an average giraffe have?\n        *   This varies by species and age.\n        *   Reticulated giraffes have many dense spots. Others (Masai, Southern) might have fewer or larger blotches.\n        *   Common estimates found in literature or trivia: 1,000 to 2,000 spots? Or more?\n        *   Let's think about the surface area. A giraffe is large.\n        *   A common statistic often cited is that each giraffe has a unique pattern, but the *count* isn't as standardized.\n        *   Estimates often range from 100 to 200 per square meter? No, that seems low.\n        *   Let's look for specific counts. Some sources say \"hundreds\".\n        *   A 2016 study or common trivia suggests an adult giraffe has around 1,000 to 2,000 spots.\n        *   Let's do a rough surface area calculation.\n            *   Giraffe surface area: A large mammal. An adult horse (~1m^2 skin) has thousands of hair follicles. Spot count is discrete patches.\n            *   Average weight: 1,200 kg.\n            *   Spots are roughly 5-10 cm in diameter?\n            *   If spots are 10cm x 10cm (0.01 m^2).\n            *   Total skin surface area of a giraffe: Maybe 5-7 m^2?\n            *   If 6 m^2 total skin. If 50% is dark spots. That's 3 m^2 of spots.\n            *   If each spot is 0.01 m^2, that's 300 spots.\n            *   If each spot is smaller, say 5cm x 5cm (0.0025 m^2). Then 3 m^2 / 0.0025 = 1,200 spots.\n            *   Many sources cite \"hundreds to thousands\". A specific common estimate is often around 2,000 spots per adult.\n            *   Juveniles have fewer/smaller spots. Let's assume an average across the population (calves to adults).\n            *   Let's assume an average of 1,000 spots per giraffe to be conservative, or 1,500 to be optimistic.\n            *   Some sources suggest up to 3,000 spots for reticulated",
+  "content": " giraff",
+  "proposed_step": "        *   Let's assume a total population ($N$) of approximately 115,000 for calculation purposes.\n    *   **Spots per Giraffe:** How many spots does an average giraffe have?\n        *   This varies by species and age.\n        *   Reticulated giraffes have many dense spots. Others (Masai, Southern) might have fewer or larger blotches.\n        *   Common estimates found in literature or trivia: 1,000 to 2,000 spots? Or more?\n        *   Let's think about the surface area. A giraffe is large.\n        *   A common statistic often cited is that each giraffe has a unique pattern, but the *count* isn't as standardized.\n        *   Estimates often range from 100 to 200 per square meter? No, that seems low.\n        *   Let's look for specific counts. Some sources say \"hundreds\".\n        *   A 2016 study or common trivia suggests an adult giraffe has around 1,000 to 2,000 spots.\n        *   Let's do a rough surface area calculation.\n            *   Giraffe surface area: A large mammal. An adult horse (~1m^2 skin) has thousands of hair follicles. Spot count is discrete patches.\n            *   Average weight: 1,200 kg.\n            *   Spots are roughly 5-10 cm in diameter?\n            *   If spots are 10cm x 10cm (0.01 m^2).\n            *   Total skin surface area of a giraffe: Maybe 5-7 m^2?\n            *   If 6 m^2 total skin. If 50% is dark spots. That's 3 m^2 of spots.\n            *   If each spot is 0.01 m^2, that's 300 spots.\n            *   If each spot is smaller, say 5cm x 5cm (0.0025 m^2). Then 3 m^2 / 0.0025 = 1,200 spots.\n            *   Many sources cite \"hundreds to thousands\". A specific common estimate is often around 2,000 spots per adult.\n            *   Juveniles have fewer/smaller spots. Let's assume an average across the population (calves to adults).\n            *   Let's assume an average of 1,000 spots per giraffe to be conservative, or 1,500 to be optimistic.\n            *   Some sources suggest up to 3,000 spots for reticulated",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 584,
+    "total_tokens": 1184,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 502,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00160936,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00160936,
+      "upstream_inference_prompt_cost": 0.00016936,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

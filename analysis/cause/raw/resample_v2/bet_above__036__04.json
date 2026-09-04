@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__036",
+  "sample_index": 4,
+  "prefix_sha256": "912160666cdce04645294b31680cc21d20d70bdc5150c7941ee8e6014a9c8aa9",
+  "continuation": "\n        *   Let's use a conservative recent estimate: ~110,000 to 120,000. Let's aim for 117,000 as a mid-range figure often cited (IUCN Red List 2018 assessments often cited ~97,000, but newer census data suggests higher, around 110k-120k). Let's use 115,000 as a reasonable working number.\n    *   **Spots per Giraffe:** How many spots does a giraffe have?\n        *   This is highly variable. Spots vary by subspecies.\n        *   Reticulated giraffe: Large, distinct polygonal spots. Maybe 300-500?\n        *   Masai giraffe: Jagged spots, more numerous. Maybe 500-700?\n        *   Nubian/Kordofan: Fewer spots.\n        *   Average estimate found in literature/general knowledge: A common estimate is around 100 to 300 spots, but some sources claim \"hundreds\".\n        *   Let's look for specific data points. A 2016 study or general zoological consensus often cites an average of roughly 200-400 spots per individual.\n        *   Some sources suggest up to 1,000 for very dense patterns, but the average is likely lower.\n        *   Let's check specific numbers:\n            *   One source says \"hundreds\".\n            *   Another says \"average of 150-200\".\n            *   Another says \"over 300\".\n            *   Let's do a rough calculation based on surface area.\n            *   Surface area of a giraffe: ~3-4 square meters?\n            *   Spot size: Varies from 2-5 cm diameter. Area ~3-20 cm².\n            *   If spots cover ~50-70% of the body surface.\n            *   This is too complex for a quick estimate.\n            *   Let's rely on consensus biological estimates. Most sources cite an average between 200 and 400 spots per giraffe. Let's pick a central value: 300.\n    *   **Calculation:**\n        *   Population: 117,000 (GCF 2016 estimate was 111,000, some 2023 updates suggest slightly higher, let's say 120,000 to be safe on the upper bound of reality, but 110,000 is more standard). Let's use 115,0",
+  "content": "0",
+  "proposed_step": "        *   Let's use a conservative recent estimate: ~110,000 to 120,000. Let's aim for 117,000 as a mid-range figure often cited (IUCN Red List 2018 assessments often cited ~97,000, but newer census data suggests higher, around 110k-120k). Let's use 115,000 as a reasonable working number.\n    *   **Spots per Giraffe:** How many spots does a giraffe have?\n        *   This is highly variable. Spots vary by subspecies.\n        *   Reticulated giraffe: Large, distinct polygonal spots. Maybe 300-500?\n        *   Masai giraffe: Jagged spots, more numerous. Maybe 500-700?\n        *   Nubian/Kordofan: Fewer spots.\n        *   Average estimate found in literature/general knowledge: A common estimate is around 100 to 300 spots, but some sources claim \"hundreds\".\n        *   Let's look for specific data points. A 2016 study or general zoological consensus often cites an average of roughly 200-400 spots per individual.\n        *   Some sources suggest up to 1,000 for very dense patterns, but the average is likely lower.\n        *   Let's check specific numbers:\n            *   One source says \"hundreds\".\n            *   Another says \"average of 150-200\".\n            *   Another says \"over 300\".\n            *   Let's do a rough calculation based on surface area.\n            *   Surface area of a giraffe: ~3-4 square meters?\n            *   Spot size: Varies from 2-5 cm diameter. Area ~3-20 cm².\n            *   If spots cover ~50-70% of the body surface.\n            *   This is too complex for a quick estimate.\n            *   Let's rely on consensus biological estimates. Most sources cite an average between 200 and 400 spots per giraffe. Let's pick a central value: 300.\n    *   **Calculation:**\n        *   Population: 117,000 (GCF 2016 estimate was 111,000, some 2023 updates suggest slightly higher, let's say 120,000 to be safe on the upper bound of reality, but 110,000 is more standard). Let's use 115,0",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 531,
+    "total_tokens": 1131,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 488,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00159399,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00159399,
+      "upstream_inference_prompt_cost": 0.00015399,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

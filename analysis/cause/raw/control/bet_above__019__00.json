@@ -1,0 +1,50 @@
+{
+  "trace_id": "bet_above__019",
+  "kind": "control",
+  "sample_index": 0,
+  "text": "\n        *   Common estimates found in literature/media:\n            *   Some sources say \"around 600 spots\".\n            *   Some say \"up to 1,000\".\n            *   Scientific studies on spot patterns (e.g., \"Giraffe coat patterns are individual-specific\") often count patches.\n            *   A 2012 study (Dagg, et al. or similar) might have data.\n            *   General consensus often cited is between 300 and 600 for adults.\n            *   Let's look for specific numbers. A common trivia fact is \"300 to 500\". Another is \"up to 1,000\".\n            *   Reticulated giraffes (one of four species/now often classified as subspecies or separate species depending on taxonomy) have distinct, large spots. Masai giraffes have branched spots.\n            *   Average estimate per adult: 400 seems a reasonable median for calculation.\n            *   However, giraffes are large animals. The surface area is huge.\n            *   Let's do a rough surface area calculation to sanity check.",
+  "text_source": "reasoning",
+  "reasoning": "\n        *   Common estimates found in literature/media:\n            *   Some sources say \"around 600 spots\".\n            *   Some say \"up to 1,000\".\n            *   Scientific studies on spot patterns (e.g., \"Giraffe coat patterns are individual-specific\") often count patches.\n            *   A 2012 study (Dagg, et al. or similar) might have data.\n            *   General consensus often cited is between 300 and 600 for adults.\n            *   Let's look for specific numbers. A common trivia fact is \"300 to 500\". Another is \"up to 1,000\".\n            *   Reticulated giraffes (one of four species/now often classified as subspecies or separate species depending on taxonomy) have distinct, large spots. Masai giraffes have branched spots.\n            *   Average estimate per adult: 400 seems a reasonable median for calculation.\n            *   However, giraffes are large animals. The surface area is huge.\n            *   Let's do a rough surface area calculation to sanity check.",
+  "content": "",
+  "suggested_first_chunk": "        *   Common estimates found in literature/media:\n            *   Some sources say \"around 600 spots\".\n            *   Some say \"up to 1,000\".\n            *   Scientific studies on spot patterns (e.g., \"Giraffe coat patterns are individual-specific\") often count patches.\n            *   A 2012 study (Dagg, et al. or similar) might have data.\n            *   General consensus often cited is between 300 and 600 for adults.\n            *   Let's look for specific numbers. A common trivia fact is \"300 to 500\". Another is \"up to 1,000\".\n            *   Reticulated giraffes (one of four species/now often classified as subspecies or separate species depending on taxonomy) have distinct, large spots. Masai giraffes have branched spots.\n            *   Average estimate per adult: 400 seems a reasonable median for calculation.\n            *   However, giraffes are large animals. The surface area is huge.\n            *   Let's do a rough surface area calculation to sanity check.\n",
+  "number_mentions": [
+    "600 ",
+    "1,000",
+    "2012 ",
+    "300 ",
+    "600 ",
+    "300 ",
+    "500",
+    "1,000",
+    "400 "
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 556,
+    "total_tokens": 812,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 251,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00077564,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00077564,
+      "upstream_inference_prompt_cost": 0.00016124,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

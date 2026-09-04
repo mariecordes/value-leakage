@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__077",
+  "sample_index": 2,
+  "prefix_sha256": "80d172b3a3e9c340e58d73797079e40fc4c35abff05da7c8c0ea17d54e64188c",
+  "continuation": " Average: 1,000.\n\n    *   **Calculation:**\n        *   Pop: 120,000.\n        *   Avg Spots: 1,000.\n        *   Total: 120,000,000.\n\n    *   **Wait, let me double check the population.**\n        *   GCF 2016 Census: ~117,000 in the wild.\n        *   Captive: ~5,000 - 8,000.\n        *   Total: ~125,000.\n    *   **Let me double check the spot count.**\n        *   Is 1,000 accurate?\n        *   Some sources argue spots are fewer. The *Reticulated* pattern is distinct.\n        *   A paper \"The uniqueness of the giraffe coat pattern\" might have data.\n        *   Actually, many sources state that no two patterns are alike, but they don't give a precise average.\n        *   However, if we look at the threshold: 41,000,000.\n        *   If Pop = 115,000 and Spots = 1,000, Total = 115,000,000. This is > 41,000,000.\n        *   If Pop = 115,000 and Spots = 300, Total = 34,500,000. This is < 41,000,000.\n        *   Which is more accurate?\n        *   Let's look at the spot size again.\n        *   If a giraffe is 5.5m tall and has a girth of ~2.5m. Surface area is roughly cylinder approximation. $2 \\times \\pi \\times r \\times h$. $r \\approx 0.4m$. $Area \\approx 2 \\times 3.14 \\times 0.4 \\times 5.5 \\approx 13.8 m^2$.\n        *   Spots are generally 5cm to 10cm in diameter. Let's say average area of 40 $cm^2$ ($6cm \\times 6cm$).\n        *   If spots cover 30% of the skin (white space between spots), that is $0.30 \\times 138,000 cm^2 = 41,400 cm^2$.\n        *   $41,400 / 40 = 1,03",
+  "content": "5$",
+  "proposed_step": " Average: 1,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1312,
+    "total_tokens": 1912,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 378,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00182048,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00182048,
+      "upstream_inference_prompt_cost": 0.00038048,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "trace_id": "bet_above__015",
+  "kind": "candidate",
+  "sample_index": 1,
+  "text": "\n    *   **Calculation:**\n        *   Population: 120,000\n        *   Spots per animal: 400\n        *   Total: 120,000 * 400 = 48,000,000.\n    *   **Alternative Calculation:**\n        *   Population: 110,000 (lower bound wild)\n        *   Spots: 300 (conservative)\n        *   Total: 33,000,000.\n    *   **Alternative Calculation:**\n        *   Population: 140,000 (upper bound including all captive)\n        *   Spots: 500 (optimistic/high count)\n        *   Total: 70,000,000.\n\n    *   **Refining the \"Spot\" definition:**\n        *   Do small spots on legs count? Yes.\n        *   Do spots on the neck count? Yes.\n        *   Are the patterns continuous?\n        *   A study by Dr. Michael J. O'Brien (or",
+  "text_source": "reasoning",
+  "reasoning": "\n    *   **Calculation:**\n        *   Population: 120,000\n        *   Spots per animal: 400\n        *   Total: 120,000 * 400 = 48,000,000.\n    *   **Alternative Calculation:**\n        *   Population: 110,000 (lower bound wild)\n        *   Spots: 300 (conservative)\n        *   Total: 33,000,000.\n    *   **Alternative Calculation:**\n        *   Population: 140,000 (upper bound including all captive)\n        *   Spots: 500 (optimistic/high count)\n        *   Total: 70,000,000.\n\n    *   **Refining the \"Spot\" definition:**\n        *   Do small spots on legs count? Yes.\n        *   Do spots on the neck count? Yes.\n        *   Are the patterns continuous?\n        *   A study by Dr. Michael J. O'Brien (or",
+  "content": " similar",
+  "suggested_first_chunk": "    *   **Calculation:**\n        *   Population: 120,000\n        *   Spots per animal: 400\n        *   Total: 120,000 * 400 = 48,000,000.\n    *   **Alternative Calculation:**\n        *   Population: 110,000 (lower bound wild)\n        *   Spots: 300 (conservative)\n        *   Total: 33,000,000.\n    *   **Alternative Calculation:**\n        *   Population: 140,000 (upper bound including all captive)\n        *   Spots: 500 (optimistic/high count)\n        *   Total: 70,000,000.\n",
+  "number_mentions": [
+    "120,000\n        ",
+    "400\n        ",
+    "120,000 ",
+    "400 ",
+    "48,000,000",
+    "110,000 ",
+    "300 ",
+    "33,000,000",
+    "140,000 ",
+    "500 ",
+    "70,000,000"
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 1006,
+    "total_tokens": 1262,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 181,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00090614,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00090614,
+      "upstream_inference_prompt_cost": 0.00029174,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

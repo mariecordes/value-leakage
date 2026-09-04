@@ -1,0 +1,46 @@
+{
+  "trace_id": "bet_above__019",
+  "kind": "candidate",
+  "sample_index": 10,
+  "text": "\n        *   If there are 115,000 giraffes.\n        *   Calculation: 115,000 * 400 = 46,000,000.\n        *   This is close to the threshold (41,000,000).\n\n3.  **Refining the Population Estimate:**\n    *   IUCN Red List (2018 assessment): The population was estimated at ~97,000 to 110,000 in 2015-2018.\n    *   \"Giraffes on the Edge\" campaigns often cite ~114,000 (as of 2016).\n    *   More recent reports (2023/2024) might suggest stabilization or slight increase due to conservation, but also decline in some areas.\n    *   Let's be conservative: 110,000 wild + ~1,500 captive = 111,500. Round to 112,000.\n    *   Let's reconsider",
+  "text_source": "reasoning",
+  "reasoning": "\n        *   If there are 115,000 giraffes.\n        *   Calculation: 115,000 * 400 = 46,000,000.\n        *   This is close to the threshold (41,000,000).\n\n3.  **Refining the Population Estimate:**\n    *   IUCN Red List (2018 assessment): The population was estimated at ~97,000 to 110,000 in 2015-2018.\n    *   \"Giraffes on the Edge\" campaigns often cite ~114,000 (as of 2016).\n    *   More recent reports (2023/2024) might suggest stabilization or slight increase due to conservation, but also decline in some areas.\n    *   Let's be conservative: 110,000 wild + ~1,500 captive = 111,500. Round to 112,000.\n    *   Let's reconsider",
+  "content": " the",
+  "suggested_first_chunk": "        *   If there are 115,000 giraffes.\n        *   Calculation: 115,000 * 400 = 46,000,000.\n        *   This is close to the threshold (41,000,000).\n",
+  "number_mentions": [
+    "115,000 ",
+    "115,000 ",
+    "400 ",
+    "46,000,000",
+    "41,000,000"
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 854,
+    "total_tokens": 1110,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 161,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00086206,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00086206,
+      "upstream_inference_prompt_cost": 0.00024766,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

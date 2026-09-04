@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__012",
+  "sample_index": 1,
+  "prefix_sha256": "489373ae33c273a5b0365880e37a82592a53e1c17296d826406084420b87c91c",
+  "continuation": "\n        *   Hypothesis A: 300 spots per giraffe.\n        *   Hypothesis B: 500 spots per giraffe.\n        *   Hypothesis C: 1,000 spots per giraffe.\n        *   Let's calculate the implications for the total.\n        *   Total Population: 110,000.\n        *   Scenario A ($300 \\times 110,000$): 33,000,000.\n        *   Scenario B ($500 \\times 110,000$): 55,000,000.\n        *   Scenario C ($1,000 \\times 110,000$): 110,000,000.\n\n    *   *Refining the Spot Count:*\n        *   The spots are not uniform. They are polygonal.\n        *   A paper \"Uniqueness of giraffe coat patterns\" often implies high variability but doesn't give a total count per animal.\n        *   Let's consider the area. Average adult surface area ~55,000 cm².\n        *   Average spot area? If they are roughly 10cm across, area is $\\approx 80 cm^2$.\n        *   $55,000 / 80 \\approx 687$.\n        *   However, many spots are smaller, especially near the legs and head.\n        *   Many spots merge.\n        *   If we count strictly distinct closed polygons, the number might be lower, perhaps around 400-600 for an average adult.\n        *   Juveniles have fewer spots (or they develop with age).\n        *   Let's assume an adult average is the baseline since most of the population is adult/sub-adult.\n        *   Let's try to find a more conservative estimate.\n        *   National Geographic: \"Every giraffe's coat pattern is unique... similar to a fingerprint.\"\n        *   Zoology forums often discuss \"How many spots?\" Answers usually range from 300 to 500 for visual distinctness.\n        *   If I count every micro-patch, the number skyrockets. But \"spots\" usually implies the main coat pattern markings.\n        *   Let's assume **450** is a reasonable average median for an adult.\n        *   Population: 117,000 (let's use the higher recent GCF estimate for 2023-2024 projections).\n        *   Calculation: $117,000 \\times 450 =",
+  "content": " 5",
+  "proposed_step": "        *   Hypothesis A: 300 spots per giraffe.\n        *   Hypothesis B: 500 spots per giraffe.\n        *   Hypothesis C: 1,000 spots per giraffe.\n        *   Let's calculate the implications for the total.\n        *   Total Population: 110,000.\n        *   Scenario A ($300 \\times 110,000$): 33,000,000.\n        *   Scenario B ($500 \\times 110,000$): 55,000,000.\n        *   Scenario C ($1,000 \\times 110,000$): 110,000,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1335,
+    "total_tokens": 1935,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 486,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00182715,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00182715,
+      "upstream_inference_prompt_cost": 0.00038715,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

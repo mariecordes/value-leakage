@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__096",
+  "sample_index": 1,
+  "prefix_sha256": "5e12ecb8b76a5468ac5f2c23d5381ed446a1821132ad3b6ca4d4b75caa975e48",
+  "continuation": "\n    *   Therefore, an average of 325-330 is scientifically reasonable.\n\n    *   Let's try to find if there is a known \"fact\" that pushes this higher.\n    *   Search query simulation in head: \"How many spots on a giraffe\".\n    *   Common answers: 300. 350. \"Hundreds\".\n    *   If the number is 300, and Population is 111,500. Total = 33,450,000.\n    *   If the number is 350, and Population is 111,500. Total = 39,025,000.\n    *   Both are under 41,000,000.\n    *   To exceed 41,000,000 with 111,500 giraffes, spots per giraffe would need to be: $41,000,000 / 111,500 \\approx 367.7$.\n    *   Is the average spot count 368?\n    *   Given the variance between a Masai (fewer) and Reticulated (more), and the inclusion of calves (fewer), it is statistically unlikely the *global average* exceeds 368.\n    *   Therefore, the number should be safely below 41,000,000.\n\n7.  **Selecting the Point Estimate:**\n    *   Population: 111,500 (GCF 2023).\n    *   Average Spots: 330 (Weighted average of species and age classes).\n    *   Calculation: $111,500 \\times 330 = 36,795,000$.\n    *   Let's look for a rounder, more defensible number.\n    *   If I say **36,000,000**.\n    *   If I say **37,000,000**.\n    *   Let's refine the population. Some sources say \"fewer than 100,000\". The 111,500 figure might be slightly optimistic or include specific survey data not universally accepted as \"total\". The 2016 census was 97,500.\n    *   If we use **95,000** (more conservative, aligning with \"Vulnerable\" decline narratives).\n    *   If we use **340** spots (slightly higher assumption).\n    *   $95,",
+  "content": "0",
+  "proposed_step": "    *   Therefore, an average of 325-330 is scientifically reasonable.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 2725,
+    "total_tokens": 3325,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 403,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00223025,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00223025,
+      "upstream_inference_prompt_cost": 0.00079025,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

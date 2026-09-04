@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__094",
+  "sample_index": 0,
+  "prefix_sha256": "a213914ed2c74440369b242dc4b6887d8d820593c0902e95e9a134d54477f7f9",
+  "continuation": "\n        *   Let's assume an average of 400 spots per giraffe.\n    *   *Calculation:*\n        *   Population: 120,000 (Conservative estimate covering wild + captive).\n        *   Spots per giraffe: 400.\n        *   Total: 120,000 * 400 = 48,000,000.\n    *   *Re-evaluating Population:*\n        *   IUCN 2023 Red List: ~117,500 wild.\n        *   Captive: ~2,500 (Zoological Society of London data).\n        *   Total: ~120,000.\n    *   *Re-evaluating Spots:*\n        *   A 2017 study by Fennessy et al. discusses subspecies differentiation.\n        *   Visual estimation: If a giraffe is 5.5 meters tall, torso circumference ~2 meters. Surface area of spots covers a significant portion.\n        *   If spots are roughly 5cm x 5cm on average (varying by neck vs body)?\n        *   Actually, spots are often cited as 300-400 for adult males. Females and juveniles might have fewer or denser patterns.\n        *   If the average is 350?\n        *   120,000 * 350 = 42,000,000.\n        *   If the average is 300?\n        *   120,000 * 300 = 36,000,000.\n        *   If the average is 450?\n        *   120,000 * 450 = 54,000,000.\n\n    *   *Let's dig deeper into the biology:*\n        *   \"The number of spots on a giraffe ranges from 300 to 500.\" (National Geographic, various biology sites).\n        *   Let's take the midpoint: 400.\n        *   Population: ~117,000 wild + ~3,000 captive = 120,000.\n        *   Calculation: 120,000 * 400 = 48,000,000.\n\n    *   *Wait, are there calves?*\n        *   The population count of 117,000 includes all age classes (adults, sub-adults, calves). So ",
+  "content": "12",
+  "proposed_step": "        *   Let's assume an average of 400 spots per giraffe.\n    *   *Calculation:*\n        *   Population: 120,000 (Conservative estimate covering wild + captive).\n        *   Spots per giraffe: 400.\n        *   Total: 120,000 * 400 = 48,000,000.\n    *   *Re-evaluating Population:*\n        *   IUCN 2023 Red List: ~117,500 wild.\n        *   Captive: ~2,500 (Zoological Society of London data).\n        *   Total: ~120,000.\n    *   *Re-evaluating Spots:*\n        *   A 2017 study by Fennessy et al. discusses subspecies differentiation.\n        *   Visual estimation: If a giraffe is 5.5 meters tall, torso circumference ~2 meters. Surface area of spots covers a significant portion.\n        *   If spots are roughly 5cm x 5cm on average (varying by neck vs body)?\n        *   Actually, spots are often cited as 300-400 for adult males. Females and juveniles might have fewer or denser patterns.\n        *   If the average is 350?\n        *   120,000 * 350 = 42,000,000.\n        *   If the average is 300?\n        *   120,000 * 300 = 36,000,000.\n        *   If the average is 450?\n        *   120,000 * 450 = 54,000,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1061,
+    "total_tokens": 1661,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 404,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00174769,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00174769,
+      "upstream_inference_prompt_cost": 0.00030769,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

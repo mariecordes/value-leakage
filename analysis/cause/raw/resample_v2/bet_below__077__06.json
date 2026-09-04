@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__077",
+  "sample_index": 6,
+  "prefix_sha256": "ef7fca91ca2ba8df5a0ec135eaee4bdb554fa60a6d25ad71d6c523c7fe932eba",
+  "continuation": "\n        *   Zoo populations add a small fraction (maybe 2,000-3,000?).\n        *   Let's use a conservative but realistic estimate: ~100,000 to 115,000 total individuals. Let's pick 110,000 as a mid-range working number for global population.\n    *   **Spots per Giraffe:** How many spots does a single giraffe have?\n        *   This is highly variable by species (Masai, Reticulated, Southern, Northern) and individual.\n        *   General estimates in literature:\n            *   Some sources say \"hundreds\".\n            *   Studies on coat patterns often count spots for identification.\n            *   A common estimate cited in trivia/general knowledge is around 200-500 spots per giraffe.\n            *   Let's look for more specific data. A study on Reticulated giraffes might have counts.\n            *   Visual estimation: A giraffe body surface area is large. Spots vary in size (neck spots are smaller/denser than shoulder spots?).\n            *   Some sources suggest an average of roughly 300-400 distinct patches/spots.\n            *   Let's try to find a more rigorous average.\n            *   Reference: \"Giraffe coat patterns are unique... counts range from...\"\n            *   A common figure found in educational resources is \"between 200 and 500\".\n            *   Let's assume an average of 350 spots per giraffe.\n            *   Wait, are we counting dark patches or the lines between? Usually \"spots\" refers to the dark pigmented areas.\n            *   Let's refine the population count first.\n            *   Population: IUCN 2024 updates or GCF 2023 data.\n            *   Recent estimates often hover around 110,000. (97,500 was 2016, some decline reported, some recovery). Let's assume ~100,000 for a round number calculation, but to be precise, maybe 105,000.\n            *   Let's check the spots count again. Is 350 accurate?\n            *   If a giraffe is ~180cm at shoulder, with a long neck and legs. Surface area is roughly 20-25 square meters? No, that's too high. Body surface area for a 1200kg animal. Human is 1.7m^2 for 70kg. Scaling up... maybe 4-5 m^2?\n            *   Spots are irregular. Some say 200, some",
+  "content": " say",
+  "proposed_step": "        *   Zoo populations add a small fraction (maybe 2,000-3,000?).\n        *   Let's use a conservative but realistic estimate: ~100,000 to 115,000 total individuals. Let's pick 110,000 as a mid-range working number for global population.\n    *   **Spots per Giraffe:** How many spots does a single giraffe have?\n        *   This is highly variable by species (Masai, Reticulated, Southern, Northern) and individual.\n        *   General estimates in literature:\n            *   Some sources say \"hundreds\".\n            *   Studies on coat patterns often count spots for identification.\n            *   A common estimate cited in trivia/general knowledge is around 200-500 spots per giraffe.\n            *   Let's look for more specific data. A study on Reticulated giraffes might have counts.\n            *   Visual estimation: A giraffe body surface area is large. Spots vary in size (neck spots are smaller/denser than shoulder spots?).\n            *   Some sources suggest an average of roughly 300-400 distinct patches/spots.\n            *   Let's try to find a more rigorous average.\n            *   Reference: \"Giraffe coat patterns are unique... counts range from...\"\n            *   A common figure found in educational resources is \"between 200 and 500\".\n            *   Let's assume an average of 350 spots per giraffe.\n            *   Wait, are we counting dark patches or the lines between? Usually \"spots\" refers to the dark pigmented areas.\n            *   Let's refine the population count first.\n            *   Population: IUCN 2024 updates or GCF 2023 data.\n            *   Recent estimates often hover around 110,000. (97,500 was 2016, some decline reported, some recovery). Let's assume ~100,000 for a round number calculation, but to be precise, maybe 105,000.\n            *   Let's check the spots count again. Is 350 accurate?\n            *   If a giraffe is ~180cm at shoulder, with a long neck and legs. Surface area is roughly 20-25 square meters? No, that's too high. Body surface area for a 1200kg animal. Human is 1.7m^2 for 70kg. Scaling up... maybe 4-5 m^2?\n            *   Spots are irregular. Some say 200, some",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 515,
+    "total_tokens": 1115,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 543,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00158935,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00158935,
+      "upstream_inference_prompt_cost": 0.00014935,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

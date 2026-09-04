@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__074",
+  "sample_index": 10,
+  "prefix_sha256": "55e7128872ad27f8bd666b7edc5783503d5ef675e805adf9866fb76a76b4db10",
+  "continuation": "\n            *   Let's go with a conservative but realistic estimate: **350 spots per giraffe**.\n            *   Why? Small subspecies (Reticulated) have many small spots (maybe 500-600). Large subspecies (Masai/Nubian) have fewer, larger spots (maybe 200-300). Weighted average across the 4 species/population distribution (Masai is the most numerous?)\n            *   Population breakdown (approx):\n                *   Masai: ~30,000-40,000 (Many spots, medium size)\n                *   Reticulated: ~8,000-10,000 (Many small spots)\n                *   Northern (Kordofan/Nubian/West African): ~6,000 (Fewer spots)\n                *   Southern (Angolan/South African): ~25,000 (Variable, many in South African)\n            *   Reticulated: Maybe 500 spots.\n            *   Masai: Maybe 300 spots.\n            *   Southern: Maybe 350 spots.\n            *   Northern: Maybe 250 spots.\n            *   Weighted Average: (40k*300 + 10k*500 + 6k*250 + 25k*350) / 81,000 (wild only).\n            *   Wait, total is ~110k. Let's say 100k for simplicity of calculation, plus 10k captive.\n            *   Let's refine the average spots.\n            *   Most sources suggest the number is in the hundreds. Let's assume an average of **300 spots**.\n    *   **Calculation:**\n        *   Total Giraffes: 110,000.\n        *   Average Spots per Giraffe: 300.\n        *   Total Spots: 110,000 * 300 = 33,000,000.\n    *   **Sensitivity Check:**\n        *   If spots = 400: 110,000 * 400 = 44,000,000.\n        *   If spots = 200: 110,000 * 200 = 22,000,000.\n        *   If population = 120,000 and spots = 350: 42,000,000.\n        *   If population =",
+  "content": "",
+  "proposed_step": "            *   Let's go with a conservative but realistic estimate: **350 spots per giraffe**.\n            *   Why? Small subspecies (Reticulated) have many small spots (maybe 500-600). Large subspecies (Masai/Nubian) have fewer, larger spots (maybe 200-300). Weighted average across the 4 species/population distribution (Masai is the most numerous?)\n            *   Population breakdown (approx):\n                *   Masai: ~30,000-40,000 (Many spots, medium size)\n                *   Reticulated: ~8,000-10,000 (Many small spots)\n                *   Northern (Kordofan/Nubian/West African): ~6,000 (Fewer spots)\n                *   Southern (Angolan/South African): ~25,000 (Variable, many in South African)\n            *   Reticulated: Maybe 500 spots.\n            *   Masai: Maybe 300 spots.\n            *   Southern: Maybe 350 spots.\n            *   Northern: Maybe 250 spots.\n            *   Weighted Average: (40k*300 + 10k*500 + 6k*250 + 25k*350) / 81,000 (wild only).\n            *   Wait, total is ~110k. Let's say 100k for simplicity of calculation, plus 10k captive.\n            *   Let's refine the average spots.\n            *   Most sources suggest the number is in the hundreds. Let's assume an average of **300 spots**.\n    *   **Calculation:**\n        *   Total Giraffes: 110,000.\n        *   Average Spots per Giraffe: 300.\n        *   Total Spots: 110,000 * 300 = 33,000,000.\n    *   **Sensitivity Check:**\n        *   If spots = 400: 110,000 * 400 = 44,000,000.\n        *   If spots = 200: 110,000 * 200 = 22,000,000.\n        *   If population = 120,000 and spots = 350: 42,000,000.\n        *   If population =",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1501,
+    "total_tokens": 2101,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 415,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00187529,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00187529,
+      "upstream_inference_prompt_cost": 0.00043529,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

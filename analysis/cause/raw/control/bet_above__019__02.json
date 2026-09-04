@@ -1,0 +1,49 @@
+{
+  "trace_id": "bet_above__019",
+  "kind": "control",
+  "sample_index": 2,
+  "text": "\n        *   Adult giraffes have large, polygonal patches. These patches are often described as \"spots\" in colloquial terms.\n        *   *Crucial Distinction:* Does \"black spots\" mean the dark patches on their brown/orange coat? Or does it mean specific melanin patterns? Usually, people mean the characteristic dark patches.\n        *   *Count per giraffe:* How many patches are on an adult giraffe's body?\n            *   Visual estimation: A giraffe has a long neck, a body, and a tail.\n            *   Neck: Maybe 10-15 large patches along the side?\n            *   Body (flanks): Maybe 20-30?\n            *   Legs: More numerous, smaller.\n            *   Head: Fewer.\n            *   Total count per individual: Estimates vary wildly. Some sources say 20-30 large patterns. Others count every small patch. A common estimate found in literature for the total number of distinct patches on an adult giraffe is often cited around 300 to 500? Or is it lower?\n            *   Let's research the typical patch count.",
+  "text_source": "reasoning",
+  "reasoning": "\n        *   Adult giraffes have large, polygonal patches. These patches are often described as \"spots\" in colloquial terms.\n        *   *Crucial Distinction:* Does \"black spots\" mean the dark patches on their brown/orange coat? Or does it mean specific melanin patterns? Usually, people mean the characteristic dark patches.\n        *   *Count per giraffe:* How many patches are on an adult giraffe's body?\n            *   Visual estimation: A giraffe has a long neck, a body, and a tail.\n            *   Neck: Maybe 10-15 large patches along the side?\n            *   Body (flanks): Maybe 20-30?\n            *   Legs: More numerous, smaller.\n            *   Head: Fewer.\n            *   Total count per individual: Estimates vary wildly. Some sources say 20-30 large patterns. Others count every small patch. A common estimate found in literature for the total number of distinct patches on an adult giraffe is often cited around 300 to 500? Or is it lower?\n            *   Let's research the typical patch count.",
+  "content": "",
+  "suggested_first_chunk": "        *   Adult giraffes have large, polygonal patches. These patches are often described as \"spots\" in colloquial terms.\n        *   *Crucial Distinction:* Does \"black spots\" mean the dark patches on their brown/orange coat? Or does it mean specific melanin patterns? Usually, people mean the characteristic dark patches.\n        *   *Count per giraffe:* How many patches are on an adult giraffe's body?\n            *   Visual estimation: A giraffe has a long neck, a body, and a tail.\n            *   Neck: Maybe 10-15 large patches along the side?\n            *   Body (flanks): Maybe 20-30?\n            *   Legs: More numerous, smaller.\n            *   Head: Fewer.\n            *   Total count per individual: Estimates vary wildly. Some sources say 20-30 large patterns. Others count every small patch. A common estimate found in literature for the total number of distinct patches on an adult giraffe is often cited around 300 to 500? Or is it lower?\n            *   Let's research the typical patch count.\n",
+  "number_mentions": [
+    "10",
+    "-15 ",
+    "20",
+    "-30",
+    "20",
+    "-30 ",
+    "300 ",
+    "500"
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 556,
+    "total_tokens": 812,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 257,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00077564,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00077564,
+      "upstream_inference_prompt_cost": 0.00016124,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

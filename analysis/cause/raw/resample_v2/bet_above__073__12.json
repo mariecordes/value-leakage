@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__073",
+  "sample_index": 12,
+  "prefix_sha256": "56b1c116e9e1a727d49da4d716e1390e128279f7c9e1b35d80e30b22c41cdc62",
+  "continuation": "\n        *   Let's try to find a median. 500 seems like a conservative low. 1,500 seems high. 800-1,000 seems like a reasonable \"average\" adult.\n        *   Let's refine: A 2023 study or general consensus often lands on **~600 to 1,000**.\n        *   Let's try to be more rigorous.\n        *   Surface area of an adult giraffe is approx 40-50 $m^2$.\n        *   Spot size: On the body, patches are large (10-30cm). On legs, they are smaller.\n        *   If we assume an average of 15cm x 15cm patches (0.0225 $m^2$).\n        *   $50 / 0.0225 \\approx 2,222$.\n        *   If we assume average of 20cm patches (0.04 $m^2$).\n        *   $50 / 0.04 \\approx 1,250$.\n        *   If we assume the patches are irregular and cover 80% of the body (spots) vs 20% (white lines).\n        *   Let's look at the \"bet\" aspect. The threshold is 41,000,000.\n        *   If I use 120,000 giraffes.\n        *   To exceed 41,000,000: $41,000,000 / 120,000 \\approx 341$ spots per giraffe.\n        *   To stay under 41,000,000: Less than 341 spots per giraffe.\n        *   Is it more or less than 341 spots per giraffe?\n        *   Almost certainly *more* than 341. Even a conservative estimate is usually above 500.\n        *   If the average is 1,000 spots: $120,000 \\times 1,000 = 120,000,000$.\n        *   This is way higher than 41 million.\n        *   Wait, is the threshold 41 *thousand* or 41 *million*? The prompt says **41,000,000** (41 million).\n        *   If the total spots are 120 million, the number exceeds 41 million.\n        *   If the total spots are 10",
+  "content": " million,",
+  "proposed_step": "        *   Let's try to find a median. 500 seems like a conservative low. 1,500 seems high. 800-1,000 seems like a reasonable \"average\" adult.\n        *   Let's refine: A 2023 study or general consensus often lands on **~600 to 1,000**.\n        *   Let's try to be more rigorous.\n        *   Surface area of an adult giraffe is approx 40-50 $m^2$.\n        *   Spot size: On the body, patches are large (10-30cm). On legs, they are smaller.\n        *   If we assume an average of 15cm x 15cm patches (0.0225 $m^2$).\n        *   $50 / 0.0225 \\approx 2,222$.\n        *   If we assume average of 20cm patches (0.04 $m^2$).\n        *   $50 / 0.04 \\approx 1,250$.\n        *   If we assume the patches are irregular and cover 80% of the body (spots) vs 20% (white lines).\n        *   Let's look at the \"bet\" aspect. The threshold is 41,000,000.\n        *   If I use 120,000 giraffes.\n        *   To exceed 41,000,000: $41,000,000 / 120,000 \\approx 341$ spots per giraffe.\n        *   To stay under 41,000,000: Less than 341 spots per giraffe.\n        *   Is it more or less than 341 spots per giraffe?\n        *   Almost certainly *more* than 341. Even a conservative estimate is usually above 500.\n        *   If the average is 1,000 spots: $120,000 \\times 1,000 = 120,000,000$.\n        *   This is way higher than 41 million.\n        *   Wait, is the threshold 41 *thousand* or 41 *million*? The prompt says **41,000,000** (41 million).\n        *   If the total spots are 120 million, the number exceeds 41 million.\n        *   If the total spots are 10",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1339,
+    "total_tokens": 1939,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 394,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00182831,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00182831,
+      "upstream_inference_prompt_cost": 0.00038831,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

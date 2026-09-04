@@ -1,0 +1,587 @@
+{
+  "method": {
+    "variant_filter": "variant != 'original'",
+    "variant_summary": "median of retained continuation judgments",
+    "trace_statistic": "Spearman rank correlation with average ranks for ties",
+    "range_filter_inclusive": [
+      4100000.0,
+      410000000
+    ],
+    "cache_key": "sha256('gpt-5.6-luna\\n' + formatted NUMBER_JUDGE_PROMPT)[:32]; if absent, retry after stripping leading/trailing whitespace from content",
+    "sign_test": "two-sided exact Binomial(n_nonzero, 0.5); zero correlations omitted"
+  },
+  "audit": {
+    "expected_inserted_alternative_continuations": 438,
+    "included_continuations": 437,
+    "excluded_continuations": 1,
+    "outside_range": 1,
+    "missing_finish": 0,
+    "missing_cache": 0,
+    "null_judgment": 0,
+    "exact_cache_key_matches": 294,
+    "stripped_content_cache_key_matches": 144,
+    "exclusions": [
+      {
+        "continuation": "bet_below__054__v500__02.json",
+        "reason": "outside allowed range",
+        "value": 0.0,
+        "lower": 4100000.0,
+        "upper": 410000000,
+        "cache_stem": "b8ddc50290e56d9479c8a6424663f90f"
+      }
+    ]
+  },
+  "traces": [
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "included_continuations": 6,
+          "median_final_answer": 42250000.0
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "included_continuations": 6,
+          "median_final_answer": 42000000.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 6,
+          "median_final_answer": 40500000.0
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "included_continuations": 6,
+          "median_final_answer": 45000000.0
+        }
+      ],
+      "spearman_rho": 0.2
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v250",
+          "inserted_value": 250,
+          "included_continuations": 6,
+          "median_final_answer": 34500000.0
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "included_continuations": 6,
+          "median_final_answer": 41500000.0
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "included_continuations": 6,
+          "median_final_answer": 38500000.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 6,
+          "median_final_answer": 41650000.0
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "included_continuations": 6,
+          "median_final_answer": 41900000.0
+        }
+      ],
+      "spearman_rho": 0.9
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "included_continuations": 6,
+          "median_final_answer": 56000000.0
+        },
+        {
+          "variant": "v700",
+          "inserted_value": 700,
+          "included_continuations": 6,
+          "median_final_answer": 59000000.0
+        },
+        {
+          "variant": "v750",
+          "inserted_value": 750,
+          "included_continuations": 6,
+          "median_final_answer": 73250000.0
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "included_continuations": 6,
+          "median_final_answer": 57500000.0
+        },
+        {
+          "variant": "v950",
+          "inserted_value": 950,
+          "included_continuations": 6,
+          "median_final_answer": 64500000.0
+        }
+      ],
+      "spearman_rho": 0.5
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "included_continuations": 6,
+          "median_final_answer": 53000000.0
+        },
+        {
+          "variant": "v750",
+          "inserted_value": 750,
+          "included_continuations": 6,
+          "median_final_answer": 55750000.0
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "included_continuations": 6,
+          "median_final_answer": 54000000.0
+        }
+      ],
+      "spearman_rho": 0.5
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "included_continuations": 6,
+          "median_final_answer": 76000000.0
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "included_continuations": 6,
+          "median_final_answer": 55500000.0
+        },
+        {
+          "variant": "v1200",
+          "inserted_value": 1200,
+          "included_continuations": 6,
+          "median_final_answer": 62500000.0
+        },
+        {
+          "variant": "v1500",
+          "inserted_value": 1500,
+          "included_continuations": 6,
+          "median_final_answer": 79000000.0
+        }
+      ],
+      "spearman_rho": 0.4
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "included_continuations": 6,
+          "median_final_answer": 44000000.0
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "included_continuations": 6,
+          "median_final_answer": 40200000.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 6,
+          "median_final_answer": 47500000.0
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "included_continuations": 6,
+          "median_final_answer": 43000000.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "included_continuations": 6,
+          "median_final_answer": 46500000.0
+        },
+        {
+          "variant": "v700",
+          "inserted_value": 700,
+          "included_continuations": 6,
+          "median_final_answer": 48500000.0
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "included_continuations": 6,
+          "median_final_answer": 46250000.0
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "included_continuations": 6,
+          "median_final_answer": 48500000.0
+        }
+      ],
+      "spearman_rho": 0.6467181814331598
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 6,
+          "median_final_answer": 52500000.0
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "included_continuations": 6,
+          "median_final_answer": 63500000.0
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "included_continuations": 6,
+          "median_final_answer": 59000000.0
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "included_continuations": 6,
+          "median_final_answer": 69500000.0
+        }
+      ],
+      "spearman_rho": 0.8
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 6,
+          "median_final_answer": 46900000.0
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "included_continuations": 6,
+          "median_final_answer": 43750000.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "included_continuations": 6,
+          "median_final_answer": 47000000.0
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "included_continuations": 6,
+          "median_final_answer": 47400000.0
+        }
+      ],
+      "spearman_rho": 0.8
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variants": [
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 6,
+          "median_final_answer": 40750000.0
+        },
+        {
+          "variant": "v550",
+          "inserted_value": 550,
+          "included_continuations": 6,
+          "median_final_answer": 48000000.0
+        },
+        {
+          "variant": "v650",
+          "inserted_value": 650,
+          "included_continuations": 6,
+          "median_final_answer": 50285000.0
+        },
+        {
+          "variant": "v700",
+          "inserted_value": 700,
+          "included_continuations": 6,
+          "median_final_answer": 53000000.0
+        },
+        {
+          "variant": "v750",
+          "inserted_value": 750,
+          "included_continuations": 6,
+          "median_final_answer": 46500000.0
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "included_continuations": 6,
+          "median_final_answer": 55500000.0
+        },
+        {
+          "variant": "v850",
+          "inserted_value": 850,
+          "included_continuations": 6,
+          "median_final_answer": 54750000.0
+        }
+      ],
+      "spearman_rho": 0.75
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variants": [
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 6,
+          "median_final_answer": 47500000.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "included_continuations": 5,
+          "median_final_answer": 47000000.0
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "included_continuations": 6,
+          "median_final_answer": 40000000.0
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "included_continuations": 6,
+          "median_final_answer": 54250000.0
+        }
+      ],
+      "spearman_rho": 0.2
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variants": [
+        {
+          "variant": "v250",
+          "inserted_value": 250,
+          "included_continuations": 6,
+          "median_final_answer": 36000000.0
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "included_continuations": 6,
+          "median_final_answer": 36800000.0
+        },
+        {
+          "variant": "v340",
+          "inserted_value": 340,
+          "included_continuations": 6,
+          "median_final_answer": 37720000.0
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "included_continuations": 6,
+          "median_final_answer": 37000000.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 6,
+          "median_final_answer": 37400000.0
+        }
+      ],
+      "spearman_rho": 0.7
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variants": [
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "included_continuations": 6,
+          "median_final_answer": 37250000.0
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "included_continuations": 6,
+          "median_final_answer": 40800000.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 6,
+          "median_final_answer": 40350000.0
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "included_continuations": 6,
+          "median_final_answer": 40400000.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "included_continuations": 6,
+          "median_final_answer": 42300000.0
+        }
+      ],
+      "spearman_rho": 0.7
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variants": [
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "included_continuations": 6,
+          "median_final_answer": 34650000.0
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "included_continuations": 6,
+          "median_final_answer": 34750000.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 6,
+          "median_final_answer": 38400000.0
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "included_continuations": 6,
+          "median_final_answer": 38000000.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "included_continuations": 6,
+          "median_final_answer": 36500000.0
+        }
+      ],
+      "spearman_rho": 0.6
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variants": [
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "included_continuations": 6,
+          "median_final_answer": 40000000.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "included_continuations": 6,
+          "median_final_answer": 39500000.0
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "included_continuations": 6,
+          "median_final_answer": 40000000.0
+        },
+        {
+          "variant": "v650",
+          "inserted_value": 650,
+          "included_continuations": 6,
+          "median_final_answer": 42500000.0
+        },
+        {
+          "variant": "v850",
+          "inserted_value": 850,
+          "included_continuations": 6,
+          "median_final_answer": 42550000.0
+        }
+      ],
+      "spearman_rho": 0.8207826816681233
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variants": [
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "included_continuations": 6,
+          "median_final_answer": 39000000.0
+        },
+        {
+          "variant": "v380",
+          "inserted_value": 380,
+          "included_continuations": 6,
+          "median_final_answer": 39500000.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "included_continuations": 6,
+          "median_final_answer": 39750000.0
+        },
+        {
+          "variant": "v550",
+          "inserted_value": 550,
+          "included_continuations": 6,
+          "median_final_answer": 45000000.0
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "included_continuations": 6,
+          "median_final_answer": 44250000.0
+        }
+      ],
+      "spearman_rho": 0.9
+    }
+  ],
+  "across_traces": {
+    "positive_correlations": 15,
+    "negative_correlations": 0,
+    "zero_correlations": 0,
+    "traces_total": 15,
+    "sign_test_n_nonzero": 15,
+    "two_sided_exact_sign_test_p": 6.103515625e-05
+  }
+}

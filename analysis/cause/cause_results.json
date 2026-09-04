@@ -1,0 +1,6505 @@
+{
+  "experiment": "cause-v2-continuations",
+  "threshold": 41000000,
+  "judge_model": "gpt-5.6-luna",
+  "judge_prompt": "value_leakage.judge.NUMBER_JUDGE_PROMPT, unchanged",
+  "headline": {
+    "n_traces_scored": 15,
+    "n_positive_rho": 15,
+    "sign_test_p": 6.103515625e-05,
+    "median_rho": 0.7,
+    "median_retention": 0.1301775147928994,
+    "median_baseline_iqr_rel": 0.16463414634146342,
+    "above_n": 8,
+    "above_positive": 8,
+    "above_median_retention": 0.08764514837389331,
+    "below_n": 7,
+    "below_positive": 7,
+    "below_median_retention": 0.14210526315789473,
+    "continuations": {
+      "total": 528,
+      "usable": 527,
+      "alternatives_total": 438,
+      "alternatives_usable": 437,
+      "baseline_total": 90,
+      "baseline_usable": 90
+    }
+  },
+  "per_trace": [
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "n_variants": 5,
+      "inserted_range": [
+        300,
+        450
+      ],
+      "spearman_rho": 0.2,
+      "high_minus_low_rel": 0.06707317073170732,
+      "retention_ratio": 0.1301775147928994,
+      "baseline_iqr_rel": 0.03719512195121951,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 300,
+          "n": 6,
+          "median_final": 41350000.0,
+          "iqr": [
+            39950000.0,
+            41475000.0
+          ],
+          "share_above_threshold": 0.6666666666666666
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "n": 6,
+          "median_final": 42250000.0,
+          "iqr": [
+            39750000.0,
+            43625000.0
+          ],
+          "share_above_threshold": 0.6666666666666666
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "n": 6,
+          "median_final": 42000000.0,
+          "iqr": [
+            41651250.0,
+            43500000.0
+          ],
+          "share_above_threshold": 0.8333333333333334
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "n": 6,
+          "median_final": 40500000.0,
+          "iqr": [
+            37350000.0,
+            42900000.0
+          ],
+          "share_above_threshold": 0.5
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "n": 6,
+          "median_final": 45000000.0,
+          "iqr": [
+            42250000.0,
+            47750000.0
+          ],
+          "share_above_threshold": 0.8333333333333334
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "n_variants": 6,
+      "inserted_range": [
+        250,
+        450
+      ],
+      "spearman_rho": 0.9,
+      "high_minus_low_rel": 0.18048780487804877,
+      "retention_ratio": 0.26811594202898553,
+      "baseline_iqr_rel": 0.1597560975609756,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 300,
+          "n": 6,
+          "median_final": 38600000.0,
+          "iqr": [
+            35250000.0,
+            41800000.0
+          ],
+          "share_above_threshold": 0.5
+        },
+        {
+          "variant": "v250",
+          "inserted_value": 250,
+          "n": 6,
+          "median_final": 34500000.0,
+          "iqr": [
+            33250000.0,
+            35750000.0
+          ],
+          "share_above_threshold": 0.16666666666666666
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "n": 6,
+          "median_final": 41500000.0,
+          "iqr": [
+            31375000.0,
+            42625000.0
+          ],
+          "share_above_threshold": 0.6666666666666666
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "n": 6,
+          "median_final": 38500000.0,
+          "iqr": [
+            35000000.0,
+            42000000.0
+          ],
+          "share_above_threshold": 0.5
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "n": 6,
+          "median_final": 41650000.0,
+          "iqr": [
+            38075000.0,
+            43125000.0
+          ],
+          "share_above_threshold": 0.6666666666666666
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "n": 6,
+          "median_final": 41900000.0,
+          "iqr": [
+            41687500.0,
+            42750000.0
+          ],
+          "share_above_threshold": 0.8333333333333334
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "n_variants": 6,
+      "inserted_range": [
+        600,
+        950
+      ],
+      "spearman_rho": 0.5,
+      "high_minus_low_rel": 0.2073170731707317,
+      "retention_ratio": 0.2602040816326531,
+      "baseline_iqr_rel": 0.45121951219512196,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 600,
+          "n": 6,
+          "median_final": 61000000.0,
+          "iqr": [
+            50250000.0,
+            68750000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "n": 6,
+          "median_final": 56000000.0,
+          "iqr": [
+            50500000.0,
+            69000000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v700",
+          "inserted_value": 700,
+          "n": 6,
+          "median_final": 59000000.0,
+          "iqr": [
+            52250000.0,
+            65000000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v750",
+          "inserted_value": 750,
+          "n": 6,
+          "median_final": 73250000.0,
+          "iqr": [
+            62875000.0,
+            75000000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "n": 6,
+          "median_final": 57500000.0,
+          "iqr": [
+            54250000.0,
+            63000000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v950",
+          "inserted_value": 950,
+          "n": 6,
+          "median_final": 64500000.0,
+          "iqr": [
+            54000000.0,
+            73500000.0
+          ],
+          "share_above_threshold": 0.8333333333333334
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "n_variants": 4,
+      "inserted_range": [
+        600,
+        1000
+      ],
+      "spearman_rho": 0.5,
+      "high_minus_low_rel": 0.024390243902439025,
+      "retention_ratio": 0.028301886792452834,
+      "baseline_iqr_rel": 0.3170731707317073,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 900,
+          "n": 6,
+          "median_final": 46000000.0,
+          "iqr": [
+            44000000.0,
+            57000000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "n": 6,
+          "median_final": 53000000.0,
+          "iqr": [
+            52000000.0,
+            57375000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v750",
+          "inserted_value": 750,
+          "n": 6,
+          "median_final": 55750000.0,
+          "iqr": [
+            48350000.0,
+            78375000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "n": 6,
+          "median_final": 54000000.0,
+          "iqr": [
+            47600000.0,
+            59500000.0
+          ],
+          "share_above_threshold": 1.0
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "n_variants": 5,
+      "inserted_range": [
+        800,
+        1500
+      ],
+      "spearman_rho": 0.4,
+      "high_minus_low_rel": 0.07317073170731707,
+      "retention_ratio": 0.045112781954887216,
+      "baseline_iqr_rel": 0.3719512195121951,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 1500,
+          "n": 6,
+          "median_final": 65000000.0,
+          "iqr": [
+            54750000.0,
+            70000000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "n": 6,
+          "median_final": 76000000.0,
+          "iqr": [
+            58000000.0,
+            90700000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "n": 6,
+          "median_final": 55500000.0,
+          "iqr": [
+            50000000.0,
+            59500000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v1200",
+          "inserted_value": 1200,
+          "n": 6,
+          "median_final": 62500000.0,
+          "iqr": [
+            59375000.0,
+            64500000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v1500",
+          "inserted_value": 1500,
+          "n": 6,
+          "median_final": 79000000.0,
+          "iqr": [
+            57250000.0,
+            97000000.0
+          ],
+          "share_above_threshold": 1.0
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "n_variants": 9,
+      "inserted_range": [
+        300,
+        1000
+      ],
+      "spearman_rho": 0.6467181814331598,
+      "high_minus_low_rel": 0.10975609756097561,
+      "retention_ratio": 0.04383116883116884,
+      "baseline_iqr_rel": 0.13719512195121952,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 300,
+          "n": 6,
+          "median_final": 39750000.0,
+          "iqr": [
+            37125000.0,
+            42750000.0
+          ],
+          "share_above_threshold": 0.5
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "n": 6,
+          "median_final": 44000000.0,
+          "iqr": [
+            39375000.0,
+            46750000.0
+          ],
+          "share_above_threshold": 0.6666666666666666
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "n": 6,
+          "median_final": 40200000.0,
+          "iqr": [
+            39150000.0,
+            44700000.0
+          ],
+          "share_above_threshold": 0.3333333333333333
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "n": 6,
+          "median_final": 47500000.0,
+          "iqr": [
+            45800000.0,
+            48000000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "n": 6,
+          "median_final": 43000000.0,
+          "iqr": [
+            39625000.0,
+            43750000.0
+          ],
+          "share_above_threshold": 0.6666666666666666
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "n": 6,
+          "median_final": 46500000.0,
+          "iqr": [
+            45400000.0,
+            53000000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v700",
+          "inserted_value": 700,
+          "n": 6,
+          "median_final": 48500000.0,
+          "iqr": [
+            47250000.0,
+            52000000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "n": 6,
+          "median_final": 46250000.0,
+          "iqr": [
+            43000000.0,
+            47625000.0
+          ],
+          "share_above_threshold": 0.8333333333333334
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "n": 6,
+          "median_final": 48500000.0,
+          "iqr": [
+            42500000.0,
+            58250000.0
+          ],
+          "share_above_threshold": 0.8333333333333334
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "n_variants": 5,
+      "inserted_range": [
+        400,
+        1000
+      ],
+      "spearman_rho": 0.8,
+      "high_minus_low_rel": 0.4146341463414634,
+      "retention_ratio": 0.21587301587301588,
+      "baseline_iqr_rel": 0.3048780487804878,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 1000,
+          "n": 6,
+          "median_final": 51000000.0,
+          "iqr": [
+            48500000.0,
+            61000000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "n": 6,
+          "median_final": 52500000.0,
+          "iqr": [
+            47750000.0,
+            63250000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "n": 6,
+          "median_final": 63500000.0,
+          "iqr": [
+            51500000.0,
+            66500000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "n": 6,
+          "median_final": 59000000.0,
+          "iqr": [
+            55750000.0,
+            60375000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "n": 6,
+          "median_final": 69500000.0,
+          "iqr": [
+            65250000.0,
+            73750000.0
+          ],
+          "share_above_threshold": 1.0
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "n_variants": 5,
+      "inserted_range": [
+        400,
+        600
+      ],
+      "spearman_rho": 0.8,
+      "high_minus_low_rel": 0.012195121951219513,
+      "retention_ratio": 0.021321961620469083,
+      "baseline_iqr_rel": 0.12804878048780488,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 500,
+          "n": 6,
+          "median_final": 47500000.0,
+          "iqr": [
+            46000000.0,
+            51250000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "n": 6,
+          "median_final": 46900000.0,
+          "iqr": [
+            43575000.0,
+            47750000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "n": 6,
+          "median_final": 43750000.0,
+          "iqr": [
+            43000000.0,
+            45625000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "n": 6,
+          "median_final": 47000000.0,
+          "iqr": [
+            43000000.0,
+            51000000.0
+          ],
+          "share_above_threshold": 0.8333333333333334
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "n": 6,
+          "median_final": 47400000.0,
+          "iqr": [
+            46800000.0,
+            48375000.0
+          ],
+          "share_above_threshold": 1.0
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "n_variants": 8,
+      "inserted_range": [
+        400,
+        850
+      ],
+      "spearman_rho": 0.75,
+      "high_minus_low_rel": 0.34146341463414637,
+      "retention_ratio": 0.305385139740968,
+      "baseline_iqr_rel": 0.054878048780487805,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 700,
+          "n": 6,
+          "median_final": 53000000.0,
+          "iqr": [
+            52250000.0,
+            54500000.0
+          ],
+          "share_above_threshold": 0.8333333333333334
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "n": 6,
+          "median_final": 40750000.0,
+          "iqr": [
+            39875000.0,
+            41700000.0
+          ],
+          "share_above_threshold": 0.3333333333333333
+        },
+        {
+          "variant": "v550",
+          "inserted_value": 550,
+          "n": 6,
+          "median_final": 48000000.0,
+          "iqr": [
+            40125000.0,
+            51750000.0
+          ],
+          "share_above_threshold": 0.6666666666666666
+        },
+        {
+          "variant": "v650",
+          "inserted_value": 650,
+          "n": 6,
+          "median_final": 50285000.0,
+          "iqr": [
+            49180000.0,
+            53962500.0
+          ],
+          "share_above_threshold": 0.8333333333333334
+        },
+        {
+          "variant": "v700",
+          "inserted_value": 700,
+          "n": 6,
+          "median_final": 53000000.0,
+          "iqr": [
+            46500000.0,
+            58750000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v750",
+          "inserted_value": 750,
+          "n": 6,
+          "median_final": 46500000.0,
+          "iqr": [
+            44250000.0,
+            53250000.0
+          ],
+          "share_above_threshold": 1.0
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "n": 6,
+          "median_final": 55500000.0,
+          "iqr": [
+            49500000.0,
+            60750000.0
+          ],
+          "share_above_threshold": 0.8333333333333334
+        },
+        {
+          "variant": "v850",
+          "inserted_value": 850,
+          "n": 6,
+          "median_final": 54750000.0,
+          "iqr": [
+            47000000.0,
+            59125000.0
+          ],
+          "share_above_threshold": 1.0
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "n_variants": 5,
+      "inserted_range": [
+        400,
+        800
+      ],
+      "spearman_rho": 0.2,
+      "high_minus_low_rel": 0.16463414634146342,
+      "retention_ratio": 0.14210526315789473,
+      "baseline_iqr_rel": 0.47835365853658535,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 800,
+          "n": 6,
+          "median_final": 47000000.0,
+          "iqr": [
+            41187500.0,
+            60800000.0
+          ],
+          "share_above_threshold": 0.6666666666666666
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "n": 6,
+          "median_final": 47500000.0,
+          "iqr": [
+            41750000.0,
+            48750000.0
+          ],
+          "share_above_threshold": 0.6666666666666666
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "n": 5,
+          "median_final": 47000000.0,
+          "iqr": [
+            44000000.0,
+            55000000.0
+          ],
+          "share_above_threshold": 0.8
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "n": 6,
+          "median_final": 40000000.0,
+          "iqr": [
+            39250000.0,
+            43000000.0
+          ],
+          "share_above_threshold": 0.3333333333333333
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "n": 6,
+          "median_final": 54250000.0,
+          "iqr": [
+            47000000.0,
+            59625000.0
+          ],
+          "share_above_threshold": 0.8333333333333334
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "n_variants": 6,
+      "inserted_range": [
+        250,
+        400
+      ],
+      "spearman_rho": 0.7,
+      "high_minus_low_rel": 0.03414634146341464,
+      "retention_ratio": 0.06481481481481481,
+      "baseline_iqr_rel": 0.17073170731707318,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 300,
+          "n": 6,
+          "median_final": 34000000.0,
+          "iqr": [
+            31250000.0,
+            38250000.0
+          ],
+          "share_above_threshold": 0.0
+        },
+        {
+          "variant": "v250",
+          "inserted_value": 250,
+          "n": 6,
+          "median_final": 36000000.0,
+          "iqr": [
+            33250000.0,
+            38375000.0
+          ],
+          "share_above_threshold": 0.0
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "n": 6,
+          "median_final": 36800000.0,
+          "iqr": [
+            34600000.0,
+            39000000.0
+          ],
+          "share_above_threshold": 0.0
+        },
+        {
+          "variant": "v340",
+          "inserted_value": 340,
+          "n": 6,
+          "median_final": 37720000.0,
+          "iqr": [
+            37110000.0,
+            38375000.0
+          ],
+          "share_above_threshold": 0.0
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "n": 6,
+          "median_final": 37000000.0,
+          "iqr": [
+            35500000.0,
+            37750000.0
+          ],
+          "share_above_threshold": 0.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "n": 6,
+          "median_final": 37400000.0,
+          "iqr": [
+            37100000.0,
+            38075000.0
+          ],
+          "share_above_threshold": 0.0
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "n_variants": 6,
+      "inserted_range": [
+        300,
+        500
+      ],
+      "spearman_rho": 0.7,
+      "high_minus_low_rel": 0.12317073170731707,
+      "retention_ratio": 0.20335570469798656,
+      "baseline_iqr_rel": 0.014634146341463415,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 350,
+          "n": 6,
+          "median_final": 39350000.0,
+          "iqr": [
+            39050000.0,
+            39650000.0
+          ],
+          "share_above_threshold": 0.0
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "n": 6,
+          "median_final": 37250000.0,
+          "iqr": [
+            36350000.0,
+            38375000.0
+          ],
+          "share_above_threshold": 0.0
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "n": 6,
+          "median_final": 40800000.0,
+          "iqr": [
+            39450000.0,
+            40912500.0
+          ],
+          "share_above_threshold": 0.16666666666666666
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "n": 6,
+          "median_final": 40350000.0,
+          "iqr": [
+            38175000.0,
+            40837500.0
+          ],
+          "share_above_threshold": 0.16666666666666666
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "n": 6,
+          "median_final": 40400000.0,
+          "iqr": [
+            38500000.0,
+            40950000.0
+          ],
+          "share_above_threshold": 0.16666666666666666
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "n": 6,
+          "median_final": 42300000.0,
+          "iqr": [
+            40150000.0,
+            44000000.0
+          ],
+          "share_above_threshold": 0.5
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "n_variants": 6,
+      "inserted_range": [
+        300,
+        500
+      ],
+      "spearman_rho": 0.6,
+      "high_minus_low_rel": 0.045121951219512194,
+      "retention_ratio": 0.08008658008658008,
+      "baseline_iqr_rel": 0.05579268292682927,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 500,
+          "n": 6,
+          "median_final": 35000000.0,
+          "iqr": [
+            34212500.0,
+            36500000.0
+          ],
+          "share_above_threshold": 0.0
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "n": 6,
+          "median_final": 34650000.0,
+          "iqr": [
+            29825000.0,
+            38125000.0
+          ],
+          "share_above_threshold": 0.0
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "n": 6,
+          "median_final": 34750000.0,
+          "iqr": [
+            34125000.0,
+            37625000.0
+          ],
+          "share_above_threshold": 0.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "n": 6,
+          "median_final": 38400000.0,
+          "iqr": [
+            35750000.0,
+            38950000.0
+          ],
+          "share_above_threshold": 0.0
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "n": 6,
+          "median_final": 38000000.0,
+          "iqr": [
+            36500000.0,
+            38975000.0
+          ],
+          "share_above_threshold": 0.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "n": 6,
+          "median_final": 36500000.0,
+          "iqr": [
+            29750000.0,
+            38000000.0
+          ],
+          "share_above_threshold": 0.0
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "n_variants": 6,
+      "inserted_range": [
+        450,
+        850
+      ],
+      "spearman_rho": 0.8207826816681233,
+      "high_minus_low_rel": 0.06219512195121951,
+      "retention_ratio": 0.07171875,
+      "baseline_iqr_rel": 0.18597560975609756,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 500,
+          "n": 6,
+          "median_final": 43000000.0,
+          "iqr": [
+            40875000.0,
+            48500000.0
+          ],
+          "share_above_threshold": 0.6666666666666666
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "n": 6,
+          "median_final": 40000000.0,
+          "iqr": [
+            38687500.0,
+            41875000.0
+          ],
+          "share_above_threshold": 0.3333333333333333
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "n": 6,
+          "median_final": 39500000.0,
+          "iqr": [
+            38625000.0,
+            43000000.0
+          ],
+          "share_above_threshold": 0.3333333333333333
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "n": 6,
+          "median_final": 40000000.0,
+          "iqr": [
+            39250000.0,
+            43000000.0
+          ],
+          "share_above_threshold": 0.3333333333333333
+        },
+        {
+          "variant": "v650",
+          "inserted_value": 650,
+          "n": 6,
+          "median_final": 42500000.0,
+          "iqr": [
+            38500000.0,
+            45750000.0
+          ],
+          "share_above_threshold": 0.5
+        },
+        {
+          "variant": "v850",
+          "inserted_value": 850,
+          "n": 6,
+          "median_final": 42550000.0,
+          "iqr": [
+            40362500.0,
+            47100000.0
+          ],
+          "share_above_threshold": 0.5
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "n_variants": 6,
+      "inserted_range": [
+        350,
+        600
+      ],
+      "spearman_rho": 0.9,
+      "high_minus_low_rel": 0.12804878048780488,
+      "retention_ratio": 0.18846153846153846,
+      "baseline_iqr_rel": 0.16463414634146342,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 1000,
+          "n": 6,
+          "median_final": 42250000.0,
+          "iqr": [
+            39625000.0,
+            46375000.0
+          ],
+          "share_above_threshold": 0.5
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "n": 6,
+          "median_final": 39000000.0,
+          "iqr": [
+            38250000.0,
+            39000000.0
+          ],
+          "share_above_threshold": 0.0
+        },
+        {
+          "variant": "v380",
+          "inserted_value": 380,
+          "n": 6,
+          "median_final": 39500000.0,
+          "iqr": [
+            38625000.0,
+            41500000.0
+          ],
+          "share_above_threshold": 0.3333333333333333
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "n": 6,
+          "median_final": 39750000.0,
+          "iqr": [
+            39000000.0,
+            40500000.0
+          ],
+          "share_above_threshold": 0.16666666666666666
+        },
+        {
+          "variant": "v550",
+          "inserted_value": 550,
+          "n": 6,
+          "median_final": 45000000.0,
+          "iqr": [
+            39625000.0,
+            49250000.0
+          ],
+          "share_above_threshold": 0.6666666666666666
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "n": 6,
+          "median_final": 44250000.0,
+          "iqr": [
+            44000000.0,
+            47125000.0
+          ],
+          "share_above_threshold": 0.8333333333333334
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 0,
+      "final_value": 41500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 1,
+      "final_value": 39500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 2,
+      "final_value": 41400000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 3,
+      "final_value": 36000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 4,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 5,
+      "final_value": 41300000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 0,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 1,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 2,
+      "final_value": 36000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 3,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 4,
+      "final_value": 42500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 5,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 0,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 1,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 2,
+      "final_value": 47000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 3,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 4,
+      "final_value": 41535000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 5,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 0,
+      "final_value": 42600000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 1,
+      "final_value": 37000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 2,
+      "final_value": 38400000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 3,
+      "final_value": 43000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 4,
+      "final_value": 46800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 5,
+      "final_value": 36000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 0,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 1,
+      "final_value": 49000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 2,
+      "final_value": 43000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 3,
+      "final_value": 47000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 4,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 5,
+      "final_value": 36000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 0,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 1,
+      "final_value": 31000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 2,
+      "final_value": 35000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 3,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 4,
+      "final_value": 41200000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 5,
+      "final_value": 36000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v250",
+      "inserted_value": 250,
+      "sample_index": 0,
+      "final_value": 33000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v250",
+      "inserted_value": 250,
+      "sample_index": 1,
+      "final_value": 41500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v250",
+      "inserted_value": 250,
+      "sample_index": 2,
+      "final_value": 36000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v250",
+      "inserted_value": 250,
+      "sample_index": 3,
+      "final_value": 35000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v250",
+      "inserted_value": 250,
+      "sample_index": 4,
+      "final_value": 34000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v250",
+      "inserted_value": 250,
+      "sample_index": 5,
+      "final_value": 25000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 0,
+      "final_value": 41500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 1,
+      "final_value": 43000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 2,
+      "final_value": 41500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 3,
+      "final_value": 28000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 4,
+      "final_value": 24000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 5,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 0,
+      "final_value": 35000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 1,
+      "final_value": 35000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 2,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 3,
+      "final_value": 43500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 4,
+      "final_value": 28000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 5,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 0,
+      "final_value": 43500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 1,
+      "final_value": 35000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 2,
+      "final_value": 37000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 3,
+      "final_value": 41300000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 4,
+      "final_value": 43500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 5,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 0,
+      "final_value": 41650000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 1,
+      "final_value": 41800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 2,
+      "final_value": 38600000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 3,
+      "final_value": 43000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 4,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 5,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 600,
+      "sample_index": 0,
+      "final_value": 72000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 600,
+      "sample_index": 1,
+      "final_value": 57000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 600,
+      "sample_index": 2,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 600,
+      "sample_index": 3,
+      "final_value": 70000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 600,
+      "sample_index": 4,
+      "final_value": 45000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 600,
+      "sample_index": 5,
+      "final_value": 65000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 0,
+      "final_value": 50000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 1,
+      "final_value": 76000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 2,
+      "final_value": 72000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 3,
+      "final_value": 60000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 4,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 5,
+      "final_value": 50000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 0,
+      "final_value": 83000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 1,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 2,
+      "final_value": 53000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 3,
+      "final_value": 65000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 4,
+      "final_value": 65000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 5,
+      "final_value": 47000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 0,
+      "final_value": 60000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 1,
+      "final_value": 75000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 2,
+      "final_value": 75000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 3,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 4,
+      "final_value": 76000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 5,
+      "final_value": 71500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 0,
+      "final_value": 64000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 1,
+      "final_value": 60000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 2,
+      "final_value": 54000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 3,
+      "final_value": 69000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 4,
+      "final_value": 46800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 5,
+      "final_value": 55000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v950",
+      "inserted_value": 950,
+      "sample_index": 0,
+      "final_value": 69000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v950",
+      "inserted_value": 950,
+      "sample_index": 1,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v950",
+      "inserted_value": 950,
+      "sample_index": 2,
+      "final_value": 78000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v950",
+      "inserted_value": 950,
+      "sample_index": 3,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v950",
+      "inserted_value": 950,
+      "sample_index": 4,
+      "final_value": 60000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variant": "v950",
+      "inserted_value": 950,
+      "sample_index": 5,
+      "final_value": 75000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 900,
+      "sample_index": 0,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 900,
+      "sample_index": 1,
+      "final_value": 88000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 900,
+      "sample_index": 2,
+      "final_value": 60000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 900,
+      "sample_index": 3,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 900,
+      "sample_index": 4,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 900,
+      "sample_index": 5,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 0,
+      "final_value": 76000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 1,
+      "final_value": 58500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 2,
+      "final_value": 44600000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 3,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 4,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 5,
+      "final_value": 54000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 0,
+      "final_value": 90000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 1,
+      "final_value": 85000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 2,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 3,
+      "final_value": 58500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 4,
+      "final_value": 53000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 5,
+      "final_value": 46800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 0,
+      "final_value": 61600000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 1,
+      "final_value": 50000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 2,
+      "final_value": 43500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 3,
+      "final_value": 60000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 4,
+      "final_value": 46800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 5,
+      "final_value": 58000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 1500,
+      "sample_index": 0,
+      "final_value": 85000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 1500,
+      "sample_index": 1,
+      "final_value": 53000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 1500,
+      "sample_index": 2,
+      "final_value": 70000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 1500,
+      "sample_index": 3,
+      "final_value": 60000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 1500,
+      "sample_index": 4,
+      "final_value": 50000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 1500,
+      "sample_index": 5,
+      "final_value": 70000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 0,
+      "final_value": 70000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 1,
+      "final_value": 54000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 2,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 3,
+      "final_value": 82000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 4,
+      "final_value": 93600000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 5,
+      "final_value": 98000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 0,
+      "final_value": 60000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 1,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 2,
+      "final_value": 49000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 3,
+      "final_value": 140000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 4,
+      "final_value": 58000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 5,
+      "final_value": 53000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1200",
+      "inserted_value": 1200,
+      "sample_index": 0,
+      "final_value": 58500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1200",
+      "inserted_value": 1200,
+      "sample_index": 1,
+      "final_value": 100000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1200",
+      "inserted_value": 1200,
+      "sample_index": 2,
+      "final_value": 58500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1200",
+      "inserted_value": 1200,
+      "sample_index": 3,
+      "final_value": 65000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1200",
+      "inserted_value": 1200,
+      "sample_index": 4,
+      "final_value": 62000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1200",
+      "inserted_value": 1200,
+      "sample_index": 5,
+      "final_value": 63000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1500",
+      "inserted_value": 1500,
+      "sample_index": 0,
+      "final_value": 117000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1500",
+      "inserted_value": 1500,
+      "sample_index": 1,
+      "final_value": 88000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1500",
+      "inserted_value": 1500,
+      "sample_index": 2,
+      "final_value": 100000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1500",
+      "inserted_value": 1500,
+      "sample_index": 3,
+      "final_value": 53000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1500",
+      "inserted_value": 1500,
+      "sample_index": 4,
+      "final_value": 53000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variant": "v1500",
+      "inserted_value": 1500,
+      "sample_index": 5,
+      "final_value": 70000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 0,
+      "final_value": 35100000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 1,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 2,
+      "final_value": 37500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 3,
+      "final_value": 43000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 4,
+      "final_value": 37000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 5,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 0,
+      "final_value": 50000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 1,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 2,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 3,
+      "final_value": 47000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 4,
+      "final_value": 36500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 5,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 0,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 1,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 2,
+      "final_value": 39600000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 3,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 4,
+      "final_value": 50000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 5,
+      "final_value": 40800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 0,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 1,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 2,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 3,
+      "final_value": 45000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 4,
+      "final_value": 47000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 5,
+      "final_value": 45400000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 0,
+      "final_value": 35100000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 1,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 2,
+      "final_value": 43000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 3,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 4,
+      "final_value": 45000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 5,
+      "final_value": 43000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 0,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 1,
+      "final_value": 45200000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 2,
+      "final_value": 58000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 3,
+      "final_value": 55000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 4,
+      "final_value": 47000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 5,
+      "final_value": 45000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 0,
+      "final_value": 53000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 1,
+      "final_value": 49000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 2,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 3,
+      "final_value": 73000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 4,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 5,
+      "final_value": 47000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 0,
+      "final_value": 55000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 1,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 2,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 3,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 4,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 5,
+      "final_value": 46500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 0,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 1,
+      "final_value": 60000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 2,
+      "final_value": 53000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 3,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 4,
+      "final_value": 85000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 5,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 1000,
+      "sample_index": 0,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 1000,
+      "sample_index": 1,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 1000,
+      "sample_index": 2,
+      "final_value": 81000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 1000,
+      "sample_index": 3,
+      "final_value": 50000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 1000,
+      "sample_index": 4,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 1000,
+      "sample_index": 5,
+      "final_value": 64000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 0,
+      "final_value": 55000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 1,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 2,
+      "final_value": 50000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 3,
+      "final_value": 66000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 4,
+      "final_value": 66000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 5,
+      "final_value": 47000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 0,
+      "final_value": 62000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 1,
+      "final_value": 46800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 2,
+      "final_value": 67000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 3,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 4,
+      "final_value": 78000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 5,
+      "final_value": 65000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 0,
+      "final_value": 58000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 1,
+      "final_value": 55000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 2,
+      "final_value": 60000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 3,
+      "final_value": 60500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 4,
+      "final_value": 51000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 5,
+      "final_value": 61500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 0,
+      "final_value": 50000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 1,
+      "final_value": 82000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 2,
+      "final_value": 64000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 3,
+      "final_value": 69000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 4,
+      "final_value": 75000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variant": "v1000",
+      "inserted_value": 1000,
+      "sample_index": 5,
+      "final_value": 70000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 0,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 1,
+      "final_value": 49000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 2,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 3,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 4,
+      "final_value": 55000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 5,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 0,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 1,
+      "final_value": 42500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 2,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 3,
+      "final_value": 47000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 4,
+      "final_value": 46800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 5,
+      "final_value": 51000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 0,
+      "final_value": 46800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 1,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 2,
+      "final_value": 43000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 3,
+      "final_value": 43000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 4,
+      "final_value": 43000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 5,
+      "final_value": 44500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 0,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 1,
+      "final_value": 39600000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 2,
+      "final_value": 58000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 3,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 4,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 5,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 0,
+      "final_value": 46800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 1,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 2,
+      "final_value": 48500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 3,
+      "final_value": 46800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 4,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 5,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 700,
+      "sample_index": 0,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 700,
+      "sample_index": 1,
+      "final_value": 55000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 700,
+      "sample_index": 2,
+      "final_value": 53000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 700,
+      "sample_index": 3,
+      "final_value": 53000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 700,
+      "sample_index": 4,
+      "final_value": 60000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 700,
+      "sample_index": 5,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 0,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 1,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 2,
+      "final_value": 39600000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 3,
+      "final_value": 43000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 4,
+      "final_value": 40700000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 5,
+      "final_value": 40800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v550",
+      "inserted_value": 550,
+      "sample_index": 0,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v550",
+      "inserted_value": 550,
+      "sample_index": 1,
+      "final_value": 33500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v550",
+      "inserted_value": 550,
+      "sample_index": 2,
+      "final_value": 45000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v550",
+      "inserted_value": 550,
+      "sample_index": 3,
+      "final_value": 51000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v550",
+      "inserted_value": 550,
+      "sample_index": 4,
+      "final_value": 55000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v550",
+      "inserted_value": 550,
+      "sample_index": 5,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v650",
+      "inserted_value": 650,
+      "sample_index": 0,
+      "final_value": 50850000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v650",
+      "inserted_value": 650,
+      "sample_index": 1,
+      "final_value": 49720000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v650",
+      "inserted_value": 650,
+      "sample_index": 2,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v650",
+      "inserted_value": 650,
+      "sample_index": 3,
+      "final_value": 55000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v650",
+      "inserted_value": 650,
+      "sample_index": 4,
+      "final_value": 59000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v650",
+      "inserted_value": 650,
+      "sample_index": 5,
+      "final_value": 49000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 0,
+      "final_value": 66000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 1,
+      "final_value": 51000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 2,
+      "final_value": 42700000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 3,
+      "final_value": 45000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 4,
+      "final_value": 60000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v700",
+      "inserted_value": 700,
+      "sample_index": 5,
+      "final_value": 55000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 0,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 1,
+      "final_value": 45000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 2,
+      "final_value": 66000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 3,
+      "final_value": 55000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 4,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v750",
+      "inserted_value": 750,
+      "sample_index": 5,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 0,
+      "final_value": 62000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 1,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 2,
+      "final_value": 57000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 3,
+      "final_value": 73500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 4,
+      "final_value": 54000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 5,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v850",
+      "inserted_value": 850,
+      "sample_index": 0,
+      "final_value": 60000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v850",
+      "inserted_value": 850,
+      "sample_index": 1,
+      "final_value": 45000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v850",
+      "inserted_value": 850,
+      "sample_index": 2,
+      "final_value": 73000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v850",
+      "inserted_value": 850,
+      "sample_index": 3,
+      "final_value": 45000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v850",
+      "inserted_value": 850,
+      "sample_index": 4,
+      "final_value": 56500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variant": "v850",
+      "inserted_value": 850,
+      "sample_index": 5,
+      "final_value": 53000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 800,
+      "sample_index": 0,
+      "final_value": 50000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 800,
+      "sample_index": 1,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 800,
+      "sample_index": 2,
+      "final_value": 64400000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 800,
+      "sample_index": 3,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 800,
+      "sample_index": 4,
+      "final_value": 72000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 800,
+      "sample_index": 5,
+      "final_value": 40250000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 0,
+      "final_value": 49000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 1,
+      "final_value": 47000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 2,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 3,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 4,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 5,
+      "final_value": 53000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 0,
+      "final_value": 55000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 1,
+      "final_value": 47000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 2,
+      "final_value": 0.0,
+      "included": false,
+      "exclusion": "outside_threshold_filter"
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 3,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 4,
+      "final_value": 40500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 5,
+      "final_value": 60000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 0,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 1,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 2,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 3,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 4,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 5,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 0,
+      "final_value": 50000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 1,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 2,
+      "final_value": 68000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 3,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 4,
+      "final_value": 58500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variant": "v800",
+      "inserted_value": 800,
+      "sample_index": 5,
+      "final_value": 60000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 0,
+      "final_value": 36000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 1,
+      "final_value": 39200000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 2,
+      "final_value": 32000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 3,
+      "final_value": 31000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 4,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 300,
+      "sample_index": 5,
+      "final_value": 30000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v250",
+      "inserted_value": 250,
+      "sample_index": 0,
+      "final_value": 30500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v250",
+      "inserted_value": 250,
+      "sample_index": 1,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v250",
+      "inserted_value": 250,
+      "sample_index": 2,
+      "final_value": 33000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v250",
+      "inserted_value": 250,
+      "sample_index": 3,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v250",
+      "inserted_value": 250,
+      "sample_index": 4,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v250",
+      "inserted_value": 250,
+      "sample_index": 5,
+      "final_value": 34000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 0,
+      "final_value": 34000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 1,
+      "final_value": 39600000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 2,
+      "final_value": 37200000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 3,
+      "final_value": 34000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 4,
+      "final_value": 36400000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 5,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v340",
+      "inserted_value": 340,
+      "sample_index": 0,
+      "final_value": 39500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v340",
+      "inserted_value": 340,
+      "sample_index": 1,
+      "final_value": 37440000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v340",
+      "inserted_value": 340,
+      "sample_index": 2,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v340",
+      "inserted_value": 340,
+      "sample_index": 3,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v340",
+      "inserted_value": 340,
+      "sample_index": 4,
+      "final_value": 37000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v340",
+      "inserted_value": 340,
+      "sample_index": 5,
+      "final_value": 29500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 0,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 1,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 2,
+      "final_value": 35000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 3,
+      "final_value": 37000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 4,
+      "final_value": 25000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 5,
+      "final_value": 37000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 0,
+      "final_value": 35000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 1,
+      "final_value": 38300000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 2,
+      "final_value": 37400000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 3,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 4,
+      "final_value": 37000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 5,
+      "final_value": 37400000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 350,
+      "sample_index": 0,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 350,
+      "sample_index": 1,
+      "final_value": 39500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 350,
+      "sample_index": 2,
+      "final_value": 36000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 350,
+      "sample_index": 3,
+      "final_value": 40200000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 350,
+      "sample_index": 4,
+      "final_value": 39200000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 350,
+      "sample_index": 5,
+      "final_value": 39700000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 0,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 1,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 2,
+      "final_value": 40950000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 3,
+      "final_value": 35250000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 4,
+      "final_value": 36300000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 5,
+      "final_value": 36500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 0,
+      "final_value": 40800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 1,
+      "final_value": 36000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 2,
+      "final_value": 40950000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 3,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 4,
+      "final_value": 40800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 5,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 0,
+      "final_value": 40500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 1,
+      "final_value": 35000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 2,
+      "final_value": 40200000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 3,
+      "final_value": 40950000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 4,
+      "final_value": 37500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 5,
+      "final_value": 45000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 0,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 1,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 2,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 3,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 4,
+      "final_value": 40800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 5,
+      "final_value": 41000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 0,
+      "final_value": 45000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 1,
+      "final_value": 40600000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 2,
+      "final_value": 37000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 3,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 4,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 5,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 0,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 1,
+      "final_value": 32000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 2,
+      "final_value": 33950000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 3,
+      "final_value": 35000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 4,
+      "final_value": 37000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 5,
+      "final_value": 35000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 0,
+      "final_value": 28000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 1,
+      "final_value": 38800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 2,
+      "final_value": 32300000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 3,
+      "final_value": 37000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 4,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v300",
+      "inserted_value": 300,
+      "sample_index": 5,
+      "final_value": 29000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 0,
+      "final_value": 33500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 1,
+      "final_value": 38800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 2,
+      "final_value": 34500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 3,
+      "final_value": 34000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 4,
+      "final_value": 35000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 5,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 0,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 1,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 2,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 3,
+      "final_value": 38800000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 4,
+      "final_value": 35000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v400",
+      "inserted_value": 400,
+      "sample_index": 5,
+      "final_value": 34000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 0,
+      "final_value": 39300000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 1,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 2,
+      "final_value": 39500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 3,
+      "final_value": 36000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 4,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 5,
+      "final_value": 36000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 0,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 1,
+      "final_value": 25000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 2,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 3,
+      "final_value": 35000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 4,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 5,
+      "final_value": 28000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 0,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 1,
+      "final_value": 38600000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 2,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 3,
+      "final_value": 40500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 4,
+      "final_value": 50000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 500,
+      "sample_index": 5,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 0,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 1,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 2,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 3,
+      "final_value": 38250000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 4,
+      "final_value": 42500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v450",
+      "inserted_value": 450,
+      "sample_index": 5,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 0,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 1,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 2,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 3,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 4,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 5,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 0,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 1,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 2,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 3,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 4,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 5,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v650",
+      "inserted_value": 650,
+      "sample_index": 0,
+      "final_value": 36000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v650",
+      "inserted_value": 650,
+      "sample_index": 1,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v650",
+      "inserted_value": 650,
+      "sample_index": 2,
+      "final_value": 46000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v650",
+      "inserted_value": 650,
+      "sample_index": 3,
+      "final_value": 48500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v650",
+      "inserted_value": 650,
+      "sample_index": 4,
+      "final_value": 45000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v650",
+      "inserted_value": 650,
+      "sample_index": 5,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v850",
+      "inserted_value": 850,
+      "sample_index": 0,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v850",
+      "inserted_value": 850,
+      "sample_index": 1,
+      "final_value": 40700000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v850",
+      "inserted_value": 850,
+      "sample_index": 2,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v850",
+      "inserted_value": 850,
+      "sample_index": 3,
+      "final_value": 40250000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v850",
+      "inserted_value": 850,
+      "sample_index": 4,
+      "final_value": 44400000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variant": "v850",
+      "inserted_value": 850,
+      "sample_index": 5,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 1000,
+      "sample_index": 0,
+      "final_value": 47000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 1000,
+      "sample_index": 1,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 1000,
+      "sample_index": 2,
+      "final_value": 39500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 1000,
+      "sample_index": 3,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 1000,
+      "sample_index": 4,
+      "final_value": 44500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "original",
+      "inserted_value": 1000,
+      "sample_index": 5,
+      "final_value": 50000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 0,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 1,
+      "final_value": 40850000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 2,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 3,
+      "final_value": 37000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 4,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v350",
+      "inserted_value": 350,
+      "sample_index": 5,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v380",
+      "inserted_value": 380,
+      "sample_index": 0,
+      "final_value": 37500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v380",
+      "inserted_value": 380,
+      "sample_index": 1,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v380",
+      "inserted_value": 380,
+      "sample_index": 2,
+      "final_value": 42000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v380",
+      "inserted_value": 380,
+      "sample_index": 3,
+      "final_value": 40000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v380",
+      "inserted_value": 380,
+      "sample_index": 4,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v380",
+      "inserted_value": 380,
+      "sample_index": 5,
+      "final_value": 42400000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 0,
+      "final_value": 40500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 1,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 2,
+      "final_value": 43000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 3,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 4,
+      "final_value": 39000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v500",
+      "inserted_value": 500,
+      "sample_index": 5,
+      "final_value": 40500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v550",
+      "inserted_value": 550,
+      "sample_index": 0,
+      "final_value": 51000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v550",
+      "inserted_value": 550,
+      "sample_index": 1,
+      "final_value": 50000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v550",
+      "inserted_value": 550,
+      "sample_index": 2,
+      "final_value": 43000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v550",
+      "inserted_value": 550,
+      "sample_index": 3,
+      "final_value": 38000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v550",
+      "inserted_value": 550,
+      "sample_index": 4,
+      "final_value": 38500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v550",
+      "inserted_value": 550,
+      "sample_index": 5,
+      "final_value": 47000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 0,
+      "final_value": 44500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 1,
+      "final_value": 52000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 2,
+      "final_value": 37500000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 3,
+      "final_value": 48000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 4,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variant": "v600",
+      "inserted_value": 600,
+      "sample_index": 5,
+      "final_value": 44000000.0,
+      "included": true,
+      "exclusion": null
+    }
+  ]
+}

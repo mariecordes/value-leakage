@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__073",
+  "sample_index": 13,
+  "prefix_sha256": "56b1c116e9e1a727d49da4d716e1390e128279f7c9e1b35d80e30b22c41cdc62",
+  "continuation": "\n        *   Let's try to calculate based on surface area.\n        *   Adult Giraffe Surface Area: ~40-50 $m^2$.\n        *   Spot size: Most spots are 10-15 cm in diameter. Area of one spot (circle) = $\\pi \\times r^2$. $r=7.5cm = 0.075m$. Area $\\approx 0.0177 m^2$.\n        *   If spots cover 50% of the body (the brown/orange patches vs the lighter lines): Total brown area $\\approx 25 m^2$.\n        *   Number of spots = $25 / 0.0177 \\approx 1,412$.\n        *   This seems a bit high. The spots are not perfect circles, they are irregular polygons packed together. The skin between spots (the white lines) is also significant.\n        *   Let's consider the number of *distinct* blotches. Many sources cite **300 to 1,000**.\n        *   A 2019 article in *Smithsonian* or similar might have a quote.\n        *   Actually, a widely circulated fact is \"A giraffe has between 500 and 1000 spots.\"\n        *   Let's assume an average of **750** spots per giraffe to be safe/middle ground. This accounts for calves (fewer) vs adults (more) and size variations.\n        *   Wait, do we count the spots on the legs? Yes, \"total on all giraffes.\"\n        *   Do we count the mane? There are small spots there too.\n        *   Let's refine the spot count.\n        *   Reference check: \"How many spots does a giraffe have?\"\n        *   Source A (Science Focus): \"Between 200 and 400.\" (This seems low, maybe distinct markings?)\n        *   Source B (Animal Diversity Web): No specific number.\n        *   Source C (General Zoology): Often 300-500 large patches, but with smaller ones included, it could be higher.\n        *   Let's look at the math again. 120,000 giraffes. Threshold is 41,000,000.\n        *   If Threshold = 41,000,000.\n        *   Giraffes = 120,000.\n        *   Spots needed to exceed threshold = $41,000,000 / 120,000 = 341.6$.\n        *   So,",
+  "content": " if the",
+  "proposed_step": "        *   Let's try to calculate based on surface area.\n        *   Adult Giraffe Surface Area: ~40-50 $m^2$.\n        *   Spot size: Most spots are 10-15 cm in diameter. Area of one spot (circle) = $\\pi \\times r^2$. $r=7.5cm = 0.075m$. Area $\\approx 0.0177 m^2$.\n        *   If spots cover 50% of the body (the brown/orange patches vs the lighter lines): Total brown area $\\approx 25 m^2$.\n        *   Number of spots = $25 / 0.0177 \\approx 1,412$.\n        *   This seems a bit high. The spots are not perfect circles, they are irregular polygons packed together. The skin between spots (the white lines) is also significant.\n        *   Let's consider the number of *distinct* blotches. Many sources cite **300 to 1,000**.\n        *   A 2019 article in *Smithsonian* or similar might have a quote.\n        *   Actually, a widely circulated fact is \"A giraffe has between 500 and 1000 spots.\"\n        *   Let's assume an average of **750** spots per giraffe to be safe/middle ground. This accounts for calves (fewer) vs adults (more) and size variations.\n        *   Wait, do we count the spots on the legs? Yes, \"total on all giraffes.\"\n        *   Do we count the mane? There are small spots there too.\n        *   Let's refine the spot count.\n        *   Reference check: \"How many spots does a giraffe have?\"\n        *   Source A (Science Focus): \"Between 200 and 400.\" (This seems low, maybe distinct markings?)\n        *   Source B (Animal Diversity Web): No specific number.\n        *   Source C (General Zoology): Often 300-500 large patches, but with smaller ones included, it could be higher.\n        *   Let's look at the math again. 120,000 giraffes. Threshold is 41,000,000.\n        *   If Threshold = 41,000,000.\n        *   Giraffes = 120,000.\n        *   Spots needed to exceed threshold = $41,000,000 / 120,000 = 341.6$.\n        *   So,",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1339,
+    "total_tokens": 1939,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 470,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00182831,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00182831,
+      "upstream_inference_prompt_cost": 0.00038831,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

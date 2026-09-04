@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__094",
+  "sample_index": 10,
+  "prefix_sha256": "a213914ed2c74440369b242dc4b6887d8d820593c0902e95e9a134d54477f7f9",
+  "continuation": "\n        *   Let's take a conservative average. If we assume 400 spots per giraffe.\n    *   *Calculation:*\n        *   Population: 120,000 (conservative) to 150,000 (optimistic including calves).\n        *   Spots per individual: 350 (lower bound) to 500 (upper bound).\n        *   Low end: 120,000 * 350 = 42,000,000.\n        *   High end: 150,000 * 500 = 75,000,000.\n        *   Mid-range: 130,000 * 400 = 52,000,000.\n\n3.  **Refining the Variables:**\n    *   *Population:* The IUCN Red List (2021 assessment, re-evaluated recently) lists the global population at roughly 112,000 wild.\n    *   *Captive:* The Species360 database records roughly 3,000-4,000 giraffes in managed care.\n    *   *Total:* ~116,000. Let's round up to 120,000 to account for un-censused calves in the wild.\n    *   *Spots:*\n        *   Adult giraffes cover about 25-30 square meters.\n        *   Spot size varies. Reticulated spots are ~15-30cm across. Masai spots are smaller but more numerous.\n        *   A 2019 study (\"The ecology of spots\") might have counts.\n        *   Common trivia often says 400-600.\n        *   If we look at the surface area: An adult giraffe has a surface area of roughly 25 m² (250,000 cm²).\n        *   If a spot averages 100 cm² (10x10cm, which is large, maybe 50cm² is more realistic for irregular spots).\n        *   250,000 / 50 = 5,000? No, that's too high. Spots don't cover *every* square centimeter. There is base color (cream/yellow) between spots.\n        *   If they cover 60% of the surface: 150,000 cm² of spots.\n        *   If average spot is 50 cm²: 3,000 spots. That feels way",
+  "content": " too high",
+  "proposed_step": "        *   Let's take a conservative average. If we assume 400 spots per giraffe.\n    *   *Calculation:*\n        *   Population: 120,000 (conservative) to 150,000 (optimistic including calves).\n        *   Spots per individual: 350 (lower bound) to 500 (upper bound).\n        *   Low end: 120,000 * 350 = 42,000,000.\n        *   High end: 150,000 * 500 = 75,000,000.\n        *   Mid-range: 130,000 * 400 = 52,000,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1061,
+    "total_tokens": 1661,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 408,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00174769,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00174769,
+      "upstream_inference_prompt_cost": 0.00030769,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

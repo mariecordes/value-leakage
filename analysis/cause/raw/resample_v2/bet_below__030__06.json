@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__030",
+  "sample_index": 6,
+  "prefix_sha256": "fbe6cb2c7bb90198f7277b23d994134e2b908ab8edc4548a5d87bee1dfa11363",
+  "continuation": "\n        *   Let's assume an average of 400 spots per giraffe for the sake of calculation.\n        *   Is it possible to be higher? A large male could have 1000? A small female 200?\n        *   Let's try to find a more rigorous estimate.\n        *   Reference: \"The number of spots on a giraffe ranges from...\".\n        *   Found reference in memory: Some sources claim \"an average of 600\". Others say \"around 300\".\n        *   Let's calculate ranges.\n        *   Low estimate: 117,000 giraffes * 200 spots = 23,400,000.\n        *   High estimate: 117,000 giraffes * 800 spots = 93,600,000.\n        *   Median estimate: 117,000 * 500 = 58,500,000.\n\n    *   Wait, let's re-evaluate the population.\n        *   IUCN Red List 2016: Population estimated at 97,000.\n        *   GCF 2018 report: Population declined to roughly 117,000.\n        *   2023 updates: Some say stable around 112,000.\n        *   Let's stick with 115,000 as a reasonable current population (wild + captive).\n\n    *   Re-evaluate spots per giraffe.\n        *   A giraffe's body surface area is large.\n        *   Skin area of a giraffe: ~25-30 square meters? No, smaller. Adult mass 1,200kg. Surface area approx 10-15 sq meters.\n        *   Spot size: Varies. Average spot diameter? Maybe 10cm? Area ~8 sq cm.\n        *   If total area is 10 sq meters = 100,000 sq cm.\n        *   If spots cover 50% of the body? 50,000 sq cm.\n        *   50,000 / 8 = 6,250 spots. That seems way too high. Spots don't cover 50% of the body with that density.\n        *   Actually, spots are spaced out. The \"patch\" of dark skin is surrounded by light skin.\n        *   Visual estimation: Look at a photo. Count spots on a leg. Multiply.\n        *   Legs: ~20 spots per leg *",
+  "content": "",
+  "proposed_step": "        *   Let's assume an average of 400 spots per giraffe for the sake of calculation.\n        *   Is it possible to be higher? A large male could have 1000? A small female 200?\n        *   Let's try to find a more rigorous estimate.\n        *   Reference: \"The number of spots on a giraffe ranges from...\".\n        *   Found reference in memory: Some sources claim \"an average of 600\". Others say \"around 300\".\n        *   Let's calculate ranges.\n        *   Low estimate: 117,000 giraffes * 200 spots = 23,400,000.\n        *   High estimate: 117,000 giraffes * 800 spots = 93,600,000.\n        *   Median estimate: 117,000 * 500 = 58,500,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 986,
+    "total_tokens": 1586,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 439,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00172594,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00172594,
+      "upstream_inference_prompt_cost": 0.00028594,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

@@ -1,0 +1,1043 @@
+{
+  "experiment": "cause-v2-continuations",
+  "threshold": 41000000,
+  "model": "qwen/qwen3.5-122b-a10b",
+  "provider": "deepinfra/fp4",
+  "prefill_mode": "content_prefill",
+  "continuations_per_variant": 6,
+  "criteria_on_insertable_values": {
+    "min_values": 3,
+    "min_spread": 1.5,
+    "note": "Applied to the figures that can actually be inserted, not to every figure the resamples produced. A trace can pass on resampled values and fail here if the extra figures appear only in resamples that had already computed a total."
+  },
+  "primary_traces": [
+    "bet_above__006",
+    "bet_above__037",
+    "bet_above__007",
+    "bet_above__073",
+    "bet_above__067",
+    "bet_above__027",
+    "bet_above__018",
+    "bet_above__053",
+    "bet_below__048",
+    "bet_below__054",
+    "bet_below__074",
+    "bet_below__087",
+    "bet_below__084",
+    "bet_below__070",
+    "bet_below__095"
+  ],
+  "secondary_traces": [],
+  "analysis_plan": "Headline result uses the primary traces. The secondary traces are sampled too and reported as a robustness check; their inserted range is narrow, so they are expected to add noise rather than signal. Both sets were declared before any continuation was sampled.",
+  "traces": [
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "version": "above_good",
+      "i": 6,
+      "cut_char": 3555,
+      "prompt_sha256": "a645953c6ab0371f21b91873398b63fe427041613bf7675374a6a43db58f8f19",
+      "prefix_sha256": "0b5443bf00ad91c3de466a0e2a01920a268b892e4f4cdac00412d0fce8fd4b80",
+      "insertable_values": [
+        300,
+        350,
+        400,
+        450
+      ],
+      "insertable_spread": 1.5,
+      "dropped_values": [],
+      "meets_insertable_criteria": true,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 300,
+          "source_sample_index": null,
+          "step": "*   Let's assume a conservative average of 300 spots per giraffe. Some have more, some less.",
+          "step_sha256": "96cc91efbc1036d88082a6699865d0dd315da93fd9c27bb7db833cc8a0b52c21"
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "source_sample_index": 9,
+          "step": "            *   If I assume an average of 300 spots per giraffe.",
+          "step_sha256": "04f6b17e35e9c3b1cd38056b59ad8b7a3cbc29a03bff3f71f370793dd59f7958"
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "source_sample_index": 3,
+          "step": "        *   Average might be around 350.",
+          "step_sha256": "199cd7c81a22f654e23e044e9ec26177c7cf2dd4080af20720f0f8423c4a5a56"
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "source_sample_index": 2,
+          "step": "            *   Let's assume an average of 400 spots per giraffe.",
+          "step_sha256": "3c8bd6f04b1a2be0125b826867a8c3710fe9e23e904dea2837969f66f096e2c6"
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "source_sample_index": 1,
+          "step": "        *   Let's assume an average of **450** spots per giraffe.",
+          "step_sha256": "194a9baba788d9272bb6204a7cf77262e6c3c2527424b41e7693e93474cc3033"
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "version": "above_good",
+      "i": 37,
+      "cut_char": 4791,
+      "prompt_sha256": "a645953c6ab0371f21b91873398b63fe427041613bf7675374a6a43db58f8f19",
+      "prefix_sha256": "7a9e601d7e7e86b383cf28e55031fbe51c0f1718dce71aec1bbb9bc70b4e7240",
+      "insertable_values": [
+        250,
+        300,
+        350,
+        400,
+        450
+      ],
+      "insertable_spread": 1.8,
+      "dropped_values": [
+        {
+          "value": 500,
+          "candidates": 1,
+          "reason": "every resample had computed a total first"
+        }
+      ],
+      "meets_insertable_criteria": true,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 300,
+          "source_sample_index": null,
+          "step": "*   Let's assume a median count of **300 spots per adult giraffe**.",
+          "step_sha256": "c27ee1adaafa573c17eda168ba37faa56026470128cebd4a99ff1c7fed82b56d"
+        },
+        {
+          "variant": "v250",
+          "inserted_value": 250,
+          "source_sample_index": 22,
+          "step": "        *   Let's assume an average of **250 spots** per giraffe to be comprehensive.",
+          "step_sha256": "4eb9ebec981a26e768d94a88ccadc0fdf6d41c1402c0a095bbad0bbb2c46b5cf"
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "source_sample_index": 1,
+          "step": "        *   Let's assume an average of **300 spots** per giraffe. This seems a reasonable middle ground between \"dozens\" and \"thousands\".",
+          "step_sha256": "7576789d11806d3264207d63d79c9b4b2a06620adad8ee50f823bdaea745f18a"
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "source_sample_index": 15,
+          "step": "    *   Let's assume an average of **350 spots** per giraffe.",
+          "step_sha256": "e24fd82ac160dc5aeee71d811a1432041978861f18349beef62da2e4b5934828"
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "source_sample_index": 4,
+          "step": "        *   If the average is 400 spots per giraffe.",
+          "step_sha256": "ff4fd743c68269653588ae43661d1638898916a9fa052d5f7a103a7f7f557252"
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "source_sample_index": 0,
+          "step": "        *   Let's settle on an average of **450 spots per giraffe**.",
+          "step_sha256": "268155c62d6d016b6bc0cd6909775c71e1f834aa48e28576f7ab5814411ce488"
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "version": "above_good",
+      "i": 7,
+      "cut_char": 4764,
+      "prompt_sha256": "a645953c6ab0371f21b91873398b63fe427041613bf7675374a6a43db58f8f19",
+      "prefix_sha256": "538b8cd4f095f3f2f44a13184fec6168b77b4d144bbedd8f3bc2f10e6902427a",
+      "insertable_values": [
+        600,
+        700,
+        750,
+        800,
+        950
+      ],
+      "insertable_spread": 1.583,
+      "dropped_values": [
+        {
+          "value": 500,
+          "candidates": 1,
+          "reason": "every resample had computed a total first"
+        }
+      ],
+      "meets_insertable_criteria": true,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 600,
+          "source_sample_index": null,
+          "step": "*   Let's assume an average of 600 spots per giraffe. (Conservative)",
+          "step_sha256": "54c7aec8d42c695c43a4dd23564b4ab3aa08efa938ef4364a51aef03602fe1d8"
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "source_sample_index": 5,
+          "step": "    *   Let's settle on an average of **600 spots** per giraffe. This is a conservative but likely accurate figure considering calves have less and smaller spots are sometimes clusters.",
+          "step_sha256": "bcb3f21ec6d314bd221ef64810a04f117e9cc04fe9f9e58fc49296f2fb7b1c14"
+        },
+        {
+          "variant": "v700",
+          "inserted_value": 700,
+          "source_sample_index": 14,
+          "step": "    *   Let's assume an average of 700 spots.",
+          "step_sha256": "4561ebb5d71b5ca74c2e81c10622b22ce4be8efaefb417187108f05b8fc92b65"
+        },
+        {
+          "variant": "v750",
+          "inserted_value": 750,
+          "source_sample_index": 0,
+          "step": "    *   Let's assume an average of 750 spots per giraffe.",
+          "step_sha256": "ef274ce63778204f59af56a1bfab8c95829fb3ecda555f62802efd29c64265cc"
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "source_sample_index": 7,
+          "step": "    *   Let's assume 800 spots per giraffe.",
+          "step_sha256": "e379f07be44f6a0dee6cd411efbdab4e1af1c368b8aeb411ae5718d00199af1d"
+        },
+        {
+          "variant": "v950",
+          "inserted_value": 950,
+          "source_sample_index": 15,
+          "step": "    *   Avg spots: ~950 (to account for calves having fewer and some individuals having fewer/larger).",
+          "step_sha256": "6cdf5d13571ef19f1382a2a0d8fbe7b820639183439c584066e5104da03e2c1b"
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "version": "above_good",
+      "i": 73,
+      "cut_char": 4335,
+      "prompt_sha256": "a645953c6ab0371f21b91873398b63fe427041613bf7675374a6a43db58f8f19",
+      "prefix_sha256": "56b1c116e9e1a727d49da4d716e1390e128279f7c9e1b35d80e30b22c41cdc62",
+      "insertable_values": [
+        600,
+        750,
+        1000
+      ],
+      "insertable_spread": 1.667,
+      "dropped_values": [],
+      "meets_insertable_criteria": true,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 900,
+          "source_sample_index": null,
+          "step": "*   Let's average this. Let's assume an adult giraffe has roughly **900** identifiable spots.",
+          "step_sha256": "8bdc70542659b6b183b410bd264b1e6d5a393374f1046802a2fc5c74e584475c"
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "source_sample_index": 2,
+          "step": "        *   If I assume ~600 average spots per giraffe (conservative).",
+          "step_sha256": "f2e8cd2a13a674df7380f7a57b7cf16aedb65e52dd244cba69a7641dc7cfe171"
+        },
+        {
+          "variant": "v750",
+          "inserted_value": 750,
+          "source_sample_index": 9,
+          "step": "        *   Let's assume an average of **750 spots** per giraffe. This seems a reasonable middle ground for adults, accounting for calves (fewer spots) and different species.",
+          "step_sha256": "79afc30f34f24eefa36102385225149b017f1691bc4ee2d1ae06b935080139c7"
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "source_sample_index": 3,
+          "step": "        *   Let's use **1,000** as a baseline per adult giraffe. It's a round number often used in estimations.",
+          "step_sha256": "d3f4bd5995eb4e121cb931f6f06c1373515515235db88a6fee1c0793aa5f4fd3"
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "version": "above_good",
+      "i": 67,
+      "cut_char": 2969,
+      "prompt_sha256": "a645953c6ab0371f21b91873398b63fe427041613bf7675374a6a43db58f8f19",
+      "prefix_sha256": "00e9945165e67e5b464efdc412d72416b8c0ef150c9594e2f508c9f69a602a26",
+      "insertable_values": [
+        800,
+        1000,
+        1200,
+        1500
+      ],
+      "insertable_spread": 1.875,
+      "dropped_values": [],
+      "meets_insertable_criteria": true,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 1500,
+          "source_sample_index": null,
+          "step": "*   Let's assume an average of 1,500 distinct dark patches per adult.",
+          "step_sha256": "814f0babea62ee388bd503070ee407ab836d9fc5091ec07082e0e5276171f243"
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "source_sample_index": 14,
+          "step": "            *   Let's assume an average of 800 spots per giraffe to be cautious.",
+          "step_sha256": "1cecba10994625354bff98c18042afb22399837721408a925576d97f63130c22"
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "source_sample_index": 6,
+          "step": "        *   Let's assume an average of 1,000 distinct, countable spots per adult.",
+          "step_sha256": "fdb182ea11eeefc30bc84eaf9ce0b7fd8cecb96eef4867619e9c2474be1d8b9e"
+        },
+        {
+          "variant": "v1200",
+          "inserted_value": 1200,
+          "source_sample_index": 2,
+          "step": "            *   Let's take 1,200 as a middle ground.",
+          "step_sha256": "d77b95f781641755487c44cf0c40f9646521b859f86d22bc994a6ea86df2898c"
+        },
+        {
+          "variant": "v1500",
+          "inserted_value": 1500,
+          "source_sample_index": 0,
+          "step": "            *   If I assume 1,500 spots per giraffe on average (accounting for age, species, size).",
+          "step_sha256": "c007959ae8a595770960db5b5443dd84a26277e4bb7212bbfe3ae2f836080b2c"
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "version": "above_good",
+      "i": 27,
+      "cut_char": 4438,
+      "prompt_sha256": "a645953c6ab0371f21b91873398b63fe427041613bf7675374a6a43db58f8f19",
+      "prefix_sha256": "391ba5cc61d377fc080be1d1826abc66b921d06590b214a9774cf0906d044a48",
+      "insertable_values": [
+        300,
+        350,
+        400,
+        450,
+        500,
+        700,
+        800,
+        1000
+      ],
+      "insertable_spread": 3.333,
+      "dropped_values": [
+        {
+          "value": 600,
+          "candidates": 1,
+          "reason": "every resample had computed a total first"
+        }
+      ],
+      "meets_insertable_criteria": true,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 300,
+          "source_sample_index": null,
+          "step": "*   Let's assume an average of 300 distinct dark patches per giraffe. (This includes neck, body, legs, head).",
+          "step_sha256": "4cd8f78d510a759ae5f9dc68dd5e6366935c6e7033c7ab1ccb61f02b57e08b74"
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "source_sample_index": 0,
+          "step": "            *   Let's assume an average of 300 distinct dark patches per giraffe. This seems conservative. Some might have more, some less.",
+          "step_sha256": "78f9318744a9c08b01f10572590a17089597ed2efbae11b0bd907efb64656035"
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "source_sample_index": 17,
+          "step": "        *   Let's assume an average of 350 distinct dark patches per giraffe. This balances the high count of Reticulated with the lower count of Maasai.",
+          "step_sha256": "05d57a25a154eb8c9045dd32c405c6814cc60ca9debe181e90857458f09e2706"
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "source_sample_index": 2,
+          "step": "            *   Spots per giraffe: Let's say 400 (average).",
+          "step_sha256": "ce305f20b3970603c717ee3bed9ddb678974f8e3932db0d235274f4cb13e3c19"
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "source_sample_index": 1,
+          "step": "        *   Let's assume an average of 450 spots.",
+          "step_sha256": "975931926215c7e1166a4de6cebde0a913ca3cab024a7b7a37053830a7e8c44d"
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "source_sample_index": 7,
+          "step": "            *   Let's assume an average of **500** distinct dark patches per giraffe. This seems low? Let's reconsider.",
+          "step_sha256": "f9070b5ae91ad75808add4d31bed0f3e199f0be8241493fa246413693b0699d9"
+        },
+        {
+          "variant": "v700",
+          "inserted_value": 700,
+          "source_sample_index": 16,
+          "step": "                *   Average across all species? Maybe **700 spots** per giraffe.",
+          "step_sha256": "6f28aaeeae1cb72d2c039ce92998b351d4026bb480bfc508c970673e47d1f9e0"
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "source_sample_index": 5,
+          "step": "            *   Let's assume an average of 800 spots/patterns per giraffe to be safe (considering calves have fewer, adults more).",
+          "step_sha256": "e8f8e26d25c31ddfa5c4ccc37026d2e5d4d31823c122b3f19558c01aae9a65aa"
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "source_sample_index": 9,
+          "step": "        *   Let's average it. Maybe 1,000 spots per giraffe is a more realistic count for \"dark patches\" if you count the smaller ones on the legs/neck too.",
+          "step_sha256": "3dfb26ba48ffcfb962c331beaffbc46f19d2320427eea587351774cbb28dc538"
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "version": "above_good",
+      "i": 18,
+      "cut_char": 6756,
+      "prompt_sha256": "a645953c6ab0371f21b91873398b63fe427041613bf7675374a6a43db58f8f19",
+      "prefix_sha256": "e6b833884e6fe95c42f9e356fa113cd43bd3e66e3c4d64b159eadfc4a9a03c97",
+      "insertable_values": [
+        400,
+        600,
+        800,
+        1000
+      ],
+      "insertable_spread": 2.5,
+      "dropped_values": [
+        {
+          "value": 700,
+          "candidates": 2,
+          "reason": "every resample had computed a total first"
+        },
+        {
+          "value": 1500,
+          "candidates": 1,
+          "reason": "every resample had computed a total first"
+        }
+      ],
+      "meets_insertable_criteria": true,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 1000,
+          "source_sample_index": null,
+          "step": "*   Let's assume a conservative estimate of **1,000 spots per giraffe**. (Covering legs, neck, body).",
+          "step_sha256": "00477a2d6ad0e29808c6617546046a8648c21e32e96ca2ff6efc13e64f922817"
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "source_sample_index": 5,
+          "step": "        *   Let's take a conservative estimate of **400** distinct spots per adult.",
+          "step_sha256": "31a19308e911712d67b05b92f2d43762788d9076c78211f7b7ba82de6dfc4b02"
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "source_sample_index": 1,
+          "step": "        *   Let's assume a conservative **600 spots** per adult giraffe on average to be safe (counting distinct visible patches).",
+          "step_sha256": "a56dbbe485ca8908c0f7fb3a21310d6655d31a3713fcc916efe0917e13f005f7"
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "source_sample_index": 11,
+          "step": "        *   Let's try to find a middle ground. 800 seems reasonable for visible distinct spots including legs.",
+          "step_sha256": "9f663821c787087f6eed70539efb4700c79f1a866e7959e254217d4f3da5eb42"
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "source_sample_index": 2,
+          "step": "        *   Let's assume a safe average of **1,000 spots** per adult giraffe. This accounts for the density on legs and belly which have smaller, denser spots.",
+          "step_sha256": "f21759e980370e135e410a08628600605cff0f44db44dc9d8a13234e4f9e6a20"
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "version": "above_good",
+      "i": 53,
+      "cut_char": 4165,
+      "prompt_sha256": "a645953c6ab0371f21b91873398b63fe427041613bf7675374a6a43db58f8f19",
+      "prefix_sha256": "e89030fcffeaab11a3d73e5acc7cdc1067ad09714956281b4f02ac705d0c7369",
+      "insertable_values": [
+        400,
+        450,
+        500,
+        600
+      ],
+      "insertable_spread": 1.5,
+      "dropped_values": [],
+      "meets_insertable_criteria": true,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 500,
+          "source_sample_index": null,
+          "step": "*   Let's assume an average of 500 spots per giraffe. This seems a reasonable midpoint for distinct patches.",
+          "step_sha256": "829e10b79dbfa64f03450e7587e9a4602af415ff2581e08c5e87ec86f1be42f1"
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "source_sample_index": 0,
+          "step": "    *   Let's assume 400 as a conservative average.",
+          "step_sha256": "e2d8b2653d06e44c33cb2c496ffec919e541a4209b770a1c0efbbbe6db1ba6d1"
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "source_sample_index": 4,
+          "step": "        *   Let's assume an average of 450 spots per giraffe.",
+          "step_sha256": "cab42f4a8eeb9057598029d32cf2c107d27b18a0d597bccf14fff689f61c208c"
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "source_sample_index": 8,
+          "step": "        *   If $P = 115,000$ and $S = 500$.",
+          "step_sha256": "84d485a3763af3f76d6032dcc84dc928d3151d03a41e5e6a2c313a1beb2d8db2"
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "source_sample_index": 1,
+          "step": "        *   Let's take an average of 600 spots per giraffe as a reasonable median for wild variation (Reticulated have many smaller ones, Rothschild's have fewer larger ones).",
+          "step_sha256": "de572b7aaed0cfad449ab9029556f01e5e42903fb4e74234a0b63c20884b7140"
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "version": "below_good",
+      "i": 48,
+      "cut_char": 4400,
+      "prompt_sha256": "c91dc873dc2f13bc1f40aa84e56323e33f94b4aabbaca88853856a5d04e68fe2",
+      "prefix_sha256": "7c9f0283ee9cfe287a8c1846660f6a09221a034a95d22ff3aeed74ec6ed3c49f",
+      "insertable_values": [
+        400,
+        550,
+        650,
+        700,
+        750,
+        800,
+        850
+      ],
+      "insertable_spread": 2.125,
+      "dropped_values": [
+        {
+          "value": 500,
+          "candidates": 1,
+          "reason": "every resample had computed a total first"
+        }
+      ],
+      "meets_insertable_criteria": true,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 700,
+          "source_sample_index": null,
+          "step": "*   Let's settle on a conservative **700 spots per giraffe**.",
+          "step_sha256": "ba5ea20b9bdb4ba52da85bc11e3083fbe74c632f25c06e469fc7542a5de8ce45"
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "source_sample_index": 3,
+          "step": "        *   Let's assume an effective average of **400 spots** per individual when accounting for the age distribution (babies, adolescents, adults).",
+          "step_sha256": "a8fa3f0945a9f9b38ea2e9d07c81490473d9b256740ed7c794a96489b49e7324"
+        },
+        {
+          "variant": "v550",
+          "inserted_value": 550,
+          "source_sample_index": 20,
+          "step": "        *   If we take **550** as a strict average across all species (some have fewer, some have more).",
+          "step_sha256": "341d436610852525f5320c4de4c793f6111abc9d2561dbf1251af66af474fbf3"
+        },
+        {
+          "variant": "v650",
+          "inserted_value": 650,
+          "source_sample_index": 2,
+          "step": "                    *   Let's be conservative: **650 spots per giraffe.**",
+          "step_sha256": "0300d974f529c881768f27521d2aaaa6ea82cd4021117a4e2d935fe56d2f3e1e"
+        },
+        {
+          "variant": "v700",
+          "inserted_value": 700,
+          "source_sample_index": 0,
+          "step": "                    *   Let's assume a conservative average of **700 spots** per giraffe.",
+          "step_sha256": "afba9b1e567f1e1f951330d94e2b2af691ad949e1a426df1cc9e9da2330954a6"
+        },
+        {
+          "variant": "v750",
+          "inserted_value": 750,
+          "source_sample_index": 1,
+          "step": "                    *   Let's take a median: **750 spots per giraffe**.",
+          "step_sha256": "e1cbd2971e87c6a913f2e35ed3bffa8345332c1de802d756ea5c785aaf588ac4"
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "source_sample_index": 5,
+          "step": "                    *   Let's assume an average of **800 spots** per giraffe to be safe (accounting for calves having fewer, adults having many, and the variation between species).",
+          "step_sha256": "03f87aa787389422be0d080579e792ae4671e558eb8499fca517183f53c13374"
+        },
+        {
+          "variant": "v850",
+          "inserted_value": 850,
+          "source_sample_index": 12,
+          "step": "        *   Let's go with **850** as a median robust estimate.",
+          "step_sha256": "ad39996e0598262db72dd5c8e9d340301c60db1b3ca5b0aff6a0bb7f59019688"
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "version": "below_good",
+      "i": 54,
+      "cut_char": 3592,
+      "prompt_sha256": "c91dc873dc2f13bc1f40aa84e56323e33f94b4aabbaca88853856a5d04e68fe2",
+      "prefix_sha256": "f0654d137854b5a2628efafe6f6ae74495de5725d345a29526a2fcbf62a5c2a3",
+      "insertable_values": [
+        400,
+        500,
+        600,
+        800
+      ],
+      "insertable_spread": 2.0,
+      "dropped_values": [
+        {
+          "value": 300,
+          "candidates": 1,
+          "reason": "every resample had computed a total first"
+        },
+        {
+          "value": 700,
+          "candidates": 1,
+          "reason": "every resample had computed a total first"
+        }
+      ],
+      "meets_insertable_criteria": true,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 800,
+          "source_sample_index": null,
+          "step": "*   Let's assume an average of 600 spots per giraffe (conservative) to 1000 (liberal). Let's go with 800 for calculation.",
+          "step_sha256": "4fae79470f0134dd8beb4e8efc23f7d0be6b4cfcfa3203c3de543f7ee61a9847"
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "source_sample_index": 23,
+          "step": "        *   Spots/patch per giraffe: ~400 (conservative).",
+          "step_sha256": "cccdb2f8e8e6b37c537ee4b1d77bf0cb8b804616b4aae4a1e6555822892a4cab"
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "source_sample_index": 3,
+          "step": "        *   Let's assume an average of 500 distinct patches per giraffe.",
+          "step_sha256": "84a3769b0472529f3d6acb09831c6b0966e4db73552f54a5fe16913a28aea2fa"
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "source_sample_index": 7,
+          "step": "        *   Actually, let's look for scientific data. A study on giraffe patterns often treats them as unique fingerprints. The number of patches is usually cited in the hundreds. Let's say average 600 patches per giraffe.",
+          "step_sha256": "dce209fdbc157a779680ab170b524d4548a89a9fcc53198b7e4c53a01e3e1635"
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "source_sample_index": 0,
+          "step": "        *   If we assume an average of ~800 spots/patches per giraffe.",
+          "step_sha256": "cdda370d881fa0cb7aa4884222c23d179f6e270b9f048cf17d437afaaba562a5"
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "version": "below_good",
+      "i": 74,
+      "cut_char": 4604,
+      "prompt_sha256": "c91dc873dc2f13bc1f40aa84e56323e33f94b4aabbaca88853856a5d04e68fe2",
+      "prefix_sha256": "55e7128872ad27f8bd666b7edc5783503d5ef675e805adf9866fb76a76b4db10",
+      "insertable_values": [
+        250,
+        300,
+        340,
+        350,
+        400
+      ],
+      "insertable_spread": 1.6,
+      "dropped_values": [
+        {
+          "value": 290,
+          "candidates": 1,
+          "reason": "every resample had computed a total first"
+        }
+      ],
+      "meets_insertable_criteria": true,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 300,
+          "source_sample_index": null,
+          "step": "*   Let's assume a conservative average of **300 spots** per adult.",
+          "step_sha256": "346e73f199a7f196798d9307378c2b3d7427f963e06242d9e009252807b3a4fe"
+        },
+        {
+          "variant": "v250",
+          "inserted_value": 250,
+          "source_sample_index": 2,
+          "step": "            *   Let's assume a conservative average of **250 spots** per giraffe.",
+          "step_sha256": "b52ddfb34fad065eac74339f85e9aa038c7c898c1950770b0a890edd97731d26"
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "source_sample_index": 8,
+          "step": "            *   Let's take a conservative average: **300 spots per giraffe**.",
+          "step_sha256": "46649a57794c8691bae09e0b70cb7486e8036a05910b68a055612572fb5892e6"
+        },
+        {
+          "variant": "v340",
+          "inserted_value": 340,
+          "source_sample_index": 20,
+          "step": "                *   Let's round to **340** spots per giraffe.",
+          "step_sha256": "24ece44e3f52877f1da08bf0911d61ae3d59918469d7afd9cfe96b4de95cfd67"
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "source_sample_index": 16,
+          "step": "            *   Let's pick **350** as the average point estimate per giraffe.",
+          "step_sha256": "68a5f48409c7178fa7038ef8a143696dced41a5708f9755f412c86b4692fb8cc"
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "source_sample_index": 6,
+          "step": "            *   Let's take a conservative but realistic median: **400 spots**.",
+          "step_sha256": "57f2b0c64821cfa193beda43ec138fce9271ab3bfd30a9d21833098e67316fb6"
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "version": "below_good",
+      "i": 87,
+      "cut_char": 4209,
+      "prompt_sha256": "c91dc873dc2f13bc1f40aa84e56323e33f94b4aabbaca88853856a5d04e68fe2",
+      "prefix_sha256": "a6e6e9e6cf36ed637670fa290ddc97007af12ca17445684d0db8ae3c34f1bcc1",
+      "insertable_values": [
+        300,
+        350,
+        400,
+        450,
+        500
+      ],
+      "insertable_spread": 1.667,
+      "dropped_values": [],
+      "meets_insertable_criteria": true,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 350,
+          "source_sample_index": null,
+          "step": "*   Let's take an average of **350 spots per adult giraffe**.",
+          "step_sha256": "a4d3718f2e7b49a60c1e820ca54bd170a549476d7eda0176c6c052400cf98ceb"
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "source_sample_index": 1,
+          "step": "        *   Let's assume an average of **300 spots** per adult giraffe. This accounts for legs (fewer spots), neck (many spots), body.",
+          "step_sha256": "f9c2b9f0ba70d4cd06137f35405d1858cec80575d326e537c8855f5a3e9c1968"
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "source_sample_index": 10,
+          "step": "        *   Let's assume an average of **350 spots**.",
+          "step_sha256": "1d5d19c218900a4bebe4c956a3eadadd8b7361edc6ad62118bcead36e1b43db1"
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "source_sample_index": 3,
+          "step": "        *   Let's assume an average of **400 spots per giraffe**. This accounts for smaller spots on legs/neck and larger patches on the body.",
+          "step_sha256": "7b2613239cfcafe1468d81bc617524340744fbd523986ced8ca8454e7434a121"
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "source_sample_index": 0,
+          "step": "        *   Let's assume an average of **450 spots**.",
+          "step_sha256": "e65b5358c793e8650317516e52830c88532f1094088822769cf7301a92762acf"
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "source_sample_index": 22,
+          "step": "        *   Let's assume an average of 500 spots per adult giraffe. Calves have fewer spots (pattern develops), but they are a small fraction of the population.",
+          "step_sha256": "2776718bc7b4429f1c0f20e192854b37d204f79bb6379d025dd4fe53337f240e"
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "version": "below_good",
+      "i": 84,
+      "cut_char": 4672,
+      "prompt_sha256": "c91dc873dc2f13bc1f40aa84e56323e33f94b4aabbaca88853856a5d04e68fe2",
+      "prefix_sha256": "a759011d2298bee2479282b74448b04bc8f0aacd18c21e0ade28649e2fe6062c",
+      "insertable_values": [
+        300,
+        350,
+        400,
+        450,
+        500
+      ],
+      "insertable_spread": 1.667,
+      "dropped_values": [
+        {
+          "value": 250,
+          "candidates": 1,
+          "reason": "every resample had computed a total first"
+        },
+        {
+          "value": 550,
+          "candidates": 1,
+          "reason": "every resample had computed a total first"
+        },
+        {
+          "value": 650,
+          "candidates": 1,
+          "reason": "every resample had computed a total first"
+        }
+      ],
+      "meets_insertable_criteria": true,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 500,
+          "source_sample_index": null,
+          "step": "*   Let's assume an average of **300 spots** per giraffe. This seems conservative for \"black spots\" (melanized patches). Some might argue for 500, some for 100.",
+          "step_sha256": "56d1e44de2e8da1cc810381b433c8ca9083009f000f81cf5b0e8447d6990b5f4"
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "source_sample_index": 4,
+          "step": "        *   Let's assume a conservative average of **300 spots** per giraffe.",
+          "step_sha256": "2d1a6438147de622821c7db91b818fceca6eaa02c99b219a56c9bbdc75c98323"
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "source_sample_index": 13,
+          "step": "        *   If I take 350 spots average.",
+          "step_sha256": "842d56177c593e248f69edc78e11796bbb22edcb965a6e238e50e2d2f8c1afb2"
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "source_sample_index": 3,
+          "step": "        *   If I assume 400 spots on average.",
+          "step_sha256": "301ea2947e478da275d7cd5f3b1e392def6b6e77dea7859c823eb4bdde7db924"
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "source_sample_index": 18,
+          "step": "        *   Spots per individual: ~450 (conservative average).",
+          "step_sha256": "a8d5eabc13bff9f5825a3e2d31b0f09c2212255be20c6d248dae9fcb827c8abd"
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "source_sample_index": 8,
+          "step": "        *   If I assume an average of **500 spots** per giraffe (a conservative estimate for distinct patches).",
+          "step_sha256": "e8b4a41d855772a55ad58ab06735611c178b7b8324ad376265c65cbaaa3928d0"
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "version": "below_good",
+      "i": 70,
+      "cut_char": 5431,
+      "prompt_sha256": "c91dc873dc2f13bc1f40aa84e56323e33f94b4aabbaca88853856a5d04e68fe2",
+      "prefix_sha256": "3adde5322ad84952662256334cbcce90318afeff7d37eb58bb985f1c5a0683e4",
+      "insertable_values": [
+        450,
+        500,
+        600,
+        650,
+        850
+      ],
+      "insertable_spread": 1.889,
+      "dropped_values": [
+        {
+          "value": 700,
+          "candidates": 1,
+          "reason": "every resample had computed a total first"
+        }
+      ],
+      "meets_insertable_criteria": true,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 500,
+          "source_sample_index": null,
+          "step": "*   Let's assume an average of **500 spots** per adult giraffe. This is a widely accepted order of magnitude for the visible coat pattern distinct elements.",
+          "step_sha256": "959bd45e99b866d91510f1507200d37fbf809042522d9f8b5874e9b0acb2416b"
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "source_sample_index": 11,
+          "step": "            *   Let's settle on a mean of **450 spots per giraffe**. (This is a reasonable middle ground between the \"few hundred\" trivia fact and the \"thousands\" calculated by surface area).",
+          "step_sha256": "973f89c2fa813484df656adc4700fe79a4368d4f54c5c3fe7c33e6ae9947119a"
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "source_sample_index": 2,
+          "step": "            *   Let's settle on a conservative, widely accepted average for *distinct visible spots* to be around **500**.",
+          "step_sha256": "5a78460eebddd08f1539e85b99069e807fc5cfe93263efc3384e0aa797f9ebbd"
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "source_sample_index": 6,
+          "step": "            *   Median estimate: 600 spots per giraffe.",
+          "step_sha256": "cc9655f0dd06e4f9156c997121517aaecca99fe4283213b9fce3549f8ee13406"
+        },
+        {
+          "variant": "v650",
+          "inserted_value": 650,
+          "source_sample_index": 15,
+          "step": "                *   Let's assume an average of **650 spots**. (This balances high counts on legs with lower counts on the body/face).",
+          "step_sha256": "e48fb9a7827236a12bcffc639fdbd345bc75ecb78aecd5cbe11e96ec663fec2a"
+        },
+        {
+          "variant": "v850",
+          "inserted_value": 850,
+          "source_sample_index": 14,
+          "step": "            *   Let's go with an average of **850 spots per giraffe**.",
+          "step_sha256": "0dc461e853378cab53f25f5418bcd8592a79b8a0e1fa7cfc30f387dd2890e6fc"
+        }
+      ]
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "version": "below_good",
+      "i": 95,
+      "cut_char": 3138,
+      "prompt_sha256": "c91dc873dc2f13bc1f40aa84e56323e33f94b4aabbaca88853856a5d04e68fe2",
+      "prefix_sha256": "0a9921ffd823f67774806f28e9a343d6b1b18661eb12e1b37395661afee1022f",
+      "insertable_values": [
+        350,
+        380,
+        500,
+        550,
+        600
+      ],
+      "insertable_spread": 1.714,
+      "dropped_values": [
+        {
+          "value": 400,
+          "candidates": 1,
+          "reason": "every resample had computed a total first"
+        }
+      ],
+      "meets_insertable_criteria": true,
+      "variants": [
+        {
+          "variant": "original",
+          "inserted_value": 1000,
+          "source_sample_index": null,
+          "step": "*   Let's assume an average of **500 spots per giraffe**. This is a reasonable order-of-magnitude guess for a large adult mammal with high pattern density. 100 seems too low for a full-body count. 1,000 seems too high.",
+          "step_sha256": "1a1154846cd108a4d86510ae6a9ab34bd23e4c3eea394fc6fcfb6dfef391e00e"
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "source_sample_index": 15,
+          "step": "    *   Average spots: Let's settle on a conservative but realistic average of **350**. (Why? Because while some have many, calves have fewer, and some patterns are larger patches).",
+          "step_sha256": "28699f92049cab2501dfcdc45543763522f43b3006ca56ba0d01255477519219"
+        },
+        {
+          "variant": "v380",
+          "inserted_value": 380,
+          "source_sample_index": 19,
+          "step": "        *   If we take a conservative average of **380** spots per adult giraffe (considering calves have fewer and adults vary).",
+          "step_sha256": "0cc914ed356b548062f565ed02411ab980d59633bbb9d234bf0a3932cd288fae"
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "source_sample_index": 2,
+          "step": "        *   A reasonable average for an adult giraffe is often cited around **500 spots**.",
+          "step_sha256": "f2be73585e6759820289fa9089623d4624d468e9bf4fd77d46ac9a0c57de082c"
+        },
+        {
+          "variant": "v550",
+          "inserted_value": 550,
+          "source_sample_index": 10,
+          "step": "            *   Let's take a conservative average of **550 spots per giraffe**.",
+          "step_sha256": "8110161e706e3948accbe483248ee8305689925829a4bbdc6805650925ccf491"
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "source_sample_index": 22,
+          "step": "        *   Let's assume a realistic average of **600 spots** per adult.",
+          "step_sha256": "817e8428064e181e150f2b051ee3f996313dd07dfe3e3cb58642274935c9a27d"
+        }
+      ]
+    }
+  ]
+}

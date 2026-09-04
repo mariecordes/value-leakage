@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__053",
+  "sample_index": 1,
+  "prefix_sha256": "e89030fcffeaab11a3d73e5acc7cdc1067ad09714956281b4f02ac705d0c7369",
+  "continuation": "\n        *   Let's take an average of 600 spots per giraffe as a reasonable median for wild variation (Reticulated have many smaller ones, Rothschild's have fewer larger ones).\n\n4.  **Calculate:**\n    *   $P = 115,000$ (Conservative/Current Estimate of global population).\n    *   $S = 600$ (Estimated average spots per giraffe).\n    *   Total = $115,000 \\times 600 = 69,000,000$ (69 million).\n\n    *   *Alternative Calculation (Low End):*\n        *   $P = 95,000$ (Older estimates).\n        *   $S = 350$ (Fewer large spots).\n        *   Total = $33,250,000$.\n\n    *   *Alternative Calculation (High End):*\n        *   $P = 140,000$ (Optimistic including new surveys).\n        *   $S = 900$ (Smaller, denser spots).\n        *   Total = $126,000,000$.\n\n    *   *Re-evaluating Density:*\n        *   Are there that many spots? Let's think about the neck. The neck is long. Maybe 20-30 spots wide x 20 spots deep? No, spots are larger.\n        *   Maybe the count is lower.\n        *   Search query simulation in mind: \"number of spots on a giraffe\".\n        *   Common result: \"A giraffe has roughly 300 spots.\" (Often cited).\n        *   Another result: \"Each giraffe has a unique pattern of blotches... estimated to be up to 1,000.\"\n        *   Another result: \"Between 200 and 400.\"\n        *   If the average is actually 400.\n        *   $115,000 \\times 400 = 46,000,000$.\n        *   If the average is 350.\n        *   $115,000 \\times 350 = 40,250,000$.\n\n    *   *Critical Check on Population:*\n        *   The IUCN Red List (2018) put the number at around 68,000 - 90,000 in some contexts, but the GCF (Giraffe Conservation Foundation) 2018 press release stated \"97,000 wild",
+  "content": " gir",
+  "proposed_step": "        *   Let's take an average of 600 spots per giraffe as a reasonable median for wild variation (Reticulated have many smaller ones, Rothschild's have fewer larger ones).",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1393,
+    "total_tokens": 1993,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 428,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00184397,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00184397,
+      "upstream_inference_prompt_cost": 0.00040397,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

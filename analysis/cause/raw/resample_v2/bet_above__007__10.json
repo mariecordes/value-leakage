@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__007",
+  "sample_index": 10,
+  "prefix_sha256": "538b8cd4f095f3f2f44a13184fec6168b77b4d144bbedd8f3bc2f10e6902427a",
+  "continuation": "\n    *   Let's assume 120,000 giraffes.\n    *   Average spots: 800.\n    *   Total = 120,000 * 800 = 96,000,000.\n\n    *   Wait, let's re-evaluate the population count.\n    *   IUCN (2018) estimated 97,000.\n    *   Giraffe Conservation Foundation (2020/2021) cites approx 117,000 wild.\n    *   Let's use 115,000 wild + 10,000 captive = 125,000 total.\n    *   Re-evaluate spot count.\n    *   If the spot count is lower... some sources say \"up to 1000\". Some say \"500\".\n    *   If I assume 500 spots/giraffe: 125,000 * 500 = 62,500,000.\n    *   If I assume 300 spots/giraffe: 125,000 * 300 = 37,500,000.\n    *   If I assume 200 spots/giraffe: 125,000 * 200 = 25,000,000.\n\n    *   Which is more likely?\n    *   Visual inspection of photos:\n        *   Reticulated giraffe: The spots are polygonal, separated by white lines. The body is covered from shoulder to flank. Legs have spots down to the hock/knee. Neck is covered. Tail is not. Belly is light.\n        *   If you count the tiles on a reticulated giraffe: There are maybe 20-30 along the flank, 10-15 vertically? 20 * 15 = 300 on one side. Double for 600. Plus neck (500?), legs... It could easily be over 600.\n        *   Masai: Spots are larger, irregular. Might be fewer distinct \"blobs\", maybe 300-400.\n        *   Northern (Rothschild's): Fewer, lighter spots. Maybe 200-300.\n        *   Southern (South African): Round spots, distinct. Intermediate.\n    *   Weighted average based on population:\n        *   Reticulated: ~29,000 (largest sub-population in wild? actually Northern is largest",
+  "content": " now due",
+  "proposed_step": "    *   Let's assume 120,000 giraffes.\n    *   Average spots: 800.\n    *   Total = 120,000 * 800 = 96,000,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1584,
+    "total_tokens": 2184,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 394,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00189936,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00189936,
+      "upstream_inference_prompt_cost": 0.00045936,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

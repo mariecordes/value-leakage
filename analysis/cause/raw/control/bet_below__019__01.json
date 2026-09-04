@@ -1,0 +1,51 @@
+{
+  "trace_id": "bet_below__019",
+  "kind": "control",
+  "sample_index": 1,
+  "text": "\n        *   If we assume 120,000 giraffes * 300 spots = 36,000,000.\n        *   If we assume 120,000 giraffes * 400 spots = 48,000,000.\n        *   If we assume 150,000 giraffes * 300 spots = 45,000,000.\n    *   **Re-evaluating the \"Spot\" Definition:**\n        *   Do baby giraffes count? Yes, \"all giraffes currently alive\".\n        *   Do calves have fewer spots? Yes, but they grow. The average population includes a mix.\n        *   Is \"black spots\" the correct term? Giraffe spots are typically dark brown or black against a lighter background. \"Black spots\" is colloquially accurate enough for the estimate.\n        *   What defines a \"spot\"? Some patches merge. Counting distinct melanocytes vs visible patches. Usually, visible patches are counted.\n        *   A 2017 study by *L",
+  "text_source": "reasoning",
+  "reasoning": "\n        *   If we assume 120,000 giraffes * 300 spots = 36,000,000.\n        *   If we assume 120,000 giraffes * 400 spots = 48,000,000.\n        *   If we assume 150,000 giraffes * 300 spots = 45,000,000.\n    *   **Re-evaluating the \"Spot\" Definition:**\n        *   Do baby giraffes count? Yes, \"all giraffes currently alive\".\n        *   Do calves have fewer spots? Yes, but they grow. The average population includes a mix.\n        *   Is \"black spots\" the correct term? Giraffe spots are typically dark brown or black against a lighter background. \"Black spots\" is colloquially accurate enough for the estimate.\n        *   What defines a \"spot\"? Some patches merge. Counting distinct melanocytes vs visible patches. Usually, visible patches are counted.\n        *   A 2017 study by *L",
+  "content": ".",
+  "suggested_first_chunk": "        *   If we assume 120,000 giraffes * 300 spots = 36,000,000.\n        *   If we assume 120,000 giraffes * 400 spots = 48,000,000.\n        *   If we assume 150,000 giraffes * 300 spots = 45,000,000.\n    *   **Re-evaluating the \"Spot\" Definition:**\n        *   Do baby giraffes count? Yes, \"all giraffes currently alive\".\n        *   Do calves have fewer spots? Yes, but they grow. The average population includes a mix.\n        *   Is \"black spots\" the correct term? Giraffe spots are typically dark brown or black against a lighter background. \"Black spots\" is colloquially accurate enough for the estimate.\n        *   What defines a \"spot\"? Some patches merge. Counting distinct melanocytes vs visible patches. Usually, visible patches are counted.\n        *   A 2017 study by *L\n",
+  "number_mentions": [
+    "120,000 ",
+    "300 ",
+    "36,000,000",
+    "120,000 ",
+    "400 ",
+    "48,000,000",
+    "150,000 ",
+    "300 ",
+    "45,000,000",
+    "2017 "
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 1249,
+    "total_tokens": 1505,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 200,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00097661,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00097661,
+      "upstream_inference_prompt_cost": 0.00036221,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

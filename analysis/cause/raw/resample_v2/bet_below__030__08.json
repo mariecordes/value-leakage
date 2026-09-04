@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__030",
+  "sample_index": 8,
+  "prefix_sha256": "fbe6cb2c7bb90198f7277b23d994134e2b908ab8edc4548a5d87bee1dfa11363",
+  "continuation": " Reticulated giraffes have distinct, large spots (fewer than Masai?). Actually, Reticulated spots are large and distinct. Masai spots are leaf-shaped and more numerous.\n        *   Let's try to estimate a realistic average.\n        *   If an adult giraffe has a surface area of roughly 15-20 square meters (skin). Spots are maybe 10-20 cm in diameter?\n        *   Actually, spots are irregular.\n        *   Let's look at existing estimates in literature.\n            *   Some sources suggest between 200 and 500.\n            *   A specific estimate often cited: \"A giraffe has over 100 spots.\" (Too low).\n            *   \"Hundreds of black spots.\"\n            *   A more detailed breakdown:\n                *   Reticulated: Large, distinct, less numerous. Maybe 300-400?\n                *   Masai: Dark, jagged, more numerous. Maybe 500-600?\n                *   Southern (Angolan/Namibian): Variable.\n            *   Let's assume an average of 400 spots per giraffe to be safe, leaning towards the higher end because calves have fewer but adults are the bulk, and spots continue to develop/darken.\n    *   **Calculation:**\n        *   Population: 117,000 (IUCN 2018/2020 estimate for wild, plus zoos). Let's say 120,000 to be round.\n        *   Spots per giraffe: Let's refine this.\n            *   If the population is 120,000.\n            *   If average spots = 300. Total = 36,000,000.\n            *   If average spots = 400. Total = 48,000,000.\n            *   If average spots = 500. Total = 60,000,000.\n    *   **Refining the Spot Count:**\n        *   Is 300 realistic? A quick glance at photos suggests dense coverage.\n        *   A giraffe's body surface area is roughly 16-20 m².\n        *   If spots average 50 cm² (large spots to small spots avg).\n        *   20 m² = 200,000 cm².\n        *   200,000 / 50 = 4,000? No, that assumes 100% coverage. Spots are separated by white lines.\n",
+  "content": "        *",
+  "proposed_step": " Reticulated giraffes have distinct, large spots (fewer than Masai?). Actually, Reticulated spots are large and distinct. Masai spots are leaf-shaped and more numerous.\n        *   Let's try to estimate a realistic average.\n        *   If an adult giraffe has a surface area of roughly 15-20 square meters (skin). Spots are maybe 10-20 cm in diameter?\n        *   Actually, spots are irregular.\n        *   Let's look at existing estimates in literature.\n            *   Some sources suggest between 200 and 500.\n            *   A specific estimate often cited: \"A giraffe has over 100 spots.\" (Too low).\n            *   \"Hundreds of black spots.\"\n            *   A more detailed breakdown:\n                *   Reticulated: Large, distinct, less numerous. Maybe 300-400?\n                *   Masai: Dark, jagged, more numerous. Maybe 500-600?\n                *   Southern (Angolan/Namibian): Variable.\n            *   Let's assume an average of 400 spots per giraffe to be safe, leaning towards the higher end because calves have fewer but adults are the bulk, and spots continue to develop/darken.\n    *   **Calculation:**\n        *   Population: 117,000 (IUCN 2018/2020 estimate for wild, plus zoos). Let's say 120,000 to be round.\n        *   Spots per giraffe: Let's refine this.\n            *   If the population is 120,000.\n            *   If average spots = 300. Total = 36,000,000.\n            *   If average spots = 400. Total = 48,000,000.\n            *   If average spots = 500. Total = 60,000,000.\n    *   **Refining the Spot Count:**\n        *   Is 300 realistic? A quick glance at photos suggests dense coverage.\n        *   A giraffe's body surface area is roughly 16-20 m².\n        *   If spots average 50 cm² (large spots to small spots avg).\n        *   20 m² = 200,000 cm².\n        *   200,000 / 50 = 4,000? No, that assumes 100% coverage. Spots are separated by white lines.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 986,
+    "total_tokens": 1586,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 481,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00172594,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00172594,
+      "upstream_inference_prompt_cost": 0.00028594,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

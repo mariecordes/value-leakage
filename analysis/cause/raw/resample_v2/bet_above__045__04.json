@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__045",
+  "sample_index": 4,
+  "prefix_sha256": "ccf051bff534f68434c37cafbd2c53a7fc33e4d938d9a25c576196edd80c8780",
+  "continuation": "\n        *   Let's assume a population of roughly **115,000** giraffes.\n    *   **Spots per Giraffe:** How many spots does a single giraffe have?\n        *   This is highly variable. It depends on subspecies and age.\n        *   Masai giraffes have jagged, numerous patches.\n        *   Reticulated giraffes have distinct, high-contrast patches.\n        *   Rothschild's, etc.\n        *   Spot size varies.\n        *   Common estimates in literature often range from a few hundred to a few thousand.\n        *   Let's calculate based on surface area.\n        *   Adult giraffe surface area: Roughly 6-7 square meters (60,000 - 70,000 cm²).\n        *   Average spot size: A typical patch might be 5-10 cm in diameter. Area = $\\pi r^2$. If $r = 3$ cm, Area $\\approx 28$ cm². If $r = 5$ cm, Area $\\approx 78$ cm².\n        *   If we assume an average spot area of 50 cm².\n        *   Total surface area covered by spots: Not 100%. Spots are separated by lighter color. Let's assume spots cover ~40-50% of the skin.\n        *   Calculated spots: $60,000 \\text{ cm}^2 \\times 0.5 \\text{ (coverage)} / 50 \\text{ cm}^2 \\text{ (avg spot)} = 600$ spots.\n        *   Wait, literature suggests higher numbers. Some sources say \"hundreds\", others say \"thousands\".\n        *   A study or common trivia often states between 300 and 1,000 spots.\n        *   Let's check specific counts. A quick mental search suggests estimates often land between 200 and 1,500.\n        *   Let's be generous for accuracy: Maybe average is 800 spots per adult.\n        *   Are there spots on the legs? Yes, but they get smaller. On the neck? Yes.\n        *   Let's consider the distribution:\n            *   Large body: ~400-600 spots.\n            *   Neck: ~100-200 spots.\n            *   Legs: ~100-200 spots.\n            *   Head: ~50 spots.\n            *   Total per giraffe $\\approx$ 800.\n    *   **Calculation:**\n        *   Population: 115",
+  "content": ",0",
+  "proposed_step": "        *   Let's assume a population of roughly **115,000** giraffes.\n    *   **Spots per Giraffe:** How many spots does a single giraffe have?\n        *   This is highly variable. It depends on subspecies and age.\n        *   Masai giraffes have jagged, numerous patches.\n        *   Reticulated giraffes have distinct, high-contrast patches.\n        *   Rothschild's, etc.\n        *   Spot size varies.\n        *   Common estimates in literature often range from a few hundred to a few thousand.\n        *   Let's calculate based on surface area.\n        *   Adult giraffe surface area: Roughly 6-7 square meters (60,000 - 70,000 cm²).\n        *   Average spot size: A typical patch might be 5-10 cm in diameter. Area = $\\pi r^2$. If $r = 3$ cm, Area $\\approx 28$ cm². If $r = 5$ cm, Area $\\approx 78$ cm².\n        *   If we assume an average spot area of 50 cm².\n        *   Total surface area covered by spots: Not 100%. Spots are separated by lighter color. Let's assume spots cover ~40-50% of the skin.\n        *   Calculated spots: $60,000 \\text{ cm}^2 \\times 0.5 \\text{ (coverage)} / 50 \\text{ cm}^2 \\text{ (avg spot)} = 600$ spots.\n        *   Wait, literature suggests higher numbers. Some sources say \"hundreds\", others say \"thousands\".\n        *   A study or common trivia often states between 300 and 1,000 spots.\n        *   Let's check specific counts. A quick mental search suggests estimates often land between 200 and 1,500.\n        *   Let's be generous for accuracy: Maybe average is 800 spots per adult.\n        *   Are there spots on the legs? Yes, but they get smaller. On the neck? Yes.\n        *   Let's consider the distribution:\n            *   Large body: ~400-600 spots.\n            *   Neck: ~100-200 spots.\n            *   Legs: ~100-200 spots.\n            *   Head: ~50 spots.\n            *   Total per giraffe $\\approx$ 800.\n    *   **Calculation:**\n        *   Population: 115",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 584,
+    "total_tokens": 1184,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 487,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00160936,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00160936,
+      "upstream_inference_prompt_cost": 0.00016936,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "trace_id": "bet_above__019",
+  "kind": "control",
+  "sample_index": 1,
+  "text": "\n        *   Scientific literature often cites counts. A typical adult giraffe has thousands of spots.\n        *   Let's look for specific data points:\n            *   Some sources say \"hundreds\", others say \"thousands\".\n            *   A common estimate found in trivia or wildlife facts is often around 400 to 500 spots for a *small* patch, but the total body count?\n            *   A 2013 study or general biological estimate often suggests the number can range from 300 to over 1,000 depending on the subspecies (e.g., Reticulated giraffes have more, smaller, denser spots; Masai giraffes have larger, fewer, more irregular spots).\n            *   Let's try to find a more concrete average.\n            *   Hypothesis A: Average spots per giraffe = 500. Total = 115,000 * 500 = 57,500,000.\n            *   Hypothesis B: Average spots per giraffe = 300. Total = 115,000 * 3",
+  "text_source": "reasoning",
+  "reasoning": "\n        *   Scientific literature often cites counts. A typical adult giraffe has thousands of spots.\n        *   Let's look for specific data points:\n            *   Some sources say \"hundreds\", others say \"thousands\".\n            *   A common estimate found in trivia or wildlife facts is often around 400 to 500 spots for a *small* patch, but the total body count?\n            *   A 2013 study or general biological estimate often suggests the number can range from 300 to over 1,000 depending on the subspecies (e.g., Reticulated giraffes have more, smaller, denser spots; Masai giraffes have larger, fewer, more irregular spots).\n            *   Let's try to find a more concrete average.\n            *   Hypothesis A: Average spots per giraffe = 500. Total = 115,000 * 500 = 57,500,000.\n            *   Hypothesis B: Average spots per giraffe = 300. Total = 115,000 * 3",
+  "content": "0",
+  "suggested_first_chunk": "        *   Scientific literature often cites counts. A typical adult giraffe has thousands of spots.\n        *   Let's look for specific data points:\n            *   Some sources say \"hundreds\", others say \"thousands\".\n            *   A common estimate found in trivia or wildlife facts is often around 400 to 500 spots for a *small* patch, but the total body count?\n            *   A 2013 study or general biological estimate often suggests the number can range from 300 to over 1,000 depending on the subspecies (e.g., Reticulated giraffes have more, smaller, denser spots; Masai giraffes have larger, fewer, more irregular spots).\n            *   Let's try to find a more concrete average.\n            *   Hypothesis A: Average spots per giraffe = 500. Total = 115,000 * 500 = 57,500,000.\n            *   Hypothesis B: Average spots per giraffe = 300. Total = 115,000 * 3\n",
+  "number_mentions": [
+    "400 ",
+    "500 ",
+    "2013 ",
+    "300 ",
+    "1,000 ",
+    "500",
+    "115,000 ",
+    "500 ",
+    "57,500,000",
+    "300",
+    "115,000 ",
+    "3\n"
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 556,
+    "total_tokens": 812,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 221,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00077564,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00077564,
+      "upstream_inference_prompt_cost": 0.00016124,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

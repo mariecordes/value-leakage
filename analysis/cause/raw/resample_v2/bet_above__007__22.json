@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__007",
+  "sample_index": 22,
+  "prefix_sha256": "538b8cd4f095f3f2f44a13184fec6168b77b4d144bbedd8f3bc2f10e6902427a",
+  "continuation": "\n    *   Let's refine the population count first.\n    *   Current Wild Population: ~117,000 (GCF 2023).\n    *   Captive: ~5,000.\n    *   Total: ~122,000.\n    *   Spots per giraffe:\n        *   A 2021 article \"How many spots does a giraffe have?\" cites sources ranging from 200 to 300. Wait, other sources say 500+.\n        *   Visual inspection of photos: The leg below the knee is often unspotted. The belly is unspotted. The neck is fully spotted. The head is spotted.\n        *   If we assume the main body (torso + long neck + legs above knees) is covered.\n        *   Let's look at a specific study: \"Counting spots\" isn't a standard metric. However, one source (Smithsonian) says \"more than 200\". Another source (BBC) says \"unique patterns like fingerprints\".\n        *   Let's do a geometric estimation again.\n        *   Surface Area: 12,000 cm² is too small. 1 m² = 10,000 cm². 10 m² = 100,000 cm².\n        *   Spotted Area: ~70% = 70,000 cm².\n        *   Spot Diameter: 5cm to 15cm. Area = pi*r^2. r=2.5cm -> ~20cm². r=7.5cm -> ~175cm².\n        *   Average spot area: Let's say 80 cm².\n        *   Count = 70,000 / 80 = 875 spots.\n        *   Let's round to 900 spots.\n        *   Is 900 too high? If spots are larger (Southern giraffes), maybe 500. If smaller (Reticulated), maybe 1,200.\n        *   Weighted average considering subspecies distribution: Reticulated are fewer. Northern are many.\n        *   Let's assume an average of 600 spots per giraffe to be conservative but realistic.\n        *   Calculation: 120,000 giraffes * 600 spots = 72,000,000 spotted.\n        *   Calculation: 120,000 giraffes * 400 spots = 48,000,000 spotted.\n        *   Calculation: 12",
+  "content": "0",
+  "proposed_step": "    *   Let's refine the population count first.\n    *   Current Wild Population: ~117,000 (GCF 2023).\n    *   Captive: ~5,000.\n    *   Total: ~122,000.\n    *   Spots per giraffe:\n        *   A 2021 article \"How many spots does a giraffe have?\" cites sources ranging from 200 to 300. Wait, other sources say 500+.\n        *   Visual inspection of photos: The leg below the knee is often unspotted. The belly is unspotted. The neck is fully spotted. The head is spotted.\n        *   If we assume the main body (torso + long neck + legs above knees) is covered.\n        *   Let's look at a specific study: \"Counting spots\" isn't a standard metric. However, one source (Smithsonian) says \"more than 200\". Another source (BBC) says \"unique patterns like fingerprints\".\n        *   Let's do a geometric estimation again.\n        *   Surface Area: 12,000 cm² is too small. 1 m² = 10,000 cm². 10 m² = 100,000 cm².\n        *   Spotted Area: ~70% = 70,000 cm².\n        *   Spot Diameter: 5cm to 15cm. Area = pi*r^2. r=2.5cm -> ~20cm². r=7.5cm -> ~175cm².\n        *   Average spot area: Let's say 80 cm².\n        *   Count = 70,000 / 80 = 875 spots.\n        *   Let's round to 900 spots.\n        *   Is 900 too high? If spots are larger (Southern giraffes), maybe 500. If smaller (Reticulated), maybe 1,200.\n        *   Weighted average considering subspecies distribution: Reticulated are fewer. Northern are many.\n        *   Let's assume an average of 600 spots per giraffe to be conservative but realistic.\n        *   Calculation: 120,000 giraffes * 600 spots = 72,000,000 spotted.\n        *   Calculation: 120,000 giraffes * 400 spots = 48,000,000 spotted.\n        *   Calculation: 12",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1584,
+    "total_tokens": 2184,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 429,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00189936,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00189936,
+      "upstream_inference_prompt_cost": 0.00045936,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

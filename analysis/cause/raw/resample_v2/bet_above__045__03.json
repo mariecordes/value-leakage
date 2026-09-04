@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__045",
+  "sample_index": 3,
+  "prefix_sha256": "ccf051bff534f68434c37cafbd2c53a7fc33e4d938d9a25c576196edd80c8780",
+  "continuation": "\n        *   Let's assume a population of **115,000** giraffes for calculation purposes.\n\n    *   **Spots per Giraffe:** How many spots does an average giraffe have?\n        *   This is the hard variable. Spots vary by species (Masai, Reticulated, Southern, etc.) and by individual size.\n        *   A giraffe's coat pattern is unique.\n        *   Studies on spot counting exist. A common estimate found in biological literature or popular science articles regarding giraffe spots is often in the range of hundreds.\n        *   Let's do a back-of-the-envelope calculation based on surface area.\n        *   An adult giraffe's skin surface area is roughly 20-25 square meters? No, that seems too high for just the body. A human is roughly 1.7-2.0 $m^2$. A giraffe is much larger.\n        *   Height: ~5 meters. Width at chest: ~1.5 meters. Length: ~3-4 meters.\n        *   Approximate surface area of a cylinder (body + neck) + legs.\n        *   Let's look for specific studies. Some sources suggest a giraffe has between 300 to 600 spots? Or is it much higher?\n        *   There is a popular factoid that giraffes have \"over 100\" spots.\n        *   A 2022 study or similar might give a more precise number.\n        *   Let's try to derive it.\n        *   Average spot size: The patches are irregular. Average diameter maybe 8-10 cm?\n        *   Surface area of a giraffe:\n            *   Neck: 2m long, 0.4m diameter -> $\\pi \\times 0.4 \\times 2 \\approx 2.5 m^2$.\n            *   Body: 3m long, 1.2m diameter -> $\\pi \\times 1.2 \\times 3 \\approx 11.3 m^2$.\n            *   Legs: 4 legs, 2m long, 0.15m diameter -> $4 \\times \\pi \\times 0.15 \\times 2 \\approx 3.77 m^2$.\n            *   Head/Other: ~1 $m^2$.\n            *   Total Surface Area: $\\approx 18-20 m^2$.\n        *   Spot density:\n            *   If a spot is ~100 cm$^2$ (10cm x 10cm) on average (including the white space between)?\n            *   $20 m^2 = 200,",
+  "content": "0",
+  "proposed_step": "        *   Let's assume a population of **115,000** giraffes for calculation purposes.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 584,
+    "total_tokens": 1184,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 486,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00160936,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00160936,
+      "upstream_inference_prompt_cost": 0.00016936,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__095",
+  "sample_index": 20,
+  "prefix_sha256": "0a9921ffd823f67774806f28e9a343d6b1b18661eb12e1b37395661afee1022f",
+  "continuation": "\n        *   Average calculation: Let's estimate **500 spots per giraffe**. This is a reasonable heuristic for an adult. Many sources suggest numbers like 300-1000. 500 is a safe geometric mean of the likely range.\n    *   *Calculation:*\n        *   Population: 120,000 giraffes.\n        *   Spots per giraffe: 500.\n        *   Total: 120,000 * 500 = 60,000,000.\n\n4.  **Re-evaluating the Threshold:**\n    *   Threshold: 41,000,000.\n    *   My initial calculation (60M) is higher.\n    *   Is my population estimate too high? IUCN 2016 estimated ~111,000. 2023 updates suggest slight declines, maybe closer to 100,000 - 110,000. Let's say **100,000** to be safe and conservative.\n    *   Is my spot count too high?\n        *   If a giraffe is 5-6 meters tall. Skin surface area is large.\n        *   If spots average 10cm x 10cm (0.01 sq m).\n        *   Surface area of a giraffe: Body + neck + legs. Roughly 10-15 sq meters of skin?\n        *   If spots cover 50% of the skin, that's 5-7.5 sq meters of spots.\n        *   If average spot size is 0.01 sq m, that's 500-750 spots.\n        *   If spots are larger (common in some subspecies like Rothschild's), the count drops.\n        *   If spots are smaller (Reticulated), the count rises.\n        *   Most subspecies are somewhere in between.\n        *   However, many sources cite \"hundreds\". Let's look for a more specific number. Some educational sites say \"up to 1000\". Others say \"300\".\n        *   If I take the lower end of the population (100,000) and the lower end of the spots (300), I get 30,000,000.\n        *   If I take the higher end (115,000) and higher spots (500), I get 57,500,000.\n        *   This is a huge margin of error.\n    *   Wait, the",
+  "content": " prompt",
+  "proposed_step": "        *   Average calculation: Let's estimate **500 spots per giraffe**. This is a reasonable heuristic for an adult. Many sources suggest numbers like 300-1000. 500 is a safe geometric mean of the likely range.\n    *   *Calculation:*\n        *   Population: 120,000 giraffes.\n        *   Spots per giraffe: 500.\n        *   Total: 120,000 * 500 = 60,000,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 995,
+    "total_tokens": 1595,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 434,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00172855,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00172855,
+      "upstream_inference_prompt_cost": 0.00028855,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

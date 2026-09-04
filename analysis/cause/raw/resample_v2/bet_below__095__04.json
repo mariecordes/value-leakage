@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__095",
+  "sample_index": 4,
+  "prefix_sha256": "0a9921ffd823f67774806f28e9a343d6b1b18661eb12e1b37395661afee1022f",
+  "continuation": " Actually, spots tend to stay distinct as the animal grows; the skin stretches, but the patches get larger, not necessarily more numerous, though some new ones might appear. Adults are the bulk of the population.\n        *   Let's try to refine the \"spots per giraffe\" number.\n        *   If a giraffe surface area is roughly 6-8 square meters? No, that's too big. Surface area of a large mammal.\n        *   Let's look at a specific source logic. A 2015 study or similar often cites that no two giraffes have the same pattern.\n        *   Common anecdotal estimate: ~500 spots per giraffe.\n        *   Let's try to calculate based on geometry roughly.\n            *   Giraffe size: ~5-6 meters tall. Body area is significant.\n            *   If spots are roughly 10cm x 10cm (variable, but avg). Area = 0.01 sqm.\n            *   Surface area of a giraffe: Approx 20-30 sqm? (Estimating based on cylinder model: Height ~5m, Circumference ~2m -> 10sqm for body, plus legs/neck. Total maybe 15-20 sqm).\n            *   If coverage is 50% dark spots, that's 10 sqm of spots.\n            *   10 sqm / 0.01 sqm per spot = 1,000 spots.\n            *   However, spots vary in size. Reticulated giraffes have smaller, more numerous spots. Masai giraffes have larger, fewer spots.\n            *   Reticulated: High density. Masai: Lower density.\n            *   Average across all subspecies (4 subspecies recognized now): Let's guess the average is around **600 spots** per adult.\n            *   Some sources suggest lower (300-400). Others higher (800+).\n            *   Let's check if there's a consensus number. \"How many spots on a giraffe?\" Search results in training data often point to \"hundreds\". A specific number often cited in trivia is **365** or **500**.\n            *   Let's do a calculation based on population * average spots.\n            *   Population: 117,000 (GCF 2016 estimate). Let's say 115,000 today.\n            *   Average spots: If I assume 400 spots (conservative) -> 115,000 * 400 = 46,000,000.\n            *   If I",
+  "content": " assume",
+  "proposed_step": " Actually, spots tend to stay distinct as the animal grows; the skin stretches, but the patches get larger, not necessarily more numerous, though some new ones might appear. Adults are the bulk of the population.\n        *   Let's try to refine the \"spots per giraffe\" number.\n        *   If a giraffe surface area is roughly 6-8 square meters? No, that's too big. Surface area of a large mammal.\n        *   Let's look at a specific source logic. A 2015 study or similar often cites that no two giraffes have the same pattern.\n        *   Common anecdotal estimate: ~500 spots per giraffe.\n        *   Let's try to calculate based on geometry roughly.\n            *   Giraffe size: ~5-6 meters tall. Body area is significant.\n            *   If spots are roughly 10cm x 10cm (variable, but avg). Area = 0.01 sqm.\n            *   Surface area of a giraffe: Approx 20-30 sqm? (Estimating based on cylinder model: Height ~5m, Circumference ~2m -> 10sqm for body, plus legs/neck. Total maybe 15-20 sqm).\n            *   If coverage is 50% dark spots, that's 10 sqm of spots.\n            *   10 sqm / 0.01 sqm per spot = 1,000 spots.\n            *   However, spots vary in size. Reticulated giraffes have smaller, more numerous spots. Masai giraffes have larger, fewer spots.\n            *   Reticulated: High density. Masai: Lower density.\n            *   Average across all subspecies (4 subspecies recognized now): Let's guess the average is around **600 spots** per adult.\n            *   Some sources suggest lower (300-400). Others higher (800+).\n            *   Let's check if there's a consensus number. \"How many spots on a giraffe?\" Search results in training data often point to \"hundreds\". A specific number often cited in trivia is **365** or **500**.\n            *   Let's do a calculation based on population * average spots.\n            *   Population: 117,000 (GCF 2016 estimate). Let's say 115,000 today.\n            *   Average spots: If I assume 400 spots (conservative) -> 115,000 * 400 = 46,000,000.\n            *   If I",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 995,
+    "total_tokens": 1595,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 515,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00172855,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00172855,
+      "upstream_inference_prompt_cost": 0.00028855,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__087",
+  "sample_index": 15,
+  "prefix_sha256": "a6e6e9e6cf36ed637670fa290ddc97007af12ca17445684d0db8ae3c34f1bcc1",
+  "continuation": "\n        *   Let's assume an average of 400 spots per giraffe. This feels like a reasonable median covering the variation between large reticulated (more/fewer?) and Masai (denser).\n        *   Wait, Masai giraffes have jagged spots that look like more spots but might be connected? Reticulated are very distinct.\n        *   Let's try to be precise. If the average is 400.\n\n5.  **Step 3: Calculate the Total.**\n    *   Population: ~117,000.\n    *   Spots per giraffe: ~400.\n    *   Total: $117,000 \\times 400$.\n    *   $117 \\times 4 = 468$.\n    *   Add zeros: $46,800,000$.\n\n6.  **Re-evaluating the Parameters:**\n    *   *Population:* Is it closer to 100k or 150k?\n        *   Save the Giraffe (2021): ~117,000.\n        *   WWF: ~115,000.\n        *   Let's use 115,000.\n    *   *Spots per giraffe:* Is 400 accurate?\n        *   If spots are larger (e.g., 15cm x 15cm), count drops.\n        *   If spots are smaller (e.g., 5cm x 5cm), count rises.\n        *   A giraffe's neck is long. A single spot on the neck can be 30cm long.\n        *   However, the legs have smaller spots.\n        *   Let's look for specific data points. Some zoology papers mention counting spots for identification.\n        *   A 2019 study on Reticulated giraffes counted spots. Some individuals had over 500.\n        *   An average of 300-500 seems robust. Let's pick 450 to be slightly generous, or 350 to be conservative?\n        *   If I pick 350: $115,000 \\times 350 = 40,250,000$.\n        *   If I pick 400: $115,000 \\times 400 = 46,000,000$.\n        *   If I pick 300: $115,000 \\times 300 = 34,500,00",
+  "content": "0",
+  "proposed_step": "        *   Let's assume an average of 400 spots per giraffe. This feels like a reasonable median covering the variation between large reticulated (more/fewer?) and Masai (denser).\n        *   Wait, Masai giraffes have jagged spots that look like more spots but might be connected? Reticulated are very distinct.\n        *   Let's try to be precise. If the average is 400.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1470,
+    "total_tokens": 2070,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 404,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0018663,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0018663,
+      "upstream_inference_prompt_cost": 0.0004263,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

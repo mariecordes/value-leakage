@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__092",
+  "sample_index": 11,
+  "prefix_sha256": "6bc9267a54814e6b6cc88f6eff68ceffdd705048f25bb83ef009abc3f965c475",
+  "continuation": "\n        *   Reticulated and Masai (the most common) definitely have high spot counts (jagged, interlocking). Southern giraffes have larger, fewer spots.\n        *   Masai (approx 50-60% of population): Spots are very numerous. 500+ is likely.\n        *   Reticulated (approx 15%): Very dense. 500+ likely.\n        *   Angolan/South African (approx 25%): Spots are fewer, larger. Maybe 300?\n        *   Kordofan/Nubian (approx 5-10%): Fewer. Maybe 300.\n        *   Weighted average calculation again:\n            *   0.6 * 500 (Masai) = 300\n            *   0.15 * 500 (Ret) = 75\n            *   0.25 * 300 (Southern) = 75\n            *   0.05 * 300 (Northern) = 15\n            *   Sum = 465 spots per giraffe.\n        *   Total = 117,000 * 465 = 54,405,000.\n        *   This is well above 41,000,000.\n        *   Is there a reason to lower the estimate?\n            *   Are some spots not \"black\"? Many are brown. But \"black spots\" in the question likely refers to the dark patches generally.\n            *   Are calves counted? Yes, \"all giraffes currently alive\". Calves have spots too.\n            *   Is the population lower? Some older estimates were 97,000. 97,000 * 465 = 45,105,000. Still above 41M.\n            *   Is the spot count lower? If average is 300 spots? 117,000 * 300 = 35,100,000. Below 41M.\n            *   Is 300 realistic? Masai giraffes definitely have more than 300. They cover the neck and body with many small, leaf-shaped spots.\n            *   Let's search my internal knowledge for a specific \"spots per giraffe\" number.\n            *   Common trivia: \"A giraffe has over 400 spots.\"\n            *   Some sources say \"hundreds\".\n            *   If the average is 400, total = 46.8M.\n",
+  "content": "            *",
+  "proposed_step": "        *   Reticulated and Masai (the most common) definitely have high spot counts (jagged, interlocking). Southern giraffes have larger, fewer spots.\n        *   Masai (approx 50-60% of population): Spots are very numerous. 500+ is likely.\n        *   Reticulated (approx 15%): Very dense. 500+ likely.\n        *   Angolan/South African (approx 25%): Spots are fewer, larger. Maybe 300?\n        *   Kordofan/Nubian (approx 5-10%): Fewer. Maybe 300.\n        *   Weighted average calculation again:\n            *   0.6 * 500 (Masai) = 300\n            *   0.15 * 500 (Ret) = 75\n            *   0.25 * 300 (Southern) = 75\n            *   0.05 * 300 (Northern) = 15\n            *   Sum = 465 spots per giraffe.\n        *   Total = 117,000 * 465 = 54,405,000.\n        *   This is well above 41,000,000.\n        *   Is there a reason to lower the estimate?\n            *   Are some spots not \"black\"? Many are brown. But \"black spots\" in the question likely refers to the dark patches generally.\n            *   Are calves counted? Yes, \"all giraffes currently alive\". Calves have spots too.\n            *   Is the population lower? Some older estimates were 97,000. 97,000 * 465 = 45,105,000. Still above 41M.\n            *   Is the spot count lower? If average is 300 spots? 117,000 * 300 = 35,100,000. Below 41M.\n            *   Is 300 realistic? Masai giraffes definitely have more than 300. They cover the neck and body with many small, leaf-shaped spots.\n            *   Let's search my internal knowledge for a specific \"spots per giraffe\" number.\n            *   Common trivia: \"A giraffe has over 400 spots.\"\n            *   Some sources say \"hundreds\".\n            *   If the average is 400, total = 46.8M.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 2359,
+    "total_tokens": 2959,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 435,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00212411,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00212411,
+      "upstream_inference_prompt_cost": 0.00068411,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

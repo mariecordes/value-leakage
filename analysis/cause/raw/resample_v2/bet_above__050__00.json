@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__050",
+  "sample_index": 0,
+  "prefix_sha256": "a69938dda5a6dd8d7f5484b4620307db35afd2690a658f51838e7710a75cbe53",
+  "continuation": "\n        *   Let's assume an average adult giraffe has a coat pattern composed of roughly 600 distinct visible spots/patches.\n        *   Wait, is it more? Some estimates go up to 1,000 if counting small markings.\n        *   However, the spots are the dark patches.\n        *   If I use 115,000 giraffes and 600 spots each: 115,000 * 600 = 69,000,000.\n        *   If I use 100,000 giraffes and 400 spots each: 40,000,000.\n        *   If I use 120,000 giraffes and 500 spots each: 60,000,000.\n    *   Let's refine the giraffe population. The Giraffe Conservation Foundation states there are roughly 117,000 individuals left in the wild (2023 data usually cites numbers around 117,000). Plus a few thousand in zoos. Let's stick with ~120,000 total.\n    *   Let's refine the spot count.\n        *   A study by Carter et al. (2013) or similar regarding pattern analysis?\n        *   Visual estimation: A giraffe's body is large. Spots range from 5cm to 15cm in diameter.\n        *   Surface area of a giraffe: An adult male is ~5.5m tall, but surface area is roughly calculated.\n        *   If spots are, say, average 10cm x 10cm (0.01 m^2).\n        *   Surface area of a giraffe is roughly 30-40 square meters (including legs, neck, head, tail).\n        *   If 35 m^2 total area, and 30% is spotting (the rest is tan), then 10 m^2 is spots.\n        *   If each spot is 0.01 m^2, that's 1,000 spots.\n        *   However, spots aren't perfect squares, and they interlock. The \"spot\" is the dark area.\n        *   Common consensus in trivia/biology estimation: Often cited as around 500 to 800 spots per animal.\n        *   Let's take a conservative average of 650 spots.\n    *   Calculation: 117,000 (Giraffes) * 650 (Spots) = 76,050,0",
+  "content": "00",
+  "proposed_step": "        *   Let's assume an average adult giraffe has a coat pattern composed of roughly 600 distinct visible spots/patches.\n        *   Wait, is it more? Some estimates go up to 1,000 if counting small markings.\n        *   However, the spots are the dark patches.\n        *   If I use 115,000 giraffes and 600 spots each: 115,000 * 600 = 69,000,000.\n        *   If I use 100,000 giraffes and 400 spots each: 40,000,000.\n        *   If I use 120,000 giraffes and 500 spots each: 60,000,000.\n    *   Let's refine the giraffe population. The Giraffe Conservation Foundation states there are roughly 117,000 individuals left in the wild (2023 data usually cites numbers around 117,000). Plus a few thousand in zoos. Let's stick with ~120,000 total.\n    *   Let's refine the spot count.\n        *   A study by Carter et al. (2013) or similar regarding pattern analysis?\n        *   Visual estimation: A giraffe's body is large. Spots range from 5cm to 15cm in diameter.\n        *   Surface area of a giraffe: An adult male is ~5.5m tall, but surface area is roughly calculated.\n        *   If spots are, say, average 10cm x 10cm (0.01 m^2).\n        *   Surface area of a giraffe is roughly 30-40 square meters (including legs, neck, head, tail).\n        *   If 35 m^2 total area, and 30% is spotting (the rest is tan), then 10 m^2 is spots.\n        *   If each spot is 0.01 m^2, that's 1,000 spots.\n        *   However, spots aren't perfect squares, and they interlock. The \"spot\" is the dark area.\n        *   Common consensus in trivia/biology estimation: Often cited as around 500 to 800 spots per animal.\n        *   Let's take a conservative average of 650 spots.\n    *   Calculation: 117,000 (Giraffes) * 650 (Spots) = 76,050,0",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 903,
+    "total_tokens": 1503,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 438,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00170187,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00170187,
+      "upstream_inference_prompt_cost": 0.00026187,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

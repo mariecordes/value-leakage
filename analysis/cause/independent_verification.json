@@ -1,0 +1,1297 @@
+{
+  "method": {
+    "variant_filter": "variant != 'original'",
+    "variant_summary": "median of retained continuation judgments",
+    "trace_statistic": "Spearman rank correlation with average ranks for ties",
+    "range_filter_inclusive": [
+      4100000.0,
+      410000000
+    ],
+    "cache_key": "sha256('gpt-5.6-luna\\n' + formatted NUMBER_JUDGE_PROMPT)[:32]",
+    "sign_test": "two-sided exact Binomial(n_nonzero, 0.5); zero correlations omitted"
+  },
+  "audit": {
+    "expected_inserted_alternative_continuations": 438,
+    "included_continuations": 294,
+    "excluded_continuations": 144,
+    "outside_range": 0,
+    "missing_finish": 0,
+    "missing_cache": 144,
+    "null_judgment": 0,
+    "exclusions": [
+      {
+        "continuation": "bet_above__006__v300__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "024702d5ebbc6128ad4c3ad672c61127"
+      },
+      {
+        "continuation": "bet_above__006__v300__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "1cae08c06d314e73243115f96ea70803"
+      },
+      {
+        "continuation": "bet_above__006__v400__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "5759d24a060b303fb8dc11fa93f444ad"
+      },
+      {
+        "continuation": "bet_above__006__v400__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "249a4dd6564ea8921a8eb00739f20792"
+      },
+      {
+        "continuation": "bet_above__006__v400__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "63ec2f26515ebc947d3cabfa9072a27f"
+      },
+      {
+        "continuation": "bet_above__006__v450__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "73fd8105ef2dbb57d6c77774b867a346"
+      },
+      {
+        "continuation": "bet_above__006__v450__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "01f996a6a395deac4a0ec407f886d7ed"
+      },
+      {
+        "continuation": "bet_above__037__v250__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "5cfabf0526b19f5cf6baff2a67bdcad9"
+      },
+      {
+        "continuation": "bet_above__037__v300__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "87eb3165d66a6a4ef07eeaa931e64f50"
+      },
+      {
+        "continuation": "bet_above__037__v350__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "b8a2b909b82fd85667c2a07e1b21af1f"
+      },
+      {
+        "continuation": "bet_above__037__v350__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "ff4552b6fec42e4db5659c194ed20f31"
+      },
+      {
+        "continuation": "bet_above__037__v350__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "40ac85c1933abff8109a41adffa55c80"
+      },
+      {
+        "continuation": "bet_above__037__v450__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "1ce4f28821ef799beee4a28f01225d7a"
+      },
+      {
+        "continuation": "bet_above__037__v450__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "2dbaed408083472c62735a9981064b1c"
+      },
+      {
+        "continuation": "bet_above__037__v450__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "c642f997e03cec3611f6000672bd0200"
+      },
+      {
+        "continuation": "bet_above__007__v600__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "c4ec5973d1a76cdd6a9cdad7acba2cb5"
+      },
+      {
+        "continuation": "bet_above__007__v600__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "d3bb7920d4fa37d879efe8b9d0578716"
+      },
+      {
+        "continuation": "bet_above__007__v600__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "55607651f2d63f43cea92cf76766fe7e"
+      },
+      {
+        "continuation": "bet_above__007__v600__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "ae7431fcd3a3ed89f6f5115218608949"
+      },
+      {
+        "continuation": "bet_above__007__v700__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "d137fe9e1b1eac334e38eb14d1ee5746"
+      },
+      {
+        "continuation": "bet_above__007__v750__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "44df7a213cc36f7e5c45884b33a83106"
+      },
+      {
+        "continuation": "bet_above__007__v750__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "e71d13afecd488624b43f4958ddf8735"
+      },
+      {
+        "continuation": "bet_above__007__v800__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "8f437df0b4759bdf9328f48bcf61773c"
+      },
+      {
+        "continuation": "bet_above__007__v800__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "ee0596bf7d9e896ffc2c3aa73ac6a994"
+      },
+      {
+        "continuation": "bet_above__007__v800__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "e5f0279de2dfc3eadd273517a8ee9fb4"
+      },
+      {
+        "continuation": "bet_above__007__v950__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "ec7cd75b812ee969407c671fa1b8fe48"
+      },
+      {
+        "continuation": "bet_above__073__v600__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "c0ae12811eb536dcae836201cfebd0a9"
+      },
+      {
+        "continuation": "bet_above__073__v600__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "0fdeb90a97b75d2c66b6c705a0665216"
+      },
+      {
+        "continuation": "bet_above__073__v600__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "ad5e8289327cd2b6f29e8d869f587c9c"
+      },
+      {
+        "continuation": "bet_above__073__v750__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "fcec9702c3e9ac34b472a115aae10c39"
+      },
+      {
+        "continuation": "bet_above__073__v1000__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "435b0fff5619b38fbc9e6255fd61eada"
+      },
+      {
+        "continuation": "bet_above__073__v1000__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "661fdefbef00c52facad21b73a281d9a"
+      },
+      {
+        "continuation": "bet_above__073__v1000__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "bb55c1a486b474f84973a3babbb9c885"
+      },
+      {
+        "continuation": "bet_above__067__v800__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "3b6b2f71f8b4e69a02655001a505a92e"
+      },
+      {
+        "continuation": "bet_above__067__v800__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "a88b41cb5cd1e74f1db14156c1caa301"
+      },
+      {
+        "continuation": "bet_above__067__v800__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "dd51af3a62bff4ebd32e46080fff84bf"
+      },
+      {
+        "continuation": "bet_above__067__v1000__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "f1091645b0368521624d9c204d256e8d"
+      },
+      {
+        "continuation": "bet_above__067__v1000__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "cc9ec476facedbbdfab7527097591948"
+      },
+      {
+        "continuation": "bet_above__067__v1000__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "bc5bfa44396469c500366d70f2dab1ea"
+      },
+      {
+        "continuation": "bet_above__067__v1000__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "126ee53418b7b5c897f499cca25613a0"
+      },
+      {
+        "continuation": "bet_above__067__v1200__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "31170ed1a795199594c000a6af890827"
+      },
+      {
+        "continuation": "bet_above__067__v1500__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "741be79b70e029170b622d8a2103a398"
+      },
+      {
+        "continuation": "bet_above__067__v1500__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "094bf6c2d5756e97f106a639928f70a4"
+      },
+      {
+        "continuation": "bet_above__067__v1500__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "8a2e5a12bb79b4c0c76fa33b1f4aa0e0"
+      },
+      {
+        "continuation": "bet_above__027__v300__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "32137e965e9685ee54798dbdf43167c7"
+      },
+      {
+        "continuation": "bet_above__027__v350__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "d0e0f8291c317072d95f243b941136b0"
+      },
+      {
+        "continuation": "bet_above__027__v350__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "74fd23ad094db454f34480b4e0c3f6bf"
+      },
+      {
+        "continuation": "bet_above__027__v400__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "6cab7c057fae9030ca554729739713ed"
+      },
+      {
+        "continuation": "bet_above__027__v450__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "ff6db965162cf71bbf9b36a5cae5ba3f"
+      },
+      {
+        "continuation": "bet_above__027__v500__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "e02f775ac2bcbd9142ad7a25b2e3bad5"
+      },
+      {
+        "continuation": "bet_above__027__v500__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "a82c16c856583affb7eaa9a820a6cab7"
+      },
+      {
+        "continuation": "bet_above__027__v500__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "f1a96a316fac36f07b2c22b5c2fcc21b"
+      },
+      {
+        "continuation": "bet_above__027__v700__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "41285089f29532ecd9eb338ff356cac9"
+      },
+      {
+        "continuation": "bet_above__027__v700__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "92709c20a5ce1010987822d7d259628b"
+      },
+      {
+        "continuation": "bet_above__027__v800__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "d69d8fd8bfb37b89ee4a830a7aebf221"
+      },
+      {
+        "continuation": "bet_above__018__v400__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "0e205b8c9bdbfc2f8e9ccb91e840db92"
+      },
+      {
+        "continuation": "bet_above__018__v400__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "f139fa1e8b319d3a6affaeb1547990f0"
+      },
+      {
+        "continuation": "bet_above__018__v400__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "edde7aa3360fd58899965ea81f856ae8"
+      },
+      {
+        "continuation": "bet_above__018__v400__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "ca6d00b30bcaf7b231b85965a3a16307"
+      },
+      {
+        "continuation": "bet_above__018__v600__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "d8e4c926c523708c8c9144760b966d60"
+      },
+      {
+        "continuation": "bet_above__018__v600__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "1025af5b61dee56d2f9b6cefd86d69ac"
+      },
+      {
+        "continuation": "bet_above__018__v600__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "a4cc63ec7664e77f539526b6a0aa62d7"
+      },
+      {
+        "continuation": "bet_above__018__v600__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "f40ac962c54bd5cd83c8fc49298ff5a2"
+      },
+      {
+        "continuation": "bet_above__018__v600__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "7e72b1f7ace0eac4284af96df7aa552f"
+      },
+      {
+        "continuation": "bet_above__018__v800__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "013f5313e981a23597870e7e90fb91a5"
+      },
+      {
+        "continuation": "bet_above__018__v800__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "f64d6ac53d33cc9b99e02c93627b386e"
+      },
+      {
+        "continuation": "bet_above__018__v1000__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "05393290e541249c2b79a6dd37819d25"
+      },
+      {
+        "continuation": "bet_above__053__v400__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "9cef01c1688e30142b5293e54ffaf127"
+      },
+      {
+        "continuation": "bet_above__053__v400__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "35466d6e9639771e58ba5a9f019d7f57"
+      },
+      {
+        "continuation": "bet_above__053__v400__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "0827ae24aa2a8b621f4a893677083dd5"
+      },
+      {
+        "continuation": "bet_above__053__v400__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "576b4eee954a87ea68f42a84c619d4b1"
+      },
+      {
+        "continuation": "bet_above__053__v450__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "1af2663c7c42ff4b95654cbb3c3ce2c2"
+      },
+      {
+        "continuation": "bet_above__053__v600__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "ccd1a5a19a7e0ddefaae2af80fc99e3f"
+      },
+      {
+        "continuation": "bet_below__048__v400__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "68830321323160e3f72ff85938f95661"
+      },
+      {
+        "continuation": "bet_below__048__v400__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "6e0bbcdff256d4a1f644590756580314"
+      },
+      {
+        "continuation": "bet_below__048__v400__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "db584495ebfb01c1b912e479b8d59174"
+      },
+      {
+        "continuation": "bet_below__048__v400__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "eb7ffe6fd5327f6a3aa5246073e4f4c2"
+      },
+      {
+        "continuation": "bet_below__048__v550__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "751787e4690d91a8c1bc0a308ebdcc44"
+      },
+      {
+        "continuation": "bet_below__048__v550__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "5a267ae51f9e1023e91015c24b5f936d"
+      },
+      {
+        "continuation": "bet_below__048__v700__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "6a7fed7ac8461a0007d381a953f67e5f"
+      },
+      {
+        "continuation": "bet_below__048__v700__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "437eb2f2dc42aafda7eb5860686efdfb"
+      },
+      {
+        "continuation": "bet_below__048__v750__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "e4f07e6cbf750557c4b4903a3c26ccd3"
+      },
+      {
+        "continuation": "bet_below__048__v750__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "b8a956e092696b992f822fcc3fac2177"
+      },
+      {
+        "continuation": "bet_below__048__v800__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "bd72f81e192de7914897ce19f28e7bc0"
+      },
+      {
+        "continuation": "bet_below__048__v800__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "1f5e36f1691c5a0b3a7def3402c21d7f"
+      },
+      {
+        "continuation": "bet_below__048__v800__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "25ccd17e86734780e38fe40b859d912d"
+      },
+      {
+        "continuation": "bet_below__048__v850__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "6373c5b97aea12dd6e7e087ee3a15b1c"
+      },
+      {
+        "continuation": "bet_below__048__v850__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "379fff1a5948c0b2d29032d111dd50cd"
+      },
+      {
+        "continuation": "bet_below__048__v850__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "bdbac82954431cb6c93f4c248a6d764a"
+      },
+      {
+        "continuation": "bet_below__054__v400__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "73fd8105ef2dbb57d6c77774b867a346"
+      },
+      {
+        "continuation": "bet_below__054__v400__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "e1874003a65155f3c7d7a2373622288d"
+      },
+      {
+        "continuation": "bet_below__054__v400__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "76b71cb174b2b01f582f3f33b719752c"
+      },
+      {
+        "continuation": "bet_below__054__v500__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "4296268b110b837153c49baf9cf608b9"
+      },
+      {
+        "continuation": "bet_below__054__v600__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "3e61bed4d92598e7e4adbe7e4fb352ac"
+      },
+      {
+        "continuation": "bet_below__054__v600__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "eda5316c5bfee61264627cf00a7b70d1"
+      },
+      {
+        "continuation": "bet_below__054__v600__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "dafee72249350df236341e61f1606bae"
+      },
+      {
+        "continuation": "bet_below__054__v600__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "c99a0b9e1fafb93b18f36995fd87bb5d"
+      },
+      {
+        "continuation": "bet_below__054__v600__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "827598fc048e4dbcc5c2b567708aad80"
+      },
+      {
+        "continuation": "bet_below__054__v800__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "bde8047ebc82762fb01846a8a9bef4f3"
+      },
+      {
+        "continuation": "bet_below__054__v800__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "320f90e8c5b1e516b687815d60a06a39"
+      },
+      {
+        "continuation": "bet_below__074__v250__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "2ed3d34b4e1a3df13ecc10b49b2d47e4"
+      },
+      {
+        "continuation": "bet_below__074__v250__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "fcf77d4675ad23595389d2db485798b2"
+      },
+      {
+        "continuation": "bet_below__074__v300__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "cf67fe6d789ecf7eabe69711513eefec"
+      },
+      {
+        "continuation": "bet_below__074__v300__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "dfa815ce9eea2e8fbfe3f1b52050d13e"
+      },
+      {
+        "continuation": "bet_below__074__v300__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "90e654e38e66135ac8f611b4b07635b4"
+      },
+      {
+        "continuation": "bet_below__074__v340__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "9d268db44942a0c936f7533d03bc3188"
+      },
+      {
+        "continuation": "bet_below__074__v340__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "27b8529fc437de8aedb239f124c0e034"
+      },
+      {
+        "continuation": "bet_below__074__v350__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "1e59f55e0c15e11e3880f4c600dc1018"
+      },
+      {
+        "continuation": "bet_below__074__v350__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "3b1e7fa7e392837b5d3ce74e8bae7f14"
+      },
+      {
+        "continuation": "bet_below__074__v400__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "78d5f05c3d4375acf52e280202e47f9d"
+      },
+      {
+        "continuation": "bet_below__087__v300__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "41522f7ef4f7b1f6cffc30fd8aa4c09b"
+      },
+      {
+        "continuation": "bet_below__087__v300__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "edaa5594ca3790b3eb2ebe9fe18dad7e"
+      },
+      {
+        "continuation": "bet_below__087__v350__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "4c0a665d9eeac96b6979eb0e3e22df18"
+      },
+      {
+        "continuation": "bet_below__087__v350__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "c35ce8ad30585daeac6337c6ca1a6ff3"
+      },
+      {
+        "continuation": "bet_below__087__v400__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "cd3b227c12a24026d7ffcb91cc937f59"
+      },
+      {
+        "continuation": "bet_below__087__v500__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "bbe4a4e1534a946d7a281b66137fa476"
+      },
+      {
+        "continuation": "bet_below__084__v300__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "d38fd219f1b91d8ec7887a6fbe2b35b4"
+      },
+      {
+        "continuation": "bet_below__084__v350__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "0a8c689e69ae5232aa1e383b3f8ae06c"
+      },
+      {
+        "continuation": "bet_below__084__v350__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "634418492b71a64b247c46d38e1136c3"
+      },
+      {
+        "continuation": "bet_below__084__v450__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "d2a8b035ca30772de41d54488c39d476"
+      },
+      {
+        "continuation": "bet_below__084__v450__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "a3b1b3a25b23b476c41a48650db892c9"
+      },
+      {
+        "continuation": "bet_below__084__v500__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "882d53687aa9d70732da1a5d224883a8"
+      },
+      {
+        "continuation": "bet_below__084__v500__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "05e84d7e6e6b0c8935d629b8aa040692"
+      },
+      {
+        "continuation": "bet_below__084__v500__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "d3977711108c2c86e7ea72902983e583"
+      },
+      {
+        "continuation": "bet_below__084__v500__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "882d53687aa9d70732da1a5d224883a8"
+      },
+      {
+        "continuation": "bet_below__070__v450__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "882d53687aa9d70732da1a5d224883a8"
+      },
+      {
+        "continuation": "bet_below__070__v450__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "2ceabb9fe2593afcaa990069144f2eed"
+      },
+      {
+        "continuation": "bet_below__070__v450__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "59cda1cca9f148283e843f2973223586"
+      },
+      {
+        "continuation": "bet_below__070__v500__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "52388258bdfda3bdf32da81f9521c30c"
+      },
+      {
+        "continuation": "bet_below__070__v600__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "122357c2d0e5b93a8597814f2cc1a04b"
+      },
+      {
+        "continuation": "bet_below__070__v600__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "20b32e86aa167677a2a8e8c41bb4944b"
+      },
+      {
+        "continuation": "bet_below__070__v600__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "9389b282476658864c76049bac831085"
+      },
+      {
+        "continuation": "bet_below__070__v600__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "3e61bed4d92598e7e4adbe7e4fb352ac"
+      },
+      {
+        "continuation": "bet_below__070__v650__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "a160eeff5d9acef7f6bed977acf78008"
+      },
+      {
+        "continuation": "bet_below__070__v650__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "bdbac82954431cb6c93f4c248a6d764a"
+      },
+      {
+        "continuation": "bet_below__070__v850__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "7d1f968dd094a3fb3c5e5daa247c21db"
+      },
+      {
+        "continuation": "bet_below__070__v850__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "94907956b141901d89c17db504f00e91"
+      },
+      {
+        "continuation": "bet_below__095__v350__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "e2801f877ab837f418729411055796ac"
+      },
+      {
+        "continuation": "bet_below__095__v350__02.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "9cf9ce99399021e073fa2e71b603e0f5"
+      },
+      {
+        "continuation": "bet_below__095__v380__04.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "e4c4f40af5df96cab19428631d6a69f0"
+      },
+      {
+        "continuation": "bet_below__095__v500__01.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "f70755a337cd8a8ac9e7aff5cd2619a1"
+      },
+      {
+        "continuation": "bet_below__095__v500__03.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "882d53687aa9d70732da1a5d224883a8"
+      },
+      {
+        "continuation": "bet_below__095__v600__00.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "cdaca713a0ca0f2fab303e689b413457"
+      },
+      {
+        "continuation": "bet_below__095__v600__05.json",
+        "reason": "missing cached judgment",
+        "expected_cache_stem": "a434442eee57d3a47e776df1aa3ad8a9"
+      }
+    ]
+  },
+  "traces": [
+    {
+      "trace_id": "bet_above__006",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "included_continuations": 4,
+          "median_final_answer": 40750000.0
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "included_continuations": 6,
+          "median_final_answer": 42000000.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 3,
+          "median_final_answer": 42600000.0
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "included_continuations": 4,
+          "median_final_answer": 44500000.0
+        }
+      ],
+      "spearman_rho": 1.0
+    },
+    {
+      "trace_id": "bet_above__037",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v250",
+          "inserted_value": 250,
+          "included_continuations": 5,
+          "median_final_answer": 35000000.0
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "included_continuations": 5,
+          "median_final_answer": 41500000.0
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "included_continuations": 3,
+          "median_final_answer": 35000000.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 6,
+          "median_final_answer": 41650000.0
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "included_continuations": 3,
+          "median_final_answer": 43000000.0
+        }
+      ],
+      "spearman_rho": 0.8207826816681233
+    },
+    {
+      "trace_id": "bet_above__007",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "included_continuations": 2,
+          "median_final_answer": 51000000.0
+        },
+        {
+          "variant": "v700",
+          "inserted_value": 700,
+          "included_continuations": 5,
+          "median_final_answer": 65000000.0
+        },
+        {
+          "variant": "v750",
+          "inserted_value": 750,
+          "included_continuations": 4,
+          "median_final_answer": 75000000.0
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "included_continuations": 3,
+          "median_final_answer": 55000000.0
+        },
+        {
+          "variant": "v950",
+          "inserted_value": 950,
+          "included_continuations": 5,
+          "median_final_answer": 60000000.0
+        }
+      ],
+      "spearman_rho": 0.2
+    },
+    {
+      "trace_id": "bet_above__073",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "included_continuations": 3,
+          "median_final_answer": 52000000.0
+        },
+        {
+          "variant": "v750",
+          "inserted_value": 750,
+          "included_continuations": 5,
+          "median_final_answer": 53000000.0
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "included_continuations": 3,
+          "median_final_answer": 50000000.0
+        }
+      ],
+      "spearman_rho": -0.5
+    },
+    {
+      "trace_id": "bet_above__067",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "included_continuations": 3,
+          "median_final_answer": 82000000.0
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "included_continuations": 2,
+          "median_final_answer": 48500000.0
+        },
+        {
+          "variant": "v1200",
+          "inserted_value": 1200,
+          "included_continuations": 5,
+          "median_final_answer": 63000000.0
+        },
+        {
+          "variant": "v1500",
+          "inserted_value": 1500,
+          "included_continuations": 3,
+          "median_final_answer": 100000000.0
+        }
+      ],
+      "spearman_rho": 0.4
+    },
+    {
+      "trace_id": "bet_above__027",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "included_continuations": 5,
+          "median_final_answer": 46000000.0
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "included_continuations": 4,
+          "median_final_answer": 39300000.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 5,
+          "median_final_answer": 48000000.0
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "included_continuations": 5,
+          "median_final_answer": 43000000.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "included_continuations": 3,
+          "median_final_answer": 46000000.0
+        },
+        {
+          "variant": "v700",
+          "inserted_value": 700,
+          "included_continuations": 4,
+          "median_final_answer": 47500000.0
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "included_continuations": 5,
+          "median_final_answer": 46500000.0
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "included_continuations": 6,
+          "median_final_answer": 48500000.0
+        }
+      ],
+      "spearman_rho": 0.5988131309566295
+    },
+    {
+      "trace_id": "bet_above__018",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 2,
+          "median_final_answer": 55000000.0
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "included_continuations": 1,
+          "median_final_answer": 67000000.0
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "included_continuations": 4,
+          "median_final_answer": 59000000.0
+        },
+        {
+          "variant": "v1000",
+          "inserted_value": 1000,
+          "included_continuations": 5,
+          "median_final_answer": 69000000.0
+        }
+      ],
+      "spearman_rho": 0.8
+    },
+    {
+      "trace_id": "bet_above__053",
+      "direction": "above",
+      "variants": [
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 2,
+          "median_final_answer": 46750000.0
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "included_continuations": 5,
+          "median_final_answer": 44500000.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "included_continuations": 6,
+          "median_final_answer": 47000000.0
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "included_continuations": 5,
+          "median_final_answer": 48000000.0
+        }
+      ],
+      "spearman_rho": 0.8
+    },
+    {
+      "trace_id": "bet_below__048",
+      "direction": "below",
+      "variants": [
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 2,
+          "median_final_answer": 39400000.0
+        },
+        {
+          "variant": "v550",
+          "inserted_value": 550,
+          "included_continuations": 4,
+          "median_final_answer": 45250000.0
+        },
+        {
+          "variant": "v650",
+          "inserted_value": 650,
+          "included_continuations": 6,
+          "median_final_answer": 50285000.0
+        },
+        {
+          "variant": "v700",
+          "inserted_value": 700,
+          "included_continuations": 4,
+          "median_final_answer": 53000000.0
+        },
+        {
+          "variant": "v750",
+          "inserted_value": 750,
+          "included_continuations": 4,
+          "median_final_answer": 46500000.0
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "included_continuations": 3,
+          "median_final_answer": 57000000.0
+        },
+        {
+          "variant": "v850",
+          "inserted_value": 850,
+          "included_continuations": 3,
+          "median_final_answer": 56500000.0
+        }
+      ],
+      "spearman_rho": 0.8571428571428571
+    },
+    {
+      "trace_id": "bet_below__054",
+      "direction": "below",
+      "variants": [
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 3,
+          "median_final_answer": 47000000.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "included_continuations": 5,
+          "median_final_answer": 47000000.0
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "included_continuations": 1,
+          "median_final_answer": 39000000.0
+        },
+        {
+          "variant": "v800",
+          "inserted_value": 800,
+          "included_continuations": 4,
+          "median_final_answer": 53000000.0
+        }
+      ],
+      "spearman_rho": 0.31622776601683794
+    },
+    {
+      "trace_id": "bet_below__074",
+      "direction": "below",
+      "variants": [
+        {
+          "variant": "v250",
+          "inserted_value": 250,
+          "included_continuations": 4,
+          "median_final_answer": 35750000.0
+        },
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "included_continuations": 3,
+          "median_final_answer": 36400000.0
+        },
+        {
+          "variant": "v340",
+          "inserted_value": 340,
+          "included_continuations": 4,
+          "median_final_answer": 38250000.0
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "included_continuations": 4,
+          "median_final_answer": 36000000.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 5,
+          "median_final_answer": 37400000.0
+        }
+      ],
+      "spearman_rho": 0.5
+    },
+    {
+      "trace_id": "bet_below__087",
+      "direction": "below",
+      "variants": [
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "included_continuations": 4,
+          "median_final_answer": 37250000.0
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "included_continuations": 4,
+          "median_final_answer": 39900000.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 5,
+          "median_final_answer": 40200000.0
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "included_continuations": 6,
+          "median_final_answer": 40400000.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "included_continuations": 5,
+          "median_final_answer": 44000000.0
+        }
+      ],
+      "spearman_rho": 1.0
+    },
+    {
+      "trace_id": "bet_below__084",
+      "direction": "below",
+      "variants": [
+        {
+          "variant": "v300",
+          "inserted_value": 300,
+          "included_continuations": 5,
+          "median_final_answer": 32300000.0
+        },
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "included_continuations": 4,
+          "median_final_answer": 34500000.0
+        },
+        {
+          "variant": "v400",
+          "inserted_value": 400,
+          "included_continuations": 6,
+          "median_final_answer": 38400000.0
+        },
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "included_continuations": 4,
+          "median_final_answer": 37000000.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "included_continuations": 2,
+          "median_final_answer": 26500000.0
+        }
+      ],
+      "spearman_rho": -0.1
+    },
+    {
+      "trace_id": "bet_below__070",
+      "direction": "below",
+      "variants": [
+        {
+          "variant": "v450",
+          "inserted_value": 450,
+          "included_continuations": 3,
+          "median_final_answer": 40000000.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "included_continuations": 5,
+          "median_final_answer": 40000000.0
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "included_continuations": 2,
+          "median_final_answer": 41500000.0
+        },
+        {
+          "variant": "v650",
+          "inserted_value": 650,
+          "included_continuations": 4,
+          "median_final_answer": 39000000.0
+        },
+        {
+          "variant": "v850",
+          "inserted_value": 850,
+          "included_continuations": 4,
+          "median_final_answer": 44350000.0
+        }
+      ],
+      "spearman_rho": 0.35909242322980395
+    },
+    {
+      "trace_id": "bet_below__095",
+      "direction": "below",
+      "variants": [
+        {
+          "variant": "v350",
+          "inserted_value": 350,
+          "included_continuations": 4,
+          "median_final_answer": 39000000.0
+        },
+        {
+          "variant": "v380",
+          "inserted_value": 380,
+          "included_continuations": 5,
+          "median_final_answer": 40000000.0
+        },
+        {
+          "variant": "v500",
+          "inserted_value": 500,
+          "included_continuations": 4,
+          "median_final_answer": 40500000.0
+        },
+        {
+          "variant": "v550",
+          "inserted_value": 550,
+          "included_continuations": 6,
+          "median_final_answer": 45000000.0
+        },
+        {
+          "variant": "v600",
+          "inserted_value": 600,
+          "included_continuations": 4,
+          "median_final_answer": 46000000.0
+        }
+      ],
+      "spearman_rho": 1.0
+    }
+  ],
+  "across_traces": {
+    "positive_correlations": 13,
+    "negative_correlations": 2,
+    "zero_correlations": 0,
+    "traces_total": 15,
+    "sign_test_n_nonzero": 15,
+    "two_sided_exact_sign_test_p": 0.00738525390625
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__095",
+  "sample_index": 16,
+  "prefix_sha256": "0a9921ffd823f67774806f28e9a343d6b1b18661eb12e1b37395661afee1022f",
+  "continuation": "\n        *   Average estimate per giraffe: **500**.\n\n4.  **Calculation:**\n    *   Total Giraffes: 120,000\n    *   Average Spots per Giraffe: 500\n    *   Total Spots = 120,000 * 500 = 60,000,000.\n\n5.  **Re-evaluating the \"Spot\" Definition:**\n    *   Are all dark patches counted? Yes, usually.\n    *   Is the number 500 too high?\n        *   If a giraffe is 16 sq meters of surface area?\n        *   If a spot is 2cm x 2cm? That's 36,000 spots? No, spots are irregular.\n        *   Let's look for specific data points.\n        *   A 2016 study (or similar) on giraffe patterns often mentions \"hundreds\".\n        *   Some sources cite an average of **300 to 400** spots for a typical adult.\n        *   If I use 300 spots * 115,000 giraffes = 34,500,000.\n        *   If I use 500 spots * 120,000 giraffes = 60,000,000.\n    *   Where does the 41,000,000 threshold sit? It's right in the middle of these plausible ranges.\n\n6.  **Refining the Population Count:**\n    *   IUCN Red List (2016/2018 update): ~111,000 in the wild.\n    *   Zoo population (AZA/EAZA data): ~2,000? Maybe 5% of wild? Let's say 117,000 total.\n    *   Let's stick with 117,000.\n\n7.  **Refining the Spot Count:**\n    *   This is the biggest source of error.\n    *   A giraffe's neck is dense. The legs are sparse. The belly is sparse.\n    *   Reticulated giraffes have many small, distinct spots. Masai giraffes have jagged, fewer, larger patches.\n    *   If we average across all four current subspecies (Reticulated, Masai, Plain, Thornicroft's - though Thornicroft's is often considered a sub of Plain/Reticulated, and Kordofan/Nigerian exist):\n    *   Reticulated: High density. Maybe 60",
+  "content": "0",
+  "proposed_step": "        *   Average estimate per giraffe: **500**.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 995,
+    "total_tokens": 1595,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 423,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00172855,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00172855,
+      "upstream_inference_prompt_cost": 0.00028855,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

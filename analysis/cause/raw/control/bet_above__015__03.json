@@ -1,0 +1,49 @@
+{
+  "trace_id": "bet_above__015",
+  "kind": "control",
+  "sample_index": 3,
+  "text": "\n        *   A single adult giraffe has hundreds, possibly thousands of spots depending on how you define a \"spot\" (e.g., a large patch vs. small fragmentation).\n        *   Research/Patterns:\n            *   Some studies count distinct melanized patches.\n            *   A typical adult giraffe neck and body might have significantly many spots.\n            *   Let's try to find a baseline. A common estimate found in trivia or biological approximations is often cited in the thousands per animal?\n            *   Actually, looking at images, the spots merge. Some are large, some small.\n            *   If we count every distinct polygon:\n                *   Neck: maybe 50-100?\n                *   Body (flank, back): maybe 200-500?\n                *   Legs: maybe 100-200?\n            *   Total per giraffe: Could be 500 to 1,000? Or even more if counting tiny fragments.\n            *   Let's look for scientific data.\n            *   A study \"The evolution of giraffe coat patterns\" might not give exact counts.",
+  "text_source": "reasoning",
+  "reasoning": "\n        *   A single adult giraffe has hundreds, possibly thousands of spots depending on how you define a \"spot\" (e.g., a large patch vs. small fragmentation).\n        *   Research/Patterns:\n            *   Some studies count distinct melanized patches.\n            *   A typical adult giraffe neck and body might have significantly many spots.\n            *   Let's try to find a baseline. A common estimate found in trivia or biological approximations is often cited in the thousands per animal?\n            *   Actually, looking at images, the spots merge. Some are large, some small.\n            *   If we count every distinct polygon:\n                *   Neck: maybe 50-100?\n                *   Body (flank, back): maybe 200-500?\n                *   Legs: maybe 100-200?\n            *   Total per giraffe: Could be 500 to 1,000? Or even more if counting tiny fragments.\n            *   Let's look for scientific data.\n            *   A study \"The evolution of giraffe coat patterns\" might not give exact counts.",
+  "content": "",
+  "suggested_first_chunk": "        *   A single adult giraffe has hundreds, possibly thousands of spots depending on how you define a \"spot\" (e.g., a large patch vs. small fragmentation).\n        *   Research/Patterns:\n            *   Some studies count distinct melanized patches.\n            *   A typical adult giraffe neck and body might have significantly many spots.\n            *   Let's try to find a baseline. A common estimate found in trivia or biological approximations is often cited in the thousands per animal?\n            *   Actually, looking at images, the spots merge. Some are large, some small.\n            *   If we count every distinct polygon:\n                *   Neck: maybe 50-100?\n                *   Body (flank, back): maybe 200-500?\n                *   Legs: maybe 100-200?\n            *   Total per giraffe: Could be 500 to 1,000? Or even more if counting tiny fragments.\n            *   Let's look for scientific data.\n            *   A study \"The evolution of giraffe coat patterns\" might not give exact counts.\n",
+  "number_mentions": [
+    "50",
+    "-100",
+    "200",
+    "-500",
+    "100",
+    "-200",
+    "500 ",
+    "1,000"
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 777,
+    "total_tokens": 1033,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 259,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00083973,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00083973,
+      "upstream_inference_prompt_cost": 0.00022533,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

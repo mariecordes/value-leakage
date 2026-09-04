@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__092",
+  "sample_index": 2,
+  "prefix_sha256": "6bc9267a54814e6b6cc88f6eff68ceffdd705048f25bb83ef009abc3f965c475",
+  "continuation": "\n        *   Most subspecies (Masai, Reticulated) are high density. Southern are lower.\n        *   Masai (approx 60% of wild population? No, maybe 45%). Masai spots are very numerous.\n        *   If Masai = 10-20cm spots. Body surface area ~20sqm.\n        *   Actually, let's search for \"average number of spots on a giraffe\" specifically.\n        *   Result from general knowledge retrieval: There isn't a definitive scientific census of spot counts. However, estimates typically range from **300 to 600**.\n        *   Let's assume a conservative average of **450 spots**.\n        *   Population: 117,000.\n        *   Total = 117,000 * 450 = 52,650,000.\n        *   This exceeds 41M.\n\n    *   **Alternative View (Conservative):**\n        *   Maybe the population is lower? 2016 census was 97,000. Maybe 100,000 is safer.\n        *   Maybe spots are lower? If average is 350.\n        *   100,000 * 350 = 35,000,000 (Below threshold).\n        *   Which is more accurate?\n        *   IUCN Red List 2018: 111,000.\n        *   GCF 2022: \"There are estimated to be around 115,000 giraffes in the wild.\" Plus ~1,400 in captivity (AZA). Total ~116,400.\n        *   Let's stick with **115,000**.\n        *   Spot count:\n            *   Subspecies breakdown (approximate % of 115k):\n                *   Masai (most numerous, East Africa): ~50,000. High spot density.\n                *   Southern (Kalahari/South Africa): ~30,000. Medium/Low density.\n                *   Reticulated (Kenya): ~20,000. High density.\n                *   Northern (very rare): ~15,000 total including Reticulated? No, Reticulated is separate. Northern (Nubian/Kordofan) is < 10,000 total.\n                *   West African: ~1,000.\n            *   Masai spots: Jagged, many. Often cited as having the",
+  "content": " most",
+  "proposed_step": "        *   Most subspecies (Masai, Reticulated) are high density. Southern are lower.\n        *   Masai (approx 60% of wild population? No, maybe 45%). Masai spots are very numerous.\n        *   If Masai = 10-20cm spots. Body surface area ~20sqm.\n        *   Actually, let's search for \"average number of spots on a giraffe\" specifically.\n        *   Result from general knowledge retrieval: There isn't a definitive scientific census of spot counts. However, estimates typically range from **300 to 600**.\n        *   Let's assume a conservative average of **450 spots**.\n        *   Population: 117,000.\n        *   Total = 117,000 * 450 = 52,650,000.\n        *   This exceeds 41M.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 2359,
+    "total_tokens": 2959,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 449,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00212411,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00212411,
+      "upstream_inference_prompt_cost": 0.00068411,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

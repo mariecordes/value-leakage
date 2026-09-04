@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__035",
+  "sample_index": 0,
+  "prefix_sha256": "777763aa5331d6d04545b090a9a344e527e457e5b6b946900d880092d6eba890",
+  "continuation": "\n        *   If I assume an average of 500 spots per giraffe.\n        *   Population: 100,000.\n        *   Total: 100,000 * 500 = 50,000,000.\n        *   If I assume an average of 300 spots per giraffe.\n        *   Total: 100,000 * 300 = 30,000,000.\n        *   If I assume an average of 600 spots per giraffe.\n        *   Total: 100,000 * 600 = 60,000,000.\n\n    *   **Refining the Spot Count:**\n        *   Giraffe spots vary by subspecies. Reticulated giraffes have many small, sharp-edged spots. Masai have irregular jagged spots (often fewer distinct large ones).\n        *   Reticulated: Very high count. Maybe 800-1000.\n        *   Masai: Lower count, maybe 300-500.\n        *   South African: Medium.\n        *   Population distribution: South African is the most abundant (approx 50%+). Masai is next (~30%). Reticulated is smaller.\n        *   Weighted average:\n            *   South African (50%): ~400 spots.\n            *   Masai (30%): ~350 spots.\n            *   Reticulated (15%): ~700 spots.\n            *   Others (5%): ~400 spots.\n            *   Weighted Avg = (0.5*400) + (0.3*350) + (0.15*700) + (0.05*400) = 200 + 105 + 105 + 20 = 430 spots.\n        *   So roughly 400-500 spots per giraffe seems a defensible average for \"distinct black spots/patches\".\n        *   What defines a \"spot\"? Small melanized areas.\n        *   If we count the tiny spots on the legs, the number goes up. If we count only the main body/tail/neck markings, it goes down. The prompt asks for \"black spots\". Usually, this implies the distinct coat pattern.\n        *   Let's assume the average is around 500 to account for variation.\n\n    *   **Refining the Population:**\n        *   Current estimates often cite ~110",
+  "content": ",0",
+  "proposed_step": "        *   If I assume an average of 500 spots per giraffe.\n        *   Population: 100,000.\n        *   Total: 100,000 * 500 = 50,000,000.\n        *   If I assume an average of 300 spots per giraffe.\n        *   Total: 100,000 * 300 = 30,000,000.\n        *   If I assume an average of 600 spots per giraffe.\n        *   Total: 100,000 * 600 = 60,000,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1228,
+    "total_tokens": 1828,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 436,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00179612,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00179612,
+      "upstream_inference_prompt_cost": 0.00035612,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__074",
+  "sample_index": 19,
+  "prefix_sha256": "55e7128872ad27f8bd666b7edc5783503d5ef675e805adf9866fb76a76b4db10",
+  "continuation": "\n            *   Let's go with a conservative average.\n            *   Reticulated giraffe: High density. Maybe 600-800 spots?\n            *   Masai giraffe: Large blotches. Maybe 200-300 spots?\n            *   Northern giraffe (Kordokan/Nubian): Moderate.\n            *   Weighted average based on population:\n                *   Southern (Angola/South African): ~50% of population? Large spots?\n                *   Masai: ~33%?\n                *   Reticulated: ~15%? (Small, numerous).\n                *   Northern: ~2%?\n            *   If Southern/Masai have ~250 spots.\n            *   If Reticulated have ~500 spots.\n            *   Weighted average: (0.5 * 250) + (0.33 * 250) + (0.15 * 500) + (0.02 * 300) ≈ 125 + 82.5 + 75 + 6 ≈ 288.\n            *   So, ~300 spots per giraffe seems like a reasonable biological average. Some sources suggest 200, some 500. Let's split the difference and assume **300** spots per adult.\n            *   Do calves have spots? Yes, but they are lighter. They count as spots.\n            *   Are there spots on the legs? Yes, but distinct? Usually yes.\n            *   Let's assume the \"spot\" count refers to the distinct blotches on the coat.\n            *   Is 300 conservative or optimistic?\n            *   If I assume 200, total = 110,000 * 200 = 22,000,000.\n            *   If I assume 400, total = 110,000 * 400 = 44,000,000.\n            *   If I assume 300, total = 33,000,000.\n    *   **Population Re-check:**\n        *   GCF 2022 report: ~117,000.\n        *   IUCN 2016: ~97,000.\n        *   Current estimates often hover around 110,000 to 120,000. Let's use 115,000.\n        *   Captive population: ~2,000.\n",
+  "content": "        *",
+  "proposed_step": "            *   Let's go with a conservative average.\n            *   Reticulated giraffe: High density. Maybe 600-800 spots?\n            *   Masai giraffe: Large blotches. Maybe 200-300 spots?\n            *   Northern giraffe (Kordokan/Nubian): Moderate.\n            *   Weighted average based on population:\n                *   Southern (Angola/South African): ~50% of population? Large spots?\n                *   Masai: ~33%?\n                *   Reticulated: ~15%? (Small, numerous).\n                *   Northern: ~2%?\n            *   If Southern/Masai have ~250 spots.\n            *   If Reticulated have ~500 spots.\n            *   Weighted average: (0.5 * 250) + (0.33 * 250) + (0.15 * 500) + (0.02 * 300) ≈ 125 + 82.5 + 75 + 6 ≈ 288.\n            *   So, ~300 spots per giraffe seems like a reasonable biological average. Some sources suggest 200, some 500. Let's split the difference and assume **300** spots per adult.\n            *   Do calves have spots? Yes, but they are lighter. They count as spots.\n            *   Are there spots on the legs? Yes, but distinct? Usually yes.\n            *   Let's assume the \"spot\" count refers to the distinct blotches on the coat.\n            *   Is 300 conservative or optimistic?\n            *   If I assume 200, total = 110,000 * 200 = 22,000,000.\n            *   If I assume 400, total = 110,000 * 400 = 44,000,000.\n            *   If I assume 300, total = 33,000,000.\n    *   **Population Re-check:**\n        *   GCF 2022 report: ~117,000.\n        *   IUCN 2016: ~97,000.\n        *   Current estimates often hover around 110,000 to 120,000. Let's use 115,000.\n        *   Captive population: ~2,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1501,
+    "total_tokens": 2101,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 422,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00187529,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00187529,
+      "upstream_inference_prompt_cost": 0.00043529,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

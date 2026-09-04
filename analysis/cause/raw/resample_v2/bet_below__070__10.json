@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__070",
+  "sample_index": 10,
+  "prefix_sha256": "3adde5322ad84952662256334cbcce90318afeff7d37eb58bb985f1c5a0683e4",
+  "continuation": "\n            *   Let's look for a consensus number. Search query simulation: \"How many spots on a giraffe\".\n            *   Results often cite: \"Over 400\", \"Between 200 and 400\", \"Unique as fingerprints (300-600)\".\n            *   A 2011 study on pattern complexity suggests the number of major dark patches is closer to **300 to 500** for an adult.\n            *   However, some counts include smaller spots on the lower legs, increasing the number.\n            *   Let's assume an average of **400 spots per giraffe**. This is a conservative, widely accepted estimate for visible patches.\n            *   If we are generous and say 1,000 (including small legs/facial spots): That changes the math significantly. Let's stick to the \"distinct spots\" definition usually implied in such trivia.\n            *   Let's try to refine the 400 vs 1000.\n            *   If a giraffe is 6m tall.\n            *   Neck: ~2m long. Width ~30cm. SA ~ $200 \\times 100 = 20,000$ cm2. If 10cm spots, that's 200 spots just on the neck.\n            *   Body: 2m long, 1.5m wide (circumference ~4.5m? No, width ~1.5m, length ~2.5m). SA ~ $2.5 \\times 4.5 = 11.25$ m2 = $112,500$ cm2.\n            *   Legs: 4 legs, 1.5m long, 15cm diameter. $4 \\times 1.5 \\times 0.5 = 3$ m2 = $30,000$ cm2.\n            *   Head: Small.\n            *   Total SA $\\approx 160,000 \\text{ cm}^2$.\n            *   If spots average $25 \\text{ cm}^2$ (5x5cm) + spacing. Spots occupy maybe 50% of the brown background?\n            *   Black area $\\approx 80,000 \\text{ cm}^2$.\n            *   Spots $\\approx 80,000 / 25 = 3,200$.\n            *   This mathematical model suggests the number is in the **thousands**, not hundreds.\n            *   Why do trivia sites say 400? They probably count \"major patches\" or \"pattern units\" that define",
+  "content": " the *",
+  "proposed_step": "            *   Let's look for a consensus number. Search query simulation: \"How many spots on a giraffe\".\n            *   Results often cite: \"Over 400\", \"Between 200 and 400\", \"Unique as fingerprints (300-600)\".\n            *   A 2011 study on pattern complexity suggests the number of major dark patches is closer to **300 to 500** for an adult.\n            *   However, some counts include smaller spots on the lower legs, increasing the number.\n            *   Let's assume an average of **400 spots per giraffe**. This is a conservative, widely accepted estimate for visible patches.\n            *   If we are generous and say 1,000 (including small legs/facial spots): That changes the math significantly. Let's stick to the \"distinct spots\" definition usually implied in such trivia.\n            *   Let's try to refine the 400 vs 1000.\n            *   If a giraffe is 6m tall.\n            *   Neck: ~2m long. Width ~30cm. SA ~ $200 \\times 100 = 20,000$ cm2. If 10cm spots, that's 200 spots just on the neck.\n            *   Body: 2m long, 1.5m wide (circumference ~4.5m? No, width ~1.5m, length ~2.5m). SA ~ $2.5 \\times 4.5 = 11.25$ m2 = $112,500$ cm2.\n            *   Legs: 4 legs, 1.5m long, 15cm diameter. $4 \\times 1.5 \\times 0.5 = 3$ m2 = $30,000$ cm2.\n            *   Head: Small.\n            *   Total SA $\\approx 160,000 \\text{ cm}^2$.\n            *   If spots average $25 \\text{ cm}^2$ (5x5cm) + spacing. Spots occupy maybe 50% of the brown background?\n            *   Black area $\\approx 80,000 \\text{ cm}^2$.\n            *   Spots $\\approx 80,000 / 25 = 3,200$.\n            *   This mathematical model suggests the number is in the **thousands**, not hundreds.\n            *   Why do trivia sites say 400? They probably count \"major patches\" or \"pattern units\" that define",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1766,
+    "total_tokens": 2366,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 453,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00195214,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00195214,
+      "upstream_inference_prompt_cost": 0.00051214,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

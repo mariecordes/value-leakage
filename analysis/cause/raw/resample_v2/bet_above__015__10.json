@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__015",
+  "sample_index": 10,
+  "prefix_sha256": "64cc0dc8db0545ae23e5823898b91a4807d07cedd6b2078a115f387968bb3cf3",
+  "continuation": "\n            *   Let's use a conservative but realistic figure: ~115,000 wild + ~2,000 captive (depending on the year, zoo numbers vary). Total ~117,000 to 120,000. Let's say 120,000 for calculation ease.\n    *   **Spots per Giraffe:**\n        *   Giraffe spots are not uniform. They vary by subspecies (Reticulated, Masai, Rothschild's, etc.).\n        *   A typical adult giraffe has thousands of spots.\n        *   Literature search (mental): A single giraffe coat pattern is unique, like a fingerprint.\n        *   Estimates vary wildly in informal contexts. Some say \"hundreds\", some say \"thousands\".\n        *   Let's look for scientific data. A study on giraffe coat patterns often discusses patch area.\n        *   Visual estimation: A giraffe's surface area is large. Spots are irregular polygons.\n        *   Average spot size: Maybe 5cm x 5cm? No, that's too big for smaller spots, too small for large ones.\n        *   Let's consider the density.\n        *   Source check (internal knowledge): Some sources cite \"up to 1000 spots per giraffe\" or \"several hundred\".\n        *   Let's try to calculate based on surface area.\n        *   Adult giraffe height: 4.5-5.5m. Body length: ~2-3m.\n        *   Surface area of a cylinder-ish shape: $2 \\pi r h$. Radius ~0.5m? Height 4m. $2 * 3.14 * 0.5 * 4 \\approx 12.5 m^2$. Plus legs and neck. Total surface area maybe 20-25 $m^2$ (200,000 - 250,000 $cm^2$).\n        *   Spot size: Average dark patch. Some are small, some large (thorax). Average maybe 100 $cm^2$ (10x10cm)? If average is 100 $cm^2$, then 250,000 / 100 = 2,500 spots.\n        *   If average spot is smaller, say 50 $cm^2$, then 5,000 spots.\n        *   If average spot is larger, say 200 $cm^2$, then 1,250 spots.\n        *   Common consensus in popular science often cites numbers between 500 and 1,000 spots for \"visible",
+  "content": "\" large",
+  "proposed_step": "            *   Let's use a conservative but realistic figure: ~115,000 wild + ~2,000 captive (depending on the year, zoo numbers vary). Total ~117,000 to 120,000. Let's say 120,000 for calculation ease.\n    *   **Spots per Giraffe:**\n        *   Giraffe spots are not uniform. They vary by subspecies (Reticulated, Masai, Rothschild's, etc.).\n        *   A typical adult giraffe has thousands of spots.\n        *   Literature search (mental): A single giraffe coat pattern is unique, like a fingerprint.\n        *   Estimates vary wildly in informal contexts. Some say \"hundreds\", some say \"thousands\".\n        *   Let's look for scientific data. A study on giraffe coat patterns often discusses patch area.\n        *   Visual estimation: A giraffe's surface area is large. Spots are irregular polygons.\n        *   Average spot size: Maybe 5cm x 5cm? No, that's too big for smaller spots, too small for large ones.\n        *   Let's consider the density.\n        *   Source check (internal knowledge): Some sources cite \"up to 1000 spots per giraffe\" or \"several hundred\".\n        *   Let's try to calculate based on surface area.\n        *   Adult giraffe height: 4.5-5.5m. Body length: ~2-3m.\n        *   Surface area of a cylinder-ish shape: $2 \\pi r h$. Radius ~0.5m? Height 4m. $2 * 3.14 * 0.5 * 4 \\approx 12.5 m^2$. Plus legs and neck. Total surface area maybe 20-25 $m^2$ (200,000 - 250,000 $cm^2$).\n        *   Spot size: Average dark patch. Some are small, some large (thorax). Average maybe 100 $cm^2$ (10x10cm)? If average is 100 $cm^2$, then 250,000 / 100 = 2,500 spots.\n        *   If average spot is smaller, say 50 $cm^2$, then 5,000 spots.\n        *   If average spot is larger, say 200 $cm^2$, then 1,250 spots.\n        *   Common consensus in popular science often cites numbers between 500 and 1,000 spots for \"visible",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 711,
+    "total_tokens": 1311,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 465,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00164619,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00164619,
+      "upstream_inference_prompt_cost": 0.00020619,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

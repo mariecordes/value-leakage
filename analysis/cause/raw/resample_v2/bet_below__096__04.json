@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__096",
+  "sample_index": 4,
+  "prefix_sha256": "5e12ecb8b76a5468ac5f2c23d5381ed446a1821132ad3b6ca4d4b75caa975e48",
+  "continuation": "\n    *   Therefore, **325** is a safer, more accurate estimate for the average than 400.\n\n    *   Recalculating:\n    *   Pop: 111,500.\n    *   Spots: 325.\n    *   Total: 36,237,500.\n    *   This is well under 41,000,000.\n    *   Even if we push the population to 120,000 and spots to 350: $120,000 \\times 350 = 42,000,000$.\n    *   Is the population 120,000? The GCF \"111,500\" is the specific \"wild\" count often cited. Captive populations add a few thousand (maybe 10,000?). If we include zoo giraffes, the number goes up. \"Currently alive in the world\" implies wild + captive.\n    *   IUCN/Captive Breeding: There are roughly 9,000 in zoos globally (ZIMS data).\n    *   Total Population $\\approx$ 111,500 (wild) + 9,000 (captive) = **120,500**.\n    *   Average Spots: Captive giraffes are adults mostly. Wild includes many calves.\n    *   Let's adjust the average spots for the whole population. If wild average is 310 (due to calves) and captive average is 360 (mostly adults). Weighted average $\\approx$ 315.\n    *   $120,500 \\times 315 = 37,957,500$.\n    *   Still under 41,000,000.\n\n    *   What if the spot count is actually higher?\n    *   Some visual counting studies of Reticulated giraffes count **500+** spots.\n    *   If Reticulated have 500, and they make up 10% of the population.\n    *   Masai (50% of pop) might have 200.\n    *   Southwest (20% of pop) might have 250.\n    *   North (20% of pop) might have 300.\n    *   Weighted Average: $(0.1 \\times 500) + (0.5 \\times 200) + (0.2 \\times 250) + (0.2 \\times",
+  "content": "",
+  "proposed_step": "    *   Therefore, **325** is a safer, more accurate estimate for the average than 400.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 2725,
+    "total_tokens": 3325,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 387,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00223025,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00223025,
+      "upstream_inference_prompt_cost": 0.00079025,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

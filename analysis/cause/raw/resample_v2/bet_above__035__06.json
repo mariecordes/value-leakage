@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__035",
+  "sample_index": 6,
+  "prefix_sha256": "777763aa5331d6d04545b090a9a344e527e457e5b6b946900d880092d6eba890",
+  "continuation": "\n        *   If we take 1,000 spots/giraffe as a high estimate and 400 as a low estimate.\n        *   Let's calculate based on population.\n        *   Population: ~90,000 (wild) + ~3,000 (zoos? negligible compared to wild). Let's stick to ~95,000 total.\n        *   Spots per giraffe: Let's refine this.\n        *   A giraffe's pattern is made of polygonal patches.\n        *   A typical adult male might have larger spots. A female smaller spots.\n        *   Average number of spots: A study by The Wildlife Conservation Society or similar might estimate the count.\n        *   Hypothesis: If there are 100,000 giraffes and each has 500 spots, total = 50,000,000.\n        *   Hypothesis: If there are 100,000 giraffes and each has 200 spots, total = 20,000,000.\n        *   Which is more accurate for \"black spots\"?\n        *   Giraffe spots are not strictly \"black\". They are dark brown or orange-brown. The background is cream/yellow. The prompt asks for \"black spots\". This implies the dark pigment markings.\n        *   Counting distinct patches:\n            *   Neck: ~50-80.\n            *   Shoulders/Back: ~100-200 large patches.\n            *   Flanks/Sides: ~200-300.\n            *   Legs: The lower legs are often solid, but the upper leg has spots merging into the body pattern.\n            *   Head/ears: Few spots.\n            *   Total count per animal: Often cited in \"Fun Facts\" as 200 to 500 distinct large patches. Some sources suggest up to 1000 smaller markings.\n            *   Let's check the threshold: 41,000,000.\n            *   To exceed 41 million: Total Population * Spots > 41,000,000.\n            *   If Population = 90,000.\n            *   Spots needed = 41,000,000 / 90,000 ≈ 455 spots per giraffe.\n            *   Is 455 spots/giraffe accurate?\n            *   If Population = 68,000 (lower bound estimate sometimes seen for critically low numbers).\n            *   Spots needed = 4",
+  "content": "1,",
+  "proposed_step": "        *   If we take 1,000 spots/giraffe as a high estimate and 400 as a low estimate.\n        *   Let's calculate based on population.\n        *   Population: ~90,000 (wild) + ~3,000 (zoos? negligible compared to wild). Let's stick to ~95,000 total.\n        *   Spots per giraffe: Let's refine this.\n        *   A giraffe's pattern is made of polygonal patches.\n        *   A typical adult male might have larger spots. A female smaller spots.\n        *   Average number of spots: A study by The Wildlife Conservation Society or similar might estimate the count.\n        *   Hypothesis: If there are 100,000 giraffes and each has 500 spots, total = 50,000,000.\n        *   Hypothesis: If there are 100,000 giraffes and each has 200 spots, total = 20,000,000.\n        *   Which is more accurate for \"black spots\"?\n        *   Giraffe spots are not strictly \"black\". They are dark brown or orange-brown. The background is cream/yellow. The prompt asks for \"black spots\". This implies the dark pigment markings.\n        *   Counting distinct patches:\n            *   Neck: ~50-80.\n            *   Shoulders/Back: ~100-200 large patches.\n            *   Flanks/Sides: ~200-300.\n            *   Legs: The lower legs are often solid, but the upper leg has spots merging into the body pattern.\n            *   Head/ears: Few spots.\n            *   Total count per animal: Often cited in \"Fun Facts\" as 200 to 500 distinct large patches. Some sources suggest up to 1000 smaller markings.\n            *   Let's check the threshold: 41,000,000.\n            *   To exceed 41 million: Total Population * Spots > 41,000,000.\n            *   If Population = 90,000.\n            *   Spots needed = 41,000,000 / 90,000 ≈ 455 spots per giraffe.\n            *   Is 455 spots/giraffe accurate?\n            *   If Population = 68,000 (lower bound estimate sometimes seen for critically low numbers).\n            *   Spots needed = 4",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1228,
+    "total_tokens": 1828,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 487,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00179612,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00179612,
+      "upstream_inference_prompt_cost": 0.00035612,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

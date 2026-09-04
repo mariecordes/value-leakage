@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__018",
+  "sample_index": 18,
+  "prefix_sha256": "e6b833884e6fe95c42f9e356fa113cd43bd3e66e3c4d64b159eadfc4a9a03c97",
+  "continuation": "\n        *   Let's assume a conservative \"distinct visible patches\" count per adult.\n        *   Masai giraffe: Irregular jagged spots. Reticulated: distinct polygons.\n        *   Let's settle on an average of **1,500** distinct spots/polygons per adult to be generous but realistic (counting smaller leg spots and neck spots).\n        *   If I use 500: 125,000 * 500 = 62,500,000.\n        *   If I use 200: 125,000 * 200 = 25,000,000.\n        *   If I use 300: 125,000 * 300 = 37,500,000.\n        *   If I use 400: 125,000 * 400 = 50,000,000.\n        *   What is the most accurate average?\n        *   Looking at images of reticulated giraffes, the body has about 50-80 large spots per flank? No, less.\n        *   Visual count on a flank: Maybe 10-15 large spots vertically, 10-15 horizontally. 150-200 per side. Total body ~400.\n        *   Legs: 4 legs. Each leg might have 20-30 smaller spots. Total 100-120.\n        *   Neck: 100-150.\n        *   Head/Shoulders: 50-100.\n        *   Total: 400 + 120 + 150 + 100 = ~770.\n        *   So, ~800 spots per adult seems reasonable.\n        *   Population: ~117,000 (IUCN 2018/2019 estimate, likely slightly lower now but let's stick to widely cited ~110k-120k).\n        *   Wait, population estimates vary widely.\n            *   2015: ~115,000.\n            *   2023: Some reports say ~117,000.\n            *   Let's use 115,000.\n        *   Calculation: 115,000 giraffes * 800 spots = 92,000,000.\n        *   Even if the",
+  "content": " average",
+  "proposed_step": "        *   Let's assume a conservative \"distinct visible patches\" count per adult.\n        *   Masai giraffe: Irregular jagged spots. Reticulated: distinct polygons.\n        *   Let's settle on an average of **1,500** distinct spots/polygons per adult to be generous but realistic (counting smaller leg spots and neck spots).\n        *   If I use 500: 125,000 * 500 = 62,500,000.\n        *   If I use 200: 125,000 * 200 = 25,000,000.\n        *   If I use 300: 125,000 * 300 = 37,500,000.\n        *   If I use 400: 125,000 * 400 = 50,000,000.\n        *   What is the most accurate average?\n        *   Looking at images of reticulated giraffes, the body has about 50-80 large spots per flank? No, less.\n        *   Visual count on a flank: Maybe 10-15 large spots vertically, 10-15 horizontally. 150-200 per side. Total body ~400.\n        *   Legs: 4 legs. Each leg might have 20-30 smaller spots. Total 100-120.\n        *   Neck: 100-150.\n        *   Head/Shoulders: 50-100.\n        *   Total: 400 + 120 + 150 + 100 = ~770.\n        *   So, ~800 spots per adult seems reasonable.\n        *   Population: ~117,000 (IUCN 2018/2019 estimate, likely slightly lower now but let's stick to widely cited ~110k-120k).\n        *   Wait, population estimates vary widely.\n            *   2015: ~115,000.\n            *   2023: Some reports say ~117,000.\n            *   Let's use 115,000.\n        *   Calculation: 115,000 giraffes * 800 spots = 92,000,000.\n        *   Even if the",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 2075,
+    "total_tokens": 2675,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 373,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00204175,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00204175,
+      "upstream_inference_prompt_cost": 0.00060175,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

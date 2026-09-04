@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__055",
+  "sample_index": 6,
+  "prefix_sha256": "e5214b7a9f92f84e22d3d29c39f114ff6f6d244ac85d193ab4032e10fbef4edf",
+  "continuation": "\n            *   Let's take the average of that range: 400 spots per giraffe.\n            *   Wait, is \"black spots\" the right term? Giraffe spots are brown/orange/black depending on species. Reticulated giraffes have dark brown/black spots. Masai have dark brown jagged patches. Assume the user means the pigmented patches (dark color).\n            *   If the average is 300, and population is 100,000. Total = 30,000,000.\n            *   If the average is 400, and population is 100,000. Total = 40,000,000.\n            *   If the average is 500, and population is 100,000. Total = 50,000,000.\n            *   If the population is 97,500 and spots are 400. Total = 39,000,000.\n            *   If the population is 110,000 and spots are 400. Total = 44,000,000.\n\n4.  **Refining the Numbers:**\n    *   *Population:* The most widely accepted current estimate for wild giraffes is approximately **97,500** (per IUCN Red List 2018, cited in subsequent years). Some newer studies suggest a recovery or adjustment, but 100,000 is a safe upper bound for \"currently alive\". Let's use 100,000 to include captive populations and potential slight undercounts.\n    *   *Spots Count:* This is highly variable by species.\n        *   Reticulated: Very distinct, many small spots. Could be 400-600?\n        *   Masai: Large, jagged, fewer in count. Maybe 150-250?\n        *   Rothschild's: Intermediate.\n        *   Since there are 4 species (currently recognized: Reticulated, Masai, Northern, Southern), and Masai is the most populous, the weighted average might lean lower.\n        *   Masai giraffes are roughly 30% of the population? Reticulated are ~15%?\n        *   Let's search for \"average number of spots on a giraffe\".\n        *   Common trivia says \"300\".\n        *   A BBC Wildlife article mentions \"hundreds of spots\".\n        *   A scientific paper on spot complexity often discusses \"patch count\".\n        *   Let's assume a conservative average of **",
+  "content": "35",
+  "proposed_step": "            *   Let's take the average of that range: 400 spots per giraffe.\n            *   Wait, is \"black spots\" the right term? Giraffe spots are brown/orange/black depending on species. Reticulated giraffes have dark brown/black spots. Masai have dark brown jagged patches. Assume the user means the pigmented patches (dark color).\n            *   If the average is 300, and population is 100,000. Total = 30,000,000.\n            *   If the average is 400, and population is 100,000. Total = 40,000,000.\n            *   If the average is 500, and population is 100,000. Total = 50,000,000.\n            *   If the population is 97,500 and spots are 400. Total = 39,000,000.\n            *   If the population is 110,000 and spots are 400. Total = 44,000,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1138,
+    "total_tokens": 1738,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 494,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00177002,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00177002,
+      "upstream_inference_prompt_cost": 0.00033002,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

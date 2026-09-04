@@ -1,0 +1,63 @@
+{
+  "trace_id": "bet_above__019",
+  "kind": "control",
+  "sample_index": 5,
+  "text": "\n        *   Adult giraffes have distinct coat patterns.\n        *   A typical adult giraffe has between 300 to 500 spots? Or is it more?\n        *   Let's do a Fermi estimation here.\n        *   Surface area of a giraffe: An adult giraffe is tall (4-5m) and has a body length of about 2.4-3m. Surface area is roughly that of a large horse or cow, plus the neck. A cow's body surface area is roughly 5-6 square meters. A giraffe is larger. Let's estimate 6-8 square meters of coat area.\n        *   Spot size: Spots vary from very small (like dust) to large patches (10-15 cm diameter). Average spot diameter might be around 7-10 cm?\n        *   If average spot is ~10cm x 10cm = 100 cm² = 0.01 m².\n        *   If area is 7 m². 7 / 0.01 = 700 spots.\n        *   However, spots aren't perfectly packed;",
+  "text_source": "reasoning",
+  "reasoning": "\n        *   Adult giraffes have distinct coat patterns.\n        *   A typical adult giraffe has between 300 to 500 spots? Or is it more?\n        *   Let's do a Fermi estimation here.\n        *   Surface area of a giraffe: An adult giraffe is tall (4-5m) and has a body length of about 2.4-3m. Surface area is roughly that of a large horse or cow, plus the neck. A cow's body surface area is roughly 5-6 square meters. A giraffe is larger. Let's estimate 6-8 square meters of coat area.\n        *   Spot size: Spots vary from very small (like dust) to large patches (10-15 cm diameter). Average spot diameter might be around 7-10 cm?\n        *   If average spot is ~10cm x 10cm = 100 cm² = 0.01 m².\n        *   If area is 7 m². 7 / 0.01 = 700 spots.\n        *   However, spots aren't perfectly packed;",
+  "content": " there",
+  "suggested_first_chunk": "        *   Adult giraffes have distinct coat patterns.\n        *   A typical adult giraffe has between 300 to 500 spots? Or is it more?\n        *   Let's do a Fermi estimation here.\n        *   Surface area of a giraffe: An adult giraffe is tall (4-5m) and has a body length of about 2.4-3m. Surface area is roughly that of a large horse or cow, plus the neck. A cow's body surface area is roughly 5-6 square meters. A giraffe is larger. Let's estimate 6-8 square meters of coat area.\n        *   Spot size: Spots vary from very small (like dust) to large patches (10-15 cm diameter). Average spot diameter might be around 7-10 cm?\n        *   If average spot is ~10cm x 10cm = 100 cm² = 0.01 m².\n        *   If area is 7 m². 7 / 0.01 = 700 spots.\n        *   However, spots aren't perfectly packed;\n",
+  "number_mentions": [
+    "300 ",
+    "500 ",
+    "4",
+    "-5m",
+    "2.4",
+    "-3m",
+    "5",
+    "-6 ",
+    "6",
+    "-8 ",
+    "10",
+    "-15 ",
+    "7",
+    "-10 ",
+    "10",
+    "10",
+    "100 ",
+    "0.01 m",
+    "7 m",
+    "7 ",
+    "0.01 ",
+    "700 "
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 556,
+    "total_tokens": 812,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 204,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00077564,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00077564,
+      "upstream_inference_prompt_cost": 0.00016124,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

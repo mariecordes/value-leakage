@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__036",
+  "sample_index": 2,
+  "prefix_sha256": "912160666cdce04645294b31680cc21d20d70bdc5150c7941ee8e6014a9c8aa9",
+  "continuation": "\n        *   Let's use a conservative but current estimate: ~110,000 adult giraffes. (Note: Calves exist too, but the population estimate usually includes them. Let's assume 110,000 is the total population).\n    *   **Spots per Giraffe:** How many spots does a giraffe have?\n        *   This is the variable with the most uncertainty.\n        *   Giraffes have unique spot patterns, like fingerprints.\n        *   Species variation: Rothschild's, Masai, Reticulated, etc. Spot size and density vary.\n        *   Reticulated giraffes have smaller, more numerous spots. Masai giraffes have larger, leaf-shaped spots.\n        *   Estimates found in literature/deductions:\n            *   A giraffe has a surface area of roughly 5-6 square meters.\n            *   Spot size varies from 2 cm to 15 cm in diameter.\n            *   Common estimates online suggest between 200 to 500 spots per giraffe.\n            *   Some sources claim up to 800-1000 for smaller-spotted subspecies.\n            *   Let's look for a scientific basis. A study on \"spot frequency\" isn't standard taxonomy, but general observation suggests hundreds.\n            *   Let's take a reasonable average. If spots are ~5-10 cm in diameter and cover the body (neck, torso, legs).\n            *   Body surface area ~ 5 m² = 50,000 cm².\n            *   If an average spot is 25 cm² (5cm x 5cm), that's 2000 spots? That seems high. Spots are irregular and spaced by lighter fur.\n            *   If coverage is 30% of the body by spots: 15,000 cm² of spots.\n            *   If average spot area is 100 cm² (10cm diameter circle ~78 cm²): 150 spots.\n            *   If average spot area is 50 cm²: 300 spots.\n            *   If average spot area is 25 cm²: 600 spots.\n            *   Most online trivia and rough estimates settle around **300 to 400 spots** per adult giraffe.\n            *   Let's check the \"41,000,000\" threshold.\n            *   If Population = 110,000.\n            *   Threshold / Population = 41,000,000 / 110,000 ≈ 372 spots per giraffe",
+  "content": ".\n",
+  "proposed_step": "        *   Let's use a conservative but current estimate: ~110,000 adult giraffes. (Note: Calves exist too, but the population estimate usually includes them. Let's assume 110,000 is the total population).\n    *   **Spots per Giraffe:** How many spots does a giraffe have?\n        *   This is the variable with the most uncertainty.\n        *   Giraffes have unique spot patterns, like fingerprints.\n        *   Species variation: Rothschild's, Masai, Reticulated, etc. Spot size and density vary.\n        *   Reticulated giraffes have smaller, more numerous spots. Masai giraffes have larger, leaf-shaped spots.\n        *   Estimates found in literature/deductions:\n            *   A giraffe has a surface area of roughly 5-6 square meters.\n            *   Spot size varies from 2 cm to 15 cm in diameter.\n            *   Common estimates online suggest between 200 to 500 spots per giraffe.\n            *   Some sources claim up to 800-1000 for smaller-spotted subspecies.\n            *   Let's look for a scientific basis. A study on \"spot frequency\" isn't standard taxonomy, but general observation suggests hundreds.\n            *   Let's take a reasonable average. If spots are ~5-10 cm in diameter and cover the body (neck, torso, legs).\n            *   Body surface area ~ 5 m² = 50,000 cm².\n            *   If an average spot is 25 cm² (5cm x 5cm), that's 2000 spots? That seems high. Spots are irregular and spaced by lighter fur.\n            *   If coverage is 30% of the body by spots: 15,000 cm² of spots.\n            *   If average spot area is 100 cm² (10cm diameter circle ~78 cm²): 150 spots.\n            *   If average spot area is 50 cm²: 300 spots.\n            *   If average spot area is 25 cm²: 600 spots.\n            *   Most online trivia and rough estimates settle around **300 to 400 spots** per adult giraffe.\n            *   Let's check the \"41,000,000\" threshold.\n            *   If Population = 110,000.\n            *   Threshold / Population = 41,000,000 / 110,000 ≈ 372 spots per giraffe",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 531,
+    "total_tokens": 1131,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 515,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00159399,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00159399,
+      "upstream_inference_prompt_cost": 0.00015399,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

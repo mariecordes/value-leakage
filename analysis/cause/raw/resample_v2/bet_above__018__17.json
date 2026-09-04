@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__018",
+  "sample_index": 17,
+  "prefix_sha256": "e6b833884e6fe95c42f9e356fa113cd43bd3e66e3c4d64b159eadfc4a9a03c97",
+  "continuation": "\n        *   Let's assume a conservative estimate of **600 spots** per giraffe (visible distinct patches).\n        *   Let's assume a more inclusive estimate (including smaller markings) of **1,500 spots**.\n\n    *   **Calculation:**\n        *   Population: ~125,000.\n        *   Spots per giraffe: Let's take an average.\n        *   Scenario A (Conservative): 400 spots * 125,000 = 50,000,000.\n        *   Scenario B (Moderate): 600 spots * 125,000 = 75,000,000.\n        *   Scenario C (High): 800 spots * 125,000 = 100,000,000.\n        *   Even with a very conservative count (e.g., 200 spots per giraffe, very rare for a full adult), 125,000 * 200 = 25,000,000.\n        *   Is it possible the number is below 41,000,000?\n        *   Population: IUCN 2016 was ~97,000. 2020 estimates were ~117,000. Let's be generous to the \"low\" side: 100,000 total.\n        *   Spots per animal: If we only count the large distinct brown/orange patches defined by veins/lines.\n            *   Masai giraffe: jagged, many smaller ones.\n            *   Reticulated: large, well-defined. Maybe 200-300 on the body + legs.\n            *   Average: Let's say 300 large spots.\n            *   100,000 * 300 = 30,000,000.\n        *   However, giraffes have spots all down their legs and often their necks. The leg spots are numerous.\n        *   If we count the leg spots (which are smaller and more numerous), the count goes up.\n        *   Also, there are many calves (maybe 10-15% of population). Calves have fewer spots? Or similar density?\n        *   Most estimates online regarding \"how many spots\" hover around 500-1000 for a detailed count.\n        *   If we use 500 spots: 125,000 * 500 = 62,5",
+  "content": "00",
+  "proposed_step": "        *   Let's assume a conservative estimate of **600 spots** per giraffe (visible distinct patches).\n        *   Let's assume a more inclusive estimate (including smaller markings) of **1,500 spots**.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 2075,
+    "total_tokens": 2675,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 426,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00204175,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00204175,
+      "upstream_inference_prompt_cost": 0.00060175,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

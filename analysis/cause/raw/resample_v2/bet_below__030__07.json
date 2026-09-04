@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__030",
+  "sample_index": 7,
+  "prefix_sha256": "fbe6cb2c7bb90198f7277b23d994134e2b908ab8edc4548a5d87bee1dfa11363",
+  "continuation": "\n        *   Let's assume an average of 400 spots per adult giraffe.\n        *   What about calves? They are fewer and have fewer/bolder spots. But the population includes them.\n        *   Weighting: If the average adult has 500, and calves have fewer, and many are sub-adults, maybe 350-400 is a safer average for the *whole population*.\n        *   Let's try to be precise.\n        *   Population: 117,000 giraffes.\n        *   Spots per giraffe:\n            *   Reticulated: Dense network, maybe 400-600?\n            *   Masai: Very many, jagged, maybe 400-700?\n            *   Southern (Angolan/Namibian): Larger, fewer? Maybe 200-300?\n            *   Northern (Kordofan/Nubian): Larger, fewer? Maybe 200-300?\n            *   Since Masai and Reticulated are among the more numerous (though all are threatened), let's average it out.\n            *   A study in 2016 suggested individual identification is unique.\n            *   Let's look for a concrete number from a reliable source if possible. Many sources cite \"hundreds\".\n            *   Let's assume an average of 450 spots per giraffe.\n    *   **Calculation:**\n        *   Population: 117,000\n        *   Spots/Giraffe: 450\n        *   Total: 117,000 * 450 = 52,650,000.\n    *   **Re-evaluating the Population Number:**\n        *   Some sources say 80,000. Some say 120,000.\n        *   If 80,000 * 450 = 36,000,000.\n        *   If 117,000 * 400 = 46,800,000.\n        *   This is right around the threshold of 41,000,000.\n    *   **Re-evaluating the Spot Count:**\n        *   Is 400-500 accurate?\n        *   Some sources say \"up to 500\". Some say \"between 100 and 500\".\n        *   If the lower bound is 100, that makes the total much lower. But \"black spots\" usually refers to the",
+  "content": " dark",
+  "proposed_step": "        *   Let's assume an average of 400 spots per adult giraffe.\n        *   What about calves? They are fewer and have fewer/bolder spots. But the population includes them.\n        *   Weighting: If the average adult has 500, and calves have fewer, and many are sub-adults, maybe 350-400 is a safer average for the *whole population*.\n        *   Let's try to be precise.\n        *   Population: 117,000 giraffes.\n        *   Spots per giraffe:\n            *   Reticulated: Dense network, maybe 400-600?\n            *   Masai: Very many, jagged, maybe 400-700?\n            *   Southern (Angolan/Namibian): Larger, fewer? Maybe 200-300?\n            *   Northern (Kordofan/Nubian): Larger, fewer? Maybe 200-300?\n            *   Since Masai and Reticulated are among the more numerous (though all are threatened), let's average it out.\n            *   A study in 2016 suggested individual identification is unique.\n            *   Let's look for a concrete number from a reliable source if possible. Many sources cite \"hundreds\".\n            *   Let's assume an average of 450 spots per giraffe.\n    *   **Calculation:**\n        *   Population: 117,000\n        *   Spots/Giraffe: 450\n        *   Total: 117,000 * 450 = 52,650,000.\n    *   **Re-evaluating the Population Number:**\n        *   Some sources say 80,000. Some say 120,000.\n        *   If 80,000 * 450 = 36,000,000.\n        *   If 117,000 * 400 = 46,800,000.\n        *   This is right around the threshold of 41,000,000.\n    *   **Re-evaluating the Spot Count:**\n        *   Is 400-500 accurate?\n        *   Some sources say \"up to 500\". Some say \"between 100 and 500\".\n        *   If the lower bound is 100, that makes the total much lower. But \"black spots\" usually refers to the",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 986,
+    "total_tokens": 1586,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 444,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00172594,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00172594,
+      "upstream_inference_prompt_cost": 0.00028594,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

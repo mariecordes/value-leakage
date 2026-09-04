@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__015",
+  "sample_index": 11,
+  "prefix_sha256": "64cc0dc8db0545ae23e5823898b91a4807d07cedd6b2078a115f387968bb3cf3",
+  "continuation": "\n            *   Let's use a conservative, widely cited figure: ~115,000 (wild) + ~1,000-2,000 (captive) ≈ 117,000 total. Let's round to 120,000 for simplicity in calculation, but keep 117,000 as the base.\n    *   **Spots per Giraffe:**\n        *   Giraffes have a spot pattern that varies by species (Masai, Reticulated, South African, Northern, etc.).\n        *   Spots are polygonal shapes covering most of the body.\n        *   How many spots on an adult giraffe?\n        *   *Common estimates:* A typical adult giraffe has between 100 to 500+ spots?\n        *   Let's look for specific data.\n        *   Some sources say \"hundreds\".\n        *   A study on spot patterns (e.g., \"Giraffe spot patterns\") might estimate density.\n        *   Surface area of a giraffe:\n            *   Height: 5-6 meters.\n            *   Circumference (neck + body): Let's estimate skin surface area. A giraffe is large. Maybe 10-12 square meters of skin?\n            *   Spot size: Varies. Reticulated spots are smaller and more numerous. Masai spots are larger and fewer.\n            *   Average spot size: Maybe 10cm x 10cm? (100 cm²).\n            *   If surface area is ~100,000 cm² (10 m²).\n            *   If spots cover 60% of the body (excluding legs, belly, head sometimes, and mane).\n            *   Coverage: ~60,000 cm².\n            *   If average spot is 100 cm², that's 600 spots.\n            *   If average spot is 50 cm² (smaller spots), that's 1,200 spots.\n            *   Let's look for literature.\n            *   A common trivia fact is \"more than 100 spots\".\n            *   Some estimates suggest 200-300 spots per giraffe.\n            *   Others suggest higher for smaller-spotted species.\n            *   Let's try to find a more concrete number.\n            *   *Research check (mental):* A popular estimate often cited in biology contexts is roughly 100 to 300 spots. However, counting them manually is rare.\n            *   Let's analyze the geometry.\n            *   Body length: ~3m (torso). Neck:",
+  "content": " ~",
+  "proposed_step": "            *   Let's use a conservative, widely cited figure: ~115,000 (wild) + ~1,000-2,000 (captive) ≈ 117,000 total. Let's round to 120,000 for simplicity in calculation, but keep 117,000 as the base.\n    *   **Spots per Giraffe:**\n        *   Giraffes have a spot pattern that varies by species (Masai, Reticulated, South African, Northern, etc.).\n        *   Spots are polygonal shapes covering most of the body.\n        *   How many spots on an adult giraffe?\n        *   *Common estimates:* A typical adult giraffe has between 100 to 500+ spots?\n        *   Let's look for specific data.\n        *   Some sources say \"hundreds\".\n        *   A study on spot patterns (e.g., \"Giraffe spot patterns\") might estimate density.\n        *   Surface area of a giraffe:\n            *   Height: 5-6 meters.\n            *   Circumference (neck + body): Let's estimate skin surface area. A giraffe is large. Maybe 10-12 square meters of skin?\n            *   Spot size: Varies. Reticulated spots are smaller and more numerous. Masai spots are larger and fewer.\n            *   Average spot size: Maybe 10cm x 10cm? (100 cm²).\n            *   If surface area is ~100,000 cm² (10 m²).\n            *   If spots cover 60% of the body (excluding legs, belly, head sometimes, and mane).\n            *   Coverage: ~60,000 cm².\n            *   If average spot is 100 cm², that's 600 spots.\n            *   If average spot is 50 cm² (smaller spots), that's 1,200 spots.\n            *   Let's look for literature.\n            *   A common trivia fact is \"more than 100 spots\".\n            *   Some estimates suggest 200-300 spots per giraffe.\n            *   Others suggest higher for smaller-spotted species.\n            *   Let's try to find a more concrete number.\n            *   *Research check (mental):* A popular estimate often cited in biology contexts is roughly 100 to 300 spots. However, counting them manually is rare.\n            *   Let's analyze the geometry.\n            *   Body length: ~3m (torso). Neck:",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 711,
+    "total_tokens": 1311,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 512,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00164619,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00164619,
+      "upstream_inference_prompt_cost": 0.00020619,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

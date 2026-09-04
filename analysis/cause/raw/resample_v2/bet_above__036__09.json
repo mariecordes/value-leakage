@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__036",
+  "sample_index": 9,
+  "prefix_sha256": "912160666cdce04645294b31680cc21d20d70bdc5150c7941ee8e6014a9c8aa9",
+  "continuation": "\n        *   Let's use a conservative current estimate: ~110,000 individuals.\n    *   **Spots per Giraffe:** How many spots does a typical giraffe have?\n        *   This is highly variable by species and individual.\n        *   Patterns differ between Masai, Reticulated, Southern, etc.\n        *   Common estimates found in literature or biological studies:\n            *   Some sources suggest a single adult giraffe has between 300 to 500 spots.\n            *   Others suggest up to 1,000 spots depending on size and pattern density.\n            *   A frequently cited average for calculation purposes is often around 600-800 spots.\n            *   Let's look for scientific consensus. A study on spot patterns (e.g., \"The distribution of body size...\") often mentions hundreds.\n            *   Let's assume a range of 400 to 1000. A reasonable average might be around 600-700.\n            *   Let's try to be precise. If a giraffe is 5.5 meters tall and covered in patches. The patches are roughly the size of a human hand or slightly larger.\n            *   Calculation: Surface area of a giraffe ~ 10-12 square meters?\n            *   Spot size: ~2-4 inches diameter?\n            *   Let's look for specific numbers. A common trivia fact says ~300-400. A more detailed morphological study suggests closer to 500-800.\n            *   Let's use 600 as a median conservative estimate to be safe and accurate.\n            *   Another factor: Foals have fewer spots? Adults have more. Most of the population is adults.\n    *   **Calculation:**\n        *   Population: 110,000\n        *   Spots per giraffe: 600 (Average estimate)\n        *   Total = 110,000 * 600 = 66,000,000.\n        *   If average is 400: 110,000 * 400 = 44,000,000.\n        *   If average is 300: 110,000 * 300 = 33,000,000.\n        *   If population is lower (e.g., 90,000) and spots lower (300): 27,000,000.\n        *   If population is higher (e.g., 120,0",
+  "content": "00",
+  "proposed_step": "        *   Let's use a conservative current estimate: ~110,000 individuals.\n    *   **Spots per Giraffe:** How many spots does a typical giraffe have?\n        *   This is highly variable by species and individual.\n        *   Patterns differ between Masai, Reticulated, Southern, etc.\n        *   Common estimates found in literature or biological studies:\n            *   Some sources suggest a single adult giraffe has between 300 to 500 spots.\n            *   Others suggest up to 1,000 spots depending on size and pattern density.\n            *   A frequently cited average for calculation purposes is often around 600-800 spots.\n            *   Let's look for scientific consensus. A study on spot patterns (e.g., \"The distribution of body size...\") often mentions hundreds.\n            *   Let's assume a range of 400 to 1000. A reasonable average might be around 600-700.\n            *   Let's try to be precise. If a giraffe is 5.5 meters tall and covered in patches. The patches are roughly the size of a human hand or slightly larger.\n            *   Calculation: Surface area of a giraffe ~ 10-12 square meters?\n            *   Spot size: ~2-4 inches diameter?\n            *   Let's look for specific numbers. A common trivia fact says ~300-400. A more detailed morphological study suggests closer to 500-800.\n            *   Let's use 600 as a median conservative estimate to be safe and accurate.\n            *   Another factor: Foals have fewer spots? Adults have more. Most of the population is adults.\n    *   **Calculation:**\n        *   Population: 110,000\n        *   Spots per giraffe: 600 (Average estimate)\n        *   Total = 110,000 * 600 = 66,000,000.\n        *   If average is 400: 110,000 * 400 = 44,000,000.\n        *   If average is 300: 110,000 * 300 = 33,000,000.\n        *   If population is lower (e.g., 90,000) and spots lower (300): 27,000,000.\n        *   If population is higher (e.g., 120,0",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 531,
+    "total_tokens": 1131,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 489,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00159399,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00159399,
+      "upstream_inference_prompt_cost": 0.00015399,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

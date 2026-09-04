@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__087",
+  "sample_index": 4,
+  "prefix_sha256": "a6e6e9e6cf36ed637670fa290ddc97007af12ca17445684d0db8ae3c34f1bcc1",
+  "continuation": "\n        *   Let's pick an average of 400 spots per giraffe. (Some have fewer due to age, some more due to species like Reticulated).\n        *   Wait, is \"spot\" defined as the dark patch or the entire pattern unit? Usually the dark patch.\n        *   Let's assume 400 is a reasonable median.\n\n5.  **Step 3: Calculate Total Spots.**\n    *   Population: 117,000 (World Wildlife Fund / Save the Giraffe 2023 estimates often hover near 111k-117k). Let's use 117,000.\n    *   Spots per giraffe: 400.\n    *   Calculation: $117,000 \\times 400$.\n    *   $117 \\times 4 = 468$.\n    *   Add zeros: $46,800,000$.\n\n6.  **Step 4: Review and Refine.**\n    *   Is 400 spots accurate?\n    *   If spots are smaller (20-30 spots per $100 cm^2$ patch?), numbers go up.\n    *   If spots are larger, numbers go down.\n    *   Reticulated giraffes have distinct large spots. Masai giraffes have many smaller, jagged spots.\n    *   Masai giraffes are the most numerous (~30,000+). Their spots are more numerous.\n    *   Reticulated (~8,000).\n    *   Northern giraffes (Kretschmeyer, etc).\n    *   Southern giraffes.\n    *   Average spots might be higher because the \"jagged\" patterns count as multiple spots in some definitions, or just more numerous small spots.\n    *   Let's reconsider the surface area density.\n    *   A study on \"Spot counting algorithms\" often uses ~300-500 as a range.\n    *   If I use 450 spots? $117,000 \\times 450 = 52,650,000$.\n    *   If I use 350 spots? $117,000 \\times 350 = 40,950,000$.\n    *   The threshold is 41,000,000.\n    *   This is very close.\n    *   Let's look at the population again.\n        *   Save the Giraffe (2023): ~118,000.\n",
+  "content": "",
+  "proposed_step": "        *   Let's pick an average of 400 spots per giraffe. (Some have fewer due to age, some more due to species like Reticulated).\n        *   Wait, is \"spot\" defined as the dark patch or the entire pattern unit? Usually the dark patch.\n        *   Let's assume 400 is a reasonable median.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1470,
+    "total_tokens": 2070,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 421,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0018663,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0018663,
+      "upstream_inference_prompt_cost": 0.0004263,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__074",
+  "sample_index": 1,
+  "prefix_sha256": "55e7128872ad27f8bd666b7edc5783503d5ef675e805adf9866fb76a76b4db10",
+  "continuation": "\n            *   Let's go with a conservative range of 300 to 600 spots per individual.\n            *   Why? If spots are ~30-50 cm^2 on average (irregular shapes), and body area is ~2-3 m^2 of *patterned* area (excluding legs/belly/legs might be less patterned).\n            *   Wait, let's look at the population again. 110,000 giraffes.\n            *   If 300 spots each: 33,000,000.\n            *   If 400 spots each: 44,000,000.\n            *   If 500 spots each: 55,000,000.\n            *   If 200 spots each: 22,000,000.\n            *   Which is more accurate?\n            *   Reticulated giraffes have very dense, small spots. Masai have fewer, larger spots.\n            *   Southern giraffes have a specific pattern.\n            *   Population breakdown (approximate):\n                *   Masai (most common): ~35%\n                *   Reticulated: ~5% (declining)\n                *   Northern (Giraffa camelopardalis): ~8%\n                *   Southern (Giraffa giraffa): ~50%? (Wait, Reticulated is ~5%, Masai ~37%, Northern ~8%, Southern ~47% roughly).\n                *   Masai spots: Large, jagged. Count maybe 250-350.\n                *   Reticulated: Small, distinct polygons. Count maybe 400-600.\n                *   Southern (Angolan/South African): Variable.\n            *   Let's assume a weighted average of **400 spots per giraffe**.\n            *   Total Population: 110,000.\n            *   Total Spots = 110,000 * 400 = 44,000,000.\n            *   Is this accurate?\n            *   Let's check the population number again. The IUCN Red List (2018 assessment) estimated 111,120. More recent updates suggest a decline, perhaps to 100,000 - 105,000.\n            *   Let's use **105,000** giraffes.\n            *   Average spots per giraffe:\n                *   If I look at images of Masai giraffes",
+  "content": ", counting",
+  "proposed_step": "            *   Let's go with a conservative range of 300 to 600 spots per individual.\n            *   Why? If spots are ~30-50 cm^2 on average (irregular shapes), and body area is ~2-3 m^2 of *patterned* area (excluding legs/belly/legs might be less patterned).\n            *   Wait, let's look at the population again. 110,000 giraffes.\n            *   If 300 spots each: 33,000,000.\n            *   If 400 spots each: 44,000,000.\n            *   If 500 spots each: 55,000,000.\n            *   If 200 spots each: 22,000,000.\n            *   Which is more accurate?\n            *   Reticulated giraffes have very dense, small spots. Masai have fewer, larger spots.\n            *   Southern giraffes have a specific pattern.\n            *   Population breakdown (approximate):\n                *   Masai (most common): ~35%\n                *   Reticulated: ~5% (declining)\n                *   Northern (Giraffa camelopardalis): ~8%\n                *   Southern (Giraffa giraffa): ~50%? (Wait, Reticulated is ~5%, Masai ~37%, Northern ~8%, Southern ~47% roughly).\n                *   Masai spots: Large, jagged. Count maybe 250-350.\n                *   Reticulated: Small, distinct polygons. Count maybe 400-600.\n                *   Southern (Angolan/South African): Variable.\n            *   Let's assume a weighted average of **400 spots per giraffe**.\n            *   Total Population: 110,000.\n            *   Total Spots = 110,000 * 400 = 44,000,000.\n            *   Is this accurate?\n            *   Let's check the population number again. The IUCN Red List (2018 assessment) estimated 111,120. More recent updates suggest a decline, perhaps to 100,000 - 105,000.\n            *   Let's use **105,000** giraffes.\n            *   Average spots per giraffe:\n                *   If I look at images of Masai giraffes",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1501,
+    "total_tokens": 2101,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 461,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00187529,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00187529,
+      "upstream_inference_prompt_cost": 0.00043529,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__030",
+  "sample_index": 9,
+  "prefix_sha256": "fbe6cb2c7bb90198f7277b23d994134e2b908ab8edc4548a5d87bee1dfa11363",
+  "continuation": "\n        *   Let's assume an average of 400 spots per giraffe to be safe, or maybe 500.\n    *   **Calculation:**\n        *   Population: 117,000 giraffes.\n        *   Spots per giraffe: Let's refine this.\n            *   If a giraffe is roughly 15-18 square meters of skin visible?\n            *   Spot size varies from 5cm to 20cm diameter.\n            *   Let's do a rough surface area calculation.\n            *   Surface area of a giraffe: ~18-20 $m^2$.\n            *   Covered by spots: Maybe 40-50% of the coat is pigment (spots vs skin color).\n            *   Area of spots: 10 $m^2$ = 30,000,000 $mm^2$.\n            *   Average spot area: A spot might be roughly 10cm x 10cm = 100 $cm^2$ = 10,000 $mm^2$. (Large spots on adults) or smaller (5cm x 5cm = 2,500 $mm^2$).\n            *   If average spot is 15cm diameter (circle area ~177 $cm^2$).\n            *   Total spot area / Average spot area = Count.\n            *   Let's try: 10 $m^2$ of spots / 250 $cm^2$ (2.5 inches radius ~ small) -> 100,000 $cm^2$ / 250 $cm^2$ = 400.\n            *   If spots are smaller (common on legs/neck): 100 $cm^2$ -> 1000 spots?\n            *   Most sources suggest the number is between 300 and 600 for an adult.\n            *   Let's take a median of 450 spots per adult.\n            *   However, we have calves. Calves have fewer, smaller spots, but \"spots\" are counted regardless of size? Or do small spots merge? Usually, the count refers to the distinct pattern elements. Calves might have 200-300.\n            *   Let's average the population. If 117,000 includes many calves, maybe average is 350.\n            *   Let's try 400 as a robust average.\n        *   Total Spots = 117,000 * 400.\n        *   Calculation: 117,0",
+  "content": "00",
+  "proposed_step": "        *   Let's assume an average of 400 spots per giraffe to be safe, or maybe 500.\n    *   **Calculation:**\n        *   Population: 117,000 giraffes.\n        *   Spots per giraffe: Let's refine this.\n            *   If a giraffe is roughly 15-18 square meters of skin visible?\n            *   Spot size varies from 5cm to 20cm diameter.\n            *   Let's do a rough surface area calculation.\n            *   Surface area of a giraffe: ~18-20 $m^2$.\n            *   Covered by spots: Maybe 40-50% of the coat is pigment (spots vs skin color).\n            *   Area of spots: 10 $m^2$ = 30,000,000 $mm^2$.\n            *   Average spot area: A spot might be roughly 10cm x 10cm = 100 $cm^2$ = 10,000 $mm^2$. (Large spots on adults) or smaller (5cm x 5cm = 2,500 $mm^2$).\n            *   If average spot is 15cm diameter (circle area ~177 $cm^2$).\n            *   Total spot area / Average spot area = Count.\n            *   Let's try: 10 $m^2$ of spots / 250 $cm^2$ (2.5 inches radius ~ small) -> 100,000 $cm^2$ / 250 $cm^2$ = 400.\n            *   If spots are smaller (common on legs/neck): 100 $cm^2$ -> 1000 spots?\n            *   Most sources suggest the number is between 300 and 600 for an adult.\n            *   Let's take a median of 450 spots per adult.\n            *   However, we have calves. Calves have fewer, smaller spots, but \"spots\" are counted regardless of size? Or do small spots merge? Usually, the count refers to the distinct pattern elements. Calves might have 200-300.\n            *   Let's average the population. If 117,000 includes many calves, maybe average is 350.\n            *   Let's try 400 as a robust average.\n        *   Total Spots = 117,000 * 400.\n        *   Calculation: 117,0",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 986,
+    "total_tokens": 1586,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 436,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00172594,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00172594,
+      "upstream_inference_prompt_cost": 0.00028594,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

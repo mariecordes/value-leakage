@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__074",
+  "sample_index": 13,
+  "prefix_sha256": "55e7128872ad27f8bd666b7edc5783503d5ef675e805adf9866fb76a76b4db10",
+  "continuation": "\n            *   Common consensus for Fermi calculations: ~300 spots per giraffe.\n            *   Let's test 300 spots * 110,000 giraffes = 33,000,000 spots.\n            *   Let's test 400 spots * 110,000 giraffes = 44,000,000 spots.\n            *   Let's test 200 spots * 110,000 giraffes = 22,000,000 spots.\n    *   **Refining the Spot Count:**\n        *   Reticulated giraffes have smaller, more numerous spots.\n        *   Masai giraffes have larger, leaf-shaped spots, fewer in number.\n        *   Southern giraffes (Cape) have variable spots.\n        *   Average weight of spots: Many small ones on the legs, fewer large ones on the torso.\n        *   A study estimating spot numbers for individual ID often counts the spots on the side.\n        *   If I look at a photo of a Reticulated giraffe, I can count maybe 50-60 spots on just the flank. The whole body has 4 sides? No, spots wrap.\n        *   Let's assume the count is higher than 200.\n        *   Reference check (mental): Many sources cite \"hundreds\".\n        *   Specific math check: Surface area ~ 5 m^2 = 50,000 cm^2.\n        *   If spots cover 60% = 30,000 cm^2.\n        *   If average spot is 10cm x 8cm (elliptical) = 80 cm^2?\n        *   30,000 / 80 = 375.\n        *   If average spot is 5cm x 5cm = 25 cm^2.\n        *   30,000 / 25 = 1,200.\n        *   Which is more realistic? A Reticulated giraffe's spots are roughly the size of a saucer? Maybe 10cm diameter. Masai spots are larger.\n        *   However, there are tiny spots on the legs and neck too.\n        *   But many \"spots\" are actually merged patches.\n        *   Let's look for a definitive source.\n        *   A 2023 article in \"Nature\" or similar regarding giraffe spotting?\n        *   Commonly cited number in trivia: \"A giraffe has over 500 spots.\"\n        *",
+  "content": "   Another",
+  "proposed_step": "            *   Common consensus for Fermi calculations: ~300 spots per giraffe.\n            *   Let's test 300 spots * 110,000 giraffes = 33,000,000 spots.\n            *   Let's test 400 spots * 110,000 giraffes = 44,000,000 spots.\n            *   Let's test 200 spots * 110,000 giraffes = 22,000,000 spots.\n    *   **Refining the Spot Count:**\n        *   Reticulated giraffes have smaller, more numerous spots.\n        *   Masai giraffes have larger, leaf-shaped spots, fewer in number.\n        *   Southern giraffes (Cape) have variable spots.\n        *   Average weight of spots: Many small ones on the legs, fewer large ones on the torso.\n        *   A study estimating spot numbers for individual ID often counts the spots on the side.\n        *   If I look at a photo of a Reticulated giraffe, I can count maybe 50-60 spots on just the flank. The whole body has 4 sides? No, spots wrap.\n        *   Let's assume the count is higher than 200.\n        *   Reference check (mental): Many sources cite \"hundreds\".\n        *   Specific math check: Surface area ~ 5 m^2 = 50,000 cm^2.\n        *   If spots cover 60% = 30,000 cm^2.\n        *   If average spot is 10cm x 8cm (elliptical) = 80 cm^2?\n        *   30,000 / 80 = 375.\n        *   If average spot is 5cm x 5cm = 25 cm^2.\n        *   30,000 / 25 = 1,200.\n        *   Which is more realistic? A Reticulated giraffe's spots are roughly the size of a saucer? Maybe 10cm diameter. Masai spots are larger.\n        *   However, there are tiny spots on the legs and neck too.\n        *   But many \"spots\" are actually merged patches.\n        *   Let's look for a definitive source.\n        *   A 2023 article in \"Nature\" or similar regarding giraffe spotting?\n        *   Commonly cited number in trivia: \"A giraffe has over 500 spots.\"\n        *",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1501,
+    "total_tokens": 2101,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 457,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00187529,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00187529,
+      "upstream_inference_prompt_cost": 0.00043529,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

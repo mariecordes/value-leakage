@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__037",
+  "sample_index": 4,
+  "prefix_sha256": "7a9e601d7e7e86b383cf28e55031fbe51c0f1718dce71aec1bbb9bc70b4e7240",
+  "continuation": "\n        *   If the average is 400 spots per giraffe.\n        *   Calculation: 125,000 giraffes × 400 spots = 50,000,000.\n        *   If the average is 200 spots per giraffe.\n        *   Calculation: 125,000 giraffes × 200 spots = 25,000,000.\n        *   If the average is 100 spots per giraffe.\n        *   Calculation: 125,000 giraffes × 100 spots = 12,500,000.\n\n    *   Re-evaluating the spot count:\n        *   Visually, a giraffe's coat is covered in a mosaic.\n        *   If I look at a high-res photo of a reticulated giraffe, the spots are small. There could be many.\n        *   However, many sources generalize to \"dozens\" or \"hundreds\".\n        *   Let's search for a specific scientific estimate if possible (simulated).\n        *   A 2020 study \"Giraffe coat patterns...\" mentions counting spots. Some individuals have over 1,000?\n        *   Actually, a widely circulated factoid says \"300 spots\".\n        *   Let's try to be more rigorous.\n        *   Population: ~117,000 (GCF 2016 data, likely the most cited baseline).\n        *   Spots: \"Hundreds\" is the vaguest term.\n        *   Let's assume a range of 200 to 600.\n        *   Midpoint: 400.\n        *   Total: 117,000 * 400 = 46,800,000.\n        *   This is above 41,000,000.\n        *   What if the population is lower? 80,000 (some older estimates)? 80,000 * 400 = 32,000,000.\n        *   What if spot count is lower? 250?\n        *   120,000 * 250 = 30,000,000.\n        *   What is the most scientifically grounded spot count?\n        *   A study by \"B. L. D. et al.\" (hypothetical) on pattern recognition usually treats the image as a texture, not discrete integers.\n        *   However",
+  "content": ", for",
+  "proposed_step": "        *   If the average is 400 spots per giraffe.\n        *   Calculation: 125,000 giraffes × 400 spots = 50,000,000.\n        *   If the average is 200 spots per giraffe.\n        *   Calculation: 125,000 giraffes × 200 spots = 25,000,000.\n        *   If the average is 100 spots per giraffe.\n        *   Calculation: 125,000 giraffes × 100 spots = 12,500,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1532,
+    "total_tokens": 2132,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 423,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00188428,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00188428,
+      "upstream_inference_prompt_cost": 0.00044428,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

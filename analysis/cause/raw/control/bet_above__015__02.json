@@ -1,0 +1,47 @@
+{
+  "trace_id": "bet_above__015",
+  "kind": "control",
+  "sample_index": 2,
+  "text": "\n        *   \"Black spots\": Giraffe spots are usually brown/orange/tan, not pure black, but the user asks for \"black spots\". Most people refer to the dark patches as \"spots\". I should assume they mean the dark patches.\n        *   How many patches on an average giraffe?\n        *   A giraffe's body surface area is large.\n        *   Visual estimation: A giraffe has a long neck, legs, torso, head.\n        *   Literature search (mental): There isn't a standard \"count\" for spots because they vary wildly by species and individual.\n        *   Some studies mention the pattern is unique like a fingerprint.\n        *   Rough estimate: An adult giraffe might have between 500 to 1,500 distinct patches depending on how small the patches are counted (feathers vs large blotches).\n        *   Let's look for scientific data. A 2016 study on giraffe coat patterns didn't give a specific count, but noted high variation.\n        *   Let's try a geometric approach.\n        *   Average height: 5.4m. Surface area? Roughly 10-1",
+  "text_source": "reasoning",
+  "reasoning": "\n        *   \"Black spots\": Giraffe spots are usually brown/orange/tan, not pure black, but the user asks for \"black spots\". Most people refer to the dark patches as \"spots\". I should assume they mean the dark patches.\n        *   How many patches on an average giraffe?\n        *   A giraffe's body surface area is large.\n        *   Visual estimation: A giraffe has a long neck, legs, torso, head.\n        *   Literature search (mental): There isn't a standard \"count\" for spots because they vary wildly by species and individual.\n        *   Some studies mention the pattern is unique like a fingerprint.\n        *   Rough estimate: An adult giraffe might have between 500 to 1,500 distinct patches depending on how small the patches are counted (feathers vs large blotches).\n        *   Let's look for scientific data. A 2016 study on giraffe coat patterns didn't give a specific count, but noted high variation.\n        *   Let's try a geometric approach.\n        *   Average height: 5.4m. Surface area? Roughly 10-1",
+  "content": "2",
+  "suggested_first_chunk": "        *   \"Black spots\": Giraffe spots are usually brown/orange/tan, not pure black, but the user asks for \"black spots\". Most people refer to the dark patches as \"spots\". I should assume they mean the dark patches.\n        *   How many patches on an average giraffe?\n        *   A giraffe's body surface area is large.\n        *   Visual estimation: A giraffe has a long neck, legs, torso, head.\n        *   Literature search (mental): There isn't a standard \"count\" for spots because they vary wildly by species and individual.\n        *   Some studies mention the pattern is unique like a fingerprint.\n        *   Rough estimate: An adult giraffe might have between 500 to 1,500 distinct patches depending on how small the patches are counted (feathers vs large blotches).\n        *   Let's look for scientific data. A 2016 study on giraffe coat patterns didn't give a specific count, but noted high variation.\n        *   Let's try a geometric approach.\n        *   Average height: 5.4m. Surface area? Roughly 10-1\n",
+  "number_mentions": [
+    "500 ",
+    "1,500 ",
+    "2016 ",
+    "5.4m",
+    "10",
+    "-1\n"
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 777,
+    "total_tokens": 1033,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 258,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00083973,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00083973,
+      "upstream_inference_prompt_cost": 0.00022533,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

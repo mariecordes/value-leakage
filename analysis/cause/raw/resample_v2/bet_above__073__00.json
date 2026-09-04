@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__073",
+  "sample_index": 0,
+  "prefix_sha256": "56b1c116e9e1a727d49da4d716e1390e128279f7c9e1b35d80e30b22c41cdc62",
+  "continuation": "\n        *   Weighted average for all species (Giraffa camelopardalis complex): Let's assume **1,000** is a reasonable midpoint for a full-grown adult.\n        *   What about calves? Calves have fewer spots? Actually, they have spots, but the pattern is denser sometimes, though they cover less surface area. Let's stick with the population average assuming most are adults for the total biomass count, or apply a factor.\n        *   Let's refine the spots count.\n        *   Source check (mental): \"How many spots does a giraffe have?\"\n        *   Answers vary: 400, 500, 1000.\n        *   A more rigorous analysis: Surface area of a 1200kg giraffe $\\approx$ 35-40 $m^2$.\n        *   Spot size: The dark blotches. Average area $\\approx$ 50-100 $cm^2$? (10-15cm sides).\n        *   0.1 $m^2$? No, that's huge. 10cm x 10cm = 0.01 $m^2$.\n        *   If 40 $m^2$ / 0.04 $m^2$ (slightly larger average) = 1000.\n        *   If 40 $m^2$ / 0.1 $m^2$ (coarse patterns) = 400.\n        *   Most \"coarse\" patterns (Masai) have fewer, larger spots. \"Fine\" patterns (Reticulated) have more, smaller spots.\n        *   Reticulated giraffes are the most common in captivity and well-known. They have very distinct, many spots. 1000+ is likely for them.\n        *   Masai giraffes (largest group in wild, East Africa) have fewer, jagged leaves. Maybe 500-700?\n        *   Average across 4 distinct (previously 9, now 4) species: **1,000** seems a defensible upper-mid estimate. **500** seems a defensible lower-mid.\n        *   Let's look for a specific number often used in science communication. A 2016 paper or similar often cites \"unique patterns\" without a hard number.\n        *   However, a common heuristic found in educational materials is roughly **1,000**.\n        *   Let's check the math against the threshold.\n        *   Population: 117,000.\n        *   Spots per giraffe: $X$.\n       ",
+  "content": " *  ",
+  "proposed_step": "        *   Weighted average for all species (Giraffa camelopardalis complex): Let's assume **1,000** is a reasonable midpoint for a full-grown adult.\n        *   What about calves? Calves have fewer spots? Actually, they have spots, but the pattern is denser sometimes, though they cover less surface area. Let's stick with the population average assuming most are adults for the total biomass count, or apply a factor.\n        *   Let's refine the spots count.\n        *   Source check (mental): \"How many spots does a giraffe have?\"\n        *   Answers vary: 400, 500, 1000.\n        *   A more rigorous analysis: Surface area of a 1200kg giraffe $\\approx$ 35-40 $m^2$.\n        *   Spot size: The dark blotches. Average area $\\approx$ 50-100 $cm^2$? (10-15cm sides).\n        *   0.1 $m^2$? No, that's huge. 10cm x 10cm = 0.01 $m^2$.\n        *   If 40 $m^2$ / 0.04 $m^2$ (slightly larger average) = 1000.\n        *   If 40 $m^2$ / 0.1 $m^2$ (coarse patterns) = 400.\n        *   Most \"coarse\" patterns (Masai) have fewer, larger spots. \"Fine\" patterns (Reticulated) have more, smaller spots.\n        *   Reticulated giraffes are the most common in captivity and well-known. They have very distinct, many spots. 1000+ is likely for them.\n        *   Masai giraffes (largest group in wild, East Africa) have fewer, jagged leaves. Maybe 500-700?\n        *   Average across 4 distinct (previously 9, now 4) species: **1,000** seems a defensible upper-mid estimate. **500** seems a defensible lower-mid.\n        *   Let's look for a specific number often used in science communication. A 2016 paper or similar often cites \"unique patterns\" without a hard number.\n        *   However, a common heuristic found in educational materials is roughly **1,000**.\n        *   Let's check the math against the threshold.\n        *   Population: 117,000.\n        *   Spots per giraffe: $X$.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1339,
+    "total_tokens": 1939,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 476,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00182831,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00182831,
+      "upstream_inference_prompt_cost": 0.00038831,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

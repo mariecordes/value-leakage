@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__087",
+  "sample_index": 10,
+  "prefix_sha256": "a6e6e9e6cf36ed637670fa290ddc97007af12ca17445684d0db8ae3c34f1bcc1",
+  "continuation": "\n        *   Let's settle on **400** as a reasonable median average across all subspecies. Some have fewer (larger spots like Reticulated), some have more (denser patches like Masai).\n        *   Wait, are there *that* many? A human hand is huge. A spot on a giraffe is often the size of a dinner plate or smaller.\n        *   Let's re-evaluate. If there are 400 spots, and 120,000 giraffes: $400 \\times 120,000 = 48,000,000$.\n        *   If the spots are fewer, say 300: $300 \\times 120,000 = 36,000,000$.\n        *   If the population is lower, say 100,000: $300 \\times 100,000 = 30,000,000$.\n        *   Let's look for the population number again.\n        *   WWF/Giraffe Conservation Foundation (2023): ~117,000 in the wild.\n        *   Captive: ~2,000.\n        *   Total: ~119,000.\n        *   Let's refine the spot count. A 2011 paper \"The diversity of giraffe coat patterns\" might have data.\n        *   Without access to the exact paper, I rely on general knowledge.\n        *   Many sources state \"hundreds of spots\".\n        *   Let's assume an average of **350 spots**.\n        *   Calculation: $119,000 \\times 350$.\n        *   $119,000 \\times 300 = 35,700,000$.\n        *   $119,000 \\times 50 = 5,950,000$.\n        *   Total: $\\approx 41,650,000$.\n        *   This is dangerously close to the threshold of 41,000,000.\n        *   If the spot count is slightly lower, or population slightly lower, it drops under.\n        *   Population is often cited as \"less than 120,000\". 111,000 is a specific number often used.\n        *   $111,000 \\times 350 = 38,850,000$.\n        *   What if spots",
+  "content": " are",
+  "proposed_step": "        *   Let's settle on **400** as a reasonable median average across all subspecies. Some have fewer (larger spots like Reticulated), some have more (denser patches like Masai).\n        *   Wait, are there *that* many? A human hand is huge. A spot on a giraffe is often the size of a dinner plate or smaller.\n        *   Let's re-evaluate. If there are 400 spots, and 120,000 giraffes: $400 \\times 120,000 = 48,000,000$.\n        *   If the spots are fewer, say 300: $300 \\times 120,000 = 36,000,000$.\n        *   If the population is lower, say 100,000: $300 \\times 100,000 = 30,000,000$.\n        *   Let's look for the population number again.\n        *   WWF/Giraffe Conservation Foundation (2023): ~117,000 in the wild.\n        *   Captive: ~2,000.\n        *   Total: ~119,000.\n        *   Let's refine the spot count. A 2011 paper \"The diversity of giraffe coat patterns\" might have data.\n        *   Without access to the exact paper, I rely on general knowledge.\n        *   Many sources state \"hundreds of spots\".\n        *   Let's assume an average of **350 spots**.\n        *   Calculation: $119,000 \\times 350$.\n        *   $119,000 \\times 300 = 35,700,000$.\n        *   $119,000 \\times 50 = 5,950,000$.\n        *   Total: $\\approx 41,650,000$.\n        *   This is dangerously close to the threshold of 41,000,000.\n        *   If the spot count is slightly lower, or population slightly lower, it drops under.\n        *   Population is often cited as \"less than 120,000\". 111,000 is a specific number often used.\n        *   $111,000 \\times 350 = 38,850,000$.\n        *   What if spots",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1470,
+    "total_tokens": 2070,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 406,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0018663,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0018663,
+      "upstream_inference_prompt_cost": 0.0004263,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

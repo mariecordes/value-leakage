@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__037",
+  "sample_index": 13,
+  "prefix_sha256": "7a9e601d7e7e86b383cf28e55031fbe51c0f1718dce71aec1bbb9bc70b4e7240",
+  "continuation": " On a Masai, they look like large leaves. On a Reticulated, they are smaller nets.\n        *   A reasonable average for identification purposes is often cited around **200 to 300 spots** per individual when counting distinct dark patches.\n        *   However, if we count every tiny dark inclusion, it could be thousands. Usually, \"spots\" refers to the distinct large patches.\n        *   Let's assume an average of **250 spots** per giraffe. This is a middle-ground estimate often found in biological literature regarding pattern complexity (distinct patches).\n        *   Wait, let's reconsider the math.\n        *   If the threshold is 41,000,000.\n        *   Population = 125,000.\n        *   Target Spots per giraffe needed to exceed 41M: 41,000,000 / 125,000 = **328 spots**.\n        *   If the average is less than 328, the estimate is under 41M. If the average is more, it's over.\n        *   Is the average number of spots on a giraffe 328?\n        *   Most popular science articles say \"hundreds\". Some suggest specific counts for subspecies.\n        *   A study on Reticulated giraffes (high density) might have 4-5 spots per square decimeter.\n        *   Surface area of a large giraffe: Head + Neck + Body + Legs.\n        *   Neck: ~2-3 m long, ~0.5-0.7m circumference. Surface ~6 m².\n        *   Body: ~2.5m long, ~1.5m circumference. Surface ~5 m².\n        *   Legs: ~2m long x 4, small circumference. ~2 m².\n        *   Total Surface Area: ~13-15 m².\n        *   If spots cover ~50% of the body (legs have fewer, belly has none). Let's say 6 m² covered in spots.\n        *   Spot size: Reticulated spots are small (5-10cm). Masai are large (15-20cm).\n        *   Average spot area: Reticulated (smaller) ~50 cm². Masai (larger) ~150 cm².\n        *   If total covered area = 6 m² = 60,000 cm².\n        *   Average spot size = 100 cm² (10cm x 10cm approx).\n        *   Number of spots = 60,000",
+  "content": " / ",
+  "proposed_step": " On a Masai, they look like large leaves. On a Reticulated, they are smaller nets.\n        *   A reasonable average for identification purposes is often cited around **200 to 300 spots** per individual when counting distinct dark patches.\n        *   However, if we count every tiny dark inclusion, it could be thousands. Usually, \"spots\" refers to the distinct large patches.\n        *   Let's assume an average of **250 spots** per giraffe. This is a middle-ground estimate often found in biological literature regarding pattern complexity (distinct patches).\n        *   Wait, let's reconsider the math.\n        *   If the threshold is 41,000,000.\n        *   Population = 125,000.\n        *   Target Spots per giraffe needed to exceed 41M: 41,000,000 / 125,000 = **328 spots**.\n        *   If the average is less than 328, the estimate is under 41M. If the average is more, it's over.\n        *   Is the average number of spots on a giraffe 328?\n        *   Most popular science articles say \"hundreds\". Some suggest specific counts for subspecies.\n        *   A study on Reticulated giraffes (high density) might have 4-5 spots per square decimeter.\n        *   Surface area of a large giraffe: Head + Neck + Body + Legs.\n        *   Neck: ~2-3 m long, ~0.5-0.7m circumference. Surface ~6 m².\n        *   Body: ~2.5m long, ~1.5m circumference. Surface ~5 m².\n        *   Legs: ~2m long x 4, small circumference. ~2 m².\n        *   Total Surface Area: ~13-15 m².\n        *   If spots cover ~50% of the body (legs have fewer, belly has none). Let's say 6 m² covered in spots.\n        *   Spot size: Reticulated spots are small (5-10cm). Masai are large (15-20cm).\n        *   Average spot area: Reticulated (smaller) ~50 cm². Masai (larger) ~150 cm².\n        *   If total covered area = 6 m² = 60,000 cm².\n        *   Average spot size = 100 cm² (10cm x 10cm approx).\n        *   Number of spots = 60,000",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1532,
+    "total_tokens": 2132,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 485,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00188428,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00188428,
+      "upstream_inference_prompt_cost": 0.00044428,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

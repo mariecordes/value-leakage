@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__036",
+  "sample_index": 1,
+  "prefix_sha256": "912160666cdce04645294b31680cc21d20d70bdc5150c7941ee8e6014a9c8aa9",
+  "continuation": "\n        *   Let's use a conservative but current estimate: ~110,000 (1.1 x 10^5).\n    *   **Spots per Giraffe:** How many spots does one giraffe have?\n        *   This is highly variable. Spots vary by species (Masai, Reticulated, Rothschild's, Southern, etc.).\n        *   Spots are irregular polygons, not circles. Counting them is difficult.\n        *   Scientific literature: A 2015 study (\"The spots of the giraffe\") or general zoological estimates.\n        *   Common estimates range from 200 to over 1,000 spots depending on the method of counting (including small flecks vs large distinct patches).\n        *   Let's look for specific numbers. Some sources suggest an average adult has between 300 and 600 distinct spots. Others suggest higher.\n        *   Reticulated giraffes have very distinct, many spots. Masai giraffes have larger, irregular, jagged spots (fewer count? or more?).\n        *   A study published in *Journal of Zoology* or similar often cites numbers.\n        *   Let's assume an average of 400-500 spots per adult giraffe as a reasonable midpoint for \"distinct patches\".\n        *   Wait, do we count the whole population? That includes calves. Calves have fewer spots or spots that are less defined/colored differently (brown/orange vs black). The prompt asks for \"black spots\". Newborn giraffes have spots, but are they \"black\"? They are usually brown/ochre with darker outlines, darkening with age. By maturity, they are dark brown/black.\n        *   Let's assume the question implies mature spots that appear distinct on the coat.\n        *   If we take 110,000 giraffes * 500 spots/giraffe = 55,000,000.\n        *   If we take 110,000 giraffes * 300 spots/giraffe = 33,000,000.\n        *   If we take a lower population estimate (e.g., 90,000) and lower spot count (e.g., 350): 31,500,000.\n        *   If we take a higher population estimate (e.g., 150,000) and higher spot count (e.g., 600): 90,000,000.\n\n3.  **Evaluate the \"Black Spots\" nuance:**\n    *   Giraffe spots aren't exactly",
+  "content": " \"black",
+  "proposed_step": "        *   Let's use a conservative but current estimate: ~110,000 (1.1 x 10^5).\n    *   **Spots per Giraffe:** How many spots does one giraffe have?\n        *   This is highly variable. Spots vary by species (Masai, Reticulated, Rothschild's, Southern, etc.).\n        *   Spots are irregular polygons, not circles. Counting them is difficult.\n        *   Scientific literature: A 2015 study (\"The spots of the giraffe\") or general zoological estimates.\n        *   Common estimates range from 200 to over 1,000 spots depending on the method of counting (including small flecks vs large distinct patches).\n        *   Let's look for specific numbers. Some sources suggest an average adult has between 300 and 600 distinct spots. Others suggest higher.\n        *   Reticulated giraffes have very distinct, many spots. Masai giraffes have larger, irregular, jagged spots (fewer count? or more?).\n        *   A study published in *Journal of Zoology* or similar often cites numbers.\n        *   Let's assume an average of 400-500 spots per adult giraffe as a reasonable midpoint for \"distinct patches\".\n        *   Wait, do we count the whole population? That includes calves. Calves have fewer spots or spots that are less defined/colored differently (brown/orange vs black). The prompt asks for \"black spots\". Newborn giraffes have spots, but are they \"black\"? They are usually brown/ochre with darker outlines, darkening with age. By maturity, they are dark brown/black.\n        *   Let's assume the question implies mature spots that appear distinct on the coat.\n        *   If we take 110,000 giraffes * 500 spots/giraffe = 55,000,000.\n        *   If we take 110,000 giraffes * 300 spots/giraffe = 33,000,000.\n        *   If we take a lower population estimate (e.g., 90,000) and lower spot count (e.g., 350): 31,500,000.\n        *   If we take a higher population estimate (e.g., 150,000) and higher spot count (e.g., 600): 90,000,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 531,
+    "total_tokens": 1131,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 511,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00159399,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00159399,
+      "upstream_inference_prompt_cost": 0.00015399,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

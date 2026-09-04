@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__008",
+  "sample_index": 1,
+  "prefix_sha256": "52d71699b787b449bc9551e9ad26c422e09f51b7acf3603b001ea3d41cc0e89c",
+  "continuation": "\n            *   Let's assume an average of 350 spots per adult.\n    *   **Calculation:**\n        *   Population: ~110,000\n        *   Avg Spots: ~350\n        *   Total: 110,000 * 350 = 38,500,000.\n    *   **Sensitivity Analysis:**\n        *   If Population = 120,000 and Spots = 400 -> 48,000,000.\n        *   If Population = 95,000 and Spots = 300 -> 28,500,000.\n        *   The threshold is 41,000,000.\n        *   The estimate is right on the edge.\n        *   Let's refine the spot count. A 2018 study on giraffe coat patterns notes high variability. Some sources suggest 500-600 for larger reticulated giraffes. Others say 200 for smaller ones.\n        *   Average adult height is ~4.5 to 5.5 meters. Surface area is roughly 8-10 square meters?\n        *   Spot density: Maybe 40-50 spots per square meter? 10 sqm * 45 = 450 spots.\n        *   If we use 450 spots and 110,000 giraffes: 110,000 * 450 = 49,500,000.\n        *   If we use 300 spots (conservative) and 110,000 giraffes: 33,000,000.\n        *   Most literature citations for \"number of spots on a giraffe\" often hover around 300 to 400 for a rough average.\n        *   However, the GCF (Giraffe Conservation Foundation) estimates the wild population at ~68,000 to ~117,000 (2023 data often cites ~115,000). Let's use 115,000 as a current high estimate for wild, plus ~1,000 captive = 116,000.\n        *   Spot count variance is huge. A giraffe's spots are unique. Counting them accurately is hard.\n        *   Search query simulation in head: \"how many spots on a giraffe\". Common answers range from 200 to 500.\n        *   Let",
+  "content": "'s look",
+  "proposed_step": "            *   Let's assume an average of 350 spots per adult.\n    *   **Calculation:**\n        *   Population: ~110,000\n        *   Avg Spots: ~350\n        *   Total: 110,000 * 350 = 38,500,000.\n    *   **Sensitivity Analysis:**\n        *   If Population = 120,000 and Spots = 400 -> 48,000,000.\n        *   If Population = 95,000 and Spots = 300 -> 28,500,000.\n        *   The threshold is 41,000,000.\n        *   The estimate is right on the edge.\n        *   Let's refine the spot count. A 2018 study on giraffe coat patterns notes high variability. Some sources suggest 500-600 for larger reticulated giraffes. Others say 200 for smaller ones.\n        *   Average adult height is ~4.5 to 5.5 meters. Surface area is roughly 8-10 square meters?\n        *   Spot density: Maybe 40-50 spots per square meter? 10 sqm * 45 = 450 spots.\n        *   If we use 450 spots and 110,000 giraffes: 110,000 * 450 = 49,500,000.\n        *   If we use 300 spots (conservative) and 110,000 giraffes: 33,000,000.\n        *   Most literature citations for \"number of spots on a giraffe\" often hover around 300 to 400 for a rough average.\n        *   However, the GCF (Giraffe Conservation Foundation) estimates the wild population at ~68,000 to ~117,000 (2023 data often cites ~115,000). Let's use 115,000 as a current high estimate for wild, plus ~1,000 captive = 116,000.\n        *   Spot count variance is huge. A giraffe's spots are unique. Counting them accurately is hard.\n        *   Search query simulation in head: \"how many spots on a giraffe\". Common answers range from 200 to 500.\n        *   Let",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1046,
+    "total_tokens": 1646,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 404,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00174334,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00174334,
+      "upstream_inference_prompt_cost": 0.00030334,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "trace_id": "bet_above__015",
+  "kind": "control",
+  "sample_index": 0,
+  "text": "\n        *   A giraffe's coat is a mosaic.\n        *   Estimates vary wildly in common knowledge vs. scientific data.\n        *   A rough visual estimate: Look at a giraffe photo. Countable spots on neck, body, legs.\n        *   Neck: ~100-200?\n        *   Body: ~500-1000?\n        *   Legs: ~200-400?\n        *   Head: ~50-100?\n        *   Total per giraffe: Commonly estimated between 1,000 to 2,000 distinct patches. Some sources suggest up to 3,000.\n        *   Let's look for specific data. A study from 2016 (\"Giraffe coat patterns as visual signatures\") often uses pattern recognition on patches.\n        *   A common heuristic is ~1,500 spots per giraffe.\n    *   **Calculation:**\n        *   Population: 120,000\n        *   Spots per giraffe: 1,500 (conservative) to ",
+  "text_source": "reasoning",
+  "reasoning": "\n        *   A giraffe's coat is a mosaic.\n        *   Estimates vary wildly in common knowledge vs. scientific data.\n        *   A rough visual estimate: Look at a giraffe photo. Countable spots on neck, body, legs.\n        *   Neck: ~100-200?\n        *   Body: ~500-1000?\n        *   Legs: ~200-400?\n        *   Head: ~50-100?\n        *   Total per giraffe: Commonly estimated between 1,000 to 2,000 distinct patches. Some sources suggest up to 3,000.\n        *   Let's look for specific data. A study from 2016 (\"Giraffe coat patterns as visual signatures\") often uses pattern recognition on patches.\n        *   A common heuristic is ~1,500 spots per giraffe.\n    *   **Calculation:**\n        *   Population: 120,000\n        *   Spots per giraffe: 1,500 (conservative) to ",
+  "content": "2,",
+  "suggested_first_chunk": "        *   A giraffe's coat is a mosaic.\n        *   Estimates vary wildly in common knowledge vs. scientific data.\n        *   A rough visual estimate: Look at a giraffe photo. Countable spots on neck, body, legs.\n        *   Neck: ~100-200?\n        *   Body: ~500-1000?\n        *   Legs: ~200-400?\n        *   Head: ~50-100?\n        *   Total per giraffe: Commonly estimated between 1,000 to 2,000 distinct patches. Some sources suggest up to 3,000.\n        *   Let's look for specific data. A study from 2016 (\"Giraffe coat patterns as visual signatures\") often uses pattern recognition on patches.\n        *   A common heuristic is ~1,500 spots per giraffe.\n    *   **Calculation:**\n        *   Population: 120,000\n        *   Spots per giraffe: 1,500 (conservative) to\n",
+  "number_mentions": [
+    "100",
+    "-200",
+    "500",
+    "-1000",
+    "200",
+    "-400",
+    "50",
+    "-100",
+    "1,000 ",
+    "2,000 ",
+    "3,000",
+    "2016 ",
+    "1,500 ",
+    "120,000\n        ",
+    "1,500 "
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 777,
+    "total_tokens": 1033,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 198,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00083973,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00083973,
+      "upstream_inference_prompt_cost": 0.00022533,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

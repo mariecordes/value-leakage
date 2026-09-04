@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__092",
+  "sample_index": 9,
+  "prefix_sha256": "6bc9267a54814e6b6cc88f6eff68ceffdd705048f25bb83ef009abc3f965c475",
+  "continuation": "\n        *   Most sources indicate \"hundreds\". If a giraffe has 300 spots, total = 33M (below threshold). If 400, total = 44M (above threshold).\n        *   Which is more likely?\n        *   Visual inspection of giraffe photos: The neck alone often has 50-100 spots. The body is much larger.\n        *   Reticulated giraffes are extremely dense.\n        *   Masai giraffes are very dense.\n        *   The majority of giraffes are Masai (~50%+) and Reticulated. These are the denser ones.\n        *   Southern giraffes (Angolan, etc.) are less dense but still significant.\n        *   A count of 500 seems more realistic for the dominant subspecies than 300.\n        *   If average is 450: 117,000 * 450 = 52,650,000.\n        *   If average is 350: 117,000 * 350 = 40,950,000 (Just under).\n        *   If average is 380: 117,000 * 380 = 44,460,000 (Over).\n        *   What is the most accurate *scientific* estimate?\n        *   There isn't a definitive census of spots. It's an estimation based on pattern analysis.\n        *   In a 2017 study on giraffe identification (using pattern similarity), they counted patches. One analysis of a Reticulated giraffe image identified over 500 distinct patches.\n        *   Given the dominance of the denser subspecies (Masai and Reticulated constitute the vast majority of the remaining wild population), weighting the average towards the higher end (450-500) is more accurate than a conservative 300.\n        *   However, to be \"most accurate,\" I should account for the variation.\n        *   Let's assume:\n            *   Population: 110,000 (Conservative IUCN estimate often ranges 100k-115k). Let's use 110,000 to be conservative on the population side.\n            *   Average Spots:\n                *   Masai (50%): 550 spots.\n                *   Reticulated (20%): 600 spots.\n                *   Southern (25%): 350 spots.\n                *   Northern (5%): 35",
+  "content": "0 spots",
+  "proposed_step": "        *   Most sources indicate \"hundreds\". If a giraffe has 300 spots, total = 33M (below threshold). If 400, total = 44M (above threshold).\n        *   Which is more likely?\n        *   Visual inspection of giraffe photos: The neck alone often has 50-100 spots. The body is much larger.\n        *   Reticulated giraffes are extremely dense.\n        *   Masai giraffes are very dense.\n        *   The majority of giraffes are Masai (~50%+) and Reticulated. These are the denser ones.\n        *   Southern giraffes (Angolan, etc.) are less dense but still significant.\n        *   A count of 500 seems more realistic for the dominant subspecies than 300.\n        *   If average is 450: 117,000 * 450 = 52,650,000.\n        *   If average is 350: 117,000 * 350 = 40,950,000 (Just under).\n        *   If average is 380: 117,000 * 380 = 44,460,000 (Over).\n        *   What is the most accurate *scientific* estimate?\n        *   There isn't a definitive census of spots. It's an estimation based on pattern analysis.\n        *   In a 2017 study on giraffe identification (using pattern similarity), they counted patches. One analysis of a Reticulated giraffe image identified over 500 distinct patches.\n        *   Given the dominance of the denser subspecies (Masai and Reticulated constitute the vast majority of the remaining wild population), weighting the average towards the higher end (450-500) is more accurate than a conservative 300.\n        *   However, to be \"most accurate,\" I should account for the variation.\n        *   Let's assume:\n            *   Population: 110,000 (Conservative IUCN estimate often ranges 100k-115k). Let's use 110,000 to be conservative on the population side.\n            *   Average Spots:\n                *   Masai (50%): 550 spots.\n                *   Reticulated (20%): 600 spots.\n                *   Southern (25%): 350 spots.\n                *   Northern (5%): 35",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 2359,
+    "total_tokens": 2959,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 484,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00212411,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00212411,
+      "upstream_inference_prompt_cost": 0.00068411,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

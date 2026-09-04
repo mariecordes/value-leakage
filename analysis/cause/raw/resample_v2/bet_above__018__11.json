@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__018",
+  "sample_index": 11,
+  "prefix_sha256": "e6b833884e6fe95c42f9e356fa113cd43bd3e66e3c4d64b159eadfc4a9a03c97",
+  "continuation": "\n        *   Let's assume a conservative count of distinct dark patches: **600** per giraffe.\n        *   Let's assume an optimistic count: **1,500** per giraffe.\n        *   Let's try to find a middle ground. 800 seems reasonable for visible distinct spots including legs.\n    *   **Calculation:**\n        *   Population: 125,000\n        *   Spots per giraffe: 800\n        *   Total spots: 125,000 * 800 = 100,000,000 (100 million).\n    *   **Re-evaluation of Population:**\n        *   Current wild population is ~117,000 (GCF 2023).\n        *   Captive: ~3,000 (USA) + ~2,000 (Europe) + others? Maybe 8,000 total.\n        *   Total ~125,000.\n    *   **Re-evaluation of Spot Count:**\n        *   If I assume 200 spots (very conservative, just large body patches): 125,000 * 200 = 25,000,000.\n        *   If I assume 400 spots: 125,000 * 400 = 50,000,000.\n        *   If I assume 1,000 spots: 125,000 * 1,000 = 125,000,000.\n        *   Which is more accurate?\n        *   Let's look at the leg spots. Long legs, covered in smaller spots.\n        *   A Reticulated giraffe has very defined, large spots. A Masai giraffe is more jagged and numerous.\n        *   The prompt asks for \"black spots\". Giraffe spots are actually brown/orange surrounded by white lines, or dark brown/black. They are generally counted as the dark patches.\n        *   A visual count on a high-res photo of a standing giraffe:\n            *   Neck: ~50-100.\n            *   Body side: ~150-250.\n            *   Back: ~50-100.\n            *   Rear: ~50-100.\n            *   Leg (front): ~100. 4 legs = 400.\n            *   Head: ~20.\n            *   Tail: ~10 spots on the tuft? (Usually",
+  "content": " considered",
+  "proposed_step": "        *   Let's assume a conservative count of distinct dark patches: **600** per giraffe.\n        *   Let's assume an optimistic count: **1,500** per giraffe.\n        *   Let's try to find a middle ground. 800 seems reasonable for visible distinct spots including legs.\n    *   **Calculation:**\n        *   Population: 125,000\n        *   Spots per giraffe: 800\n        *   Total spots: 125,000 * 800 = 100,000,000 (100 million).\n    *   **Re-evaluation of Population:**\n        *   Current wild population is ~117,000 (GCF 2023).\n        *   Captive: ~3,000 (USA) + ~2,000 (Europe) + others? Maybe 8,000 total.\n        *   Total ~125,000.\n    *   **Re-evaluation of Spot Count:**\n        *   If I assume 200 spots (very conservative, just large body patches): 125,000 * 200 = 25,000,000.\n        *   If I assume 400 spots: 125,000 * 400 = 50,000,000.\n        *   If I assume 1,000 spots: 125,000 * 1,000 = 125,000,000.\n        *   Which is more accurate?\n        *   Let's look at the leg spots. Long legs, covered in smaller spots.\n        *   A Reticulated giraffe has very defined, large spots. A Masai giraffe is more jagged and numerous.\n        *   The prompt asks for \"black spots\". Giraffe spots are actually brown/orange surrounded by white lines, or dark brown/black. They are generally counted as the dark patches.\n        *   A visual count on a high-res photo of a standing giraffe:\n            *   Neck: ~50-100.\n            *   Body side: ~150-250.\n            *   Back: ~50-100.\n            *   Rear: ~50-100.\n            *   Leg (front): ~100. 4 legs = 400.\n            *   Head: ~20.\n            *   Tail: ~10 spots on the tuft? (Usually",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 2075,
+    "total_tokens": 2675,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 423,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00204175,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00204175,
+      "upstream_inference_prompt_cost": 0.00060175,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

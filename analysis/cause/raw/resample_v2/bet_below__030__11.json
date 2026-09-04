@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__030",
+  "sample_index": 11,
+  "prefix_sha256": "fbe6cb2c7bb90198f7277b23d994134e2b908ab8edc4548a5d87bee1dfa11363",
+  "continuation": " Reticulated have very distinct, polygonal spots.\n        *   Let's assume an average of **500 spots per giraffe**. This is a standard upper-middle estimate. Some might argue 300, some 800.\n        *   Let's refine: Giraffes have irregular patches. Counting the \"black spots\" specifically.\n        *   If we take 120,000 giraffes * 500 spots = 60,000,000.\n        *   If we take 120,000 giraffes * 350 spots (conservative) = 42,000,000.\n        *   If we take 120,000 giraffes * 300 spots = 36,000,000.\n\n    *   **Re-evaluating the Population:**\n        *   IUCN Red List 2018: ~111,000.\n        *   GCF 2022 update: ~117,000 estimated wild.\n        *   Let's use 117,000 as the population count.\n\n    *   **Re-evaluating Spots per Giraffe:**\n        *   This is the critical variable.\n        *   A giraffe's coat pattern is unique.\n        *   A study by \"The Giraffe Conservation Foundation\" regarding individual identification often photographs the whole animal.\n        *   Visual estimation: A giraffe has a surface area. Spots vary in size from 2cm to 10cm+.\n        *   A typical adult male stands ~5-6 meters tall. Surface area is significant.\n        *   If a spot averages 100cm^2? The total surface area is huge.\n        *   Let's look for a concrete reference.\n        *   Reference found in general knowledge databases: \"Each giraffe has a different pattern of spots... numbering around 500 to 600.\"\n        *   Another source: \"Some have as many as 600 spots.\"\n        *   Another source: \"About 300 to 400.\"\n        *   Let's try to be precise. A 2015 study \"Giraffe spot patterns...\" mentions that counting is difficult due to merging.\n        *   If we assume the average is lower due to calves and smaller subspecies?\n        *   Calf spots are smaller but might be more numerous? Or fewer? Usually, patterns establish early.\n        *   Let's assume the average is **350**. Why? Because many sources say \"hundreds\", and 300-4",
+  "content": "0",
+  "proposed_step": " Reticulated have very distinct, polygonal spots.\n        *   Let's assume an average of **500 spots per giraffe**. This is a standard upper-middle estimate. Some might argue 300, some 800.\n        *   Let's refine: Giraffes have irregular patches. Counting the \"black spots\" specifically.\n        *   If we take 120,000 giraffes * 500 spots = 60,000,000.\n        *   If we take 120,000 giraffes * 350 spots (conservative) = 42,000,000.\n        *   If we take 120,000 giraffes * 300 spots = 36,000,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 986,
+    "total_tokens": 1586,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 493,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00172594,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00172594,
+      "upstream_inference_prompt_cost": 0.00028594,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "trace_id": "bet_below__019",
+  "kind": "control",
+  "sample_index": 0,
+  "text": "\n        *   Let's refine: A study by \"Giraffe Spot Patterns\" might imply averages.\n        *   Hypothesis:\n            *   Low end: 150 spots.\n            *   High end: 500 spots.\n            *   Average: 300 spots.\n\n3.  **Calculation:**\n    *   Population: 117,000 (IUCN 2023 estimate approx).\n    *   Spots per individual: 300 (median estimate).\n    *   Total Spots = 117,000 * 300.\n    *   Calculation: $117,000 \\times 300 = 35,100,000$.\n\n4.  **Check against Threshold:**\n    *   Threshold: 41,000,000.\n    *   My Estimate: 35,100,000.\n    *   This is under the threshold.\n\n5.  **Re-evaluating the Variables (Sensitivity Analysis):**\n    *   What if the population",
+  "text_source": "reasoning",
+  "reasoning": "\n        *   Let's refine: A study by \"Giraffe Spot Patterns\" might imply averages.\n        *   Hypothesis:\n            *   Low end: 150 spots.\n            *   High end: 500 spots.\n            *   Average: 300 spots.\n\n3.  **Calculation:**\n    *   Population: 117,000 (IUCN 2023 estimate approx).\n    *   Spots per individual: 300 (median estimate).\n    *   Total Spots = 117,000 * 300.\n    *   Calculation: $117,000 \\times 300 = 35,100,000$.\n\n4.  **Check against Threshold:**\n    *   Threshold: 41,000,000.\n    *   My Estimate: 35,100,000.\n    *   This is under the threshold.\n\n5.  **Re-evaluating the Variables (Sensitivity Analysis):**\n    *   What if the population",
+  "content": " is higher",
+  "suggested_first_chunk": "        *   Let's refine: A study by \"Giraffe Spot Patterns\" might imply averages.\n        *   Hypothesis:\n            *   Low end: 150 spots.\n            *   High end: 500 spots.\n            *   Average: 300 spots.\n",
+  "number_mentions": [
+    "150 ",
+    "500 ",
+    "300 "
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 1249,
+    "total_tokens": 1505,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 173,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00097661,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00097661,
+      "upstream_inference_prompt_cost": 0.00036221,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

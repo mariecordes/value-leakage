@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__074",
+  "sample_index": 18,
+  "prefix_sha256": "55e7128872ad27f8bd666b7edc5783503d5ef675e805adf9866fb76a76b4db10",
+  "continuation": "\n            *   Let's assume a range of **250 to 350** spots per giraffe as a reasonable average across species.\n            *   Reticulated giraffes: Smaller spots, more numerous. Maybe 400-500.\n            *   Masai giraffes: Larger, jagged spots, fewer. Maybe 200-250.\n            *   Average: ~300.\n    *   **Calculation:**\n        *   Population: 110,000.\n        *   Spots per giraffe: 300.\n        *   Total spots = 110,000 * 300 = 33,000,000.\n    *   **Refinement:**\n        *   Is the population higher? In 2016, it was 117,000. In 2023, GCF says \"fewer than 110,000\". Let's use **105,000** to be conservative/accurate to current decline.\n        *   Are there captives? ~2,000.\n        *   Total giraffes: **107,000**.\n        *   Spots per giraffe:\n            *   If the average is 300, Total = 32,100,000.\n            *   If the average is 400 (conservative high end due to Reticulated prevalence?), Total = 42,800,000.\n            *   If the average is 250 (conservative low end), Total = 26,750,000.\n        *   Let's dig deeper into the \"spots per giraffe\" metric.\n        *   A 2019 study \"Variation in giraffe coat patterns\" or similar.\n        *   Common consensus in biology articles: \"Hundreds\".\n        *   Specific number often cited: ~300.\n        *   Some sources say \"up to 600\".\n        *   Let's consider the baby giraffes. They have spots too, maybe fewer/smaller initially? Or same pattern density? Usually same pattern, just smaller spots, potentially more of them to cover the same area? Actually, spots are determined in utero. The number of spots is relatively fixed.\n        *   Let's assume **350** spots is a solid mean.\n        *   Population: **110,000**.\n        *   Total: 110,000 * 350 = 38,500,",
+  "content": "00",
+  "proposed_step": "            *   Let's assume a range of **250 to 350** spots per giraffe as a reasonable average across species.\n            *   Reticulated giraffes: Smaller spots, more numerous. Maybe 400-500.\n            *   Masai giraffes: Larger, jagged spots, fewer. Maybe 200-250.\n            *   Average: ~300.\n    *   **Calculation:**\n        *   Population: 110,000.\n        *   Spots per giraffe: 300.\n        *   Total spots = 110,000 * 300 = 33,000,000.\n    *   **Refinement:**\n        *   Is the population higher? In 2016, it was 117,000. In 2023, GCF says \"fewer than 110,000\". Let's use **105,000** to be conservative/accurate to current decline.\n        *   Are there captives? ~2,000.\n        *   Total giraffes: **107,000**.\n        *   Spots per giraffe:\n            *   If the average is 300, Total = 32,100,000.\n            *   If the average is 400 (conservative high end due to Reticulated prevalence?), Total = 42,800,000.\n            *   If the average is 250 (conservative low end), Total = 26,750,000.\n        *   Let's dig deeper into the \"spots per giraffe\" metric.\n        *   A 2019 study \"Variation in giraffe coat patterns\" or similar.\n        *   Common consensus in biology articles: \"Hundreds\".\n        *   Specific number often cited: ~300.\n        *   Some sources say \"up to 600\".\n        *   Let's consider the baby giraffes. They have spots too, maybe fewer/smaller initially? Or same pattern density? Usually same pattern, just smaller spots, potentially more of them to cover the same area? Actually, spots are determined in utero. The number of spots is relatively fixed.\n        *   Let's assume **350** spots is a solid mean.\n        *   Population: **110,000**.\n        *   Total: 110,000 * 350 = 38,500,",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1501,
+    "total_tokens": 2101,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 442,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00187529,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00187529,
+      "upstream_inference_prompt_cost": 0.00043529,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

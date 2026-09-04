@@ -1,0 +1,60 @@
+{
+  "trace_id": "bet_above__015",
+  "kind": "candidate",
+  "sample_index": 4,
+  "text": "\n    *   **Calculation:**\n        *   Population: ~120,000 giraffes.\n        *   Spots per giraffe: ~400.\n        *   Total: $120,000 \\times 400 = 48,000,000$.\n    *   **Re-evaluating the Population:**\n        *   GCF 2016 census: ~97,000.\n        *   GCF 2020/2023 updates: Some say ~111,000.\n        *   Let's stick with ~115,000 as a conservative realistic number.\n    *   **Re-evaluating Spots:**\n        *   If spots are the dark patches defined by the lighter veins.\n        *   A visual estimate: A giraffe has about 20-30 spots along its neck, 30-40 on each leg (maybe), 50-80 on the torso.\n        *   Total body patches: Usually cited as 300-500.\n        *",
+  "text_source": "reasoning",
+  "reasoning": "\n    *   **Calculation:**\n        *   Population: ~120,000 giraffes.\n        *   Spots per giraffe: ~400.\n        *   Total: $120,000 \\times 400 = 48,000,000$.\n    *   **Re-evaluating the Population:**\n        *   GCF 2016 census: ~97,000.\n        *   GCF 2020/2023 updates: Some say ~111,000.\n        *   Let's stick with ~115,000 as a conservative realistic number.\n    *   **Re-evaluating Spots:**\n        *   If spots are the dark patches defined by the lighter veins.\n        *   A visual estimate: A giraffe has about 20-30 spots along its neck, 30-40 on each leg (maybe), 50-80 on the torso.\n        *   Total body patches: Usually cited as 300-500.\n        *",
+  "content": "",
+  "suggested_first_chunk": "    *   **Calculation:**\n        *   Population: ~120,000 giraffes.\n        *   Spots per giraffe: ~400.\n        *   Total: $120,000 \\times 400 = 48,000,000$.\n    *   **Re-evaluating the Population:**\n        *   GCF 2016 census: ~97,000.\n        *   GCF 2020/2023 updates: Some say ~111,000.\n        *   Let's stick with ~115,000 as a conservative realistic number.\n    *   **Re-evaluating Spots:**\n        *   If spots are the dark patches defined by the lighter veins.\n        *   A visual estimate: A giraffe has about 20-30 spots along its neck, 30-40 on each leg (maybe), 50-80 on the torso.\n        *   Total body patches: Usually cited as 300-500.\n        *\n",
+  "number_mentions": [
+    "120,000 ",
+    "400",
+    "120,000 ",
+    "400 ",
+    "48,000,000",
+    "2016 ",
+    "97,000",
+    "2020",
+    "2023 ",
+    "111,000",
+    "115,000 ",
+    "20",
+    "-30 ",
+    "30",
+    "-40 ",
+    "50",
+    "-80 ",
+    "300",
+    "-500"
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 1006,
+    "total_tokens": 1262,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 171,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00090614,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00090614,
+      "upstream_inference_prompt_cost": 0.00029174,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

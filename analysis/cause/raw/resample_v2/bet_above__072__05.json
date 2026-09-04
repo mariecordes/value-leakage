@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__072",
+  "sample_index": 5,
+  "prefix_sha256": "784dd1ec1c8a3d18479946baeb6f7eee5bf3ccc652e5a9ce1fb8392ba9800420",
+  "continuation": "\n                *   Let's look for a middle ground. Reticulated giraffes have smaller, more numerous spots. Masai giraffes have larger, jagged, fewer spots.\n                *   *Reticulated:* Higher count. Maybe 500-800?\n                *   *Southern (Maasai/Kenyan):* Lower count. Maybe 150-300?\n                *   *Weighted average:* Most giraffes are Masai or Reticulated.\n                *   Let's estimate an average of **400 spots per giraffe**. This accounts for the variation between species and the fact that some spots are very small and numerous while others are large and few.\n                *   Re-evaluating: Some sources say \"hundreds\". Some specific studies analyzing AI pattern recognition for individual ID often partition the image into many features.\n                *   Let's try a more conservative count first. If I assume 200 spots. Total = 117,000 * 200 = 23,400,000.\n                *   If I assume 400 spots. Total = 117,000 * 400 = 46,800,000.\n                *   If I assume 600 spots. Total = 117,000 * 600 = 70,200,000.\n                *   Which is more accurate physically?\n                *   A giraffe's body is huge. The spots are distinct dark patches. If you count every distinct dark region, is it 200?\n                *   *Reference Check:* A 2018 National Geographic article mentions \"unique patterns of spots\".\n                *   *Reference Check:* A paper by *C. L. Miller* (2019) on giraffe pattern analysis often uses grid overlays.\n                *   Let's look at the density.\n                *   If a giraffe is 117,000 strong.\n                *   Let's search for a consensus \"spots per giraffe\".\n                *   Common trivia: \"How many spots does a giraffe have?\"\n                *   Answers range from 100 to 500.\n                *   The *Giraffe Conservation Foundation* states patterns are unique like fingerprints.\n                *   Let's assume a slightly higher count because \"spots\" usually implies every distinct dark patch, not just the major large ones. On the legs and neck, spots get smaller.\n                *   Let's estimate **350** spots per giraffe as a realistic average.\n                    *   Masai: ~250\n                    *   Reticulated",
+  "content": ": ~",
+  "proposed_step": "                *   Let's look for a middle ground. Reticulated giraffes have smaller, more numerous spots. Masai giraffes have larger, jagged, fewer spots.\n                *   *Reticulated:* Higher count. Maybe 500-800?\n                *   *Southern (Maasai/Kenyan):* Lower count. Maybe 150-300?\n                *   *Weighted average:* Most giraffes are Masai or Reticulated.\n                *   Let's estimate an average of **400 spots per giraffe**. This accounts for the variation between species and the fact that some spots are very small and numerous while others are large and few.\n                *   Re-evaluating: Some sources say \"hundreds\". Some specific studies analyzing AI pattern recognition for individual ID often partition the image into many features.\n                *   Let's try a more conservative count first. If I assume 200 spots. Total = 117,000 * 200 = 23,400,000.\n                *   If I assume 400 spots. Total = 117,000 * 400 = 46,800,000.\n                *   If I assume 600 spots. Total = 117,000 * 600 = 70,200,000.\n                *   Which is more accurate physically?\n                *   A giraffe's body is huge. The spots are distinct dark patches. If you count every distinct dark region, is it 200?\n                *   *Reference Check:* A 2018 National Geographic article mentions \"unique patterns of spots\".\n                *   *Reference Check:* A paper by *C. L. Miller* (2019) on giraffe pattern analysis often uses grid overlays.\n                *   Let's look at the density.\n                *   If a giraffe is 117,000 strong.\n                *   Let's search for a consensus \"spots per giraffe\".\n                *   Common trivia: \"How many spots does a giraffe have?\"\n                *   Answers range from 100 to 500.\n                *   The *Giraffe Conservation Foundation* states patterns are unique like fingerprints.\n                *   Let's assume a slightly higher count because \"spots\" usually implies every distinct dark patch, not just the major large ones. On the legs and neck, spots get smaller.\n                *   Let's estimate **350** spots per giraffe as a realistic average.\n                    *   Masai: ~250\n                    *   Reticulated",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1104,
+    "total_tokens": 1704,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 562,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00176016,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00176016,
+      "upstream_inference_prompt_cost": 0.00032016,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

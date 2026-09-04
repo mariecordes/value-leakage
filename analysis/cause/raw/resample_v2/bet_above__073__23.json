@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__073",
+  "sample_index": 23,
+  "prefix_sha256": "56b1c116e9e1a727d49da4d716e1390e128279f7c9e1b35d80e30b22c41cdc62",
+  "continuation": "\n        *   Let's take a weighted average. Most giraffes are adult/sub-adults.\n        *   Conservative estimate: 500 spots.\n        *   Generous estimate: 1,500 spots.\n        *   Midpoint/Best Guess: **1,000 spots** per giraffe.\n\n3.  **Perform the Calculation:**\n    *   Total Giraffes: 120,000 (117k wild + ~3k captive).\n    *   Spots per Giraffe: 1,000.\n    *   Total Spots: $120,000 \\times 1,000 = 120,000,000$ (120 million).\n\n4.  **Re-evaluate the Spot Count:**\n    *   Is 1,000 accurate?\n    *   Let's refine the surface area calculation.\n    *   Giraffe surface area: An adult Reticulated giraffe is ~18,000 cm² per side? No, total skin surface area for a 1200kg animal.\n    *   Meeus calculation for surface area: $SA = k \\times W^{2/3}$. For 1200kg, $SA \\approx 40,000 cm^2$ ($4 m^2$)? Wait, that seems too small.\n    *   Standard animal surface area formula ($SA = 0.1 \\times W^{0.67}$? No).\n    *   Let's check: A human (~80kg) has ~1.7 m² surface area. A giraffe (~1000kg) is much bigger.\n    *   Rough scaling: If a human is 1.8m, a giraffe is 5.7m. Surface area scales with square of linear dimension. $(5.7/1.8)^2 \\approx 10$. So roughly $1.7 \\times 10 = 17 m^2$.\n    *   Let's assume surface area is between **15 to 20 square meters**.\n    *   Spot size: The patches are polygons.\n    *   Large neck spots: ~10-15cm across.\n    *   Body spots: ~20-30cm across.\n    *   Leg spots: ~5cm across.\n    *   Weighted average area: Maybe a spot \"covers\" 20cm x 20cm = 400 cm² = 0.04 m².\n    *   If Surface Area = 20 m².\n    *   Count = $20 / 0",
+  "content": ".0",
+  "proposed_step": "        *   Let's take a weighted average. Most giraffes are adult/sub-adults.\n        *   Conservative estimate: 500 spots.\n        *   Generous estimate: 1,500 spots.\n        *   Midpoint/Best Guess: **1,000 spots** per giraffe.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1339,
+    "total_tokens": 1939,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 397,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00182831,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00182831,
+      "upstream_inference_prompt_cost": 0.00038831,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

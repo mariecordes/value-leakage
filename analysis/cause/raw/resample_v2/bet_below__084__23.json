@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__084",
+  "sample_index": 23,
+  "prefix_sha256": "a759011d2298bee2479282b74448b04bc8f0aacd18c21e0ade28649e2fe6062c",
+  "continuation": "\n        *   Let's assume an average of **300 spots** per giraffe. This seems low?\n        *   Re-evaluating: If I look at a picture, there are many shapes.\n        *   Let's try a different approach. If there are 100,000 giraffes and the threshold is 41,000,000.\n        *   $41,000,000 / 100,000 = 410$ spots per giraffe.\n        *   Is 410 spots per giraffe reasonable?\n        *   If a giraffe has 400 spots, and there are 100,000 giraffes, the total is 40,000,000. This is right under the threshold.\n        *   If a giraffe has 500 spots, total is 50,000,000 (over).\n        *   If a giraffe has 200 spots, total is 20,000,000 (under).\n        *   Which is more accurate for \"black spots\"?\n        *   Spots are the dark patches.\n        *   According to the Giraffe Conservation Foundation, there are four species (Masai, Reticulated, Southern, Northern).\n        *   Reticulated giraffes have very distinct, small, many spots. Masai giraffes have larger, jagged patches (fewer distinct \"spots\").\n        *   If we average across species, Reticulated might have 500+, Masai might have 150.\n        *   Population breakdown: Reticulated ~5,000? Masai ~30,000? Southern (Angolan/Karoo) ~70,000?\n        *   Masai giraffes have \"leaf-shaped\" spots that are large. Maybe 100-200 per animal.\n        *   Reticulated have small, dense spots. Maybe 300-400 per animal.\n        *   Southern giraffes (Cape) have rounder shapes, moderate count.\n        *   Let's calculate a weighted average.\n        *   If the average is roughly 350 spots per giraffe.\n        *   Population: ~97,000.\n        *   Total = $97,000 \\times 350 = 33,950,000$.\n        *   This is below 41,000,000.\n        *   What if the population is higher? Some sources say 110",
+  "content": ",0",
+  "proposed_step": "        *   Let's assume an average of **300 spots** per giraffe. This seems low?\n        *   Re-evaluating: If I look at a picture, there are many shapes.\n        *   Let's try a different approach. If there are 100,000 giraffes and the threshold is 41,000,000.\n        *   $41,000,000 / 100,000 = 410$ spots per giraffe.\n        *   Is 410 spots per giraffe reasonable?\n        *   If a giraffe has 400 spots, and there are 100,000 giraffes, the total is 40,000,000. This is right under the threshold.\n        *   If a giraffe has 500 spots, total is 50,000,000 (over).\n        *   If a giraffe has 200 spots, total is 20,000,000 (under).\n        *   Which is more accurate for \"black spots\"?\n        *   Spots are the dark patches.\n        *   According to the Giraffe Conservation Foundation, there are four species (Masai, Reticulated, Southern, Northern).\n        *   Reticulated giraffes have very distinct, small, many spots. Masai giraffes have larger, jagged patches (fewer distinct \"spots\").\n        *   If we average across species, Reticulated might have 500+, Masai might have 150.\n        *   Population breakdown: Reticulated ~5,000? Masai ~30,000? Southern (Angolan/Karoo) ~70,000?\n        *   Masai giraffes have \"leaf-shaped\" spots that are large. Maybe 100-200 per animal.\n        *   Reticulated have small, dense spots. Maybe 300-400 per animal.\n        *   Southern giraffes (Cape) have rounder shapes, moderate count.\n        *   Let's calculate a weighted average.\n        *   If the average is roughly 350 spots per giraffe.\n        *   Population: ~97,000.\n        *   Total = $97,000 \\times 350 = 33,950,000$.\n        *   This is below 41,000,000.\n        *   What if the population is higher? Some sources say 110",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1460,
+    "total_tokens": 2060,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 442,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0018634,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0018634,
+      "upstream_inference_prompt_cost": 0.0004234,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

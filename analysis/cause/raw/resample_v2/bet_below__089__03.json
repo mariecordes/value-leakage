@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__089",
+  "sample_index": 3,
+  "prefix_sha256": "322390e1e063650f7bfc0420acb362500814ab34781320d0f7ab02c537ab90a1",
+  "continuation": "\n            *   Let's try to find a specific number often used in estimates.\n            *   If average spots = 300.\n            *   Total population = 110,000.\n            *   Total spots = 110,000 * 300 = 33,000,000.\n            *   If average spots = 400.\n            *   Total spots = 110,000 * 400 = 44,000,000.\n            *   If average spots = 250.\n            *   Total spots = 110,000 * 250 = 27,500,000.\n\n    *   **Refining the Population:**\n        *   IUCN Red List (2021 update): 119,761 individuals (wild).\n        *   Captive: ~4,000.\n        *   Total: ~124,000.\n        *   Wait, recent declines: Some reports say population dropped to roughly 110,000. Let's use 115,000 as a solid middle ground.\n\n    *   **Refining the Spot Count:**\n        *   Are spots counted on the legs? Yes, usually \"spots\" refers to the reticulated or blotched pattern covering the skin.\n        *   Do we count the belly? Often lighter, fewer spots.\n        *   Let's look for a definitive study count.\n        *   A study by *Dagg and Foster* (1976) or more recent image analysis.\n        *   A 2016 article \"How many spots does a giraffe have?\" often cites \"hundreds\".\n        *   Some specific counts from individual tracking projects:\n            *   Individual identification photos often reveal 200-400 distinct dark patches.\n            *   Let's assume a realistic average of **320 spots** per adult.\n            *   Calculation: 115,000 giraffes * 320 spots = 36,800,000.\n\n    *   **Sensitivity Analysis:**\n        *   Low End: 90,000 giraffes * 200 spots = 18,000,000.\n        *   High End: 130,000 giraffes * 500 spots = 65,000,000.\n        *   The threshold is 41,000,000.\n        *   My estimated",
+  "content": " range",
+  "proposed_step": "            *   Let's try to find a specific number often used in estimates.\n            *   If average spots = 300.\n            *   Total population = 110,000.\n            *   Total spots = 110,000 * 300 = 33,000,000.\n            *   If average spots = 400.\n            *   Total spots = 110,000 * 400 = 44,000,000.\n            *   If average spots = 250.\n            *   Total spots = 110,000 * 250 = 27,500,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1309,
+    "total_tokens": 1909,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 435,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00181961,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00181961,
+      "upstream_inference_prompt_cost": 0.00037961,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

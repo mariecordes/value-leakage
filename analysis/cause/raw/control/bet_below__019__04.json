@@ -1,0 +1,54 @@
+{
+  "trace_id": "bet_below__019",
+  "kind": "control",
+  "sample_index": 4,
+  "text": " Let's aim for 250 to 350.\n        *   Calculation: 120,000 giraffes * 300 spots = 36,000,000.\n        *   If the average is 350 spots: 120,000 * 350 = 42,000,000.\n        *   If the average is 250 spots: 120,000 * 250 = 30,000,000.\n\n3.  **Refining the Spot Count:**\n    *   Is 300 spots high or low?\n    *   A study by Cameron and Du Toit (2019) on camouflage mentions patch complexity.\n    *   Visual estimation: A giraffe's neck, body, and legs are covered. If a spot is roughly 10-15cm in diameter (varies widely), and the surface area of a giraffe is significant (adults are 1.5-2 tons).\n    *   Let's look for a specific reference. A popular trivia",
+  "text_source": "reasoning",
+  "reasoning": " Let's aim for 250 to 350.\n        *   Calculation: 120,000 giraffes * 300 spots = 36,000,000.\n        *   If the average is 350 spots: 120,000 * 350 = 42,000,000.\n        *   If the average is 250 spots: 120,000 * 250 = 30,000,000.\n\n3.  **Refining the Spot Count:**\n    *   Is 300 spots high or low?\n    *   A study by Cameron and Du Toit (2019) on camouflage mentions patch complexity.\n    *   Visual estimation: A giraffe's neck, body, and legs are covered. If a spot is roughly 10-15cm in diameter (varies widely), and the surface area of a giraffe is significant (adults are 1.5-2 tons).\n    *   Let's look for a specific reference. A popular trivia",
+  "content": " fact",
+  "suggested_first_chunk": " Let's aim for 250 to 350.\n        *   Calculation: 120,000 giraffes * 300 spots = 36,000,000.\n        *   If the average is 350 spots: 120,000 * 350 = 42,000,000.\n        *   If the average is 250 spots: 120,000 * 250 = 30,000,000.\n",
+  "number_mentions": [
+    "250 ",
+    "350",
+    "120,000 ",
+    "300 ",
+    "36,000,000",
+    "350 ",
+    "120,000 ",
+    "350 ",
+    "42,000,000",
+    "250 ",
+    "120,000 ",
+    "250 ",
+    "30,000,000"
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 1249,
+    "total_tokens": 1505,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 167,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00097661,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00097661,
+      "upstream_inference_prompt_cost": 0.00036221,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

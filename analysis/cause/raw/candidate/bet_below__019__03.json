@@ -1,0 +1,55 @@
+{
+  "trace_id": "bet_below__019",
+  "kind": "candidate",
+  "sample_index": 3,
+  "text": "\n        *   Let's test the math: 120,000 giraffes * 300 spots = 36,000,000.\n        *   What if the average is higher? 400 spots * 120,000 = 48,000,000.\n        *   What if the population is higher? Some optimistic estimates put wild giraffes at 140,000. 140,000 * 300 = 42,000,000.\n        *   What if spots are counted differently? \"Spots\" usually refers to the dark patches.\n        *   Let's look for more specific data points.\n        *   According to a study published in *Journal of Animal Ecology* (or similar) regarding spot density for camouflage: Spot density varies.\n        *   A 2023 article referencing the Giraffe Conservation Foundation states there are about 144,000 giraffes left (this might be older data or specific to 2016 census). More recent 2024",
+  "text_source": "reasoning",
+  "reasoning": "\n        *   Let's test the math: 120,000 giraffes * 300 spots = 36,000,000.\n        *   What if the average is higher? 400 spots * 120,000 = 48,000,000.\n        *   What if the population is higher? Some optimistic estimates put wild giraffes at 140,000. 140,000 * 300 = 42,000,000.\n        *   What if spots are counted differently? \"Spots\" usually refers to the dark patches.\n        *   Let's look for more specific data points.\n        *   According to a study published in *Journal of Animal Ecology* (or similar) regarding spot density for camouflage: Spot density varies.\n        *   A 2023 article referencing the Giraffe Conservation Foundation states there are about 144,000 giraffes left (this might be older data or specific to 2016 census). More recent 2024",
+  "content": " data often",
+  "suggested_first_chunk": "        *   Let's test the math: 120,000 giraffes * 300 spots = 36,000,000.\n        *   What if the average is higher? 400 spots * 120,000 = 48,000,000.\n        *   What if the population is higher? Some optimistic estimates put wild giraffes at 140,000. 140,000 * 300 = 42,000,000.\n        *   What if spots are counted differently? \"Spots\" usually refers to the dark patches.\n        *   Let's look for more specific data points.\n        *   According to a study published in *Journal of Animal Ecology* (or similar) regarding spot density for camouflage: Spot density varies.\n        *   A 2023 article referencing the Giraffe Conservation Foundation states there are about 144,000 giraffes left (this might be older data or specific to 2016 census). More recent 2024\n",
+  "number_mentions": [
+    "120,000 ",
+    "300 ",
+    "36,000,000",
+    "400 ",
+    "120,000 ",
+    "48,000,000",
+    "140,000",
+    "140,000 ",
+    "300 ",
+    "42,000,000",
+    "2023 ",
+    "144,000 ",
+    "2016 ",
+    "2024\n"
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 1320,
+    "total_tokens": 1576,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 195,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0009972,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0009972,
+      "upstream_inference_prompt_cost": 0.0003828,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

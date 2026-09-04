@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__077",
+  "sample_index": 10,
+  "prefix_sha256": "ef7fca91ca2ba8df5a0ec135eaee4bdb554fa60a6d25ad71d6c523c7fe932eba",
+  "continuation": "\n        *   Let's use a conservative but realistic figure: ~100,000 wild giraffes.\n        *   Are there zoo populations? Yes, but they are a tiny fraction compared to wild populations (a few thousand at most). Let's stick to ~100,000 total individuals for the calculation, perhaps rounding up slightly to 110,000 to be safe, or sticking to the widely cited ~97,000-100,000. Let's use **100,000** as a clean baseline.\n    *   **Spots per Giraffe:** How many spots does an average giraffe have?\n        *   This is highly variable based on species (Northern giraffe, Southern giraffe, Reticulated, Masai, etc.), sex, age, and individual variation.\n        *   Patterns change. \"Spots\" are actually patches of pigmentation separated by lighter lines.\n        *   Some sources suggest counts can range from hundreds to thousands per animal.\n        *   Specific studies:\n            *   A common estimate often cited in trivia is \"hundreds\".\n            *   A 2015 study on reticulated giraffes suggested counts could be in the range of 300-400 distinctive patches?\n            *   Let's look for more concrete data. Some sources say an adult giraffe has between 100 and 400 spots. Others suggest up to 600.\n            *   A widely accepted average for estimation purposes is often around **200 to 400 spots**.\n            *   Let's try to find a mean.\n            *   Reference: \"Giraffes have between 300 and 400 spots\" (National Geographic, San Diego Zoo).\n            *   Reference: \"The pattern is unique, like a fingerprint.\"\n            *   If the range is 300-400, the average is 350.\n            *   If the range includes smaller spots (sometimes counted differently), it could be higher.\n            *   Let's consider the variability. Masai giraffes have jagged, leaf-shaped spots that might be counted differently than Reticulated giraffes (which have distinct polygon shapes).\n            *   Let's assume an average of **400** spots per giraffe to be on the higher side of a reasonable estimate (to ensure accuracy covers the variation). Or perhaps **350**.\n            *   Let's do a Fermi calculation.\n                *   Population: 110,000 (IUCN 2016/2018 estimate was ~97k, updated estimates sometimes push to 117k).",
+  "content": " Let",
+  "proposed_step": "        *   Let's use a conservative but realistic figure: ~100,000 wild giraffes.\n        *   Are there zoo populations? Yes, but they are a tiny fraction compared to wild populations (a few thousand at most). Let's stick to ~100,000 total individuals for the calculation, perhaps rounding up slightly to 110,000 to be safe, or sticking to the widely cited ~97,000-100,000. Let's use **100,000** as a clean baseline.\n    *   **Spots per Giraffe:** How many spots does an average giraffe have?\n        *   This is highly variable based on species (Northern giraffe, Southern giraffe, Reticulated, Masai, etc.), sex, age, and individual variation.\n        *   Patterns change. \"Spots\" are actually patches of pigmentation separated by lighter lines.\n        *   Some sources suggest counts can range from hundreds to thousands per animal.\n        *   Specific studies:\n            *   A common estimate often cited in trivia is \"hundreds\".\n            *   A 2015 study on reticulated giraffes suggested counts could be in the range of 300-400 distinctive patches?\n            *   Let's look for more concrete data. Some sources say an adult giraffe has between 100 and 400 spots. Others suggest up to 600.\n            *   A widely accepted average for estimation purposes is often around **200 to 400 spots**.\n            *   Let's try to find a mean.\n            *   Reference: \"Giraffes have between 300 and 400 spots\" (National Geographic, San Diego Zoo).\n            *   Reference: \"The pattern is unique, like a fingerprint.\"\n            *   If the range is 300-400, the average is 350.\n            *   If the range includes smaller spots (sometimes counted differently), it could be higher.\n            *   Let's consider the variability. Masai giraffes have jagged, leaf-shaped spots that might be counted differently than Reticulated giraffes (which have distinct polygon shapes).\n            *   Let's assume an average of **400** spots per giraffe to be on the higher side of a reasonable estimate (to ensure accuracy covers the variation). Or perhaps **350**.\n            *   Let's do a Fermi calculation.\n                *   Population: 110,000 (IUCN 2016/2018 estimate was ~97k, updated estimates sometimes push to 117k).",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 515,
+    "total_tokens": 1115,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 564,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00158935,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00158935,
+      "upstream_inference_prompt_cost": 0.00014935,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

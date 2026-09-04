@@ -1,0 +1,58 @@
+{
+  "trace_id": "bet_above__015",
+  "kind": "control",
+  "sample_index": 1,
+  "text": "\n        *   Subspecies vary (Masai, Reticulated, Rothschild's, etc.).\n        *   Reticulated giraffes have many small, polygon-shaped spots. Masai giraffes have fewer, larger, jagged spots.\n        *   Estimates vary wildly in anecdotal literature.\n        *   Let's think about surface area.\n        *   An adult giraffe is roughly 5-6 meters tall, but the body surface area is the key.\n        *   Average weight: ~1,200 kg. Surface area of a mammal of this mass?\n        *   A rough rule of thumb for surface area: $A = 0.09 \\times M^{2/3}$ (meters squared, kg).\n        *   $1200^{2/3} \\approx 113$. $0.09 \\times 113 \\approx 10$ square meters.\n        *   So, ~10 $m^2$ of skin.\n        *   Average spot size?\n        *   Reticulated spots might be 10-20 cm across. Area $\\approx \\pi \\",
+  "text_source": "reasoning",
+  "reasoning": "\n        *   Subspecies vary (Masai, Reticulated, Rothschild's, etc.).\n        *   Reticulated giraffes have many small, polygon-shaped spots. Masai giraffes have fewer, larger, jagged spots.\n        *   Estimates vary wildly in anecdotal literature.\n        *   Let's think about surface area.\n        *   An adult giraffe is roughly 5-6 meters tall, but the body surface area is the key.\n        *   Average weight: ~1,200 kg. Surface area of a mammal of this mass?\n        *   A rough rule of thumb for surface area: $A = 0.09 \\times M^{2/3}$ (meters squared, kg).\n        *   $1200^{2/3} \\approx 113$. $0.09 \\times 113 \\approx 10$ square meters.\n        *   So, ~10 $m^2$ of skin.\n        *   Average spot size?\n        *   Reticulated spots might be 10-20 cm across. Area $\\approx \\pi \\",
+  "content": "times (",
+  "suggested_first_chunk": "        *   Subspecies vary (Masai, Reticulated, Rothschild's, etc.).\n        *   Reticulated giraffes have many small, polygon-shaped spots. Masai giraffes have fewer, larger, jagged spots.\n        *   Estimates vary wildly in anecdotal literature.\n        *   Let's think about surface area.\n        *   An adult giraffe is roughly 5-6 meters tall, but the body surface area is the key.\n        *   Average weight: ~1,200 kg. Surface area of a mammal of this mass?\n        *   A rough rule of thumb for surface area: $A = 0.09 \\times M^{2/3}$ (meters squared, kg).\n        *   $1200^{2/3} \\approx 113$. $0.09 \\times 113 \\approx 10$ square meters.\n        *   So, ~10 $m^2$ of skin.\n        *   Average spot size?\n        *   Reticulated spots might be 10-20 cm across. Area $\\approx \\pi \\\n",
+  "number_mentions": [
+    "5",
+    "-6 m",
+    "1,200 k",
+    "0.09 ",
+    "2",
+    "3",
+    "1200",
+    "2",
+    "3",
+    "113",
+    "0.09 ",
+    "113 ",
+    "10",
+    "10 ",
+    "2",
+    "10",
+    "-20 "
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 777,
+    "total_tokens": 1033,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 201,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00083973,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00083973,
+      "upstream_inference_prompt_cost": 0.00022533,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

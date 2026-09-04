@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__092",
+  "sample_index": 1,
+  "prefix_sha256": "6bc9267a54814e6b6cc88f6eff68ceffdd705048f25bb83ef009abc3f965c475",
+  "continuation": "\n        *   Most dense subspecies (Masai, Reticulated) definitely have 400-500+.\n        *   Sparse subspecies (Giraffa camelopardalis camelopardalis - Nubian, though rare) might have fewer.\n        *   However, the Masai giraffe is the most populous (approx 50% of wild population). They are very spotted.\n        *   The Angolan giraffe (approx 25%) has large, irregular patches, fewer in number (maybe 200-300?).\n        *   The South African giraffe (approx 20%) has star-shaped spots, moderate count.\n        *   If Masai (50%) = 500 spots.\n        *   If Angolan (25%) = 250 spots.\n        *   If South African (20%) = 350 spots.\n        *   If Northern (5%) = 300 spots.\n        *   Weighted Average = (0.5 * 500) + (0.25 * 250) + (0.2 * 350) + (0.05 * 300)\n        *   = 250 + 62.5 + 70 + 15 = 397.5 spots.\n        *   Total Population = 117,000.\n        *   Total Spots = 117,000 * 397.5 = 46,507,500.\n        *   This is > 41,000,000.\n\n    *   **Alternative Lower Bound Scenario:**\n        *   Population: Maybe it's lower? Some sources say 80,000 (older data).\n        *   If Pop = 80,000.\n        *   Spots = 397.5.\n        *   Total = 31,800,000. (Below threshold).\n        *   Current consensus is trending towards 100k-120k due to re-evaluation of certain populations (e.g. Angolan and Northern populations were undercounted, now recognized as recovering or stable).\n        *   The GCF (Giraffe Conservation Foundation) updated the number to ~117,000 in their 2023 reports.\n        *   So 117,000 is the most reliable number currently.\n        *   Spot count: Is 400 reasonable?\n        *   Some studies counting spots for biometric ID identify hundreds of nodal points.\n        *   A specific",
+  "content": " study",
+  "proposed_step": "        *   Most dense subspecies (Masai, Reticulated) definitely have 400-500+.\n        *   Sparse subspecies (Giraffa camelopardalis camelopardalis - Nubian, though rare) might have fewer.\n        *   However, the Masai giraffe is the most populous (approx 50% of wild population). They are very spotted.\n        *   The Angolan giraffe (approx 25%) has large, irregular patches, fewer in number (maybe 200-300?).\n        *   The South African giraffe (approx 20%) has star-shaped spots, moderate count.\n        *   If Masai (50%) = 500 spots.\n        *   If Angolan (25%) = 250 spots.\n        *   If South African (20%) = 350 spots.\n        *   If Northern (5%) = 300 spots.\n        *   Weighted Average = (0.5 * 500) + (0.25 * 250) + (0.2 * 350) + (0.05 * 300)\n        *   = 250 + 62.5 + 70 + 15 = 397.5 spots.\n        *   Total Population = 117,000.\n        *   Total Spots = 117,000 * 397.5 = 46,507,500.\n        *   This is > 41,000,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 2359,
+    "total_tokens": 2959,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 434,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00212411,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00212411,
+      "upstream_inference_prompt_cost": 0.00068411,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

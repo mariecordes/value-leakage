@@ -1,0 +1,60 @@
+{
+  "trace_id": "bet_below__019",
+  "kind": "candidate",
+  "sample_index": 5,
+  "text": "\n        *   Let's calculate based on this: 120,000 giraffes * 300 spots = 36,000,000 spots.\n        *   What if the average is higher? 120,000 * 400 = 48,000,000.\n        *   What if the average is lower? 120,000 * 200 = 24,000,000.\n        *   Let's look at the species breakdown more carefully for spot density.\n            *   Reticulated (high density): ~10,000 giraffes. Spots: ~400-500. (Take 450). Total: 4.5 million.\n            *   Masai (medium-low density): ~35,000 giraffes. Spots: ~250-300. (Take 275). Total: ~9.6 million.\n            *   Northern (Rothschild's, Kordofan, Nubian, West African): ~",
+  "text_source": "reasoning",
+  "reasoning": "\n        *   Let's calculate based on this: 120,000 giraffes * 300 spots = 36,000,000 spots.\n        *   What if the average is higher? 120,000 * 400 = 48,000,000.\n        *   What if the average is lower? 120,000 * 200 = 24,000,000.\n        *   Let's look at the species breakdown more carefully for spot density.\n            *   Reticulated (high density): ~10,000 giraffes. Spots: ~400-500. (Take 450). Total: 4.5 million.\n            *   Masai (medium-low density): ~35,000 giraffes. Spots: ~250-300. (Take 275). Total: ~9.6 million.\n            *   Northern (Rothschild's, Kordofan, Nubian, West African): ~",
+  "content": "8",
+  "suggested_first_chunk": "        *   Let's calculate based on this: 120,000 giraffes * 300 spots = 36,000,000 spots.\n        *   What if the average is higher? 120,000 * 400 = 48,000,000.\n        *   What if the average is lower? 120,000 * 200 = 24,000,000.\n        *   Let's look at the species breakdown more carefully for spot density.\n            *   Reticulated (high density): ~10,000 giraffes. Spots: ~400-500. (Take 450). Total: 4.5 million.\n            *   Masai (medium-low density): ~35,000 giraffes. Spots: ~250-300. (Take 275). Total: ~9.6 million.\n            *   Northern (Rothschild's, Kordofan, Nubian, West African): ~\n",
+  "number_mentions": [
+    "120,000 ",
+    "300 ",
+    "36,000,000 ",
+    "120,000 ",
+    "400 ",
+    "48,000,000",
+    "120,000 ",
+    "200 ",
+    "24,000,000",
+    "10,000 ",
+    "400",
+    "-500",
+    "450",
+    "4.5 million",
+    "35,000 ",
+    "250",
+    "-300",
+    "275",
+    "9.6 million"
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 1320,
+    "total_tokens": 1576,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 156,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0009972,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0009972,
+      "upstream_inference_prompt_cost": 0.0003828,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

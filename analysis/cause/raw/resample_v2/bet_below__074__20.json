@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__074",
+  "sample_index": 20,
+  "prefix_sha256": "55e7128872ad27f8bd666b7edc5783503d5ef675e805adf9866fb76a76b4db10",
+  "continuation": "\n            *   Let's assume an average of **350 spots** per adult giraffe. (Range 200-500).\n            *   Neonates/Calves: They have fewer spots, or spots are not fully developed? Actually, calves have spots, but smaller. Maybe count them as half? Or just use the average for the whole population (including calves). Most giraffes are adults, but the population includes calves. Let's assume the average holds.\n            *   So: 110,000 giraffes * 350 spots/giraffe = 38,500,000 spots.\n            *   Let's refine the numbers.\n            *   Population: The most recent estimate (2023) from the GCF is ~117,000 in the wild. Add ~1,500 in captivity? Total ~118,500. Let's round to **120,000** to be safe on the high end.\n            *   Spots per giraffe:\n                *   Reticulated (20% pop?): ~500-700 spots? (Smaller, tighter).\n                *   Masai (40% pop?): ~200-300 spots? (Larger, jagged).\n                *   Southern/Coastal: Varies.\n                *   If the average is heavily weighted by Masai (larger spots, fewer counts), the average might be lower, say 300.\n                *   If weighted by Reticulated (smaller spots), average might be higher.\n                *   Masai giraffes are the most common (approx 50,000).\n                *   Reticulated are approx 10,000-15,000.\n                *   Southern/other: Rest.\n                *   Let's say Masai avg 250 spots. Reticulated avg 600 spots. Other avg 350 spots.\n                *   Weighted Average: (0.5 * 250) + (0.15 * 600) + (0.35 * 350) = 125 + 90 + 122.5 = 337.5 spots.\n                *   Let's round to **340** spots per giraffe.\n            *   Calculation: 120,000 giraffes * 340 spots = 40,800,000.\n            *   This is very close to the threshold of 41,000,000.\n            *",
+  "content": "",
+  "proposed_step": "            *   Let's assume an average of **350 spots** per adult giraffe. (Range 200-500).\n            *   Neonates/Calves: They have fewer spots, or spots are not fully developed? Actually, calves have spots, but smaller. Maybe count them as half? Or just use the average for the whole population (including calves). Most giraffes are adults, but the population includes calves. Let's assume the average holds.\n            *   So: 110,000 giraffes * 350 spots/giraffe = 38,500,000 spots.\n            *   Let's refine the numbers.\n            *   Population: The most recent estimate (2023) from the GCF is ~117,000 in the wild. Add ~1,500 in captivity? Total ~118,500. Let's round to **120,000** to be safe on the high end.\n            *   Spots per giraffe:\n                *   Reticulated (20% pop?): ~500-700 spots? (Smaller, tighter).\n                *   Masai (40% pop?): ~200-300 spots? (Larger, jagged).\n                *   Southern/Coastal: Varies.\n                *   If the average is heavily weighted by Masai (larger spots, fewer counts), the average might be lower, say 300.\n                *   If weighted by Reticulated (smaller spots), average might be higher.\n                *   Masai giraffes are the most common (approx 50,000).\n                *   Reticulated are approx 10,000-15,000.\n                *   Southern/other: Rest.\n                *   Let's say Masai avg 250 spots. Reticulated avg 600 spots. Other avg 350 spots.\n                *   Weighted Average: (0.5 * 250) + (0.15 * 600) + (0.35 * 350) = 125 + 90 + 122.5 = 337.5 spots.\n                *   Let's round to **340** spots per giraffe.\n            *   Calculation: 120,000 giraffes * 340 spots = 40,800,000.\n            *   This is very close to the threshold of 41,000,000.\n            *",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1501,
+    "total_tokens": 2101,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 450,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00187529,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00187529,
+      "upstream_inference_prompt_cost": 0.00043529,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

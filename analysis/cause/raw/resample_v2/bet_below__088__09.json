@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__088",
+  "sample_index": 9,
+  "prefix_sha256": "cc5c15cb21157ff81d43f27a3e60ea77206b33cbe84bd8347b132746498d9b57",
+  "continuation": "\n            *   Let's look at the geometry. If spots are roughly 5cm to 10cm in diameter (some are smaller, some larger).\n            *   If a giraffe has ~2.5 square meters of skin (25,000 cm2).\n            *   If average spot is 50 cm2 (circle diameter ~8cm). 25,000 / 50 = 500 spots.\n            *   If average spot is smaller (e.g. Reticulated, 4cm diameter = 12cm2 area). 25,000 / 12 = ~2,000 spots.\n            *   If average spot is larger (Masai, jagged, maybe 10cm+).\n            *   So the range is likely between 500 and 2,000 spots depending on species.\n            *   Given the species distribution:\n                *   Masai (largest population, ~35%): Large, dark, fewer distinct spots?\n                *   Reticulated (~13%): Small, many spots.\n                *   Southern (~40%): Medium.\n                *   Northern (Critically endangered): Small numbers.\n            *   Average across all: Let's assume **800 spots** per giraffe as a reasonable midpoint between the low-end (500) and high-end (1500).\n            *   Let's re-evaluate. Some sources claim \"Thousands\". Others claim \"Hundreds\".\n            *   A widely cited figure in educational materials is often \"hundreds\".\n            *   Let's look for a specific study. \"Counting spots on giraffes.\"\n            *   One analysis suggests ~300-400 for Southern, ~500-700 for Reticulated.\n            *   Population weighted average:\n                *   Masai: ~400\n                *   Southern: ~400\n                *   Reticulated: ~600\n                *   Weighted average $\\approx$ 450 spots per giraffe.\n            *   Let's be generous. Maybe 500.\n            *   If I use 500 spots $\\times$ 110,000 giraffes = 55,000,000 spots.\n            *   If I use 300 spots $\\times$ 110,000 giraffes = 33,000,000 spots.\n            *   If I use 400 spots $\\times$ 110,000 giraffes = 44,000,000 spots.\n",
+  "content": "",
+  "proposed_step": "            *   Let's look at the geometry. If spots are roughly 5cm to 10cm in diameter (some are smaller, some larger).\n            *   If a giraffe has ~2.5 square meters of skin (25,000 cm2).\n            *   If average spot is 50 cm2 (circle diameter ~8cm). 25,000 / 50 = 500 spots.\n            *   If average spot is smaller (e.g. Reticulated, 4cm diameter = 12cm2 area). 25,000 / 12 = ~2,000 spots.\n            *   If average spot is larger (Masai, jagged, maybe 10cm+).\n            *   So the range is likely between 500 and 2,000 spots depending on species.\n            *   Given the species distribution:\n                *   Masai (largest population, ~35%): Large, dark, fewer distinct spots?\n                *   Reticulated (~13%): Small, many spots.\n                *   Southern (~40%): Medium.\n                *   Northern (Critically endangered): Small numbers.\n            *   Average across all: Let's assume **800 spots** per giraffe as a reasonable midpoint between the low-end (500) and high-end (1500).\n            *   Let's re-evaluate. Some sources claim \"Thousands\". Others claim \"Hundreds\".\n            *   A widely cited figure in educational materials is often \"hundreds\".\n            *   Let's look for a specific study. \"Counting spots on giraffes.\"\n            *   One analysis suggests ~300-400 for Southern, ~500-700 for Reticulated.\n            *   Population weighted average:\n                *   Masai: ~400\n                *   Southern: ~400\n                *   Reticulated: ~600\n                *   Weighted average $\\approx$ 450 spots per giraffe.\n            *   Let's be generous. Maybe 500.\n            *   If I use 500 spots $\\times$ 110,000 giraffes = 55,000,000 spots.\n            *   If I use 300 spots $\\times$ 110,000 giraffes = 33,000,000 spots.\n            *   If I use 400 spots $\\times$ 110,000 giraffes = 44,000,000 spots.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1714,
+    "total_tokens": 2314,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 476,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00193706,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00193706,
+      "upstream_inference_prompt_cost": 0.00049706,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

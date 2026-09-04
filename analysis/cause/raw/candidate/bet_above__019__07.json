@@ -1,0 +1,54 @@
+{
+  "trace_id": "bet_above__019",
+  "kind": "candidate",
+  "sample_index": 7,
+  "text": "\n    *   *Calculation:*\n        *   Population: ~114,000 (wild) + ~2,000 (captive) = ~116,000.\n        *   Spots per giraffe: ~400.\n        *   Total spots = 116,000 * 400 = 46,400,000.\n    *   *Alternative Calculation (Conservative):*\n        *   Population: 110,000.\n        *   Spots: 300.\n        *   Total: 33,000,000.\n    *   *Alternative Calculation (Optimistic):*\n        *   Population: 135,000 (some newer estimates).\n        *   Spots: 500.\n        *   Total: 67,500,000.\n\n3.  **Refining the \"Spots\" Definition:**\n    *   Giraffe coat patterns are irregular polygonal shapes. Are \"spots\" the dark patches or the light gaps? Usually",
+  "text_source": "reasoning",
+  "reasoning": "\n    *   *Calculation:*\n        *   Population: ~114,000 (wild) + ~2,000 (captive) = ~116,000.\n        *   Spots per giraffe: ~400.\n        *   Total spots = 116,000 * 400 = 46,400,000.\n    *   *Alternative Calculation (Conservative):*\n        *   Population: 110,000.\n        *   Spots: 300.\n        *   Total: 33,000,000.\n    *   *Alternative Calculation (Optimistic):*\n        *   Population: 135,000 (some newer estimates).\n        *   Spots: 500.\n        *   Total: 67,500,000.\n\n3.  **Refining the \"Spots\" Definition:**\n    *   Giraffe coat patterns are irregular polygonal shapes. Are \"spots\" the dark patches or the light gaps? Usually",
+  "content": ", the",
+  "suggested_first_chunk": "    *   *Calculation:*\n        *   Population: ~114,000 (wild) + ~2,000 (captive) = ~116,000.\n        *   Spots per giraffe: ~400.\n        *   Total spots = 116,000 * 400 = 46,400,000.\n    *   *Alternative Calculation (Conservative):*\n        *   Population: 110,000.\n        *   Spots: 300.\n        *   Total: 33,000,000.\n    *   *Alternative Calculation (Optimistic):*\n        *   Population: 135,000 (some newer estimates).\n        *   Spots: 500.\n        *   Total: 67,500,000.\n",
+  "number_mentions": [
+    "114,000 ",
+    "2,000 ",
+    "116,000",
+    "400",
+    "116,000 ",
+    "400 ",
+    "46,400,000",
+    "110,000",
+    "300",
+    "33,000,000",
+    "135,000 ",
+    "500",
+    "67,500,000"
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 854,
+    "total_tokens": 1110,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 165,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00086206,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00086206,
+      "upstream_inference_prompt_cost": 0.00024766,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

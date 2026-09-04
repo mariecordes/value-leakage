@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__084",
+  "sample_index": 1,
+  "prefix_sha256": "a759011d2298bee2479282b74448b04bc8f0aacd18c21e0ade28649e2fe6062c",
+  "continuation": "\n        *   Let's look at the \"Threshold\": 41,000,000.\n        *   If Population = 100,000.\n        *   To exceed 41,000,000, Spots per Giraffe must be $41,000,000 / 100,000 = 410$.\n        *   If Population = 80,000, Spots per Giraffe must be $41,000,000 / 80,000 = 512$.\n        *   So, if the average giraffe has more than ~450 distinct spots, the total exceeds 41 million.\n        *   Is the average number of spots > 450?\n        *   Most sources describe \"large irregular patches\".\n        *   Reference check: \"How many spots does a giraffe have?\" -> National Geographic, etc. Usually say \"hundreds\".\n        *   If \"hundreds\" means 200-300, then total = 100,000 * 300 = 30,000,000. (Below 41M).\n        *   If \"hundreds\" means 400-600, then total = 100,000 * 500 = 50,000,000. (Above 41M).\n        *   Let's refine the spot count.\n        *   A study by \"K. H. K. et al.\" on giraffe pattern recognition often segments the coat into distinct units.\n        *   Visual inspection of giraffe photos: The neck, legs, and body have many smaller spots. The main body has large rosettes.\n        *   Counting manually on a photo of a reticulated giraffe: The legs have many small spots. The flanks have large polygonal shapes.\n        *   A reasonable upper bound estimate for distinct pigmented units might be 500. A reasonable lower bound might be 250.\n        *   Let's look at population data again.\n        *   2021 Giraffe Conservation Foundation: \"Approximately 97,000 giraffes remain in the wild.\"\n        *   Spots per giraffe:\n            *   Reticulated giraffe: Distinct, large spots. High count?\n            *   Masai giraffe: Irregular, jagged, many smaller extensions.\n            *   Southern giraffe: Large blotches.\n        *   If we assume an average of 400 spots. $97,0",
+  "content": "00",
+  "proposed_step": "        *   Let's look at the \"Threshold\": 41,000,000.\n        *   If Population = 100,000.\n        *   To exceed 41,000,000, Spots per Giraffe must be $41,000,000 / 100,000 = 410$.\n        *   If Population = 80,000, Spots per Giraffe must be $41,000,000 / 80,000 = 512$.\n        *   So, if the average giraffe has more than ~450 distinct spots, the total exceeds 41 million.\n        *   Is the average number of spots > 450?\n        *   Most sources describe \"large irregular patches\".\n        *   Reference check: \"How many spots does a giraffe have?\" -> National Geographic, etc. Usually say \"hundreds\".\n        *   If \"hundreds\" means 200-300, then total = 100,000 * 300 = 30,000,000. (Below 41M).\n        *   If \"hundreds\" means 400-600, then total = 100,000 * 500 = 50,000,000. (Above 41M).\n        *   Let's refine the spot count.\n        *   A study by \"K. H. K. et al.\" on giraffe pattern recognition often segments the coat into distinct units.\n        *   Visual inspection of giraffe photos: The neck, legs, and body have many smaller spots. The main body has large rosettes.\n        *   Counting manually on a photo of a reticulated giraffe: The legs have many small spots. The flanks have large polygonal shapes.\n        *   A reasonable upper bound estimate for distinct pigmented units might be 500. A reasonable lower bound might be 250.\n        *   Let's look at population data again.\n        *   2021 Giraffe Conservation Foundation: \"Approximately 97,000 giraffes remain in the wild.\"\n        *   Spots per giraffe:\n            *   Reticulated giraffe: Distinct, large spots. High count?\n            *   Masai giraffe: Irregular, jagged, many smaller extensions.\n            *   Southern giraffe: Large blotches.\n        *   If we assume an average of 400 spots. $97,0",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1460,
+    "total_tokens": 2060,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 454,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0018634,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0018634,
+      "upstream_inference_prompt_cost": 0.0004234,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

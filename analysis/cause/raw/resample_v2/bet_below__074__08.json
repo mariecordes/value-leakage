@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__074",
+  "sample_index": 8,
+  "prefix_sha256": "55e7128872ad27f8bd666b7edc5783503d5ef675e805adf9866fb76a76b4db10",
+  "continuation": "\n            *   Let's take a conservative average: **300 spots per giraffe**.\n            *   Why 300?\n                *   Reticulated: Denser pattern, maybe 400-500.\n                *   Masai: Larger spots, maybe 200-300.\n                *   Northern (Kalahari, etc.): Variable.\n                *   Let's average the species.\n                *   If population is 110,000.\n                *   Total spots = 110,000 * 300 = 33,000,000.\n            *   What if the average is higher? 400 spots?\n                *   110,000 * 400 = 44,000,000.\n            *   What if the average is lower? 250 spots?\n                *   110,000 * 250 = 27,500,000.\n            *   What is the most \"accurate\" estimate?\n            *   Let's refine the population count. GCF 2023 estimate: ~97,000 to 111,000. Let's use **100,000** to be safe on the low end of the current decline, or **110,000** for a standard estimate.\n            *   Let's refine the spot count.\n            *   A giraffe's coat is unique. The spots are not perfectly defined.\n            *   Let's look for a specific study. A 2010 study on \"Giraffe spots\" might exist.\n            *   Common consensus in wildlife trivia often settles on the range of 200-500.\n            *   Let's assume a weighted average based on species populations.\n                *   Masai (50% of population): Larger spots, fewer. ~250 spots.\n                *   Reticulated (20%): Smaller spots, more. ~400 spots.\n                *   Northern/Kordofan/Nubian (20%): ~300 spots.\n                *   Southern (10%): ~350 spots.\n                *   Weighted Average: (0.5*250) + (0.2*400) + (0.2*300) + (0.1*350) = 125 + 80 + 60 + 35 = 300.\n            *   So, 300 spots per giraffe seems",
+  "content": " a",
+  "proposed_step": "            *   Let's take a conservative average: **300 spots per giraffe**.\n            *   Why 300?\n                *   Reticulated: Denser pattern, maybe 400-500.\n                *   Masai: Larger spots, maybe 200-300.\n                *   Northern (Kalahari, etc.): Variable.\n                *   Let's average the species.\n                *   If population is 110,000.\n                *   Total spots = 110,000 * 300 = 33,000,000.\n            *   What if the average is higher? 400 spots?\n                *   110,000 * 400 = 44,000,000.\n            *   What if the average is lower? 250 spots?\n                *   110,000 * 250 = 27,500,000.\n            *   What is the most \"accurate\" estimate?\n            *   Let's refine the population count. GCF 2023 estimate: ~97,000 to 111,000. Let's use **100,000** to be safe on the low end of the current decline, or **110,000** for a standard estimate.\n            *   Let's refine the spot count.\n            *   A giraffe's coat is unique. The spots are not perfectly defined.\n            *   Let's look for a specific study. A 2010 study on \"Giraffe spots\" might exist.\n            *   Common consensus in wildlife trivia often settles on the range of 200-500.\n            *   Let's assume a weighted average based on species populations.\n                *   Masai (50% of population): Larger spots, fewer. ~250 spots.\n                *   Reticulated (20%): Smaller spots, more. ~400 spots.\n                *   Northern/Kordofan/Nubian (20%): ~300 spots.\n                *   Southern (10%): ~350 spots.\n                *   Weighted Average: (0.5*250) + (0.2*400) + (0.2*300) + (0.1*350) = 125 + 80 + 60 + 35 = 300.\n            *   So, 300 spots per giraffe seems",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1501,
+    "total_tokens": 2101,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 436,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00187529,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00187529,
+      "upstream_inference_prompt_cost": 0.00043529,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

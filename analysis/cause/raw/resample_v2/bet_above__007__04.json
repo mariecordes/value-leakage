@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__007",
+  "sample_index": 4,
+  "prefix_sha256": "538b8cd4f095f3f2f44a13184fec6168b77b4d144bbedd8f3bc2f10e6902427a",
+  "continuation": "\n    *   Let's refine the population number again.\n    *   IUCN Red List (2023): 117,000.\n    *   Captive: ~10,000.\n    *   Total: ~127,000.\n    *   Spots per adult: Let's assume 750.\n    *   Calculation: 127,000 * 750 = 95,250,000.\n\n    *   Wait, is 750 spots reasonable?\n    *   Let's re-evaluate surface area.\n    *   Giraffe length (body + neck): 5-6 meters. Width: 1.5 meters. Height: 5-6m.\n    *   Surface area of a cylinder (rough approximation for body + neck):\n    *   Body: Length 3m, girth 2.5m. Area = 3 * 2.5 = 7.5 m².\n    *   Neck: Length 2.5m, girth 1.2m. Area = 2.5 * 1.2 = 3 m².\n    *   Legs: 4 legs * 2m length * 0.4m girth = 3.2 m².\n    *   Total Surface Area ≈ 13.7 m².\n    *   Spotted coverage: Maybe 60-70%. ~9 m² = 90,000 cm².\n    *   Spot size: Ranges from small dots on neck/legs to large patches on flanks.\n    *   If average spot is 15cm x 10cm = 150 cm².\n    *   90,000 / 150 = 600 spots.\n    *   If average spot is smaller (due to fragmentation on legs/neck), say 100 cm².\n    *   90,000 / 100 = 900 spots.\n    *   So 600-900 is the likely range per adult.\n    *   Let's take 750 as the mean.\n\n    *   Total Population:\n    *   Wild: 117,000 (GCF 2023 estimate).\n    *   Captive: ~8,000 (AZA + others).\n    *   Total: 125,000.\n\n    *   Calculation: 125,000 * 750 = 93,750,000.\n\n    *",
+  "content": "   Is",
+  "proposed_step": "    *   Let's refine the population number again.\n    *   IUCN Red List (2023): 117,000.\n    *   Captive: ~10,000.\n    *   Total: ~127,000.\n    *   Spots per adult: Let's assume 750.\n    *   Calculation: 127,000 * 750 = 95,250,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1584,
+    "total_tokens": 2184,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 339,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00189936,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00189936,
+      "upstream_inference_prompt_cost": 0.00045936,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

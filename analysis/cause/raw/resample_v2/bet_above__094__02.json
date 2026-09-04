@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__094",
+  "sample_index": 2,
+  "prefix_sha256": "a213914ed2c74440369b242dc4b6887d8d820593c0902e95e9a134d54477f7f9",
+  "continuation": "\n        *   Let's assume an average of **400 spots per adult giraffe**.\n        *   Do calves have spots? Yes, they are born with spots that may change color but the pattern is usually established.\n        *   Do all spots count as \"black\"? Most giraffe spots are dark brown or black against a tan/orange background. The prompt asks for \"black spots\". In common parlance, these are considered black/dark spots.\n        *   Are there variations in density? The neck has many, legs have fewer? Yes.\n        *   Let's try to be conservative and accurate.\n        *   Population: ~118,000 (wild) + ~2,500 (captive) = ~120,500. Let's round to **120,000**.\n        *   Spots per individual: Let's average across species. Masai (dense), Rothschild (large/patterned), Reticulated (distinct), Angolan (lighter).\n        *   Range found in literature: 300 to 600. Average ~450 seems reasonable for a total count including neck and body.\n        *   Calculation: 120,000 giraffes * 450 spots = 54,000,000.\n        *   Wait, let's look closer at the population numbers again.\n        *   Current IUCN estimate (2023): ~117,000 in the wild.\n        *   Captive: ~2,000-3,000.\n        *   Total: ~120,000.\n        *   Spots: A study by \"The Guardian\" or similar often cites 400. A 2017 article mentions \"each giraffe has a unique pattern of 300-400 spots\".\n        *   If we use 300: 120,000 * 300 = 36,000,000.\n        *   If we use 400: 120,000 * 400 = 48,000,000.\n        *   If we use 500: 120,000 * 500 = 60,000,000.\n        *   Which is the \"most accurate\"?\n        *   Spots are not just distinct circles. They are irregular polygons that cover the body.\n        *   A detailed count on a single animal usually yields numbers between 400 and 500 for an adult.\n        *   Let",
+  "content": "'s",
+  "proposed_step": "        *   Let's assume an average of **400 spots per adult giraffe**.\n        *   Do calves have spots? Yes, they are born with spots that may change color but the pattern is usually established.\n        *   Do all spots count as \"black\"? Most giraffe spots are dark brown or black against a tan/orange background. The prompt asks for \"black spots\". In common parlance, these are considered black/dark spots.\n        *   Are there variations in density? The neck has many, legs have fewer? Yes.\n        *   Let's try to be conservative and accurate.\n        *   Population: ~118,000 (wild) + ~2,500 (captive) = ~120,500. Let's round to **120,000**.\n        *   Spots per individual: Let's average across species. Masai (dense), Rothschild (large/patterned), Reticulated (distinct), Angolan (lighter).\n        *   Range found in literature: 300 to 600. Average ~450 seems reasonable for a total count including neck and body.\n        *   Calculation: 120,000 giraffes * 450 spots = 54,000,000.\n        *   Wait, let's look closer at the population numbers again.\n        *   Current IUCN estimate (2023): ~117,000 in the wild.\n        *   Captive: ~2,000-3,000.\n        *   Total: ~120,000.\n        *   Spots: A study by \"The Guardian\" or similar often cites 400. A 2017 article mentions \"each giraffe has a unique pattern of 300-400 spots\".\n        *   If we use 300: 120,000 * 300 = 36,000,000.\n        *   If we use 400: 120,000 * 400 = 48,000,000.\n        *   If we use 500: 120,000 * 500 = 60,000,000.\n        *   Which is the \"most accurate\"?\n        *   Spots are not just distinct circles. They are irregular polygons that cover the body.\n        *   A detailed count on a single animal usually yields numbers between 400 and 500 for an adult.\n        *   Let",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1061,
+    "total_tokens": 1661,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 448,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00174769,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00174769,
+      "upstream_inference_prompt_cost": 0.00030769,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

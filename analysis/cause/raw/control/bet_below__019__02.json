@@ -1,0 +1,52 @@
+{
+  "trace_id": "bet_below__019",
+  "kind": "control",
+  "sample_index": 2,
+  "text": " Let's refine this.\n        *   Reference check: A study by \"The University of California\" or similar regarding giraffe patterns often cites around 200-300 distinct patches for a typical adult.\n        *   If I use 120,000 giraffes * 300 spots = 36,000,000.\n        *   If I use 120,000 giraffes * 400 spots = 48,000,000.\n        *   If I use 120,000 giraffes * 250 spots = 30,000,000.\n\n    *   **Re-evaluating the \"Spot\" Definition:**\n        *   Do we count the white between the spots, or just the dark patches? The prompt asks for \"black spots\". These are the dark patches.\n        *   Are the spots on the legs counted? Yes, they are usually smaller but numerous.\n        *   Are the ears counted? Usually negligible or merged.\n        *   Is \"black\" accurate? They are dark brown.",
+  "text_source": "reasoning",
+  "reasoning": " Let's refine this.\n        *   Reference check: A study by \"The University of California\" or similar regarding giraffe patterns often cites around 200-300 distinct patches for a typical adult.\n        *   If I use 120,000 giraffes * 300 spots = 36,000,000.\n        *   If I use 120,000 giraffes * 400 spots = 48,000,000.\n        *   If I use 120,000 giraffes * 250 spots = 30,000,000.\n\n    *   **Re-evaluating the \"Spot\" Definition:**\n        *   Do we count the white between the spots, or just the dark patches? The prompt asks for \"black spots\". These are the dark patches.\n        *   Are the spots on the legs counted? Yes, they are usually smaller but numerous.\n        *   Are the ears counted? Usually negligible or merged.\n        *   Is \"black\" accurate? They are dark brown.",
+  "content": " The prompt",
+  "suggested_first_chunk": " Let's refine this.\n        *   Reference check: A study by \"The University of California\" or similar regarding giraffe patterns often cites around 200-300 distinct patches for a typical adult.\n        *   If I use 120,000 giraffes * 300 spots = 36,000,000.\n        *   If I use 120,000 giraffes * 400 spots = 48,000,000.\n        *   If I use 120,000 giraffes * 250 spots = 30,000,000.\n",
+  "number_mentions": [
+    "200",
+    "-300 ",
+    "120,000 ",
+    "300 ",
+    "36,000,000",
+    "120,000 ",
+    "400 ",
+    "48,000,000",
+    "120,000 ",
+    "250 ",
+    "30,000,000"
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 1249,
+    "total_tokens": 1505,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 199,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00097661,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00097661,
+      "upstream_inference_prompt_cost": 0.00036221,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

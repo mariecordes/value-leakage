@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__015",
+  "sample_index": 3,
+  "prefix_sha256": "64cc0dc8db0545ae23e5823898b91a4807d07cedd6b2078a115f387968bb3cf3",
+  "continuation": "\n            *   Let's use a conservative/standard estimate: ~115,000 wild + ~10,000 captive = ~125,000 total.\n            *   Another source (World Wildlife Fund) often cites around 111,000.\n            *   Let's assume a round figure of **120,000** total giraffes for the calculation.\n\n    *   **Spots per Giraffe:**\n        *   This is the tricky part. A \"spot\" is a dark patch on the coat.\n        *   Giraffes have reticulated or irregular patterns.\n        *   Are we counting patches on the body, neck, legs, head?\n        *   Let's estimate the surface area of a giraffe and the density of spots.\n        *   Adult giraffe height: ~5 meters.\n        *   Body surface area: Large animals. A human is ~1.8-2.0 m². A giraffe is much larger.\n        *   Approximation: A giraffe might have a surface area of ~18-20 m²? (Very rough guess).\n        *   Size of a spot: Varies wildly by subspecies (Reticulated, Masai, Rothschild's, etc.).\n            *   Masai giraffes: Jagged, leaf-shaped spots. Large. Maybe 10-20 cm in diameter. Area ~50-150 cm²?\n            *   Reticulated giraffes: Smaller, polygonal spots. Maybe 5-10 cm diameter. Area ~20-80 cm²?\n        *   Let's look for a direct estimate or analogy.\n        *   There is no scientific census of spots.\n        *   Logic: How many \"tiles\" fit on a giraffe?\n        *   If the average spot covers 100 cm² (0.01 m²) and the giraffe surface area is 20 m²:\n            *   Total spots = 20 / 0.01 = 2,000 spots.\n        *   If spot size is smaller (50 cm² = 0.005 m²):\n            *   Total spots = 20 / 0.005 = 4,000 spots.\n        *   If spot size is larger (200 cm² = 0.02 m²):\n            *   Total spots = 20 / 0.02 = 1,000 spots.\n        *   Most estimates on the internet or in trivia suggest a giraffe has between 1,000 and 5,000 spots.\n",
+  "content": "        *",
+  "proposed_step": "            *   Let's use a conservative/standard estimate: ~115,000 wild + ~10,000 captive = ~125,000 total.\n            *   Another source (World Wildlife Fund) often cites around 111,000.\n            *   Let's assume a round figure of **120,000** total giraffes for the calculation.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 711,
+    "total_tokens": 1311,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 461,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00164619,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00164619,
+      "upstream_inference_prompt_cost": 0.00020619,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__073",
+  "sample_index": 11,
+  "prefix_sha256": "56b1c116e9e1a727d49da4d716e1390e128279f7c9e1b35d80e30b22c41cdc62",
+  "continuation": "\n        *   Let's try to find a more rigorous calculation.\n        *   Giraffe surface area calculation: Adult mass 1200kg. Surface area formula for mammals: $3.5 \\times Mass^{2/3}$?\n            *   $1200^{0.66} \\approx 113$. $113 \\times 3.5 \\approx 395$ sq ft? No, that's not right. Mammal surface area formula: $10 \\times Mass^{0.66}$ (in dm^2)?\n            *   Let's use a standard estimate: An adult giraffe has a body surface area of approximately **30 to 40 square meters**.\n            *   Spot size: The dark patches are the spots. They range from small dots on the legs to large polygons on the belly. Average area of a spot? If we assume the dark pigment covers about 50% of the skin. And the average distinct \"fuzzy\" boundary is a spot.\n            *   If 50% coverage on 40 sq meters = 20 sq meters of black pigment.\n            *   How many spots to make up 20 sq meters?\n            *   If average spot is 50cm x 50cm? (Huge). 0.25 sq meters. $20 / 0.25 = 80$. (Too few).\n            *   If average spot is 15cm x 15cm? (225 sq cm = 0.0225 sq meters). $20 / 0.0225 \\approx 900$.\n            *   If average spot is 10cm x 10cm? (0.01 sq meters). $20 / 0.01 = 2000$.\n            *   Literature check: Many sources state \"between 500 and 1,000.\" Some say \"hundreds.\"\n            *   A 2015 article in *Science* regarding coat patterns suggests a higher density for some patterns.\n            *   However, a widely cited figure for the *total number of spots* on a single giraffe is often **~1,000**.\n            *   Let's try to be conservative but realistic. If the population is 120,000.\n            *   If spots = 1,000/giraffe -> Total = 120,000,000.\n            *   If spots = 500/giraffe -> Total = 60,000,000.\n            *   If spots = 200/giraffe ->",
+  "content": " Total =",
+  "proposed_step": "        *   Let's try to find a more rigorous calculation.\n        *   Giraffe surface area calculation: Adult mass 1200kg. Surface area formula for mammals: $3.5 \\times Mass^{2/3}$?\n            *   $1200^{0.66} \\approx 113$. $113 \\times 3.5 \\approx 395$ sq ft? No, that's not right. Mammal surface area formula: $10 \\times Mass^{0.66}$ (in dm^2)?\n            *   Let's use a standard estimate: An adult giraffe has a body surface area of approximately **30 to 40 square meters**.\n            *   Spot size: The dark patches are the spots. They range from small dots on the legs to large polygons on the belly. Average area of a spot? If we assume the dark pigment covers about 50% of the skin. And the average distinct \"fuzzy\" boundary is a spot.\n            *   If 50% coverage on 40 sq meters = 20 sq meters of black pigment.\n            *   How many spots to make up 20 sq meters?\n            *   If average spot is 50cm x 50cm? (Huge). 0.25 sq meters. $20 / 0.25 = 80$. (Too few).\n            *   If average spot is 15cm x 15cm? (225 sq cm = 0.0225 sq meters). $20 / 0.0225 \\approx 900$.\n            *   If average spot is 10cm x 10cm? (0.01 sq meters). $20 / 0.01 = 2000$.\n            *   Literature check: Many sources state \"between 500 and 1,000.\" Some say \"hundreds.\"\n            *   A 2015 article in *Science* regarding coat patterns suggests a higher density for some patterns.\n            *   However, a widely cited figure for the *total number of spots* on a single giraffe is often **~1,000**.\n            *   Let's try to be conservative but realistic. If the population is 120,000.\n            *   If spots = 1,000/giraffe -> Total = 120,000,000.\n            *   If spots = 500/giraffe -> Total = 60,000,000.\n            *   If spots = 200/giraffe ->",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1339,
+    "total_tokens": 1939,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 448,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00182831,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00182831,
+      "upstream_inference_prompt_cost": 0.00038831,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

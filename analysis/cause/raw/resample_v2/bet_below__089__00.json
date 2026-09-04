@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_below__089",
+  "sample_index": 0,
+  "prefix_sha256": "322390e1e063650f7bfc0420acb362500814ab34781320d0f7ab02c537ab90a1",
+  "continuation": "\n            *   Let's assume the lower end of high-end estimates is more realistic for *distinct* spots.\n            *   Let's try 300 spots per giraffe as a reasonable average.\n            *   Let's try 400 spots per giraffe as a more generous count (including small ones on legs).\n\n3.  **Calculation:**\n    *   Population: ~115,000 (110k wild + 5k captive).\n    *   Spots per giraffe: Let's analyze the variance.\n        *   If 300 spots: $115,000 \\times 300 = 34,500,000$.\n        *   If 400 spots: $115,000 \\times 400 = 46,000,000$.\n        *   If 500 spots: $115,000 \\times 500 = 57,500,000$.\n    *   Most \"accurate\" estimate relies on the most reliable count of spots.\n    *   According to the Giraffe Conservation Foundation and general biology resources, spot counts vary significantly by species (Reticulated, Masai, etc.). Reticulated have smaller, numerous spots. Masai have larger, jagged, fewer spots.\n    *   Reticulated: Smaller spots, more numerous.\n    *   Masai: Larger spots, fewer.\n    *   Population breakdown:\n        *   Masai: ~32,000\n        *   Reticulated: ~8,000\n        *   Rothschild's: ~7,000\n        *   West African: ~600\n        *   South African: ~50,000\n        *   Northern, Angolan, Thornicroft's: Remainder.\n        *   Total: ~117,700 (2016 IUCN).\n    *   The Masai (largest group) has fewer spots per body area than Reticulated.\n    *   South African (most numerous) also has distinct patterns.\n    *   Average spot count per adult:\n        *   Some sources cite \"hundreds\".\n        *   A 2019 study on pattern complexity might suggest counts.\n        *   Let's look for a median. Is it 200? 300?\n        *   If I assume an average of 300 spots, the total is ~35 million.\n        *   If I assume an average of 350 spots, the total is ~41 million.\n        *  ",
+  "content": " If I",
+  "proposed_step": "            *   Let's assume the lower end of high-end estimates is more realistic for *distinct* spots.\n            *   Let's try 300 spots per giraffe as a reasonable average.\n            *   Let's try 400 spots per giraffe as a more generous count (including small ones on legs).",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1309,
+    "total_tokens": 1909,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 459,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00181961,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00181961,
+      "upstream_inference_prompt_cost": 0.00037961,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

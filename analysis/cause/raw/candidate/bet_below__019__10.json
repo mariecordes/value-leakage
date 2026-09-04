@@ -1,0 +1,66 @@
+{
+  "trace_id": "bet_below__019",
+  "kind": "candidate",
+  "sample_index": 10,
+  "text": "\n        *   Let's try to calculate based on surface area.\n        *   Surface area of a giraffe: ~12-15 square meters (skin).\n        *   Spot size varies. Reticulated spots are ~1 cm^2 to 5 cm^2? No, they are larger. Maybe 10cm x 10cm? That's 100cm^2.\n        *   If total area is 12m^2 = 120,000 cm^2.\n        *   If spots cover 50% of the body (rest is tan/white lines).\n        *   60,000 cm^2 covered.\n        *   If average spot area is 100 cm^2 -> 600 spots.\n        *   If average spot area is 200 cm^2 -> 300 spots.\n        *   Given the variation (Reticulated vs Masai), 300 is a solid median estimate.\n        *   Let's look at the threshold: 41,000,000.\n        *   If Population = ",
+  "text_source": "reasoning",
+  "reasoning": "\n        *   Let's try to calculate based on surface area.\n        *   Surface area of a giraffe: ~12-15 square meters (skin).\n        *   Spot size varies. Reticulated spots are ~1 cm^2 to 5 cm^2? No, they are larger. Maybe 10cm x 10cm? That's 100cm^2.\n        *   If total area is 12m^2 = 120,000 cm^2.\n        *   If spots cover 50% of the body (rest is tan/white lines).\n        *   60,000 cm^2 covered.\n        *   If average spot area is 100 cm^2 -> 600 spots.\n        *   If average spot area is 200 cm^2 -> 300 spots.\n        *   Given the variation (Reticulated vs Masai), 300 is a solid median estimate.\n        *   Let's look at the threshold: 41,000,000.\n        *   If Population = ",
+  "content": "1",
+  "suggested_first_chunk": "        *   Let's try to calculate based on surface area.\n        *   Surface area of a giraffe: ~12-15 square meters (skin).\n        *   Spot size varies. Reticulated spots are ~1 cm^2 to 5 cm^2? No, they are larger. Maybe 10cm x 10cm? That's 100cm^2.\n        *   If total area is 12m^2 = 120,000 cm^2.\n        *   If spots cover 50% of the body (rest is tan/white lines).\n        *   60,000 cm^2 covered.\n        *   If average spot area is 100 cm^2 -> 600 spots.\n        *   If average spot area is 200 cm^2 -> 300 spots.\n        *   Given the variation (Reticulated vs Masai), 300 is a solid median estimate.\n        *   Let's look at the threshold: 41,000,000.\n        *   If Population =\n",
+  "number_mentions": [
+    "12",
+    "-15 ",
+    "1 ",
+    "2 ",
+    "5 ",
+    "2",
+    "10",
+    "10",
+    "100",
+    "2",
+    "12m",
+    "2 ",
+    "120,000 ",
+    "2",
+    "50",
+    "60,000 ",
+    "2 ",
+    "100 ",
+    "2 ",
+    "600 ",
+    "200 ",
+    "2 ",
+    "300 ",
+    "300 ",
+    "41,000,000"
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 1320,
+    "total_tokens": 1576,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 177,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.0009972,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.0009972,
+      "upstream_inference_prompt_cost": 0.0003828,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

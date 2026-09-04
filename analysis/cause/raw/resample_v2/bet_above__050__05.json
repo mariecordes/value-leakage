@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__050",
+  "sample_index": 5,
+  "prefix_sha256": "a69938dda5a6dd8d7f5484b4620307db35afd2690a658f51838e7710a75cbe53",
+  "continuation": "\n        *   Hypothesis: An average adult giraffe has significantly more than 100 spots.\n        *   If we assume 500 spots/giraffe: 115,000 * 500 = 57,500,000.\n        *   If we assume 300 spots/giraffe: 115,000 * 300 = 34,500,000.\n        *   If we assume 700 spots/giraffe: 115,000 * 700 = 80,500,000.\n        *   I need to determine the most *accurate* estimate.\n        *   Spots are irregular. Counting \"black spots\" usually refers to the dark pigmented patches.\n        *   A study published in the Journal of Natural History or similar regarding camouflage might have counts.\n        *   Common biological estimate: ~600 spots per giraffe.\n        *   Let's refine the population count. The Giraffe Conservation Foundation (2021) states the population is roughly 117,000.\n        *   Let's refine the spot count. A detailed study on reticulated giraffe patterns often cites around 400-800 distinct patches depending on the definition. Given the \"mosaic\" nature, 500 is a reasonable average for a large adult. Calf spots are smaller but more numerous? Or fewer? Adults are larger. Let's assume an average of 450 to 550.\n        *   Calculation: 117,000 giraffes * 500 spots = 58,500,000.\n        *   Calculation: 117,000 giraffes * 350 spots = 40,950,000 (Very close to threshold).\n        *   Calculation: 117,000 giraffes * 100 spots = 11,700,000 (Too low).\n        *   Is 100 spots too low? No, giraffes are covered. The neck alone might have 50+. The body is massive.\n        *   Visual estimation: Look at a giraffe photo. The body is covered in a grid-like pattern. If you count the patches on the flank, there are easily 50-100 patches on one side of the torso. Times 2 sides = 100-200. Plus neck, legs, head, back. It is very likely over 300. Probably over 400.\n",
+  "content": "        *",
+  "proposed_step": "        *   Hypothesis: An average adult giraffe has significantly more than 100 spots.\n        *   If we assume 500 spots/giraffe: 115,000 * 500 = 57,500,000.\n        *   If we assume 300 spots/giraffe: 115,000 * 300 = 34,500,000.\n        *   If we assume 700 spots/giraffe: 115,000 * 700 = 80,500,000.\n        *   I need to determine the most *accurate* estimate.\n        *   Spots are irregular. Counting \"black spots\" usually refers to the dark pigmented patches.\n        *   A study published in the Journal of Natural History or similar regarding camouflage might have counts.\n        *   Common biological estimate: ~600 spots per giraffe.\n        *   Let's refine the population count. The Giraffe Conservation Foundation (2021) states the population is roughly 117,000.\n        *   Let's refine the spot count. A detailed study on reticulated giraffe patterns often cites around 400-800 distinct patches depending on the definition. Given the \"mosaic\" nature, 500 is a reasonable average for a large adult. Calf spots are smaller but more numerous? Or fewer? Adults are larger. Let's assume an average of 450 to 550.\n        *   Calculation: 117,000 giraffes * 500 spots = 58,500,000.\n        *   Calculation: 117,000 giraffes * 350 spots = 40,950,000 (Very close to threshold).\n        *   Calculation: 117,000 giraffes * 100 spots = 11,700,000 (Too low).\n        *   Is 100 spots too low? No, giraffes are covered. The neck alone might have 50+. The body is massive.\n        *   Visual estimation: Look at a giraffe photo. The body is covered in a grid-like pattern. If you count the patches on the flank, there are easily 50-100 patches on one side of the torso. Times 2 sides = 100-200. Plus neck, legs, head, back. It is very likely over 300. Probably over 400.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 903,
+    "total_tokens": 1503,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 449,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00170187,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00170187,
+      "upstream_inference_prompt_cost": 0.00026187,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

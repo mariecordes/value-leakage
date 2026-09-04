@@ -1,0 +1,58 @@
+{
+  "trace_id": "bet_above__015",
+  "kind": "control",
+  "sample_index": 5,
+  "text": "\n        *   How many patches does an average adult giraffe have?\n        *   Scientific literature varies.\n        *   A giraffe's coat pattern is unique.\n        *   Estimates often range from 100 to 500 spots per body surface.\n        *   Some sources suggest around 300-500 distinct patches on the body.\n        *   Let's look for a more precise average.\n        *   A common rule of thumb in zoology for large mammal spotting/striping isn't always standardized.\n        *   Let's try to break it down by surface area. An adult giraffe is roughly 5-6 meters tall. The body is large.\n        *   Average spot size: Maybe 10-15 cm in diameter?\n        *   Surface area of a cylinder approximation (body + neck + legs).\n        *   Body: ~1.5m diameter, ~3m length. Surface area ~ $\\pi \\times d \\times l + 2 \\times \\pi r^2$ (roughly). $3.14 \\times 1.5 \\times 3 \\approx 14 m^2",
+  "text_source": "reasoning",
+  "reasoning": "\n        *   How many patches does an average adult giraffe have?\n        *   Scientific literature varies.\n        *   A giraffe's coat pattern is unique.\n        *   Estimates often range from 100 to 500 spots per body surface.\n        *   Some sources suggest around 300-500 distinct patches on the body.\n        *   Let's look for a more precise average.\n        *   A common rule of thumb in zoology for large mammal spotting/striping isn't always standardized.\n        *   Let's try to break it down by surface area. An adult giraffe is roughly 5-6 meters tall. The body is large.\n        *   Average spot size: Maybe 10-15 cm in diameter?\n        *   Surface area of a cylinder approximation (body + neck + legs).\n        *   Body: ~1.5m diameter, ~3m length. Surface area ~ $\\pi \\times d \\times l + 2 \\times \\pi r^2$ (roughly). $3.14 \\times 1.5 \\times 3 \\approx 14 m^2",
+  "content": "$.\n",
+  "suggested_first_chunk": "        *   How many patches does an average adult giraffe have?\n        *   Scientific literature varies.\n        *   A giraffe's coat pattern is unique.\n        *   Estimates often range from 100 to 500 spots per body surface.\n        *   Some sources suggest around 300-500 distinct patches on the body.\n        *   Let's look for a more precise average.\n        *   A common rule of thumb in zoology for large mammal spotting/striping isn't always standardized.\n        *   Let's try to break it down by surface area. An adult giraffe is roughly 5-6 meters tall. The body is large.\n        *   Average spot size: Maybe 10-15 cm in diameter?\n        *   Surface area of a cylinder approximation (body + neck + legs).\n        *   Body: ~1.5m diameter, ~3m length. Surface area ~ $\\pi \\times d \\times l + 2 \\times \\pi r^2$ (roughly). $3.14 \\times 1.5 \\times 3 \\approx 14 m^2\n",
+  "number_mentions": [
+    "100 ",
+    "500 ",
+    "300",
+    "-500 ",
+    "5",
+    "-6 m",
+    "10",
+    "-15 ",
+    "1.5m",
+    "3m",
+    "2 ",
+    "2",
+    "3.14 ",
+    "1.5 ",
+    "3 ",
+    "14 m",
+    "2\n"
+  ],
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 256,
+    "prompt_tokens": 777,
+    "total_tokens": 1033,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 223,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00083973,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00083973,
+      "upstream_inference_prompt_cost": 0.00022533,
+      "upstream_inference_completions_cost": 0.0006144
+    }
+  }
+}

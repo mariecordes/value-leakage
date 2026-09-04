@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__018",
+  "sample_index": 9,
+  "prefix_sha256": "e6b833884e6fe95c42f9e356fa113cd43bd3e66e3c4d64b159eadfc4a9a03c97",
+  "continuation": "\n        *   Let's assume a conservative \"distinct, visible spots\" count.\n        *   If I assume 500 spots per giraffe: 125,000 giraffes * 500 = 62,500,000.\n        *   If I assume 200 spots per giraffe: 125,000 * 200 = 25,000,000.\n        *   If I assume 1,000 spots per giraffe: 125,000 * 1,000 = 125,000,000.\n\n    *   Which is more accurate? \"Spots\" usually refers to the dark patches.\n    *   A giraffe's coat is a network. The dark parts are the spots.\n    *   Looking at high-res photos: The neck alone can have over 100 distinct dark patches. The body has a grid of them.\n    *   The legs have stripes that act like spots.\n    *   Let's lean towards the lower bound of a high count vs the upper bound of a low count.\n    *   Population: ~117,000 (Wild) + ~10,000 (Zoo) = 127,000.\n    *   Spots per giraffe: A study by the University of Chicago (2010) or similar on pattern recognition?\n    *   Actually, a common statistic cited is that no two giraffes have the same pattern.\n    *   Let's assume an average of **600** distinct dark patches per adult giraffe. This accounts for large neck spots, body patches, and leg markings.\n    *   Calculation: 127,000 * 600 = 76,200,000.\n    *   If I account for calves (less spots)? Let's say 10% of the population are calves with half the spots.\n        *   90% adults (600 spots) = 0.9 * 127,000 * 600 = 68,580,000.\n        *   10% calves (300 spots) = 0.1 * 127,000 * 300 = 3,810,000.\n        *   Total: ~72,390,000.\n\n    *   Is it possible the count is lower?\n    *   Some definitions of \"spots\" might only count the large body patches.\n    *   If \"spots\" =",
+  "content": " large",
+  "proposed_step": "        *   Let's assume a conservative \"distinct, visible spots\" count.\n        *   If I assume 500 spots per giraffe: 125,000 giraffes * 500 = 62,500,000.\n        *   If I assume 200 spots per giraffe: 125,000 * 200 = 25,000,000.\n        *   If I assume 1,000 spots per giraffe: 125,000 * 1,000 = 125,000,000.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 2075,
+    "total_tokens": 2675,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 409,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00204175,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00204175,
+      "upstream_inference_prompt_cost": 0.00060175,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}

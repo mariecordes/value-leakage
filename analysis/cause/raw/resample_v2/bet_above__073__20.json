@@ -1,0 +1,37 @@
+{
+  "trace_id": "bet_above__073",
+  "sample_index": 20,
+  "prefix_sha256": "56b1c116e9e1a727d49da4d716e1390e128279f7c9e1b35d80e30b22c41cdc62",
+  "continuation": "\n        *   Let's split the difference and account for juveniles.\n        *   *Population demographics:* Not all are full adults.\n        *   *Subspecies differences:* Reticulated spots are smaller and denser than Masai spots.\n        *   Reticulated: Smaller, more numerous. Masai: Jagged, fewer, larger.\n        *   Reticulated population: ~80,000? Masai: ~30,000? Others: small numbers.\n        *   Let's assume an average. If Reticulated has ~1,500 and Masai has ~400, the weighted average might be around 800-900.\n        *   Let's refine the population count first.\n    *   **Refining Population:**\n        *   GCF 2016: 80,364 Reticulated, 26,610 Masai, 5,500 Rothschild, others. Total ~117,500.\n        *   Let's assume ~117,500 wild + ~2,000 captive = **119,500**.\n    *   **Refining Spot Count:**\n        *   *Reticulated:* Small spots, high density. Estimated ~1,000 - 1,500. Let's say 1,200.\n        *   *Masai:* Large, star-shaped spots. Estimated ~300 - 600. Let's say 450.\n        *   *Rothschild (Nubian):* Intermediate/Large. ~600?\n        *   *Kordofan/Nigerian:* ~500?\n        *   *Kalahari (South):* Sparse. ~400?\n        *   Weighted Calculation:\n            *   Reticulated (68% of pop): 117,500 * 0.68 = ~80,000 giraffes. 80,000 * 1,200 spots = 96,000,000 spots.\n            *   Masai (22% of pop): 117,500 * 0.22 = ~26,000 giraffes. 26,000 * 450 spots = 11,700,000 spots.\n            *   Others (10%): 11,500 giraffes. 11,500 * 600 spots = 6,900,000 spots.\n           ",
+  "content": " *  ",
+  "proposed_step": "        *   Let's split the difference and account for juveniles.\n        *   *Population demographics:* Not all are full adults.\n        *   *Subspecies differences:* Reticulated spots are smaller and denser than Masai spots.\n        *   Reticulated: Smaller, more numerous. Masai: Jagged, fewer, larger.\n        *   Reticulated population: ~80,000? Masai: ~30,000? Others: small numbers.\n        *   Let's assume an average. If Reticulated has ~1,500 and Masai has ~400, the weighted average might be around 800-900.\n        *   Let's refine the population count first.\n    *   **Refining Population:**\n        *   GCF 2016: 80,364 Reticulated, 26,610 Masai, 5,500 Rothschild, others. Total ~117,500.\n        *   Let's assume ~117,500 wild + ~2,000 captive = **119,500**.\n    *   **Refining Spot Count:**\n        *   *Reticulated:* Small spots, high density. Estimated ~1,000 - 1,500. Let's say 1,200.\n        *   *Masai:* Large, star-shaped spots. Estimated ~300 - 600. Let's say 450.\n        *   *Rothschild (Nubian):* Intermediate/Large. ~600?\n        *   *Kordofan/Nigerian:* ~500?\n        *   *Kalahari (South):* Sparse. ~400?\n        *   Weighted Calculation:\n            *   Reticulated (68% of pop): 117,500 * 0.68 = ~80,000 giraffes. 80,000 * 1,200 spots = 96,000,000 spots.\n            *   Masai (22% of pop): 117,500 * 0.22 = ~26,000 giraffes. 26,000 * 450 spots = 11,700,000 spots.\n            *   Others (10%): 11,500 giraffes. 11,500 * 600 spots = 6,900,000 spots.",
+  "finish_reason": "length",
+  "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1339,
+    "total_tokens": 1939,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": null,
+      "audio_tokens": 0,
+      "reasoning_tokens": 379,
+      "rejected_prediction_tokens": null,
+      "text_tokens": null,
+      "image_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "image_tokens": null,
+      "text_tokens": null,
+      "video_tokens": 0
+    },
+    "cost": 0.00182831,
+    "is_byok": false,
+    "cost_details": {
+      "upstream_inference_cost": 0.00182831,
+      "upstream_inference_prompt_cost": 0.00038831,
+      "upstream_inference_completions_cost": 0.00144
+    }
+  }
+}
