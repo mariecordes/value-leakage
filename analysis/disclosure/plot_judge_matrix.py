@@ -52,7 +52,7 @@ def main(source: str = "judge_stability_random.json"):
     # the cells carry one quantity; a diverging or rainbow map would imply a
     # midpoint that does not exist here.
     cmap = LinearSegmentedColormap.from_list(
-        "count", ["#ffffff", PAL.INDIGO_LT, PAL.BELOW])
+        "count", ["#ffffff", PAL.DISCLOSURE["ADMITS"], PAL.DISCLOSURE["DENIES"]])
 
     fig, ax = plt.subplots(figsize=(8.4, 6.6))
     im = ax.imshow(m, cmap=cmap, vmin=0, vmax=m.max())

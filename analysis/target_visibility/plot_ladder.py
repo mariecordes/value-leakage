@@ -32,15 +32,11 @@ FAMILIES = [
     ("bet", "Bet (threshold shown)"),
     ("hidden", "Bet (threshold withheld)"),
 ]
-# One neutral hue for every bar, and the two models told apart by fill.
-#
-# Deliberately NOT indigo-for-instructed / amber-for-bet. In the palette those
-# two hues mean below pays and above pays, and the quantity plotted here is
-# computed from both of those sides at once, so neither hue belongs to any bar.
-# Borrowing them for prompt conditions would give the same two colours a third
-# meaning across the figure set. Indigo alone is the primary mark, matching the
-# bias dots in the disclosure figure, which plot this same quantity.
-BAR = PAL.BELOW
+# One neutral for every bar. The prompt family is already on the x-axis, so colour
+# has nothing left to encode, and repeating it in hue would be redundant. Neutral
+# rather than the bet's blue because one of these bars is the instructed condition,
+# which blue would misdescribe. The two models stay told apart by fill.
+BAR = PAL.NEUTRAL
 
 MODEL_LABEL = {"qwen3.5-122b-a10b": "qwen3.5-122b-a10b",
                "glm-5p2": "glm-5p2"}

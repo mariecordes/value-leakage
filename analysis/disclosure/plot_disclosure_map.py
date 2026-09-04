@@ -38,11 +38,13 @@ JUDGE_SHARE_SLOP = 0.10
 sys.path.insert(0, str(Path(__file__).parent.parent))
 import palette as PAL  # noqa: E402
 
-# Four labels form one ordered scale: open about it -> silent -> denies it.
-# Diverging by design (blue pole / neutral middle / orange pole). Adjacent-pair
-# CVD and normal-vision separation checked with the dataviz validator; the two
-# poles reuse the repo's own condition colours.
-LABELS = ("ADMITS", "MENTIONS", "NO_MENTION", "DENIES")
+# Three of the four labels form one ordered scale, open about it -> denies it.
+# "Never raises it" sits off that scale and is drawn last, in grey: a trace that
+# does not mention the incentive is silent rather than more closed than one that
+# mentions it, and placing it between two ramp steps broke the left-to-right read.
+# A single-hue blue ramp for the three scale steps, checked with the dataviz
+# validator for monotone lightness and step separation. See analysis/palette.py.
+LABELS = ("ADMITS", "MENTIONS", "DENIES", "NO_MENTION")
 LABEL_COLORS = PAL.DISCLOSURE
 LABEL_TEXT = {"ADMITS": "admits influence", "MENTIONS": "mentions it",
               "NO_MENTION": "never raises it", "DENIES": "denies influence"}
@@ -125,7 +127,7 @@ def draw(rows):
     # Bars recede, dots carry the reading.
     ax.errorbar(xs, ys, xerr=err, fmt="none", ecolor=INK_MUTED, elinewidth=1.1,
                 capsize=4, capthick=1.1, alpha=0.42, zorder=2)
-    ax.scatter(xs, ys, s=150, color=PAL.BELOW, edgecolor="white", linewidth=1.8,
+    ax.scatter(xs, ys, s=150, color=PAL.BET, edgecolor="white", linewidth=1.8,
                zorder=3)
 
     # Labels go above the dot, so they clear the horizontal error bar. Models
@@ -139,8 +141,10 @@ def draw(rows):
 
     ax.set_xlabel("Share of runs whose reasoning admits influence",
                   fontsize=11, color=INK)
-    ax.set_ylabel("Condition-balanced answer shift", fontsize=11, color=INK)
-    ax.set_title("Answer shifts and how often the reasoning reports influence",
+    ax.set_ylabel("Answer shift\n(0 = no shift, 1 = every run follows the prompt)",
+                  fontsize=11, color=INK)
+    ax.set_title("How often the reasoning admits influence, against the "
+                 "answer shift",
                  fontsize=12, color=INK, loc="left")
     ax.set_xlim(xs.min() - 0.14, xs.max() + 0.12)
     ax.set_ylim(min(0, ys.min()) - 0.06, ys.max() + 0.10)
@@ -164,7 +168,7 @@ def draw(rows):
             if wi >= 0.08:                      # visible label, never colour-alone
                 bx.text(li + wi / 2, y, f"{wi*100:.0f}", ha="center", va="center",
                         fontsize=8.5,
-                        color="white" if lab in ("ADMITS", "DENIES") else INK)
+                        color="white" if lab in ("MENTIONS", "DENIES") else INK)
         left = left + w
     bx.set_yticks(ypos)
     bx.set_yticklabels(bar_order, fontsize=9, color=INK)
@@ -182,11 +186,7 @@ def draw(rows):
 
     fig.suptitle("Answer shifts and how models describe the Donation Bet",
                  fontsize=13, color=INK, x=0.012, ha="left", y=0.98)
-    # Short enough not to set the figure width; the rest lives in the caption.
-    fig.text(0.012, 0.005,
-             "Shift: difference in above-threshold landing rates; ties count "
-             "as half in each condition.", fontsize=9, color=INK_MUTED, ha="left")
-    fig.tight_layout(rect=[0, 0.02, 1, 0.94])
+    fig.tight_layout(rect=[0, 0, 1, 0.94])
     out = DISCLOSURE_DIR / "map.png"
     fig.savefig(out, dpi=180, bbox_inches="tight", pad_inches=0.3)
     fig.savefig(DISCLOSURE_DIR / "map.svg", bbox_inches="tight", pad_inches=0.3)

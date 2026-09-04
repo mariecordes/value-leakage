@@ -34,9 +34,11 @@ import palette as PAL  # noqa: E402
 from value_leakage.plot import INK, INK_MUTED  # noqa: E402
 
 CONTINUATION_DIR = HERE
-ARM_COLOR = {"bet": PAL.ABOVE, "instructed": PAL.BELOW}
-ARM_LIGHT = {"bet": PAL.AMBER_LT, "instructed": PAL.INDIGO_LT}
-ARM_TITLE = {"bet": "Bet", "instructed": "Instructed (told to aim)"}
+# Hue is the prompt family. Stated versus landed is the second split, carried by a
+# lighter fill against the full one. See analysis/palette.py.
+FAMILY_COLOR = PAL.FAMILY
+FAMILY_LIGHT = PAL.FAMILY_LIGHT
+ARM_TITLE = {"bet": "Donation bet", "instructed": "Instructed to aim"}
 
 
 def sgn(version: str) -> float:
@@ -83,22 +85,25 @@ def main(model: str = "qwen3.5-122b-a10b", clip: float = 6.0):
                         whiskerprops=dict(linewidth=1.2),
                         capprops=dict(linewidth=1.2))
         for patch, kind in zip(bp["boxes"], kinds):
-            col = ARM_LIGHT[arm] if kind == "said" else ARM_COLOR[arm]
-            patch.set_facecolor(col)
-            patch.set_edgecolor(ARM_COLOR[arm])
+            patch.set_facecolor(FAMILY_LIGHT[arm] if kind == "said"
+                                else FAMILY_COLOR[arm])
+        # White reads on the full fill but vanishes on the light one.
+        for median, kind in zip(bp["medians"], kinds):
+            median.set_color(FAMILY_COLOR[arm] if kind == "said" else "white")
+            patch.set_edgecolor(FAMILY_COLOR[arm])
             patch.set_alpha(0.9)
         for part in ("whiskers", "caps"):
             for artist in bp[part]:
-                artist.set_color(ARM_COLOR[arm])
+                artist.set_color(FAMILY_COLOR[arm])
         for flier in bp["fliers"]:
-            flier.set_markeredgecolor(ARM_COLOR[arm])
+            flier.set_markeredgecolor(FAMILY_COLOR[arm])
 
         ax.axhline(0, color=INK_MUTED, linewidth=1.1, linestyle="--", zorder=0)
         ax.axvline(len(cuts) - 0.5, color=INK_MUTED, linewidth=0.8,
                    alpha=0.4, zorder=0)
         ax.set_xticks(list(range(len(cuts) + 1)))
-        ax.set_xticklabels([f"{c:.0%}\ncut" for c in cuts]
-                           + ["100%\nuninterrupted"], fontsize=9.5)
+        ax.set_xticklabels([f"{c:g}" for c in cuts]
+                           + ["1.0\n(uninterrupted)"], fontsize=9.5)
         ax.set_xlim(-0.6, len(cuts) + 0.6)
         # Symlog, matching the scatter in the main figure. The bet 50% box
         # genuinely runs from -1.9 to +5.1 — with n=7 the spread is wide enough
@@ -111,8 +116,17 @@ def main(model: str = "qwen3.5-122b-a10b", clip: float = 6.0):
         ax.set_yticks(yt)
         ax.set_yticklabels([f"{t:g}" for t in yt])
         ax.axhspan(-0.3, 0.3, color=INK_MUTED, alpha=0.05, zorder=0)
+        # In the plot rather than a footnote, and worded as on the scatter: a
+        # compressed axis a reader cannot see is misleading.
+        if ax is axes[0]:
+            # Below the band, where both panels are empty: on top of the data it
+            # was unreadable.
+            ax.text(-0.45, -0.42, "shaded band: axis is linear\ninside ±0.3, "
+                    "compressed outside", va="top", ha="left",
+                    fontsize=8.5, color=INK_MUTED, linespacing=1.4)
         ax.set_title(ARM_TITLE[arm], fontsize=12, color=INK, loc="left")
-        ax.set_xlabel("Where the reasoning was cut", fontsize=11, color=INK)
+        ax.set_xlabel("Where the reasoning was cut (% of the trace)",
+                      fontsize=11, color=INK)
         ax.grid(True, axis="y", alpha=0.25, linewidth=0.6)
         ax.set_axisbelow(True)
         for sp in ("top", "right"):
@@ -121,25 +135,20 @@ def main(model: str = "qwen3.5-122b-a10b", clip: float = 6.0):
         # Legend inside each panel, in that panel's own colour, so the reader
         # never has to look elsewhere to decode it.
         ax.legend(handles=[
-            Patch(facecolor=ARM_LIGHT[arm], edgecolor=ARM_COLOR[arm],
+            Patch(facecolor=FAMILY_LIGHT[arm], edgecolor=FAMILY_COLOR[arm],
                   label="estimate when stopped at the cut"),
-            Patch(facecolor=ARM_COLOR[arm], edgecolor=ARM_COLOR[arm],
+            Patch(facecolor=FAMILY_COLOR[arm], edgecolor=FAMILY_COLOR[arm],
                   label="estimate after continuation")],
             fontsize=9.5, frameon=False, loc="lower right")
 
     axes[0].set_ylabel("Normalized estimate, toward the rewarded side\n"
-                       "(0 = threshold, 0.2 = 20% past it)",
+                       "(0 = threshold)",
                        fontsize=11, color=INK)
 
-    fig.suptitle("The spread of estimates at each cut: when the model was "
-                 "stopped, and after it continued",
+    fig.suptitle("Comparing the estimate the model stated when stopped at each cut "
+                 "with the estimate it reached after continuing",
                  fontsize=13, color=INK, x=0.012, ha="left", y=0.98)
-    fig.text(0.012, 0.015,
-             "The vertical axis is linear inside the shaded band (±0.3) and "
-             "compressed outside it, so the wide 50% boxes fit without "
-             "flattening the rest. Nothing is excluded.",
-             fontsize=8.5, color=INK_MUTED, ha="left")
-    fig.subplots_adjust(top=0.845, bottom=0.155, left=0.075, right=0.985,
+    fig.subplots_adjust(top=0.88, bottom=0.125, left=0.075, right=0.985,
                         wspace=0.08)
     out = CONTINUATION_DIR / f"stated_vs_resampled_bars_{model}.png"
     fig.savefig(out, dpi=180, facecolor="white", bbox_inches="tight",

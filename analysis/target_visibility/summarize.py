@@ -247,7 +247,7 @@ def lineup(model: str, est: dict, traj: dict, thr: float,
         ax.legend(loc="upper left", fontsize=8, frameon=False)
 
     for ax in axes[:, 0]:
-        ax.set_ylabel("normalized estimate (0 = threshold)", fontsize=11,
+        ax.set_ylabel("Normalized estimate (0 = threshold)", fontsize=11,
                       color=INK)
 
     fig.suptitle("Four prompt versions of the Donation Bet: baseline, bet, "

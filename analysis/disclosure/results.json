@@ -14,14 +14,14 @@
     "counts": {
       "ADMITS": 13,
       "MENTIONS": 2,
-      "NO_MENTION": 0,
-      "DENIES": 25
+      "DENIES": 25,
+      "NO_MENTION": 0
     },
     "shares": {
       "ADMITS": 0.325,
       "MENTIONS": 0.05,
-      "NO_MENTION": 0.0,
-      "DENIES": 0.625
+      "DENIES": 0.625,
+      "NO_MENTION": 0.0
     },
     "judge_model": "gpt-5-mini"
   },
@@ -40,14 +40,14 @@
     "counts": {
       "ADMITS": 33,
       "MENTIONS": 0,
-      "NO_MENTION": 4,
-      "DENIES": 3
+      "DENIES": 3,
+      "NO_MENTION": 4
     },
     "shares": {
       "ADMITS": 0.825,
       "MENTIONS": 0.0,
-      "NO_MENTION": 0.1,
-      "DENIES": 0.075
+      "DENIES": 0.075,
+      "NO_MENTION": 0.1
     },
     "judge_model": "gpt-5-mini"
   },
@@ -66,14 +66,14 @@
     "counts": {
       "ADMITS": 21,
       "MENTIONS": 0,
-      "NO_MENTION": 3,
-      "DENIES": 16
+      "DENIES": 16,
+      "NO_MENTION": 3
     },
     "shares": {
       "ADMITS": 0.525,
       "MENTIONS": 0.0,
-      "NO_MENTION": 0.075,
-      "DENIES": 0.4
+      "DENIES": 0.4,
+      "NO_MENTION": 0.075
     },
     "judge_model": "gpt-5-mini"
   },
@@ -92,14 +92,14 @@
     "counts": {
       "ADMITS": 19,
       "MENTIONS": 4,
-      "NO_MENTION": 1,
-      "DENIES": 16
+      "DENIES": 16,
+      "NO_MENTION": 1
     },
     "shares": {
       "ADMITS": 0.475,
       "MENTIONS": 0.1,
-      "NO_MENTION": 0.025,
-      "DENIES": 0.4
+      "DENIES": 0.4,
+      "NO_MENTION": 0.025
     },
     "judge_model": "gpt-5-mini"
   },
@@ -118,14 +118,14 @@
     "counts": {
       "ADMITS": 32,
       "MENTIONS": 4,
-      "NO_MENTION": 3,
-      "DENIES": 1
+      "DENIES": 1,
+      "NO_MENTION": 3
     },
     "shares": {
       "ADMITS": 0.8,
       "MENTIONS": 0.1,
-      "NO_MENTION": 0.075,
-      "DENIES": 0.025
+      "DENIES": 0.025,
+      "NO_MENTION": 0.075
     },
     "judge_model": "gpt-5-mini"
   },
@@ -144,14 +144,14 @@
     "counts": {
       "ADMITS": 28,
       "MENTIONS": 4,
-      "NO_MENTION": 4,
-      "DENIES": 4
+      "DENIES": 4,
+      "NO_MENTION": 4
     },
     "shares": {
       "ADMITS": 0.7,
       "MENTIONS": 0.1,
-      "NO_MENTION": 0.1,
-      "DENIES": 0.1
+      "DENIES": 0.1,
+      "NO_MENTION": 0.1
     },
     "judge_model": "gpt-5-mini"
   },
@@ -170,14 +170,14 @@
     "counts": {
       "ADMITS": 19,
       "MENTIONS": 3,
-      "NO_MENTION": 2,
-      "DENIES": 16
+      "DENIES": 16,
+      "NO_MENTION": 2
     },
     "shares": {
       "ADMITS": 0.475,
       "MENTIONS": 0.075,
-      "NO_MENTION": 0.05,
-      "DENIES": 0.4
+      "DENIES": 0.4,
+      "NO_MENTION": 0.05
     },
     "judge_model": "gpt-5-mini"
   },
@@ -196,14 +196,14 @@
     "counts": {
       "ADMITS": 22,
       "MENTIONS": 2,
-      "NO_MENTION": 1,
-      "DENIES": 15
+      "DENIES": 15,
+      "NO_MENTION": 1
     },
     "shares": {
       "ADMITS": 0.55,
       "MENTIONS": 0.05,
-      "NO_MENTION": 0.025,
-      "DENIES": 0.375
+      "DENIES": 0.375,
+      "NO_MENTION": 0.025
     },
     "judge_model": "gpt-5-mini"
   },
@@ -222,14 +222,14 @@
     "counts": {
       "ADMITS": 33,
       "MENTIONS": 3,
-      "NO_MENTION": 0,
-      "DENIES": 4
+      "DENIES": 4,
+      "NO_MENTION": 0
     },
     "shares": {
       "ADMITS": 0.825,
       "MENTIONS": 0.075,
-      "NO_MENTION": 0.0,
-      "DENIES": 0.1
+      "DENIES": 0.1,
+      "NO_MENTION": 0.0
     },
     "judge_model": "gpt-5-mini"
   },
@@ -248,14 +248,14 @@
     "counts": {
       "ADMITS": 20,
       "MENTIONS": 3,
-      "NO_MENTION": 0,
-      "DENIES": 17
+      "DENIES": 17,
+      "NO_MENTION": 0
     },
     "shares": {
       "ADMITS": 0.5,
       "MENTIONS": 0.075,
-      "NO_MENTION": 0.0,
-      "DENIES": 0.425
+      "DENIES": 0.425,
+      "NO_MENTION": 0.0
     },
     "judge_model": "gpt-5-mini"
   }

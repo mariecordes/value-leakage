@@ -58,7 +58,7 @@ JUDGE_CACHE = CACHE / "finish_numbers"
 sys.path.insert(0, str(Path(__file__).parent.parent))
 import palette as PAL  # noqa: E402
 
-ARM_COLOR = {"bet": PAL.ABOVE, "instructed": PAL.BELOW}
+FAMILY_COLOR = PAL.FAMILY
 
 
 def finish_files(model: str, job: dict) -> list[Path]:
@@ -362,9 +362,7 @@ def report(rows, thr):
 # lighter steps, so nothing new is introduced.
 # Four series: arm x which side pays. Reuses the palette's two poles and their
 # lighter steps, so nothing new is introduced.
-SERIES_COLOR = {("bet", "above"): PAL.ABOVE, ("bet", "below"): PAL.AMBER_LT,
-                ("instructed", "above"): PAL.BELOW,
-                ("instructed", "below"): PAL.INDIGO_LT}
+SERIES_COLOR = PAL.FAMILY
 SERIES_LABEL = {("bet", "above"): "bet, above pays",
                 ("bet", "below"): "bet, below pays",
                 ("instructed", "above"): "instructed, above pays",
@@ -372,7 +370,15 @@ SERIES_LABEL = {("bet", "above"): "bet, above pays",
 
 
 def figure(rows, summary, thr, model, finals=None):
-    """Left: every interruption, on a symmetric-log scale.
+    """The combined two-panel figure. NOT USED in the write-up — see the note below.
+
+    Both panels were superseded by standalone figures that say the same thing with
+    more room: plot_gap_scatter.py replaces the left panel and plot_gap_bars.py
+    replaces the right. The report uses those two. This function is kept because it
+    produced the figure the earlier draft carried, and deleting it would make that
+    draft impossible to reproduce; nothing downstream reads its output.
+
+    Left: every interruption, on a symmetric-log scale.
 
     A few runs sit 2-6x above the threshold. On a linear axis they either crush
     the other 43 points into a corner or have to be excluded, and excluding them
@@ -401,10 +407,15 @@ def figure(rows, summary, thr, model, finals=None):
                    and r["version"].endswith("_" + side)]
             if not sel:
                 continue
+            # Hue is the prompt family; the side each prompt rewards is the
+            # second split and takes a lighter fill. Same size and the same white
+            # edge throughout, so no series is visually heavier than another.
+            fill = (SERIES_COLOR[arm] if side == "above"
+                    else PAL.FAMILY_LIGHT[arm])
             ax.scatter([r["stated_rel"] for r in sel],
                        [r["landing_rel"] for r in sel],
-                       s=70, color=SERIES_COLOR[(arm, side)], edgecolor="white",
-                       linewidth=1.0, alpha=0.72,
+                       s=70, facecolor=fill, edgecolor="white",
+                       linewidth=1.0, alpha=0.8,
                        label=SERIES_LABEL[(arm, side)])
     lim = [-0.35, 7.0]
     for axis in ("x", "y"):
@@ -425,7 +436,7 @@ def figure(rows, summary, thr, model, finals=None):
             "compressed outside", transform=ax.transAxes, va="top",
             fontsize=8.5, color=INK_MUTED)
     ax.set_xlabel("Normalized estimate the model stated when stopped\n"
-                  "(0 = threshold, 0.2 = 20% past it)",
+                  "(0 = threshold)",
                   fontsize=11, color=INK)
     ax.set_ylabel("Normalized estimate after continuation\n(same scale)",
                   fontsize=11, color=INK)
@@ -449,7 +460,7 @@ def figure(rows, summary, thr, model, finals=None):
             if not g:
                 continue
             positions.append(k + d)
-            colors.append(ARM_COLOR[arm])
+            colors.append(FAMILY_COLOR[arm])
             data.append(g)
         xt.append(k); xl.append(f"{c:.0%}\ncut")
     bp = bx.boxplot(data, positions=positions, widths=0.26, patch_artist=True,
@@ -468,28 +479,30 @@ def figure(rows, summary, thr, model, finals=None):
             cp.set_color(col)
         flier.set_markeredgecolor(col)
     bx.axhline(0, color=INK_MUTED, linewidth=1.2, linestyle="--", zorder=0)
-    bx.text(-0.42, 0.012, "no difference", fontsize=9,
-            color=INK_MUTED, va="bottom", ha="left")
+    # On a white plate: without it the label disappears behind the first box.
+    bx.text(-0.42, 0.012, "no difference", fontsize=9, color=INK_MUTED,
+            va="bottom", ha="left",
+            bbox=dict(facecolor="white", edgecolor="none", pad=1.6, alpha=0.85))
     n_clip = sum(1 for r in rows if abs(r["gap_toward_favoured"]) > 0.5)
     bx.set_ylim(-0.5, 0.5)
     if n_clip:
-        bx.text(0.5, -0.155, f"{n_clip} of {len(rows)} interruptions have gaps "
-                f"beyond \u00b10.5 and are not drawn here — all of them are "
-                f"visible in the panel on the left.",
-                transform=bx.transAxes, ha="center", va="top", fontsize=8.5,
+        bx.text(0.02, 0.985, f"{n_clip} of {len(rows)} interruptions have gaps "
+                f"beyond \u00b10.5 and are not drawn here",
+                transform=bx.transAxes, ha="left", va="top", fontsize=8.5,
                 color=INK_MUTED)
     bx.set_xticks(xt); bx.set_xticklabels(xl, fontsize=10)
     bx.set_xlim(-0.5, len(cuts) - 0.5)
-    bx.set_ylabel("Difference: after continuing, minus when stopped\n"
-                  "(same normalized scale; + = nearer the rewarded side)",
+    bx.set_ylabel("How much further toward the rewarded side\n"
+                  "the continuation ended (0 = no difference)",
                   fontsize=11, color=INK)
     bx.set_title("How that difference is distributed, at each cut",
                  fontsize=12, color=INK, loc="left")
-    handles = [Line2D([], [], color=ARM_COLOR["bet"], lw=8, label="bet"),
-               Line2D([], [], color=ARM_COLOR["instructed"], lw=8,
+    handles = [Line2D([], [], color=FAMILY_COLOR["bet"], lw=8, label="bet"),
+               Line2D([], [], color=FAMILY_COLOR["instructed"], lw=8,
                       label="instructed")]
+    # Lower right: the clipped-point note occupies the top of this panel.
     bx.legend(handles=handles, fontsize=9.5, frameon=False, ncol=2,
-              loc="upper right")
+              loc="lower right")
     bx.grid(True, axis="y", alpha=0.25, linewidth=0.6)
     bx.set_axisbelow(True)
     for sp in ("top", "right"):
@@ -499,7 +512,7 @@ def figure(rows, summary, thr, model, finals=None):
     fig.suptitle("The model's estimate when its reasoning was stopped, and "
                  "after it was allowed to continue",
                  fontsize=13, color=INK, x=0.012, ha="left", y=0.98)
-    fig.subplots_adjust(top=0.86, bottom=0.175, left=0.068, right=0.985)
+    fig.subplots_adjust(top=0.86, bottom=0.125, left=0.068, right=0.985)
     out = CONTINUATION_DIR / f"honesty_{model}.png"
     fig.savefig(out, dpi=180, facecolor="white", bbox_inches="tight",
                 pad_inches=0.3)

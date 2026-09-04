@@ -30,9 +30,10 @@ CONTINUATION_DIR = HERE
 
 # Four series: arm x which side pays. Reuses the palette's two poles and their
 # lighter steps, so nothing new is introduced.
-SERIES_COLOR = {("bet", "above"): PAL.ABOVE, ("bet", "below"): PAL.AMBER_LT,
-                ("instructed", "above"): PAL.BELOW,
-                ("instructed", "below"): PAL.INDIGO_LT}
+# This figure's primary comparison is bet against instructed — the instructed arm is
+# the control that licenses reading the bet arm's result — so that goes in hue. The
+# side each prompt rewards is the second split, and takes fill. See analysis/palette.py.
+SERIES_COLOR = PAL.FAMILY
 SERIES_LABEL = {("bet", "above"): "bet, above pays",
                 ("bet", "below"): "bet, below pays",
                 ("instructed", "above"): "instructed, aim above",
@@ -53,10 +54,15 @@ def main(model: str = "qwen3.5-122b-a10b"):
                    and r["version"].endswith("_" + side)]
             if not sel:
                 continue
+            # Hue is the prompt family; the side each prompt rewards is the
+            # second split and takes a lighter fill. Same size and the same white
+            # edge throughout, so no series is visually heavier than another.
+            fill = (SERIES_COLOR[arm] if side == "above"
+                    else PAL.FAMILY_LIGHT[arm])
             ax.scatter([r["stated_rel"] for r in sel],
                        [r["landing_rel"] for r in sel],
-                       s=78, color=SERIES_COLOR[(arm, side)], edgecolor="white",
-                       linewidth=1.0, alpha=0.72,
+                       s=78, facecolor=fill, edgecolor="white",
+                       linewidth=1.0, alpha=0.8,
                        label=SERIES_LABEL[(arm, side)])
 
     # Symlog on both axes: linear where the bulk lives, compressed in the tail,
@@ -84,7 +90,7 @@ def main(model: str = "qwen3.5-122b-a10b"):
             fontsize=8.5, color=INK_MUTED)
 
     ax.set_xlabel("Normalized estimate the model stated when stopped\n"
-                  "(0 = threshold, 0.2 = 20% past it)",
+                  "(0 = threshold)",
                   fontsize=11, color=INK)
     ax.set_ylabel("Normalized estimate after continuation\n(same scale)",
                   fontsize=11, color=INK)
@@ -98,14 +104,11 @@ def main(model: str = "qwen3.5-122b-a10b"):
     fig.suptitle("Each interruption: the estimate the model stated when "
                  "stopped,\nand the estimate it reached after continuing",
                  fontsize=13, color=INK, x=0.012, ha="left", y=0.985)
-    fig.text(0.012, 0.015,
-             f"One dot per interruption (n={len(rows)}). Dots on the dashed "
-             f"line agree; above it the continuation ended higher than the "
-             f"stated estimate, below it, lower.",
-             fontsize=8.5, color=INK_MUTED, ha="left")
-    fig.subplots_adjust(top=0.87, bottom=0.155, left=0.105, right=0.985)
+    fig.subplots_adjust(top=0.87, bottom=0.125, left=0.105, right=0.985)
     out = CONTINUATION_DIR / f"stated_vs_resampled_scatter_{model}.png"
     fig.savefig(out, dpi=180, facecolor="white", bbox_inches="tight",
+                pad_inches=0.3)
+    fig.savefig(out.with_suffix(".svg"), facecolor="white", bbox_inches="tight",
                 pad_inches=0.3)
     plt.close(fig)
     print(f"saved {out.relative_to(CONTINUATION_DIR.parent)}")

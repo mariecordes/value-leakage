@@ -10,3 +10,7 @@ __pycache__/
 # Per-request retry and judge caches. Consolidated results and primary
 # experimental responses are retained under analysis/ and analysis/*/raw/.
 analysis/**/cache/
+
+# Pre-palette-change figure snapshots. Kept locally so the earlier versions are
+# still comparable; not part of the published record.
+analysis/_figures_v1/

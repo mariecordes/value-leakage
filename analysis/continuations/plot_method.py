@@ -78,8 +78,8 @@ def main(model: str = "qwen3.5-122b-a10b", tail: int = 78):
         gridspec_kw={"height_ratios": [1.0, 1.5], "hspace": 0.1})
 
     # ---- top: the trace itself, at its real length ------------------------
-    tx.barh(0, n_chars, height=0.34, color=PAL.INDIGO_LT,
-            edgecolor=PAL.BELOW, linewidth=1.4, zorder=2)
+    tx.barh(0, n_chars, height=0.34, color=PAL.BET_LIGHT,
+            edgecolor=PAL.BET, linewidth=1.4, zorder=2)
     for c in cuts:
         tx.plot([c, c], [-0.17, 0.17], color=INK, linewidth=2.2, zorder=3)
     for c, r in zip(cuts, rows):
@@ -109,11 +109,11 @@ def main(model: str = "qwen3.5-122b-a10b", tail: int = 78):
 
     for c, r in zip(cuts, rows):
         st, ld = r["stated"] / 1e6, r["landing"] / 1e6
-        bx.plot([c, c], [st, ld], color=PAL.BELOW, linewidth=1.6,
+        bx.plot([c, c], [st, ld], color=PAL.BET, linewidth=1.6,
                 alpha=0.55, zorder=2)
         bx.scatter([c], [st], s=150, facecolor="white",
-                   edgecolor=PAL.BELOW, linewidth=2.0, zorder=3)
-        bx.scatter([c], [ld], s=150, color=PAL.BELOW, edgecolor="white",
+                   edgecolor=PAL.BET, linewidth=2.0, zorder=3)
+        bx.scatter([c], [ld], s=150, color=PAL.BET, edgecolor="white",
                    linewidth=1.4, zorder=3)
         # A stated number recovered as the midpoint of a range is flagged, so
         # the figure never presents a derived value as something the model
@@ -135,7 +135,7 @@ def main(model: str = "qwen3.5-122b-a10b", tail: int = 78):
 
     # The answer the trace reached on its own, never interrupted.
     final = run["final"] / 1e6
-    bx.scatter([n_chars], [final], s=170, marker="D", color=PAL.BELOW,
+    bx.scatter([n_chars], [final], s=170, marker="D", color=PAL.BET,
                edgecolor="white", linewidth=1.4, zorder=3)
     bx.annotate(f"final answer\n{final:,.1f}M", xy=(n_chars, final),
                 xytext=(0, 16), textcoords="offset points", ha="center",
@@ -161,14 +161,14 @@ def main(model: str = "qwen3.5-122b-a10b", tail: int = 78):
 
     handles = [
         plt.Line2D([], [], marker="o", linestyle="none", markersize=11,
-                   markerfacecolor="white", markeredgecolor=PAL.BELOW,
+                   markerfacecolor="white", markeredgecolor=PAL.BET,
                    markeredgewidth=2.0,
                    label="estimate when stopped at the cut"),
         plt.Line2D([], [], marker="o", linestyle="none", markersize=11,
-                   markerfacecolor=PAL.BELOW, markeredgecolor="white",
+                   markerfacecolor=PAL.BET, markeredgecolor="white",
                    label="estimate after continuation"),
         plt.Line2D([], [], marker="D", linestyle="none", markersize=10,
-                   markerfacecolor=PAL.BELOW, markeredgecolor="white",
+                   markerfacecolor=PAL.BET, markeredgecolor="white",
                    label="answer the uninterrupted trace reached"),
     ]
     bx.legend(handles=handles, fontsize=9.5, frameon=False, loc="upper right")
