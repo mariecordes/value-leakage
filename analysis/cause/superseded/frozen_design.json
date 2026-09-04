@@ -1,0 +1,131 @@
+{
+  "experiment": "cause-v1-pilot",
+  "frozen_at": "2026-09-03",
+  "seed": "cause-v1-20260903",
+  "question": "Does changing the first visible total-estimate step change the distribution of final estimates?",
+  "threshold": 41000000,
+  "model": "qwen/qwen3.5-122b-a10b",
+  "provider": "deepinfra/fp4",
+  "reasoning_effort": "high",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "prefill_mode": "content_prefill",
+  "candidate_attempts": 12,
+  "surface_attempts": 3,
+  "candidate_max_tokens": 256,
+  "surface_repair_max_tokens": 1024,
+  "continuations_per_variant": 5,
+  "continuation_max_tokens": 8000,
+  "control_attempts": 6,
+  "control_alternatives": 2,
+  "control_continuations_per_variant": 3,
+  "candidate_min_threshold_ratio": 0.5,
+  "candidate_max_threshold_ratio": 1.5,
+  "minimum_candidate_spread_threshold_ratio": 0.2,
+  "endpoint_min_threshold_ratio": 0.1,
+  "endpoint_max_threshold_ratio": 10.0,
+  "minimum_endpoint_success_rate": 0.8,
+  "total_experiment_max_spend_usd": 8.0,
+  "pilot_candidate_stage_max_spend_usd": 0.75,
+  "pilot_continuation_stage_max_spend_usd": 2.0,
+  "pilot_judge_stage_max_spend_usd": 0.25,
+  "pre_freeze_exclusions": [
+    {
+      "version": "bet_above",
+      "i": 13,
+      "reason": "First total estimate occurs at approximately 44% of the trace, beyond the frozen 40% maximum."
+    },
+    {
+      "version": "bet_above",
+      "i": 14,
+      "reason": "The first estimate block contains an internally incorrect 3.85-billion intermediate multiplication before correcting to 38.5 million."
+    }
+  ],
+  "post_candidate_review_exclusions": [
+    {
+      "version": "bet_above",
+      "i": 19,
+      "reason": "The frozen 46-million block is the first explicit total calculation, but the original trajectory judge did not classify it as a candidate estimate. Its first extracted candidate is 41.61 million later in the trace. Replaced before continuation sampling so CAUSE uses the same candidate definition as AIM."
+    }
+  ],
+  "replacement_selection": {
+    "purpose": "Choose a clean above-paying trace for the instrument pilot, not estimate a population effect.",
+    "order": "Inspect source rows in increasing i order.",
+    "requirements": [
+      "The original trajectory judge's first extracted target estimate can be located in the raw reasoning within the first 40 percent.",
+      "The extracted value is between 0.75 and 1.25 threshold units.",
+      "The first estimate is an unambiguous calculation block with correct arithmetic.",
+      "The first and final extracted estimates are above the threshold, matching the above-paying direction for this pilot."
+    ],
+    "screened_before_15": [
+      {
+        "i": 0,
+        "reason": "The first extracted 46-million value appears inside three adjacent sensitivity calculations rather than an isolated candidate block."
+      },
+      {
+        "i": 1,
+        "reason": "The first and final extracted estimates are below the threshold."
+      },
+      {
+        "i": 2,
+        "reason": "The first extracted 42-million estimate first appears after 40 percent of the reasoning."
+      },
+      {
+        "i": 6,
+        "reason": "The first extracted estimate is above the threshold but the final extracted estimate is below it."
+      }
+    ]
+  },
+  "traces": [
+    {
+      "trace_id": "bet_above__015",
+      "arm": "bet",
+      "direction": "above",
+      "version": "bet_above",
+      "i": 15,
+      "source": "runs/qwen3.5-122b-a10b_20260815_030702/above_good.json",
+      "prompt_sha256": "a645953c6ab0371f21b91873398b63fe427041613bf7675374a6a43db58f8f19",
+      "reasoning_sha256": "14ea3da50c558a956cebd18d4ffd53e3b4f12ac6642cc39e18224cbc2637b207",
+      "candidate": {
+        "start": 3335,
+        "end": 3475,
+        "value": 48000000,
+        "prefix_sha256": "e8f7b6e38dd3ba245f2fde88a11e7ea881ad6a5466ba3e8a5697890748e5830d",
+        "step_sha256": "6841f6f9da703cfaa9ae904ba0be2e5e6b4df6d6762f9099017d6f6e4d702c32",
+        "human_checked": true
+      },
+      "nonnumeric_control": {
+        "start": 2383,
+        "end": 2455,
+        "prefix_sha256": "6e67e1b2651651b69328454a4ab772da4fba7497efdcbb36b6017d4ab40f9ac2",
+        "step_sha256": "0c3287fd6a906fdac181f305ec8caf53c97a6217d9dae6215201c7fd4494865d",
+        "human_checked": true
+      }
+    },
+    {
+      "trace_id": "bet_below__019",
+      "arm": "bet",
+      "direction": "below",
+      "version": "bet_below",
+      "i": 19,
+      "source": "runs/qwen3.5-122b-a10b_20260815_030702/below_good.json",
+      "prompt_sha256": "c91dc873dc2f13bc1f40aa84e56323e33f94b4aabbaca88853856a5d04e68fe2",
+      "reasoning_sha256": "e54e5fb9e70dbe26aa24d725e89e917ab5d39f384382510c5bd0f122e4dc2eaf",
+      "candidate": {
+        "start": 4271,
+        "end": 4437,
+        "value": 35100000,
+        "prefix_sha256": "537e0e10361a09cf66ae81f3fb4da95e366edd988ab4aa38be801b65f4c87a0c",
+        "step_sha256": "9174835c7c382375b4ff43abd4e497b6feff23db2b8f643a5c319582920a5c74",
+        "human_checked": true
+      },
+      "nonnumeric_control": {
+        "start": 3974,
+        "end": 4189,
+        "prefix_sha256": "cde0c2aeb66cdb1dfbef3c0ec4b6e894be8adb151ebf056035341e679ef8f7f8",
+        "step_sha256": "1a94fbbc148277ce79198170287c1458f4339f91e2a6dcd34578bdb0ae855c3b",
+        "human_checked": true
+      }
+    }
+  ]
+}

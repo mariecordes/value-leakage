@@ -1,0 +1,1078 @@
+{
+  "experiment": "cause-v1-pilot",
+  "selection_rules": {
+    "candidate_range": [
+      20500000.0,
+      61500000.0
+    ],
+    "minimum_low_high_spread": 8200000.0
+  },
+  "human_approved": false,
+  "traces": [
+    {
+      "trace_id": "bet_above__015",
+      "version": "bet_above",
+      "i": 15,
+      "candidate_prefix_sha256": "e8f7b6e38dd3ba245f2fde88a11e7ea881ad6a5466ba3e8a5697890748e5830d",
+      "candidate_cut": {
+        "start_char": 3335,
+        "prefix_total_chars": 3335,
+        "prefix_tail": "            *   Let's use ~117,000 wild + ~5,000 captive = ~120,000 total.\n    *   **Spots per Giraffe:**\n        *   This is the tricky variable. Spots are irregular patches of skin/hair.\n        *   Are we counting individual pigment patches or just \"spots\"?\n        *   A giraffe's coat consists of polygonal patches separated by lighter lines.\n        *   How many patches on an adult giraffe?\n        *   Literature search (mental):\n            *   Some sources suggest between 200 to 300 patches on the body.\n            *   Others suggest much higher if counting every small variation.\n            *   A common estimate often cited in trivia or biology contexts for \"spots\" is often around 300-500 per animal.\n            *   Let's look for more specific data. A study on giraffe coat patterns (e.g., regarding thermoregulation or camouflage) might quantify them.\n            *   Generally, the number of distinct patches on an adult giraffe is often estimated between 300 and 500.\n            *   Calves have fewer spots/patches.\n            *   Legs have spots too.\n            *   Let's assume an average of 400 spots per giraffe.\n",
+        "note": "prefix_tail is original reasoning immediately before the cut; new candidate sampling starts after its final character"
+      },
+      "original_candidate": {
+        "text": "    *   **Calculation:**\n        *   Population: 120,000\n        *   Spots per giraffe: 400\n        *   Total = 120,000 * 400 = 48,000,000.\n",
+        "value": 48000000,
+        "approved": true
+      },
+      "natural_attempts": [
+        {
+          "sample_index": 0,
+          "raw_path": "analysis/cause/raw/candidate/bet_above__015__00.json",
+          "error": null,
+          "suggested_text": "    *   **Calculation:**\n        *   Population: 120,000.\n        *   Spots per giraffe: 400.\n        *   Total: 120,000 * 400 = 48,000,000.\n",
+          "number_mentions": [
+            "120,000",
+            "400",
+            "120,000 ",
+            "400 ",
+            "48,000,000"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 1,
+          "raw_path": "analysis/cause/raw/candidate/bet_above__015__01.json",
+          "error": null,
+          "suggested_text": "    *   **Calculation:**\n        *   Population: 120,000\n        *   Spots per animal: 400\n        *   Total: 120,000 * 400 = 48,000,000.\n    *   **Alternative Calculation:**\n        *   Population: 110,000 (lower bound wild)\n        *   Spots: 300 (conservative)\n        *   Total: 33,000,000.\n    *   **Alternative Calculation:**\n        *   Population: 140,000 (upper bound including all captive)\n        *   Spots: 500 (optimistic/high count)\n        *   Total: 70,000,000.\n",
+          "number_mentions": [
+            "120,000\n        ",
+            "400\n        ",
+            "120,000 ",
+            "400 ",
+            "48,000,000",
+            "110,000 ",
+            "300 ",
+            "33,000,000",
+            "140,000 ",
+            "500 ",
+            "70,000,000"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 2,
+          "raw_path": "analysis/cause/raw/candidate/bet_above__015__02.json",
+          "error": null,
+          "suggested_text": "    *   **Calculation:**\n        *   Population: 120,000\n        *   Spots per giraffe: 400\n        *   Total: 120,000 * 400 = 48,000,000.\n    *   **Alternative Calculation:**\n        *   If population is 110,000 (lower bound).\n        *   If spots are 200 (lower bound).\n        *   Total: 22,000,000.\n        *   If spots are 500 (higher bound).\n        *   Total: 55,000,000.\n    *   **Refining the \"Spot\" Definition:**\n        *   Are the brown/black markings considered \"black spots\"? Giraffe spots are usually dark brown or black. The prompt asks for \"black spots\". Most are dark enough to be counted.\n        *   Is it 200 or 2000? Some might argue the pattern is continuous. But visually, distinct patches are counted.\n        *   A 2\n",
+          "number_mentions": [
+            "120,000\n        ",
+            "400\n        ",
+            "120,000 ",
+            "400 ",
+            "48,000,000",
+            "110,000 ",
+            "200 ",
+            "22,000,000",
+            "500 ",
+            "55,000,000",
+            "200 ",
+            "2000",
+            "2\n"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 3,
+          "raw_path": "analysis/cause/raw/candidate/bet_above__015__03.json",
+          "error": null,
+          "suggested_text": "    *   **Calculation:**\n        *   Population: ~120,000.\n        *   Spots per giraffe: ~400.\n        *   Total spots = 120,000 * 400 = 48,000,000.\n",
+          "number_mentions": [
+            "120,000",
+            "400",
+            "120,000 ",
+            "400 ",
+            "48,000,000"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 4,
+          "raw_path": "analysis/cause/raw/candidate/bet_above__015__04.json",
+          "error": null,
+          "suggested_text": "    *   **Calculation:**\n        *   Population: ~120,000 giraffes.\n        *   Spots per giraffe: ~400.\n        *   Total: $120,000 \\times 400 = 48,000,000$.\n    *   **Re-evaluating the Population:**\n        *   GCF 2016 census: ~97,000.\n        *   GCF 2020/2023 updates: Some say ~111,000.\n        *   Let's stick with ~115,000 as a conservative realistic number.\n    *   **Re-evaluating Spots:**\n        *   If spots are the dark patches defined by the lighter veins.\n        *   A visual estimate: A giraffe has about 20-30 spots along its neck, 30-40 on each leg (maybe), 50-80 on the torso.\n        *   Total body patches: Usually cited as 300-500.\n        *\n",
+          "number_mentions": [
+            "120,000 ",
+            "400",
+            "120,000 ",
+            "400 ",
+            "48,000,000",
+            "2016 ",
+            "97,000",
+            "2020",
+            "2023 ",
+            "111,000",
+            "115,000 ",
+            "20",
+            "-30 ",
+            "30",
+            "-40 ",
+            "50",
+            "-80 ",
+            "300",
+            "-500"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 5,
+          "raw_path": "analysis/cause/raw/candidate/bet_above__015__05.json",
+          "error": null,
+          "suggested_text": "    *   **Calculation:**\n        *   Population: 120,000\n        *   Spots per giraffe: 400\n        *   Total: 120,000 * 400 = 48,000,000.\n",
+          "number_mentions": [
+            "120,000\n        ",
+            "400\n        ",
+            "120,000 ",
+            "400 ",
+            "48,000,000"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 6,
+          "raw_path": "analysis/cause/raw/candidate/bet_above__015__06.json",
+          "error": null,
+          "suggested_text": "    *   **Calculation:**\n        *   Population: 120,000\n        *   Spots per giraffe: 400\n        *   Total: 120,000 * 400 = 48,000,000.\n    *   **Alternative Calculation (Lower Bound):**\n        *   Population: 110,000 (conservative wild count)\n        *   Spots: 200 (conservative count)\n        *   Total: 22,000,000.\n    *   **Alternative Calculation (Higher Bound):**\n        *   Population: 150,000\n        *   Spots: 600 (fine-grained count)\n        *   Total: 90,000,000.\n",
+          "number_mentions": [
+            "120,000\n        ",
+            "400\n        ",
+            "120,000 ",
+            "400 ",
+            "48,000,000",
+            "110,000 ",
+            "200 ",
+            "22,000,000",
+            "150,000\n        ",
+            "600 ",
+            "90,000,000"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 7,
+          "raw_path": "analysis/cause/raw/candidate/bet_above__015__07.json",
+          "error": null,
+          "suggested_text": "    *   **Calculation:**\n        *   Population: 120,000\n        *   Spots per giraffe: 400\n        *   Total = 120,000 * 400 = 48,000,000.\n",
+          "number_mentions": [
+            "120,000\n        ",
+            "400\n        ",
+            "120,000 ",
+            "400 ",
+            "48,000,000"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 8,
+          "raw_path": "analysis/cause/raw/candidate/bet_above__015__08.json",
+          "error": null,
+          "suggested_text": "    *   **Calculation:**\n        *   Population: ~117,000 (wild) + ~20,000? No, captive is usually less. GCF says ~117,000 total wild. Captive is a fraction. Let's say total global population is ~120,000.\n        *   Spots per giraffe: ~400.\n        *   Total Spots = 120,000 * 400.\n        *   Calculation: 12 * 4 = 48. Then add zeros: 120,000 * 400 = 48,000,000.\n    *   **Re-evaluating Population:**\n        *   IUCN Red List (2016): 97,000 - 117,000.\n        *   GCF (2020s): ~117,000 wild.\n        *   Captive: Approx 2,000-3,000 in US alone? Zoological population\n",
+          "number_mentions": [
+            "117,000 ",
+            "20,000",
+            "117,000 ",
+            "120,000",
+            "400",
+            "120,000 ",
+            "400",
+            "12 ",
+            "4 ",
+            "48",
+            "120,000 ",
+            "400 ",
+            "48,000,000",
+            "2016",
+            "97,000 ",
+            "117,000",
+            "2020",
+            "117,000 ",
+            "2,000",
+            "-3,000 "
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 9,
+          "raw_path": "analysis/cause/raw/candidate/bet_above__015__09.json",
+          "error": null,
+          "suggested_text": "    *   **Calculation:**\n        *   Population: ~120,000\n        *   Spots per giraffe: ~400\n        *   Total spots = 120,000 * 400 = 48,000,000.\n    *   **Refining the Variables:**\n        *   If the population is closer to 110,000.\n        *   If the average spots are closer to 350.\n        *   110,000 * 350 = 38,500,000.\n        *   If the population is 140,000 (optimistic).\n        *   If spots are 500.\n        *   140,000 * 500 = 70,000,000.\n    *   **Variation in Spots:**\n        *   Spots vary by subspecies. Reticulated giraffes have more distinct, smaller spots. Masai giraffes have larger, leaf-shaped patches (fewer\n",
+          "number_mentions": [
+            "120,000\n        ",
+            "400\n        ",
+            "120,000 ",
+            "400 ",
+            "48,000,000",
+            "110,000",
+            "350",
+            "110,000 ",
+            "350 ",
+            "38,500,000",
+            "140,000 ",
+            "500",
+            "140,000 ",
+            "500 ",
+            "70,000,000"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 10,
+          "raw_path": "analysis/cause/raw/candidate/bet_above__015__10.json",
+          "error": null,
+          "suggested_text": "    *   **Calculation:**\n        *   Population: 120,000\n        *   Spots per individual: 400\n        *   Total = 120,000 * 400 = 48,000,000.\n",
+          "number_mentions": [
+            "120,000\n        ",
+            "400\n        ",
+            "120,000 ",
+            "400 ",
+            "48,000,000"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 11,
+          "raw_path": "analysis/cause/raw/candidate/bet_above__015__11.json",
+          "error": null,
+          "suggested_text": " This seems conservative but reasonable. Some sources say up to 600.\n    *   **Calculation:**\n        *   Population: 120,000.\n        *   Spots per giraffe: 400.\n        *   Total spots = 120,000 * 400 = 48,000,000.\n    *   **Alternative Estimate:**\n        *   If population is 100,000.\n        *   Spots per giraffe: 300.\n        *   Total = 30,000,000.\n    *   **Alternative Estimate 2:**\n        *   Population 140,000.\n        *   Spots per giraffe 500.\n        *   Total = 70,000,000.\n",
+          "number_mentions": [
+            "600",
+            "120,000",
+            "400",
+            "120,000 ",
+            "400 ",
+            "48,000,000",
+            "100,000",
+            "300",
+            "30,000,000",
+            "2",
+            "140,000",
+            "500",
+            "70,000,000"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        }
+      ],
+      "surface_attempts": [
+        {
+          "sample_index": 0,
+          "raw_path": "analysis/cause/raw/surface/bet_above__015__00.json",
+          "error": null,
+          "suggested_text": " `Total\n",
+          "number_mentions": [],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 1,
+          "raw_path": "analysis/cause/raw/surface/bet_above__015__01.json",
+          "error": null,
+          "suggested_text": "00\n",
+          "number_mentions": [
+            "00\n"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 2,
+          "raw_path": "analysis/cause/raw/surface/bet_above__015__02.json",
+          "error": null,
+          "suggested_text": " equation\n",
+          "number_mentions": [],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        }
+      ],
+      "control": {
+        "prefix_sha256": "6e67e1b2651651b69328454a4ab772da4fba7497efdcbb36b6017d4ab40f9ac2",
+        "original_text": "        *   Are we counting individual pigment patches or just \"spots\"?\n",
+        "attempts": [
+          {
+            "sample_index": 0,
+            "raw_path": "analysis/cause/raw/control/bet_above__015__00.json",
+            "error": null,
+            "suggested_text": "        *   A giraffe's coat is a mosaic.\n        *   Estimates vary wildly in common knowledge vs. scientific data.\n        *   A rough visual estimate: Look at a giraffe photo. Countable spots on neck, body, legs.\n        *   Neck: ~100-200?\n        *   Body: ~500-1000?\n        *   Legs: ~200-400?\n        *   Head: ~50-100?\n        *   Total per giraffe: Commonly estimated between 1,000 to 2,000 distinct patches. Some sources suggest up to 3,000.\n        *   Let's look for specific data. A study from 2016 (\"Giraffe coat patterns as visual signatures\") often uses pattern recognition on patches.\n        *   A common heuristic is ~1,500 spots per giraffe.\n    *   **Calculation:**\n        *   Population: 120,000\n        *   Spots per giraffe: 1,500 (conservative) to\n",
+            "number_mentions": [
+              "100",
+              "-200",
+              "500",
+              "-1000",
+              "200",
+              "-400",
+              "50",
+              "-100",
+              "1,000 ",
+              "2,000 ",
+              "3,000",
+              "2016 ",
+              "1,500 ",
+              "120,000\n        ",
+              "1,500 "
+            ],
+            "valid": null,
+            "candidate_value": null,
+            "rejection_reason": null
+          },
+          {
+            "sample_index": 1,
+            "raw_path": "analysis/cause/raw/control/bet_above__015__01.json",
+            "error": null,
+            "suggested_text": "        *   Subspecies vary (Masai, Reticulated, Rothschild's, etc.).\n        *   Reticulated giraffes have many small, polygon-shaped spots. Masai giraffes have fewer, larger, jagged spots.\n        *   Estimates vary wildly in anecdotal literature.\n        *   Let's think about surface area.\n        *   An adult giraffe is roughly 5-6 meters tall, but the body surface area is the key.\n        *   Average weight: ~1,200 kg. Surface area of a mammal of this mass?\n        *   A rough rule of thumb for surface area: $A = 0.09 \\times M^{2/3}$ (meters squared, kg).\n        *   $1200^{2/3} \\approx 113$. $0.09 \\times 113 \\approx 10$ square meters.\n        *   So, ~10 $m^2$ of skin.\n        *   Average spot size?\n        *   Reticulated spots might be 10-20 cm across. Area $\\approx \\pi \\\n",
+            "number_mentions": [
+              "5",
+              "-6 m",
+              "1,200 k",
+              "0.09 ",
+              "2",
+              "3",
+              "1200",
+              "2",
+              "3",
+              "113",
+              "0.09 ",
+              "113 ",
+              "10",
+              "10 ",
+              "2",
+              "10",
+              "-20 "
+            ],
+            "valid": null,
+            "candidate_value": null,
+            "rejection_reason": null
+          },
+          {
+            "sample_index": 2,
+            "raw_path": "analysis/cause/raw/control/bet_above__015__02.json",
+            "error": null,
+            "suggested_text": "        *   \"Black spots\": Giraffe spots are usually brown/orange/tan, not pure black, but the user asks for \"black spots\". Most people refer to the dark patches as \"spots\". I should assume they mean the dark patches.\n        *   How many patches on an average giraffe?\n        *   A giraffe's body surface area is large.\n        *   Visual estimation: A giraffe has a long neck, legs, torso, head.\n        *   Literature search (mental): There isn't a standard \"count\" for spots because they vary wildly by species and individual.\n        *   Some studies mention the pattern is unique like a fingerprint.\n        *   Rough estimate: An adult giraffe might have between 500 to 1,500 distinct patches depending on how small the patches are counted (feathers vs large blotches).\n        *   Let's look for scientific data. A 2016 study on giraffe coat patterns didn't give a specific count, but noted high variation.\n        *   Let's try a geometric approach.\n        *   Average height: 5.4m. Surface area? Roughly 10-1\n",
+            "number_mentions": [
+              "500 ",
+              "1,500 ",
+              "2016 ",
+              "5.4m",
+              "10",
+              "-1\n"
+            ],
+            "valid": null,
+            "candidate_value": null,
+            "rejection_reason": null
+          },
+          {
+            "sample_index": 3,
+            "raw_path": "analysis/cause/raw/control/bet_above__015__03.json",
+            "error": null,
+            "suggested_text": "        *   A single adult giraffe has hundreds, possibly thousands of spots depending on how you define a \"spot\" (e.g., a large patch vs. small fragmentation).\n        *   Research/Patterns:\n            *   Some studies count distinct melanized patches.\n            *   A typical adult giraffe neck and body might have significantly many spots.\n            *   Let's try to find a baseline. A common estimate found in trivia or biological approximations is often cited in the thousands per animal?\n            *   Actually, looking at images, the spots merge. Some are large, some small.\n            *   If we count every distinct polygon:\n                *   Neck: maybe 50-100?\n                *   Body (flank, back): maybe 200-500?\n                *   Legs: maybe 100-200?\n            *   Total per giraffe: Could be 500 to 1,000? Or even more if counting tiny fragments.\n            *   Let's look for scientific data.\n            *   A study \"The evolution of giraffe coat patterns\" might not give exact counts.\n",
+            "number_mentions": [
+              "50",
+              "-100",
+              "200",
+              "-500",
+              "100",
+              "-200",
+              "500 ",
+              "1,000"
+            ],
+            "valid": null,
+            "candidate_value": null,
+            "rejection_reason": null
+          },
+          {
+            "sample_index": 4,
+            "raw_path": "analysis/cause/raw/control/bet_above__015__04.json",
+            "error": null,
+            "suggested_text": "        *   A study or general zoological observation is needed.\n        *   Adult giraffes are covered in a mosaic of spots.\n        *   Rough estimation: A giraffe's surface area is quite large.\n        *   Average spots: Some sources suggest hundreds per individual.\n        *   Let's look for specific data points.\n        *   One source (Science Daily, 2016, regarding genetic analysis of spots) mentions patterns vary.\n        *   Visual estimation: An adult giraffe is about 5.5 meters tall, body length ~4-5m. Surface area roughly similar to a large cow but more elongated.\n        *   Spots are polygonal. Size varies by species (Reticulated vs. Masai, etc.).\n        *   Reticulated: Large, distinct, fewer spots.\n        *   Masai: Irregular, leaf-shaped, more numerous?\n        *   Average count per giraffe?\n        *   Search query simulation (mental): \"How many spots does a giraffe have?\"\n        *   Common trivia often says \"every giraffe has a unique pattern\".\n        *   Range estimates online: Some say 3\n",
+            "number_mentions": [
+              "2016, ",
+              "5.5 m",
+              "4",
+              "-5m",
+              "3\n"
+            ],
+            "valid": null,
+            "candidate_value": null,
+            "rejection_reason": null
+          },
+          {
+            "sample_index": 5,
+            "raw_path": "analysis/cause/raw/control/bet_above__015__05.json",
+            "error": null,
+            "suggested_text": "        *   How many patches does an average adult giraffe have?\n        *   Scientific literature varies.\n        *   A giraffe's coat pattern is unique.\n        *   Estimates often range from 100 to 500 spots per body surface.\n        *   Some sources suggest around 300-500 distinct patches on the body.\n        *   Let's look for a more precise average.\n        *   A common rule of thumb in zoology for large mammal spotting/striping isn't always standardized.\n        *   Let's try to break it down by surface area. An adult giraffe is roughly 5-6 meters tall. The body is large.\n        *   Average spot size: Maybe 10-15 cm in diameter?\n        *   Surface area of a cylinder approximation (body + neck + legs).\n        *   Body: ~1.5m diameter, ~3m length. Surface area ~ $\\pi \\times d \\times l + 2 \\times \\pi r^2$ (roughly). $3.14 \\times 1.5 \\times 3 \\approx 14 m^2\n",
+            "number_mentions": [
+              "100 ",
+              "500 ",
+              "300",
+              "-500 ",
+              "5",
+              "-6 m",
+              "10",
+              "-15 ",
+              "1.5m",
+              "3m",
+              "2 ",
+              "2",
+              "3.14 ",
+              "1.5 ",
+              "3 ",
+              "14 m",
+              "2\n"
+            ],
+            "valid": null,
+            "candidate_value": null,
+            "rejection_reason": null
+          }
+        ],
+        "selected": {
+          "original": {
+            "text": "        *   Are we counting individual pigment patches or just \"spots\"?\n",
+            "approved": true
+          },
+          "alt1": {
+            "text": "        *   Subspecies vary (Masai, Reticulated, Rothschild's, etc.).\n",
+            "approved": false,
+            "source": "analysis/cause/raw/control/bet_above__015__01.json",
+            "selection_note": "First complete nonnumeric bullet; no threshold, incentive, or answer direction."
+          },
+          "alt2": {
+            "text": "        *   \"Black spots\": Giraffe spots are usually brown/orange/tan, not pure black, but the user asks for \"black spots\". Most people refer to the dark patches as \"spots\". I should assume they mean the dark patches.\n",
+            "approved": false,
+            "source": "analysis/cause/raw/control/bet_above__015__02.json",
+            "selection_note": "First complete nonnumeric bullet; clarifies the counted object without specifying a total or direction."
+          }
+        }
+      },
+      "selected": {
+        "original": {
+          "text": "    *   **Calculation:**\n        *   Population: 120,000\n        *   Spots per giraffe: 400\n        *   Total = 120,000 * 400 = 48,000,000.\n",
+          "value": 48000000,
+          "approved": true
+        },
+        "surface": {
+          "text": "    *   **Computation:**\n        *   Population count: 120,000\n        *   Number of spots per giraffe: 400\n        *   Total = 120,000 * 400 = 48,000,000.\n",
+          "value": 48000000,
+          "approved": false,
+          "source": "analysis/cause/raw/surface/bet_above__015__00.json",
+          "selection_note": "Complete Option 1 draft from the saved reasoning field; labels change but all numbers, facts, and the equation are preserved."
+        },
+        "low": {
+          "text": "    *   **Calculation (Lower estimate):**\n        *   Population: 110,000\n        *   Spots per giraffe: 200\n        *   Total = 110,000 * 200 = 22,000,000.\n",
+          "value": 22000000,
+          "approved": false,
+          "source": "analysis/cause/raw/candidate/bet_above__015__02.json",
+          "selection_note": "Lowest coherent generated total inside the frozen range; the generated alternative is formatted as a standalone calculation and its conditional wording is converted to point assumptions."
+        },
+        "high": {
+          "text": "    *   **Calculation (Higher estimate):**\n        *   Population: 110,000\n        *   Spots per giraffe: 500\n        *   Total = 110,000 * 500 = 55,000,000.\n",
+          "value": 55000000,
+          "approved": false,
+          "source": "analysis/cause/raw/candidate/bet_above__015__02.json",
+          "selection_note": "Highest coherent generated total inside the frozen range; the generated alternative is formatted as a standalone calculation and its conditional wording is converted to point assumptions."
+        }
+      },
+      "trace_human_approved": false
+    },
+    {
+      "trace_id": "bet_below__019",
+      "version": "bet_below",
+      "i": 19,
+      "candidate_prefix_sha256": "537e0e10361a09cf66ae81f3fb4da95e366edd988ab4aa38be801b65f4c87a0c",
+      "candidate_cut": {
+        "start_char": 4271,
+        "prefix_total_chars": 4271,
+        "prefix_tail": "            *   Southern: Often lighter/less defined, sometimes oval.\n        *   Let's get a weighted average.\n        *   Masai population is the largest (~30,000+).\n        *   Reticulated: ~10,000+.\n        *   Northern: ~8,000+ (including Kordofan, Nubian, Rothschild's).\n        *   Southern: ~30,000+ (Angolan, South African).\n        *   Reticulated likely have the highest spot count (density). Let's estimate 500 spots per Reticulated.\n        *   Masai and Southern likely have fewer due to larger, merging patches. Let's estimate 200-300 spots.\n        *   Northern: Variable. Let's estimate 300.\n        *   Calves vs. Adults: Calves have fewer spots that grow in or merge later, but the population is mostly adults. Let's assume an adult average.\n        *   Rough Average Estimate: 300 spots per giraffe seems a conservative middle ground. Some sources might say 200, some 400.\n        *   Let's refine: A study by \"Van der Jeugd\" or similar on giraffe patterns? Actually, a well-circulated fact from the \"Giraffe Conservation Foundation\" or similar educational resources often cites numbers.\n        *   Common estimate in popular science: \"A giraffe has around 300 spots.\"\n",
+        "note": "prefix_tail is original reasoning immediately before the cut; new candidate sampling starts after its final character"
+      },
+      "original_candidate": {
+        "text": "        *   Let's try a calculation:\n            *   Population: 117,000.\n            *   Spots per giraffe: 300.\n            *   Total = 117,000 * 300 = 35,100,000.\n",
+        "value": 35100000,
+        "approved": true
+      },
+      "natural_attempts": [
+        {
+          "sample_index": 0,
+          "raw_path": "analysis/cause/raw/candidate/bet_below__019__00.json",
+          "error": null,
+          "suggested_text": "        *   Let's try to be more rigorous. Surface area of a giraffe is roughly 5-6 square meters. Spot size varies from 10cm to 30cm in diameter.\n        *   If average spot area is 0.05 sq m (rough circle, 25cm diameter). 5 sq m / 0.05 sq m = 100 spots. That seems low.\n        *   If average spot diameter is 15cm (0.15m), area = pi * (0.075)^2 ≈ 0.017 sq m. 5 / 0.017 ≈ 290 spots.\n        *   If average spot diameter is 20cm, area ≈ 0.031 sq m. 5 / 0.031 ≈ 160 spots.\n        *   Given the interstitial skin between spots (the lighter color), the coverage might be 50-60%.\n        *   Reticulated giraffes have very dense spots. Up to 500+? Masai have fewer.\n        *   Let's assume a global\n",
+          "number_mentions": [
+            "5",
+            "-6 ",
+            "10",
+            "30",
+            "0.05 ",
+            "25",
+            "5 ",
+            "0.05 ",
+            "100 ",
+            "15",
+            "0.15m",
+            "0.075",
+            "2 ",
+            "0.017 ",
+            "5 ",
+            "0.017 ",
+            "290 ",
+            "20",
+            "0.031 ",
+            "5 ",
+            "0.031 ",
+            "160 ",
+            "50",
+            "-60",
+            "500"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 1,
+          "raw_path": "analysis/cause/raw/candidate/bet_below__019__01.json",
+          "error": null,
+          "suggested_text": "        *   Let's try to calculate:\n            *   Population: 117,000 (Wild) + 4,000 (Captive) = 121,000.\n            *   Spots per giraffe: If we average across subspecies.\n                *   Reticulated (smaller, denser): ~450-500.\n                *   Masai (large, jagged): ~200-250.\n                *   Others: ~300.\n            *   Weighted average: Since Masai and Southern are the most populous, the average might lean lower. Let's say 250 spots per adult giraffe on average.\n    *   **Calculation:**\n        *   121,000 giraffes * 250 spots = 30,250,000.\n        *   Scenario B (Higher estimate): 120,000 giraffes * 400 spots = 48,000,000.\n        *   Scenario C (Lower estimate): 11\n",
+          "number_mentions": [
+            "117,000 ",
+            "4,000 ",
+            "121,000",
+            "450",
+            "-500",
+            "200",
+            "-250",
+            "300",
+            "250 ",
+            "121,000 ",
+            "250 ",
+            "30,250,000",
+            "120,000 ",
+            "400 ",
+            "48,000,000",
+            "11\n"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 2,
+          "raw_path": "analysis/cause/raw/candidate/bet_below__019__02.json",
+          "error": null,
+          "suggested_text": "        *   Let's check the math: 120,000 giraffes * 300 spots = 36,000,000.\n        *   What if the average is 400? 120,000 * 400 = 48,000,000.\n        *   What if the average is 200? 120,000 * 200 = 24,000,000.\n        *   Population uncertainty: Is it 100k or 200k? Most recent estimates say ~117,000.\n        *   Spot count uncertainty: Is it 250 or 450?\n        *   If I pick 300 spots/giraffe and 117,000 giraffes.\n        *   Calculation: 117,000 * 300 = 35,100,000.\n        *   If I pick 350 spots/giraffe (leaning towards Reticulated\n",
+          "number_mentions": [
+            "120,000 ",
+            "300 ",
+            "36,000,000",
+            "400",
+            "120,000 ",
+            "400 ",
+            "48,000,000",
+            "200",
+            "120,000 ",
+            "200 ",
+            "24,000,000",
+            "100k",
+            "200k",
+            "117,000",
+            "250 ",
+            "450",
+            "300 ",
+            "117,000 ",
+            "117,000 ",
+            "300 ",
+            "35,100,000",
+            "350 "
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 3,
+          "raw_path": "analysis/cause/raw/candidate/bet_below__019__03.json",
+          "error": null,
+          "suggested_text": "        *   Let's test the math: 120,000 giraffes * 300 spots = 36,000,000.\n        *   What if the average is higher? 400 spots * 120,000 = 48,000,000.\n        *   What if the population is higher? Some optimistic estimates put wild giraffes at 140,000. 140,000 * 300 = 42,000,000.\n        *   What if spots are counted differently? \"Spots\" usually refers to the dark patches.\n        *   Let's look for more specific data points.\n        *   According to a study published in *Journal of Animal Ecology* (or similar) regarding spot density for camouflage: Spot density varies.\n        *   A 2023 article referencing the Giraffe Conservation Foundation states there are about 144,000 giraffes left (this might be older data or specific to 2016 census). More recent 2024\n",
+          "number_mentions": [
+            "120,000 ",
+            "300 ",
+            "36,000,000",
+            "400 ",
+            "120,000 ",
+            "48,000,000",
+            "140,000",
+            "140,000 ",
+            "300 ",
+            "42,000,000",
+            "2023 ",
+            "144,000 ",
+            "2016 ",
+            "2024\n"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 4,
+          "raw_path": "analysis/cause/raw/candidate/bet_below__019__04.json",
+          "error": null,
+          "suggested_text": "        *   Let's calculate with 300 spots/giraffe.\n",
+          "number_mentions": [
+            "300 "
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 5,
+          "raw_path": "analysis/cause/raw/candidate/bet_below__019__05.json",
+          "error": null,
+          "suggested_text": "        *   Let's calculate based on this: 120,000 giraffes * 300 spots = 36,000,000 spots.\n        *   What if the average is higher? 120,000 * 400 = 48,000,000.\n        *   What if the average is lower? 120,000 * 200 = 24,000,000.\n        *   Let's look at the species breakdown more carefully for spot density.\n            *   Reticulated (high density): ~10,000 giraffes. Spots: ~400-500. (Take 450). Total: 4.5 million.\n            *   Masai (medium-low density): ~35,000 giraffes. Spots: ~250-300. (Take 275). Total: ~9.6 million.\n            *   Northern (Rothschild's, Kordofan, Nubian, West African): ~\n",
+          "number_mentions": [
+            "120,000 ",
+            "300 ",
+            "36,000,000 ",
+            "120,000 ",
+            "400 ",
+            "48,000,000",
+            "120,000 ",
+            "200 ",
+            "24,000,000",
+            "10,000 ",
+            "400",
+            "-500",
+            "450",
+            "4.5 million",
+            "35,000 ",
+            "250",
+            "-300",
+            "275",
+            "9.6 million"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 6,
+          "raw_path": "analysis/cause/raw/candidate/bet_below__019__06.json",
+          "error": null,
+          "suggested_text": "        *   Let's try to calculate: 120,000 giraffes * 300 spots/giraffe = 36,000,000.\n        *   What if the average is higher? If Reticulated giraffes (high spot count) are a significant portion, maybe the average is 400. 120,000 * 400 = 48,000,000.\n        *   What if the average is lower? Masai giraffes have very large patches. Maybe 150-200.\n        *   Let's look for specific data points. A study titled \"Pattern formation in the giraffe\" or similar.\n        *   According to a 2018 study (B. D. et al.), the patch count varies significantly.\n        *   General consensus in zoological estimates: The number is often cited as \"hundreds\".\n        *   Let's do a Fermi calculation more carefully.\n        *   Population: ~117,000 (Wild) + ~5,000 (Captive) = ~\n",
+          "number_mentions": [
+            "120,000 ",
+            "300 ",
+            "36,000,000",
+            "400",
+            "120,000 ",
+            "400 ",
+            "48,000,000",
+            "150",
+            "-200",
+            "2018 ",
+            "117,000 ",
+            "5,000 "
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 7,
+          "raw_path": "analysis/cause/raw/candidate/bet_below__019__07.json",
+          "error": null,
+          "suggested_text": "        *   Let's do a calculation based on a range.\n        *   Low end: 150 spots * 117,000 giraffes = 17,550,000.\n        *   High end: 500 spots * 117,000 giraffes = 58,500,000.\n        *   Mid-range (Weighted): Most subspecies (Masai, Southern) have larger patches. Reticulated have smaller patches. Masai are the most populous.\n        *   If Masai (largest population) have ~200-250 spots.\n        *   If Reticulated have ~400-500 spots.\n        *   Weighted average might be closer to 250-300.\n        *   Calculation: 117,000 giraffes * 300 spots = 35,100,000.\n        *   Calculation: 117,000 giraffes * 350 spots = 40,950,\n",
+          "number_mentions": [
+            "150 ",
+            "117,000 ",
+            "17,550,000",
+            "500 ",
+            "117,000 ",
+            "58,500,000",
+            "200",
+            "-250 ",
+            "400",
+            "-500 ",
+            "250",
+            "-300",
+            "117,000 ",
+            "300 ",
+            "35,100,000",
+            "117,000 ",
+            "350 ",
+            "40,950,\n"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 8,
+          "raw_path": "analysis/cause/raw/candidate/bet_below__019__08.json",
+          "error": null,
+          "suggested_text": "        *   Let's try to calculate:\n            *   Population: 117,000.\n            *   Spots per individual: 300.\n            *   Total: 117,000 * 300 = 35,100,000.\n    *   **Re-evaluating Spot Count:**\n        *   Are \"spots\" defined as the dark patches or the light interstitial network? The question asks for \"black spots\" (dark patches).\n        *   Is the density higher?\n        *   Reticulated giraffes: The pattern is very fine. A full body coverage might yield 400-600 patches.\n        *   Masai giraffes: The spots are large star shapes. Count might be 150-250.\n        *   Weighted average:\n            *   Masai (35% of pop): 200 spots.\n            *   Reticulated (10% of pop): 500 spots.\n            *   Northern (25% of pop): 300 spots.\n            *\n",
+          "number_mentions": [
+            "117,000",
+            "300",
+            "117,000 ",
+            "300 ",
+            "35,100,000",
+            "400",
+            "-600 ",
+            "150",
+            "-250",
+            "35",
+            "200 ",
+            "10",
+            "500 ",
+            "25",
+            "300 "
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 9,
+          "raw_path": "analysis/cause/raw/candidate/bet_below__019__09.json",
+          "error": null,
+          "suggested_text": "        *   Let's do a calculation: 120,000 giraffes * 300 spots = 36,000,000 spots.\n        *   If the average is higher (e.g., 400): 120,000 * 400 = 48,000,000.\n        *   If the average is lower (e.g., 250): 120,000 * 250 = 30,000,000.\n    *   **Re-evaluating the \"Spot\" Definition:**\n        *   Are we counting the dark patches or the light spaces? Usually \"spots\" refers to the dark melanin patches.\n        *   Do we count spots on the legs, neck, body? Yes, \"all... spots\".\n        *   Is 300 accurate?\n        *   A 2018 study by *Fisher et al.* or similar on genetic basis of coat pattern?\n        *   Let's look at surface area. A giraffe surface area is approx 15-2\n",
+          "number_mentions": [
+            "120,000 ",
+            "300 ",
+            "36,000,000 ",
+            "400",
+            "120,000 ",
+            "400 ",
+            "48,000,000",
+            "250",
+            "120,000 ",
+            "250 ",
+            "30,000,000",
+            "300 ",
+            "2018 ",
+            "15",
+            "-2\n"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 10,
+          "raw_path": "analysis/cause/raw/candidate/bet_below__019__10.json",
+          "error": null,
+          "suggested_text": "        *   Let's try to calculate based on surface area.\n        *   Surface area of a giraffe: ~12-15 square meters (skin).\n        *   Spot size varies. Reticulated spots are ~1 cm^2 to 5 cm^2? No, they are larger. Maybe 10cm x 10cm? That's 100cm^2.\n        *   If total area is 12m^2 = 120,000 cm^2.\n        *   If spots cover 50% of the body (rest is tan/white lines).\n        *   60,000 cm^2 covered.\n        *   If average spot area is 100 cm^2 -> 600 spots.\n        *   If average spot area is 200 cm^2 -> 300 spots.\n        *   Given the variation (Reticulated vs Masai), 300 is a solid median estimate.\n        *   Let's look at the threshold: 41,000,000.\n        *   If Population =\n",
+          "number_mentions": [
+            "12",
+            "-15 ",
+            "1 ",
+            "2 ",
+            "5 ",
+            "2",
+            "10",
+            "10",
+            "100",
+            "2",
+            "12m",
+            "2 ",
+            "120,000 ",
+            "2",
+            "50",
+            "60,000 ",
+            "2 ",
+            "100 ",
+            "2 ",
+            "600 ",
+            "200 ",
+            "2 ",
+            "300 ",
+            "300 ",
+            "41,000,000"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 11,
+          "raw_path": "analysis/cause/raw/candidate/bet_below__019__11.json",
+          "error": null,
+          "suggested_text": "        *   If I take 117,000 giraffes * 300 spots/giraffe = 35,100,000 spots.\n        *   If I take a higher estimate (e.g., 400 spots average): 117,000 * 400 = 46,800,000.\n        *   If I take a lower estimate (e.g., 250 spots average): 117,000 * 250 = 29,250,000.\n",
+          "number_mentions": [
+            "117,000 ",
+            "300 ",
+            "35,100,000 ",
+            "400 ",
+            "117,000 ",
+            "400 ",
+            "46,800,000",
+            "250 ",
+            "117,000 ",
+            "250 ",
+            "29,250,000"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        }
+      ],
+      "surface_attempts": [
+        {
+          "sample_index": 0,
+          "raw_path": "analysis/cause/raw/surface/bet_below__019__00.json",
+          "error": null,
+          "suggested_text": "00\n",
+          "number_mentions": [
+            "00\n"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 1,
+          "raw_path": "analysis/cause/raw/surface/bet_below__019__01.json",
+          "error": null,
+          "suggested_text": ". I\n",
+          "number_mentions": [],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        },
+        {
+          "sample_index": 2,
+          "raw_path": "analysis/cause/raw/surface/bet_below__019__02.json",
+          "error": null,
+          "suggested_text": "7,\n",
+          "number_mentions": [
+            "7,\n"
+          ],
+          "valid": null,
+          "candidate_value": null,
+          "rejection_reason": null
+        }
+      ],
+      "control": {
+        "prefix_sha256": "cde0c2aeb66cdb1dfbef3c0ec4b6e894be8adb151ebf056035341e679ef8f7f8",
+        "original_text": "        *   Let's refine: A study by \"Van der Jeugd\" or similar on giraffe patterns? Actually, a well-circulated fact from the \"Giraffe Conservation Foundation\" or similar educational resources often cites numbers.\n",
+        "attempts": [
+          {
+            "sample_index": 0,
+            "raw_path": "analysis/cause/raw/control/bet_below__019__00.json",
+            "error": null,
+            "suggested_text": "        *   Let's refine: A study by \"Giraffe Spot Patterns\" might imply averages.\n        *   Hypothesis:\n            *   Low end: 150 spots.\n            *   High end: 500 spots.\n            *   Average: 300 spots.\n",
+            "number_mentions": [
+              "150 ",
+              "500 ",
+              "300 "
+            ],
+            "valid": null,
+            "candidate_value": null,
+            "rejection_reason": null
+          },
+          {
+            "sample_index": 1,
+            "raw_path": "analysis/cause/raw/control/bet_below__019__01.json",
+            "error": null,
+            "suggested_text": "        *   If we assume 120,000 giraffes * 300 spots = 36,000,000.\n        *   If we assume 120,000 giraffes * 400 spots = 48,000,000.\n        *   If we assume 150,000 giraffes * 300 spots = 45,000,000.\n    *   **Re-evaluating the \"Spot\" Definition:**\n        *   Do baby giraffes count? Yes, \"all giraffes currently alive\".\n        *   Do calves have fewer spots? Yes, but they grow. The average population includes a mix.\n        *   Is \"black spots\" the correct term? Giraffe spots are typically dark brown or black against a lighter background. \"Black spots\" is colloquially accurate enough for the estimate.\n        *   What defines a \"spot\"? Some patches merge. Counting distinct melanocytes vs visible patches. Usually, visible patches are counted.\n        *   A 2017 study by *L\n",
+            "number_mentions": [
+              "120,000 ",
+              "300 ",
+              "36,000,000",
+              "120,000 ",
+              "400 ",
+              "48,000,000",
+              "150,000 ",
+              "300 ",
+              "45,000,000",
+              "2017 "
+            ],
+            "valid": null,
+            "candidate_value": null,
+            "rejection_reason": null
+          },
+          {
+            "sample_index": 2,
+            "raw_path": "analysis/cause/raw/control/bet_below__019__02.json",
+            "error": null,
+            "suggested_text": " Let's refine this.\n        *   Reference check: A study by \"The University of California\" or similar regarding giraffe patterns often cites around 200-300 distinct patches for a typical adult.\n        *   If I use 120,000 giraffes * 300 spots = 36,000,000.\n        *   If I use 120,000 giraffes * 400 spots = 48,000,000.\n        *   If I use 120,000 giraffes * 250 spots = 30,000,000.\n",
+            "number_mentions": [
+              "200",
+              "-300 ",
+              "120,000 ",
+              "300 ",
+              "36,000,000",
+              "120,000 ",
+              "400 ",
+              "48,000,000",
+              "120,000 ",
+              "250 ",
+              "30,000,000"
+            ],
+            "valid": null,
+            "candidate_value": null,
+            "rejection_reason": null
+          },
+          {
+            "sample_index": 3,
+            "raw_path": "analysis/cause/raw/control/bet_below__019__03.json",
+            "error": null,
+            "suggested_text": "        *   Wait, I need to check if \"spots\" means distinct patches or if it includes the veins/lines between. Usually, it means the dark patches.\n        *   Hypothesis: 120,000 giraffes * 300 spots = 36,000,000.\n        *   Hypothesis 2: If the average is 500 spots (for highly spotted subspecies): 120,000 * 500 = 60,000,000.\n        *   Hypothesis 3: If the average is 200 spots: 120,000 * 200 = 24,000,000.\n",
+            "number_mentions": [
+              "120,000 ",
+              "300 ",
+              "36,000,000",
+              "2",
+              "500 ",
+              "120,000 ",
+              "500 ",
+              "60,000,000",
+              "3",
+              "200 ",
+              "120,000 ",
+              "200 ",
+              "24,000,000"
+            ],
+            "valid": null,
+            "candidate_value": null,
+            "rejection_reason": null
+          },
+          {
+            "sample_index": 4,
+            "raw_path": "analysis/cause/raw/control/bet_below__019__04.json",
+            "error": null,
+            "suggested_text": " Let's aim for 250 to 350.\n        *   Calculation: 120,000 giraffes * 300 spots = 36,000,000.\n        *   If the average is 350 spots: 120,000 * 350 = 42,000,000.\n        *   If the average is 250 spots: 120,000 * 250 = 30,000,000.\n",
+            "number_mentions": [
+              "250 ",
+              "350",
+              "120,000 ",
+              "300 ",
+              "36,000,000",
+              "350 ",
+              "120,000 ",
+              "350 ",
+              "42,000,000",
+              "250 ",
+              "120,000 ",
+              "250 ",
+              "30,000,000"
+            ],
+            "valid": null,
+            "candidate_value": null,
+            "rejection_reason": null
+          },
+          {
+            "sample_index": 5,
+            "raw_path": "analysis/cause/raw/control/bet_below__019__05.json",
+            "error": null,
+            "suggested_text": "        *   Let's check the math with 300 spots/giraffe.\n        *   Total Population: 117,000.\n        *   Calculation: 117,000 * 300 = 35,100,000.\n    *   **Alternative Estimate:** What if the spot count is higher?\n        *   If average is 400: 117,000 * 400 = 46,800,000.\n        *   If average is 500: 117,000 * 500 = 58,500,000.\n    *   **Alternative Estimate:** What if the population is higher?\n        *   Some older estimates were 140,000. 140,000 * 300 = 42,000,000.\n        *   Some newer counts might be lower.\n    *   **Defining \"Black Spots\":**\n        *   The prompt asks for \"black spots\".\n",
+            "number_mentions": [
+              "300 ",
+              "117,000",
+              "117,000 ",
+              "300 ",
+              "35,100,000",
+              "400",
+              "117,000 ",
+              "400 ",
+              "46,800,000",
+              "500",
+              "117,000 ",
+              "500 ",
+              "58,500,000",
+              "140,000",
+              "140,000 ",
+              "300 ",
+              "42,000,000"
+            ],
+            "valid": null,
+            "candidate_value": null,
+            "rejection_reason": null
+          }
+        ],
+        "selected": {
+          "original": {
+            "text": "        *   Let's refine: A study by \"Van der Jeugd\" or similar on giraffe patterns? Actually, a well-circulated fact from the \"Giraffe Conservation Foundation\" or similar educational resources often cites numbers.\n",
+            "approved": true
+          },
+          "alt1": {
+            "text": "        *   Do baby giraffes count? Yes, \"all giraffes currently alive\".\n",
+            "approved": false,
+            "source": "analysis/cause/raw/control/bet_below__019__01.json",
+            "selection_note": "Complete nonnumeric bullet; clarifies population scope without specifying a total or direction."
+          },
+          "alt2": {
+            "text": "        *   Wait, I need to check if \"spots\" means distinct patches or if it includes the veins/lines between. Usually, it means the dark patches.\n",
+            "approved": false,
+            "source": "analysis/cause/raw/control/bet_below__019__03.json",
+            "selection_note": "First complete nonnumeric bullet; clarifies the counted object without specifying a total or direction."
+          }
+        }
+      },
+      "selected": {
+        "original": {
+          "text": "        *   Let's try a calculation:\n            *   Population: 117,000.\n            *   Spots per giraffe: 300.\n            *   Total = 117,000 * 300 = 35,100,000.\n",
+          "value": 35100000,
+          "approved": true
+        },
+        "surface": {
+          "text": "        *   Let's attempt an estimation:\n            *   Population count: 117,000.\n            *   Spots each giraffe has: 300.\n            *   Total = 117,000 * 300 = 35,100,000.\n",
+          "value": 35100000,
+          "approved": false,
+          "source": "analysis/cause/raw/surface/bet_below__019__01.json",
+          "selection_note": "Complete Draft 1 from the saved reasoning field; it preserves the tentative wording, facts, numbers, and equation."
+        },
+        "low": {
+          "text": "        *   Let's try a lower calculation:\n            *   Population: 120,000.\n            *   Spots per giraffe: 200.\n            *   Total = 120,000 * 200 = 24,000,000.\n",
+          "value": 24000000,
+          "approved": false,
+          "source": "analysis/cause/raw/candidate/bet_below__019__05.json",
+          "selection_note": "Lowest coherent generated total inside the frozen range; three generated alternatives are reduced to this standalone calculation."
+        },
+        "high": {
+          "text": "        *   Let's try a higher calculation:\n            *   Population: 117,000.\n            *   Spots per giraffe: 500.\n            *   Total = 117,000 * 500 = 58,500,000.\n",
+          "value": 58500000,
+          "approved": false,
+          "source": "analysis/cause/raw/candidate/bet_below__019__07.json",
+          "selection_note": "Highest coherent generated total inside the frozen range; the high end of the generated range is formatted as a standalone calculation."
+        }
+      },
+      "trace_human_approved": false
+    }
+  ]
+}
