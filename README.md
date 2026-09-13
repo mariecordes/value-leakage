@@ -5,6 +5,10 @@ Minimal reproduction of the Value Leakage motivated-reasoning experiment
 Raw data for 10 models is included — you can start analyzing without running
 anything.
 
+The [final research report](docs/research_report.md), *Tracing motivated
+reasoning in the Donation Bet*, presents the full investigation, results, and
+discussion for this project.
+
 ## The experiment
 
 A model is asked to estimate the total number of black spots on all living
