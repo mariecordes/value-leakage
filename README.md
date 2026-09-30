@@ -8,7 +8,7 @@ does its visible reasoning reflect and explain that shift? This repository studi
 question in Betley et al.'s (2026) Donation Bet, where a donation goes to a good or bad
 cause depending on which side of a threshold a model's Fermi estimate falls.
 
-**Read the full report: [research_report.pdf](docs/research_report.pdf)**
+**Read the full report: [research_report.pdf](https://mariecordes.github.io/value-leakage/research_report.pdf)**
 
 ## Key findings
 
