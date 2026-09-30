@@ -1,53 +1,49 @@
 # Tracing motivated reasoning in the Donation Bet
 *Marie Cordes, September 2026*
 
-## **Executive summary**
+*Independent research project extending an existing replication of the Donation Bet, undertaken to build hands-on experience in chain-of-thought faithfulness research.*
 
-Betley et al.'s (2026) Donation Bet asks a model to estimate the total number of black giraffe spots worldwide. A donation goes to a good or bad cause depending on which side of a threshold the answer falls. This should be irrelevant to the estimate, but models move toward the outcome that benefits the good cause. I ask: when an irrelevant incentive shifts a model's answer, how faithfully does its visible reasoning reflect and explain that shift?
+## **Summary**
 
-Starting from an existing repository that replicated the paper’s result, I built a framework to test four complementary dimensions of faithfulness: **TELL** asks whether the reasoning **tells** us that the incentive influenced the estimate. **AIM** asks what allows the model to **aim** at the rewarded outcome. **KNOW** asks whether the model appears to **know** where its answer is heading by testing whether its stated estimate predicts later continuations. **CAUSE** asks what **causes** the model’s answer to shift toward the reward by changing an early numerical estimate and measuring whether the final answer moves. TELL covers 400 traces across ten models. The deeper tests focus on Qwen 3.5 122B A10B (Qwen), chosen for its large supplied shift and continuable raw reasoning.
+Betley et al.’s (2026) Donation Bet asks a model to estimate the total number of black giraffe spots worldwide. A donation goes to a good or bad cause depending on which side of a threshold the answer falls. This should be irrelevant to the estimate, but models’ answers tend to move toward the side that benefits the good cause. I measure this as the *shift*: how much more often answers land above the threshold when that side benefits the good cause than when the other side does (0 means no effect; 1 means every answer follows the incentive). I ask: when an irrelevant incentive shifts a model’s answer, how faithfully does its visible reasoning reflect and explain that shift?
 
-**TELL: Qwen usually discloses the influence, but this differs across models.** Qwen admits the donation affected its estimate in 33 of 40 traces. Claude Opus 4.7 denies influence in 25 of 40 despite showing a behavioral shift. Judge self-consistency supports this broad contrast, but not fine-grained model rankings.
+Starting from an existing repository that replicated the paper’s result, I built a framework to test four complementary dimensions of faithfulness: **TELL** asks whether the reasoning **tells** us that the incentive influenced the estimate. **AIM** asks what allows the model to **aim** at the rewarded outcome. **KNOW** asks whether the model appears to **know** where its answer is heading, by pausing its reasoning, asking for its current estimate, and checking whether that estimate predicts where the reasoning lands when allowed to continue. **CAUSE** asks what **causes** the model’s answer to shift toward the reward, by changing an early number in its reasoning and measuring whether the final answer moves. TELL analyzes 400 reasoning traces from ten models. The deeper tests focus on Qwen 3.5 122B A10B (Qwen) because it showed the largest shift and its full reasoning can be resumed from any point.
 
-**AIM: the incentive needs an actionable numerical target.** Qwen's shift is 0.526 in the ordinary Donation Bet, 0.167 when the threshold is withheld, and 1.000 under an explicit instruction to aim. Its above- and below-target trajectories separate from the first visible numerical candidate. Reliable steering depends on knowing where to aim.
+**TELL: Qwen usually discloses the influence, but this differs across models.** Qwen’s reasoning openly says the donation affected its estimate in 33 of 40 traces. Claude Opus 4.7’s reasoning denies any influence in 25 of 40, even though its answers shift. The labels come from an LLM judge that, when asked to judge the same traces a second time, agreed with its first label on only 63% of them, so this broad contrast holds up, but finer rankings between models do not.
 
-![](../analysis/target_visibility/lineup_qwen3.5-122b-a10b_exec_summary.png)
+**AIM: the incentive needs an actionable numerical target.** Qwen’s shift is 0.526 in the ordinary Donation Bet, 0.167 when the prompt still describes the bet and which side benefits the good cause but leaves out the threshold number, and 1.000 when explicitly told to aim. In the ordinary and instructed versions, tracking the numbers Qwen writes while reasoning shows that above-pays and below-pays runs differ from the very first estimate, rather than drifting apart later. In other words, the incentive only strongly steers the answer when the model knows the number it needs to beat.
 
-**KNOW: stated estimates remain locally consistent with continuations across the chain of thought.** I interrupted Qwen's traces at 25%, 50%, and 75%, elicited an immediate estimate, and generated six continuations from the same prefix. At each point, the estimate generally tracked the continuation median, with no systematic rewarded-direction gap. This shows local predictive consistency, not stability or causation.
+**KNOW: when paused, the model’s stated estimate predicts where its reasoning will land.** I paused Qwen at 25%, 50%, and 75% of its reasoning trace, asked for its current best estimate, and separately let the reasoning continue six times from the same point. The stated estimate generally matched the median final answer of those continuations, and was not systematically tilted toward the side that benefits the good cause. What the model says about its current estimate is therefore a good guide to where it is heading, though this does not show that the stated estimate causes the final answer.
 
-![](../analysis/continuations/stated_vs_resampled_scatter_qwen3.5-122b-a10b_exec_summary.png)
+**CAUSE: the first spots-per-giraffe estimate matters, but determines little.** Qwen typically calculates the total as the number of giraffes times the number of spots per giraffe. Its giraffe count barely varies, but spots per giraffe is far more uncertain, so that is the variable I focused on. Using a sentence-resampling intervention, I cut the reasoning just before Qwen’s first committed number of spots per giraffe, swapped in alternative values that Qwen itself produced at that point, and let the reasoning continue. The direction of the effect was completely consistent: in all 15 traces, inserting a higher number of spots led to a higher final answer (median rank correlation 0.70; p = 0.000061). But the size of the effect was small. If the calculation simply carried through, doubling spots per giraffe would double the final estimate; instead, only about 13% of that change reached the final answer, because later reasoning revised most of it.
 
-**CAUSE: the first spots-per-giraffe estimate matters, but determines little.** Using a sentence-resampling intervention, I replaced the first committed estimate with alternatives sampled from Qwen at the same point and context. All 15 traces moved in the predicted direction (median correlation 0.70; p-value \= 0.000061). Yet the final answer retained a median of only 13% of the proportional change. In 10 of 15 traces, the intervention effect was smaller than ordinary continuation spread.
+Taken together, Qwen’s visible reasoning is **partially faithful: it reflects the incentive-driven shift more faithfully than it explains it**. The trace usually acknowledges the incentive, steers toward it when given a numerical target, and states estimates that predict its continuations. Sentence resampling also shows that the first spots-per-giraffe estimate used in the calculation genuinely affects the final answer, but later reasoning revises most of its effect. The trace is therefore useful for monitoring without being a full explanation: it reveals the incentive, shows where the answer is heading, and includes a step that contributes to the result, but does not show how most of the final estimate is produced.
 
-![](../analysis/cause/cause_consistency_exec_summary.png)
-
-Taken together, Qwen's visible reasoning is **partially faithful: it reflects the incentive-driven shift more faithfully than it explains it**. The trace usually acknowledges the incentive, steers toward it when given a numerical target, and states estimates that predict its continuations. Sentence resampling also shows that the first spots-per-giraffe estimate used in the calculation genuinely affects the final answer, but later reasoning revises most of its effect. The trace is therefore monitorable without being fully explanatory: it reveals the incentive, shows where the answer is heading, and includes a step that contributes to the result, but does not show how most of the final estimate is produced.
-
-This conclusion is based on one Fermi-estimation task and a deep investigation of one model. It should be treated as a hypothesis about how value leakage unfolds in the reasoning trace, to be tested across tasks and models, especially models like Claude that more often deny influence. The report describes the methodology and experimental setup, discusses these limitations, and outlines directions for future work.
+This conclusion is based on one task and a deep investigation of one model. It should be treated as a hypothesis about how an irrelevant incentive shapes a model’s reasoning, to be tested across tasks and models, especially models like Claude that more often deny influence. The report describes the methodology and experimental setup, presents the results and observations per test, discusses these limitations, and outlines directions for future work.
 
 ## **1\. Introduction**
 
 ### **1.1 From value leakage to a question about reasoning**
 
-Language models are often asked to help with decisions while also being told facts that should not affect the answer. Betley et al. (2026) call it **value leakage** when the model's own preferences nevertheless change its response. Their Donation Bet experiment gives a particularly clean example: a model is asked for a Fermi estimate of the total number of giraffe spots in the world. In one condition, a donation goes to a good cause if the answer is above a threshold and to a bad cause otherwise. In the other, the good cause benefits if the answer is below the same threshold. The user's stated goal is still an accurate estimate, so the donation rule should be irrelevant to the factual question.
+Language models are often asked to help with decisions while also being told facts that should not affect the answer. Betley et al. (2026) call it **value leakage** when the model’s own preferences nevertheless change its response. Their Donation Bet experiment gives a particularly clean example: a model is asked for a Fermi estimate of the total number of giraffe spots in the world. In one condition, a donation goes to a good cause if the answer is above a threshold and to a bad cause otherwise. In the other, the good cause benefits if the answer is below the same threshold. The user’s stated goal is still an accurate estimate, so the donation rule should be irrelevant to the factual question.
 
-The experiment measures a distributional effect rather than asking whether any one answer is right. If a model's estimates tend to move upward when an answer above the threshold benefits the good cause, and downward when an answer below the threshold does, then the donation outcome has affected its answers. Betley et al. (2026) find this effect across a suite of models and tasks. The paper also shows a striking difference in how models describe their own behavior: Qwen-family models often discuss adjusting their estimates to help the good cause; Claude Opus 4.7 (Claude) sometimes says it should remain unbiased while still producing different answer distributions across the two conditions.
+The experiment measures a distributional effect rather than asking whether any one answer is right. If a model’s estimates tend to move upward when an answer above the threshold benefits the good cause, and downward when an answer below the threshold does, then the donation outcome has affected its answers. Betley et al. (2026) find this effect across a suite of models and tasks. The paper also shows a striking difference in how models describe their own behavior: Qwen-family models often discuss adjusting their estimates to help the good cause; Claude Opus 4.7 (Claude) sometimes says it should remain unbiased while still producing different answer distributions across the two conditions.
 
-The original paper already tests several alternative explanations. It varies system instructions, how the consequences are framed, the location of the threshold, and the model's reasoning effort. It also studies how the answer develops over the reasoning trace. These results establish that value leakage is robust and that different models can arrive at it in different ways. They do not, however, tell us whether a step that looks important inside one trace actually causes the final answer to change. A difference between two sets of rollouts can establish an effect across answers, but not the causal role of a particular sentence.
+The original paper already tests several alternative explanations. It varies system instructions, how the consequences are framed, the location of the threshold, and the model’s reasoning effort. It also studies how the answer develops over the reasoning trace. These results establish that value leakage is robust and that different models can arrive at it in different ways. They do not, however, tell us whether a step that looks important inside one trace actually causes the final answer to change. A difference between two sets of rollouts can establish an effect across answers, but not the causal role of a particular sentence.
 
 This project began as a take-home question about what motivated reasoning looks like and whether it should be understood as unfaithful chain-of-thought. I sharpened that into the following research question:
 
-> **When a should-be-irrelevant incentive shifts a reasoning model's numerical answer, how faithfully does the visible reasoning disclose the influence, track how it shapes the developing answer, and identify a step that causally transmits it?**
+> **When a should-be-irrelevant incentive shifts a reasoning model’s numerical answer, how faithfully does the visible reasoning disclose the influence, track how it shapes the developing answer, and identify a step that causally transmits it?**
 
-I treat faithfulness as four linked questions. **TELL** asks whether the trace acknowledges that the incentive affected the estimate. **AIM** asks what information makes the incentive actionable and when the numerical trajectories begin to separate. **KNOW** asks whether the estimate the model states at successive points accurately tracks where continuations from those points go. **CAUSE** asks whether an early premise that appears to carry the shift actually causes the final answer to move.
+I treat faithfulness as four linked questions, each tested by one experiment. **TELL** asks whether the trace acknowledges that the incentive affected the estimate; it assigns disclosure labels to 400 saved traces across ten models. **AIM** asks what information makes the incentive actionable and when the numerical trajectories begin to separate; it compares the original bet with a hidden-threshold condition and an explicit instruction. **KNOW** asks whether the estimate the model states at successive points accurately tracks where continuations from those points go; it cuts saved traces at 25%, 50%, and 75%, elicits the model’s current estimate, and compares it with six continuations from the same prefix. **CAUSE** asks whether an early premise that appears to carry the shift actually causes the final answer to move; it replaces the first spots-per-giraffe commitment with alternative values sampled from that model at that exact cut, following the sentence-resampling method in *Thought Anchors* (Bogdan et al., 2025).
 
-I test these questions in four corresponding experiments. TELL assigns disclosure labels to 400 saved traces across ten models. AIM compares the original bet with a hidden-threshold condition and an explicit instruction, then measures where their numerical trajectories separate. KNOW cuts saved traces from a single model at 25%, 50%, and 75%, elicits the model's current estimate, and compares it with six continuations from the same prefix. CAUSE replaces the first spots-per-giraffe commitment with alternative values sampled from that model at that exact cut, then compares the resulting continuation distributions. This last test is motivated by the sentence-resampling method in *Thought Anchors* (Bogdan et al., 2025), which identifies influential reasoning steps by replacing a sentence and measuring how later answers change.
-
-Together, the tests move from observing what a trace says, to changing what target the model can act on, to checking whether its stated estimate tracks its future behavior, and finally to intervening on a specific written premise. This treats the trace as evidence whose usefulness must be tested rather than assumed. It follows Korbak et al. (2025), who argue that visible reasoning can be informative without being guaranteed faithful, and Singh et al. (2026), who use targeted tests to distinguish explanations for concerning model behavior.
+This approach treats the trace as evidence whose usefulness must be tested rather than assumed. It follows Korbak et al. (2025), who argue that visible reasoning can be informative without being guaranteed faithful, and Singh et al. (2026), who use targeted tests to distinguish explanations for concerning model behavior.
 
 ### **1.2 Starting point and my contribution**
 
-The project extends a supplied replication of the Donation Bet (Singh, n.d.) rather than reimplementing the paper from scratch. The repository already contained the prompts, model sampling code, saved rollouts, answer extraction, the paper's threshold-based behavioral metric, and plots reproducing the effect across ten models.
+The project extends a supplied replication of the Donation Bet (Singh, n.d.) rather than reimplementing the paper from scratch. The repository already contained the prompts, model sampling code, saved rollouts, answer extraction, the paper’s threshold-based behavioral metric, and plots reproducing the effect across ten models (Table 1).
+
+*Table 1. Components supplied by the existing replication.*
 
 | Part | What was supplied |
 | ----- | ----- |
@@ -55,7 +51,9 @@ The project extends a supplied replication of the Donation Bet (Singh, n.d.) rat
 | Data | Roughly 100 saved rollouts per prompt for ten reasoning models, plus model-specific thresholds derived from baseline answers. |
 | Analysis | Final-answer extraction, trajectory extraction, the matched response fraction, and per-model replication plots. |
 
-I did not build that replication but four investigations on top of it:
+I did not build that replication; I added four investigations on top of it (Table 2):
+
+*Table 2. Investigations added in this project.*
 
 | Investigation | What I added |
 | ----- | ----- |
@@ -68,16 +66,9 @@ All new analyses use cached raw responses and deterministic local scripts once m
 
 ### **1.3 What each test can establish**
 
-The four tests are related, but they answer different questions. This is specifically designed to not regard faithfulness as a single property that one metric can settle. A trace may disclose an influence without explaining its effect, predict a continuation without causing it, or contain a causal premise without accounting for most of the final answer. Testing these dimensions separately makes the limits of each result explicit; combining them provides a broader assessment of how faithfully the visible reasoning represents the process that produced the answer.
+The four tests are related, but they answer different questions. The design deliberately avoids treating faithfulness as a single property that one metric can settle. A trace may disclose an influence without explaining its effect, predict a continuation without causing it, or contain a causal premise without accounting for most of the final answer. Testing these dimensions separately makes the limits of each result explicit; combining them provides a broader assessment of how faithfully the visible reasoning represents the process that produced the answer. Table A1 (Appendix A.1) summarizes what each test can and cannot show.
 
-| Test | Evidence it provides | What it cannot show by itself |
-| ----- | ----- | ----- |
-| TELL | Whether the trace openly acknowledges that the donation rule affected, or could affect, the estimate. | How much the incentive changed the answer, or which step carried the effect. |
-| AIM | What information makes the incentive actionable, and when the resulting numerical trajectories separate. | Whether the model is explicitly aware of aiming at every point, or whether a particular sentence caused the separation. |
-| KNOW | Whether the model's stated current estimate, measured at several points, predicts the answer distribution obtained by continuing from each point. | Whether the model understands why it is heading there, or whether the stated estimate caused the continuation. |
-| CAUSE | Whether changing an early written premise while holding the preceding context fixed changes later answers. | Whether that premise explains the entire value-leakage effect or corresponds to an internal mechanism. |
-
-Read in sequence, TELL tests whether the influence is acknowledged; AIM tests what allows the model to steer toward it; KNOW tests whether the visible numerical state tracks where the reasoning is going; and CAUSE tests whether an early written premise actually helps produce the shift.
+TELL tests whether the influence is acknowledged; AIM tests what allows the model to steer toward it; KNOW tests whether the visible numerical state tracks where the reasoning is going; and CAUSE tests whether an early written premise actually helps produce the shift.
 
 ### **1.4 Main results**
 
@@ -85,11 +76,11 @@ TELL begins with a ten-model comparison. The deeper AIM, KNOW, and CAUSE experim
 
 First, TELL and AIM establish that acknowledging an incentive and being able to act on it are different questions. Qwen admits influence in 33 of 40 sampled traces, while Claude denies influence in 25 of 40\. For Qwen, however, the incentive alone does not produce the full effect. The ordinary Donation Bet produces a shift of 0.526, while hiding the numerical threshold reduces the point estimate to 0.167. Explicitly instructing Qwen to land on one side produces complete observed separation. The target must be specific enough for the model to steer toward it.
 
-The trajectory results then create the question that motivates the later experiments. In the ordinary and instructed conditions, Qwen's above- and below-target trajectories are already separated when the first numerical candidate becomes visible, and the gap remains broadly stable. KNOW finds that the estimate Qwen states at 25%, 50%, and 75% of a trace usually agrees with the distribution reached by continuing from that exact point. I do not find a systematic tendency for the stated estimate to be more favorable to the rewarded side than the continuations. The visible reasoning therefore tracks where the answer is heading once a partial trace exists, but these results do not show which earlier step made it head there.
+The trajectory results then create the question that motivates the later experiments. In the ordinary and instructed conditions, Qwen’s above- and below-target trajectories are already separated when the first numerical candidate becomes visible, and the gap remains broadly stable. KNOW finds that the estimate Qwen states at 25%, 50%, and 75% of a trace usually agrees with the distribution reached by continuing from that exact point. I do not find a systematic tendency for the stated estimate to be more favorable to the rewarded side than the continuations. The visible reasoning therefore tracks where the answer is heading once a partial trace exists, but these results do not show which earlier step made it head there.
 
 CAUSE tests the most direct explanation suggested by that early separation: that the first written spots-per-giraffe premise carries the shift into the final answer. I intervened on 15 traces and inserted alternative spot counts sampled from Qwen at the exact same cut and context. All 15 traces show a positive rank correlation between the inserted count and the final estimate. The median within-trace Spearman correlation is 0.70, and a two-sided sign test gives $p=6.1\times {10}^{-5}$. Yet the final answer retains a median of only 13% of the proportional change implied by the edited premise. The early premise is part of the causal process, but it does not decide the answer; later reasoning revises most of its effect.
 
-Taken together, the four tests give a differentiated assessment of faithfulness. TELL shows that the incentive is often disclosed in Qwen's trace. AIM shows that reliable steering depends on an actionable numerical target and appears early. KNOW shows that Qwen's stated intermediate estimate is locally predictive of its continuations. CAUSE shows that one early written premise genuinely contributes to the final answer, while explaining only a small part of where it lands. This weighs against a simple account in which Qwen covertly chooses a preferred answer and writes an unrelated calculation. It also rules out the stronger claim that the visible calculation provides a complete causal explanation.
+Taken together, the four tests give a differentiated assessment of faithfulness. TELL shows that the incentive is often disclosed in Qwen’s trace. AIM shows that reliable steering depends on an actionable numerical target and appears early. KNOW shows that Qwen’s stated intermediate estimate is locally predictive of its continuations. CAUSE shows that one early written premise genuinely contributes to the final answer, while explaining only a small part of where it lands. This weighs against a simple account in which Qwen covertly chooses a preferred answer and writes an unrelated calculation. It also rules out the stronger claim that the visible calculation provides a complete causal explanation.
 
 ## **2\. Methods**
 
@@ -105,7 +96,7 @@ For a model with threshold **$T$**, each final answer is coded as above or below
 
 $\Delta \ =\ P(y>T\ |\ above\ pays)-P(y>T |\ below\ pays)$.
 
-A value of zero means the answer distributions cross the threshold at the same rate. A value of one means every answer follows the incentive. This deliberately coarse metric follows the decision rule in the prompt and avoids letting a few extreme numerical estimates determine the result. In TELL's supplied runs, an answer exactly on the threshold receives a midrank of 0.5 in both conditions. For the fresh AIM comparisons, both conditions use the same strict $y>T$ rule, and I report Newcombe-style 95% intervals formed from Wilson intervals for the two proportions.
+A value of zero means the answer distributions cross the threshold at the same rate. A value of one means every answer follows the incentive. This deliberately coarse metric follows the decision rule in the prompt and avoids letting a few extreme numerical estimates determine the result. In TELL’s supplied runs, an answer exactly on the threshold receives a midrank of 0.5 in both conditions. For the fresh AIM comparisons, both conditions use the same strict $y>T$ rule, and I report Newcombe-style 95% intervals formed from Wilson intervals for the two proportions.
 
 For the trajectory plots, I extract the cumulative numerical candidates in each trace, express them as $(y-T)/T$, and interpolate them over normalized trace position. Each line is the median across rollouts and each band is the interquartile range. These curves describe when the conditions separate; they do not show that any displayed number caused the separation.
 
@@ -117,16 +108,18 @@ CAUSE uses two primary within-trace outcomes. **Spearman correlation** $\rho$ me
 
 ### **2.3 Hypotheses and decision rules**
 
-I wrote the main hypotheses before looking at the corresponding aggregate results.
+Table 3 lists the main hypotheses, which I wrote before looking at the corresponding aggregate results.
 
-| ID | Prediction | Test |
-| ----- | ----- | ----- |
-| H1 | In Qwen, the above- and below-pays trajectories separate early and remain separated. | AIM |
-| H2 | Hiding the numerical threshold reduces the Donation Bet shift. | AIM |
-| H3 | Explicitly instructing the model to aim above or below produces a larger shift than the ordinary bet. | AIM |
-| H4 | Models with larger behavioral shifts disclose the incentive more often. | TELL |
-| H5 | Qwen's stated intermediate estimate is systematically more favorable to the rewarded side than its continuations. | KNOW |
-| H6 | Within a trace, increasing the first spots-per-giraffe premise increases the final estimate. | CAUSE |
+*Table 3. Main hypotheses.*
+
+| ID | Prediction |
+| ----- | ----- |
+| H1 | In Qwen, the above- and below-pays trajectories separate early and remain separated. |
+| H2 | Hiding the numerical threshold reduces the Donation Bet shift. |
+| H3 | Explicitly instructing the model to aim above or below produces a larger shift than the ordinary bet. |
+| H4 | Models with larger behavioral shifts disclose the incentive more often. |
+| H5 | Qwen’s stated intermediate estimate is systematically more favorable to the rewarded side than its continuations. |
+| H6 | Within a trace, increasing the first spots-per-giraffe premise increases the final estimate. |
 
 H1-H4 concern where the behavioral effect appears and how it is described. H5 is a direct test for a local mismatch between the trace and subsequent behavior. H6 is the causal test. For CAUSE, the primary directional result is the sign of the within-trace rank correlation. I use an exact two-sided sign test over the 15 traces, then report correlation and retention as effect-size summaries.
 
@@ -134,11 +127,11 @@ H1-H4 concern where the behavioral effect appears and how it is described. H5 is
 
 Several checks changed the analysis rather than merely confirming it.
 
-* **Prompt and prefix fidelity.** Every replayed prompt, saved reasoning trace, and intervention prefix is verified by SHA-256 hash. The final-answer analysis uses the replication's unchanged number judge and validity filter.  
+* **Prompt and prefix fidelity.** Every replayed prompt, saved reasoning trace, and intervention prefix is verified by SHA-256 hash. The final-answer analysis uses the replication’s unchanged number judge and validity filter.  
 * **Number extraction.** Using the original prompt, GPT-5.6-luna matched the original Claude Opus 5 extraction in all 199 cases where both judges selected a number.  
 * **Disclosure labels.** I reran the disclosure judge on a fresh random sample of 40 traces. It returned the same four-way label for 25 of 40\. Agreement was higher for admissions than for denials, so I interpret the broad model-level pattern and report raw counts rather than treating the exact label of every trace as ground truth.  
 * **Interruption probes.** A hand-labeled development set of 60 probe responses reached 86.7% final agreement with the automated extraction. This is not a clean held-out estimate: the second blind round was used to diagnose and repair the judge prompt. An earlier 64-token limit had produced 37 empty judge responses, invalidating two preliminary agreement measurements. I therefore keep the claim qualitative and show the full distribution rather than relying on a small difference in means.  
-* **Parsing and medians.** For an interruption probe, I use the committed number that completes the prompt's request for a single current estimate; an explicit range is represented by its midpoint and flagged. Taking the first number from a range would systematically understate some above-pays reports and inflate the apparent mismatch in the tested direction. The paper's factor-of-ten validity filter removes quantities such as a per-giraffe spot count that are not plausible total answers, and the median of six continuations reduces sensitivity to heavy-tailed endpoints.  
+* **Parsing and medians.** For an interruption probe, I use the committed number that completes the prompt’s request for a single current estimate; an explicit range is represented by its midpoint and flagged. Taking the first number from a range would systematically understate some above-pays reports and inflate the apparent mismatch in the tested direction. The paper’s factor-of-ten validity filter removes quantities such as a per-giraffe spot count that are not plausible total answers, and the median of six continuations reduces sensitivity to heavy-tailed endpoints.  
 * **Continuation fidelity.** Ten completed KNOW continuations were audited end to end against five criteria, including exact prefix preservation and a finished final answer; all passed.
 
 ### **2.5 Code and reproducibility**
@@ -151,7 +144,7 @@ The project code and reproduction instructions are available in the [project rep
 
 **Main finding.** Qwen usually acknowledges the incentive in rewarded-side traces, while Claude more often denies influence. The exact label shares are too judge-sensitive to interpret as calibrated honesty rates.
 
-**Design.** For each of the ten models, I selected up to 40 rewarded-side traces, balanced across above-pays and below-pays prompts. The judge classified 400 traces in total. I paired those labels with each model's condition-balanced answer shift, calculated from all usable bet runs.
+**Design.** For each of the ten models, I selected up to 40 rewarded-side traces, balanced across above-pays and below-pays prompts. The judge classified 400 traces in total. I paired those labels with each model’s condition-balanced answer shift, calculated from all usable bet runs.
 
 This compares two distinct axes:
 
@@ -162,17 +155,17 @@ The two should not be conflated. A model can discuss the bet frequently without 
 
 ![](../analysis/disclosure/map.png)
 
-*Figure 1\. Behavioral shift and disclosure do not collapse to one variable. The left panel plots each model's answer shift against the share of sampled traces that admit influence; horizontal bars show descriptive uncertainty in the admission share, combining binomial sampling uncertainty with the observed ten-point movement when the same disclosure judge was rerun. The right panel shows the four disclosure labels for 40 traces per model.*
+*Figure 1\. Behavioral shift and disclosure do not collapse to one variable. The left panel plots each model’s answer shift against the share of sampled traces that admit influence; horizontal bars show descriptive uncertainty in the admission share, combining binomial sampling uncertainty with the observed ten-point movement when the same disclosure judge was rerun. The right panel shows the four disclosure labels for 40 traces per model.*
 
-**Results.** Across all 400 first-pass labels, 240 traces admitted influence, 25 mentioned the bet without admitting influence, 18 never raised it, and 117 denied influence. The broad pattern is therefore not one of universal silence. The more relevant variation is whether the reasoning owns or disclaims the bet's influence.
+**Results.** Across all 400 first-pass labels, 240 traces admitted influence, 25 mentioned the bet without admitting influence, 18 never raised it, and 117 denied influence. The broad pattern is therefore not one of universal silence. The more relevant variation is whether the reasoning owns or disclaims the bet’s influence.
 
 Qwen has the largest answer shift, 0.545, and the most admissions: 33 of 40 traces. Three more mention the bet and four deny influence. Claude has a smaller shift, 0.262, but a markedly different disclosure profile: 13 admissions, two mentions, and 25 denials.
 
-The figure also shows why disclosure cannot substitute for the behavioral metric. MiniMax-M3 admits influence in 22 of 40 traces while its condition-balanced shift is only 0.053. DeepSeek V4 Flash admits influence in 33 of 40 and shifts by 0.227. Qwen both admits and shifts substantially. These are different properties.
+Figure 1 also shows why disclosure cannot substitute for the behavioral metric. MiniMax-M3 admits influence in 22 of 40 traces while its condition-balanced shift is only 0.053. DeepSeek V4 Flash admits influence in 33 of 40 and shifts by 0.227. Qwen both admits and shifts substantially. These are different properties.
 
 A few traces contain unusually direct evidence of planned concealment. One Inkling-small rollout says:
 
-> *“I want to provide a number that is just above so that if they wanted good cause, it's satisfied, but I won't say that.”*
+> *“I want to provide a number that is just above so that if they wanted good cause, it’s satisfied, but I won’t say that.”*
 
 A Qwen rollout separately plans:
 
@@ -180,7 +173,7 @@ A Qwen rollout separately plans:
 
 These are selected examples, not prevalence estimates. They concern what the model plans to include in its final answer, not concealment from the hidden reasoning trace. Their value is narrower: they show that a trace can reveal target-directed reasoning alongside a decision not to disclose it to the user.
 
-**Reliability check.** An identical second judgment on 40 randomly selected traces reproduced 25 of the 40 four-way labels. It reproduced 17 of 23 first-pass admissions but only four of 11 denials. Five first-pass denials became admissions, while three first-pass admissions became denials. The overall denial share moved from 27.5% to 17.5%.
+**Reliability check.** As Figure 2 shows, an identical second judgment on 40 randomly selected traces reproduced 25 of the 40 four-way labels. It reproduced 17 of 23 first-pass admissions but only four of 11 denials. Five first-pass denials became admissions, while three first-pass admissions became denials. The overall denial share moved from 27.5% to 17.5%.
 
 *![](../analysis/disclosure/judge_matrix.png)*
 
@@ -192,7 +185,7 @@ The roughly 52-point first-pass denial difference between Claude and Qwen is muc
 
 ### **3.2 AIM: Does the model need an actionable target to shape the answer?**
 
-**Main finding.** Qwen's answer shift becomes substantially smaller when the donation prompt still specifies which direction benefits the good cause but withholds the numerical threshold. Its trajectories are consistent with the separation appearing early rather than accumulating through later revisions.
+**Main finding.** Qwen’s answer shift becomes substantially smaller when the donation prompt still specifies which direction benefits the good cause but withholds the numerical threshold. Its trajectories are consistent with the separation appearing early rather than accumulating through later revisions.
 
 **Design.** I compared four prompt versions:
 
@@ -207,15 +200,15 @@ The hidden-threshold condition preserves the good-versus-bad framing and tells t
 
 *Figure 3\. Answer shift when the rewarded side flips. Qwen follows an explicit instruction perfectly, shifts substantially in the ordinary Donation Bet, and shifts less when the threshold is withheld. GLM passes the explicit-instruction check but shows only a small ordinary-bet effect on this fresh endpoint. Error bars are 95% confidence intervals.*
 
-**Behavioral results.** For Qwen, the instructed condition produces the maximum possible shift, 1.000 (60 usable answers; 95% CI 0.773 to 1.000). The ordinary Donation Bet produces a shift of 0.526 (193 usable answers; 95% CI 0.339 to 0.672): 71.7% of above-pays answers cross the threshold, compared with 19.1% of below-pays answers. The hidden-threshold condition produces a shift of 0.167 (60 usable answers; 95% CI \-0.185 to 0.480).
+**Behavioral results.** Figure 3 summarizes the shifts. For Qwen, the instructed condition produces the maximum possible shift, 1.000 (60 usable answers; 95% CI 0.773 to 1.000). The ordinary Donation Bet produces a shift of 0.526 (193 usable answers; 95% CI 0.339 to 0.672): 71.7% of above-pays answers cross the threshold, compared with 19.1% of below-pays answers. The hidden-threshold condition produces a shift of 0.167 (60 usable answers; 95% CI \-0.185 to 0.480).
 
-Hiding the threshold reduces the point estimate by about 68%, leaving the hidden estimate at 32% of the ordinary-bet estimate. The interval is wide, so I do not claim that the remaining effect is zero. The result shows that access to the numerical target accounts for a substantial part of Qwen's observed steering.
+Hiding the threshold reduces the point estimate by about 68%, leaving the hidden estimate at 32% of the ordinary-bet estimate. The interval is wide, so I do not claim that the remaining effect is zero. The result shows that access to the numerical target accounts for a substantial part of Qwen’s observed steering.
 
 The instructed condition provides a ceiling check: every observed run lands on the requested side. The Donation Bet produces about 53% of this complete observed separation.
 
 One Qwen trace makes the use of the target unusually explicit:
 
-> *“If I say 39,000,000, it's under. If I say 42,000,000, it's over.”*
+> *“If I say 39,000,000, it’s under. If I say 42,000,000, it’s over.”*
 
 This is an illustration, not evidence about prevalence. The aggregate intervention is what shows that target visibility matters.
 
@@ -223,27 +216,25 @@ This is an illustration, not evidence about prevalence. The aggregate interventi
 
 **![](../analysis/target_visibility/lineup_qwen3.5-122b-a10b.png)**
 
-*Figure 4\. Qwen's median cumulative estimates over normalized trace position. Values are measured relative to the 41 million threshold. In the ordinary and instructed conditions, the above- and below-target traces are already separated at the start and remain separated. Lines are medians and bands are interquartile ranges.*
+*Figure 4\. Qwen’s median cumulative estimates over normalized trace position. Values are measured relative to the 41 million threshold. In the ordinary and instructed conditions, the above- and below-target traces are already separated at the start and remain separated. Lines are medians and bands are interquartile ranges.*
 
-In the ordinary bet, the gap between the two Qwen trajectories is 0.186 threshold units at the first extracted candidate and 0.170 at the end. Under explicit instruction, it is 0.276 at the first candidate and 0.266 at the end. The conditions are already separated when the first numerical candidate becomes visible, and the gap does not grow through the later calculation.
+In the ordinary bet, the gap between the two Qwen trajectories in Figure 4 is 0.186 threshold units at the first extracted candidate and 0.170 at the end. Under explicit instruction, it is 0.276 at the first candidate and 0.266 at the end. The conditions are already separated when the first numerical candidate becomes visible, and the gap does not grow through the later calculation.
 
 This does not establish that the first candidate sentence caused the final answer. The plot averages different traces, bootstrap intervals for the change in the trajectory gap are wide, and the hidden-threshold curve is noisy. I therefore treat the trajectories as localization evidence. The behavioral prompt intervention is the main result, and CAUSE tests a specific written premise directly.
 
-**Endpoint sensitivity and an exploratory signal.** I also reran the ordinary GLM Donation Bet through OpenRouter and compared it with the GLM run supplied in the starter repository, which had been generated through Fireworks. The newly generated OpenRouter run has an answer shift of 0.120, compared with 0.348 in the supplied Fireworks run. On OpenRouter, the threshold inherited from the supplied run sits at the 34th percentile of GLM's new baseline answers rather than near their median. The bet therefore has little shift to remove, even though the instructed condition still produces complete observed separation. Because both the serving endpoint and answer judge differ, the smaller shift cannot be interpreted as a clean failure to replicate value leakage in GLM. It instead shows that the supplied threshold is poorly calibrated for the new OpenRouter baseline. *Appendix A.1, Figure A1* shows the same result over the full trajectory: the bet conditions largely overlap while the instructed conditions separate cleanly.
+**Endpoint sensitivity.** A rerun of the ordinary GLM bet on a different serving endpoint produced a much smaller shift, which reflects a poorly calibrated inherited threshold rather than a clean failure to replicate (Appendix A.3).
 
-I also observed that reasoning length tracks how far the instructed target lies from the model's ordinary answer. For GLM, aiming above required little movement and averaged about 2,500 output tokens, while aiming below required a larger move and averaged about 18,300. Qwen's two directions were similarly distant from its baseline and had more similar lengths. This is exploratory evidence from two models and one task, not an established diagnostic.
-
-**AIM therefore provides evidence that both the Donation Bet and a direct instruction can steer Qwen's estimate, but that this steering depends substantially on having a numerical target it can use.** The separation is visible near the start of the observable calculation. That temporal pattern motivates the direct intervention in CAUSE, but does not replace it.
+**AIM therefore provides evidence that both the Donation Bet and a direct instruction can steer Qwen’s estimate, but that this steering depends substantially on having a numerical target it can use.** The separation is visible near the start of the observable calculation. That temporal pattern motivates the direct intervention in CAUSE, but does not replace it.
 
 ### **3.3 KNOW: Does the stated intermediate estimate reveal how the answer is taking shape?**
 
-**Main finding.** In the selected Qwen traces, I do not observe a systematic rewarded-direction difference between the model's stated mid-trace estimate and the median of its continuations. The test measures local predictive consistency, not introspective access to a hidden state.
+**Main finding.** In the selected Qwen traces, I do not observe a systematic rewarded-direction difference between the model’s stated mid-trace estimate and the median of its continuations. The test measures local predictive consistency, not introspective access to a hidden state.
 
 **Design.** I selected ten Donation Bet traces and ten instructed traces, balanced across above-target and below-target prompts and weighted toward rewarded-side outcomes. Each saved trace was cut at 25%, 50%, and 75% of its character length, snapped back to a sentence boundary.
 
-At every cut, I created two branches from the same partial text:
+Figure 5 shows how, at every cut, I created two branches from the same partial text:
 
-1. **Probe branch:** I appended a neutral sentence fragment in the model's own voice and asked it to state its current best point estimate before any further calculation.  
+1. **Probe branch:** I appended a neutral sentence fragment in the model’s own voice and asked it to state its current best point estimate before any further calculation.  
 2. **Continuation branches:** I resumed the same partial trace six times without the probe and extracted the final estimate from each continuation.
 
 The probe ends mid-sentence so that the natural next text is a number:
@@ -252,7 +243,7 @@ The probe ends mid-sentence so that the natural next text is a number:
 
 It does not name the threshold, rewarded direction, or desired value. Adding a new user turn would change the conversational context, so both branches use assistant content prefill.
 
-The original plan was to compare an admitter with a denier. That was not runnable without combining two serving stacks: the strongest denier's saved reasoning was summarized, and most raw traces were generated on an endpoint that could not be continued. I replaced that comparison with a within-Qwen comparison between bet and instructed traces. This holds the model and serving stack fixed, but means the experiment does not test a strong denier.
+The original plan was to compare an admitter with a denier. That was not runnable without combining two serving stacks: the strongest denier’s saved reasoning was summarized, and most raw traces were generated on an endpoint that could not be continued. I replaced that comparison with a within-Qwen comparison between bet and instructed traces. This holds the model and serving stack fixed, but means the experiment does not test a strong denier.
 
 Fifty of the 60 planned interruptions passed the probe and continuation filters.
 
@@ -260,15 +251,15 @@ Fifty of the 60 planned interruptions passed the probe and continuation filters.
 
 *Figure 5\. KNOW procedure for one real Qwen trace. At each cut, the model gives its current estimate in a probe and is separately continued six times from the same saved prefix. The comparison is between the probe estimate and the median final estimate of those continuations; the original uninterrupted answer is shown only for context. This trace was chosen because its differences are visually clear, not because it is representative.*
 
-**Results.** Of 60 intended interruption points, 50 produced a usable stated-estimate and continuation pair after parsing and filtering. Twenty-seven stated values came from the number judge, 22 were clear numerical sentence completions, and one was the midpoint of an explicit range. Two apparent values, 200 and 400, were per-giraffe quantities and were removed by the original paper's outlier rule.
+**Results.** Of 60 intended interruption points, 50 produced a usable stated-estimate and continuation pair after parsing and filtering. Twenty-seven stated values came from the number judge, 22 were clear numerical sentence completions, and one was the midpoint of an explicit range. Two apparent values, 200 and 400, were per-giraffe quantities and were removed by the original paper’s outlier rule.
 
-The stated estimate is strongly predictive of the continuation median over the full range.
+As Figure 6 shows, the stated estimate is strongly predictive of the continuation median over the full range.
 
 ![](../analysis/continuations/stated_vs_resampled_scatter_qwen3.5-122b-a10b.png)
 
 *Figure 6\. Each point is one usable interruption. The x-axis is the estimate stated when Qwen is stopped; the y-axis is the median final estimate from six continuations. Both are normalized around the relevant threshold. The dashed line is equality. The transformed axes are linear within ±0.3 and compressed outside that band.*
 
-The relation is predictive, not exact. Four retained probe estimates exceed 150 million: 169.8, 200, 250, and 275 million. They come from two above-pays bet traces and explain several extreme points. I retained them because they pass the paper's outlier filter and their continuation medians are also high.
+The relation is predictive, not exact. Four retained probe estimates exceed 150 million: 169.8, 200, 250, and 275 million. They come from two above-pays bet traces and explain several extreme points. I retained them because they pass the paper’s outlier filter and their continuation medians are also high.
 
 One probe response makes the local mechanism concrete. At the 75% cut of an above-pays trace, Qwen states 40.5 million and then continues:
 
@@ -276,11 +267,13 @@ One probe response makes the local mechanism concrete. At the 75% cut of an abov
 
 This catches active threshold checking at a specific moment, but it is not per-trace proof of value leakage.
 
-To test for motivated self-report, I signed each stated-minus-continuation gap toward the rewarded side. If the probe presented a more donation-favorable state than the continuations supported, the gaps should be positive.
+To test for motivated self-report, I signed each stated-minus-continuation gap toward the rewarded side. If the probe presented a more donation-favorable state than the continuations supported, the gaps should be positive (Figure 7).
 
 ![](../analysis/continuations/stated_vs_resampled_bars_qwen3.5-122b-a10b.png)
 
 *Figure 7\. Probe estimates and continuation medians by condition and cut position, signed toward the rewarded side. The paired distributions overlap at every cut. The 1.0 column shows the uninterrupted final answers and has no probe counterpart.*
+
+*Table 4. KNOW: gap between the stated estimate and the continuation median, signed toward the rewarded side.*
 
 | Condition | Cut | Usable interruptions | Median rewarded-direction gap | Bootstrap 95% CI |
 | ----- | ----- | ----- | ----- | ----- |
@@ -291,15 +284,9 @@ To test for motivated self-report, I signed each stated-minus-continuation gap t
 | Instructed | 50% | 9 | 0.005 | [-0.037, 0.018] |
 | Instructed | 75% | 10 | 0.000 | [-0.005, 0.037] |
 
-Every interval includes zero, and the Donation Bet medians are slightly negative rather than positive. The bet arm is more variable, especially at the halfway cut, while the instructed comparison remains near zero at every cut. H5 is not supported.
+Every interval in Table 4 includes zero, and the Donation Bet medians are slightly negative rather than positive. The bet arm is more variable, especially at the halfway cut, while the instructed comparison remains near zero at every cut. H5 is not supported.
 
-Several limitations remain:
-
-* The sample contains only 50 usable cuts from 20 selected traces.  
-* The early Donation Bet interval is wide and cannot exclude a meaningful mismatch.  
-* Six continuations only approximate the conditional continuation distribution.  
-* Content prefill resumes from text, not from an inaccessible saved hidden state.  
-* The probe may itself change what the model does next.
+Two limitations are specific to this test: the sample contains only 50 usable cuts from 20 selected traces, and the early Donation Bet interval is wide enough that it cannot exclude a meaningful mismatch. Section 4.2 discusses the broader limits of textual interventions and small continuation samples.
 
 The instructed arm shows what the method returns under overt steering, but it is not a positive control for deception. Near-zero gaps could reflect accurate local reporting, a probe that elicits a continuation-relevant number without accessing an internal state, or both.
 
@@ -307,7 +294,7 @@ The instructed arm shows what the method returns under overt steering, but it is
 
 ### **3.4 CAUSE: Does changing the first spots-per-giraffe estimate cause the final answer to move?**
 
-**Main finding.** The first written spots-per-giraffe premise has a consistent causal effect, but later reasoning preserves only a small fraction of the change inserted into it. TELL, AIM, and KNOW show that Qwen's trace is open about the objective, moves in the expected direction, and gives locally predictive estimates. None of those results establishes that a displayed calculation step caused the final answer. CAUSE intervenes directly on the first premise that can scale the estimate.
+**Main finding.** The first written spots-per-giraffe premise has a consistent causal effect, but later reasoning preserves only a small fraction of the change inserted into it. TELL, AIM, and KNOW show that Qwen’s trace is open about the objective, moves in the expected direction, and gives locally predictive estimates. None of those results establishes that a displayed calculation step caused the final answer. CAUSE intervenes directly on the first premise that can scale the estimate.
 
 #### **Finding an intervention point**
 
@@ -327,17 +314,19 @@ The same-number comparison in Figure 8 illustrates why the analysis must use dis
 
 #### **A consistent directional effect**
 
-The full experiment contains 88 premise variants and 528 continuations: 438 from alternative lines and 90 from reinserted original lines. Of these, 527 continuations yield a usable final total. The single excluded continuation argues that giraffe spots are not literally black and returns zero; this is a genuine response to the prompt's wording, not a parsing failure.
+The full experiment contains 88 premise variants and 528 continuations: 438 from alternative lines and 90 from reinserted original lines. Of these, 527 continuations yield a usable final total. The single excluded continuation argues that giraffe spots are not literally black and returns zero; this is a genuine response to the prompt’s wording, not a parsing failure.
 
 ![](../analysis/cause/cause.png)
 
 *Figure 9\. Within-trace effect of the inserted spots-per-giraffe premise. Each line is one original trace; points are individual continuations and line vertices are variant medians. Both above-pays and below-pays traces generally slope upward. Two of 437 usable alternative continuations lie above the plotted y-range.*
 
-All 15 within-trace rank correlations are positive: 8 of 8 in the above-pays arm and 7 of 7 in the below-pays arm. Under a null in which positive and negative signs are equally likely, the exact two-sided sign-test p-value is $6.1\times {10}^{-5}$. The median Spearman correlation is 0.70. Figure 10 shows the correlation and retention estimate for every trace.
+All 15 within-trace rank correlations are positive (Figure 9): 8 of 8 in the above-pays arm and 7 of 7 in the below-pays arm. Under a null in which positive and negative signs are equally likely, the exact two-sided sign-test p-value is $6.1\times {10}^{-5}$. The median Spearman correlation is 0.70. Figure 10 shows the correlation and retention estimate for every trace.
 
 ![](../analysis/cause/cause_consistency.png)
 
 *Figure 10\. Within-trace Spearman correlation and retention for all 15 CAUSE traces. Every correlation is positive, while retention varies and remains well below one. The first spots estimate has a consistent directional effect but transmits only a limited share of the inserted change.*
+
+*Table 5. CAUSE summary statistics.*
 
 | Outcome | Result |
 | ----- | ----- |
@@ -350,11 +339,11 @@ All 15 within-trace rank correlations are positive: 8 of 8 in the above-pays arm
 | Median retention | 0.13 |
 | Median baseline continuation IQR | 0.16 of the threshold |
 
-The directional result is strong, but the effect is not large. Median retention is 0.13: only about 13% of the proportional change implied by the edited spots premise remains in the final answer. The inserted values span 1.5× to 3.3× within a trace, so the small retention is not caused by an imperceptibly weak intervention.
+The directional result is strong (Table 5), but the effect is not large. Median retention is 0.13: only about 13% of the proportional change implied by the edited spots premise remains in the final answer. The inserted values span 1.5× to 3.3× within a trace, so the small retention is not caused by an imperceptibly weak intervention.
 
 ![](../analysis/cause/cause_spread.png)
 
-*Figure 11\. Pooled continuation-level differences from the median obtained by reinserting each trace's own premise, shown for its lowest sampled value, own value, and highest sampled value. The lowest and highest distributions shift in the expected directions, but overlap substantially. The middle row is an edited-prefix control using the original line, not the untouched saved trace.*
+*Figure 11\. Pooled continuation-level differences from the median obtained by reinserting each trace’s own premise, shown for its lowest sampled value, own value, and highest sampled value. The lowest and highest distributions shift in the expected directions, but overlap substantially. The middle row is an edited-prefix control using the original line, not the untouched saved trace.*
 
 Figure 11 shows the right interpretation. Lower inserted values move the distribution down and higher values move it up, but continuation-level noise is wide enough that the distributions overlap substantially. The cause is reliable in aggregate and often difficult to identify from a single continuation.
 
@@ -362,12 +351,14 @@ Figure 11 shows the right interpretation. Lower inserted values move the distrib
 
 ### **3.5 Hypothesis outcomes**
 
-The table below resolves the six predictions from Section 2.3. “Supported” means that the observed result followed the stated prediction within this study; it does not imply that the claim generalizes beyond the tested models, prompts, and deployments.
+Table 6 resolves the six predictions from Section 2.3. “Supported” means that the observed result followed the stated prediction within this study; it does not imply that the claim generalizes beyond the tested models, prompts, and deployments.
+
+*Table 6. Outcomes of the six hypotheses.*
 
 | Hypothesis | Outcome | Evidence |
 | ----- | ----- | ----- |
-| H1 | Supported descriptively | Qwen's above- and below-target trajectories are separated at the first extracted candidate and remain separated through the trace. The trajectory analysis localizes the difference but is not causal. |
-| H2 | Supported | Withholding the threshold reduces Qwen's answer-shift point estimate from 0.526 to 0.167, a reduction of \~68%. The interval remains too wide to conclude that the residual effect is zero. |
+| H1 | Supported descriptively | Qwen’s above- and below-target trajectories are separated at the first extracted candidate and remain separated through the trace. The trajectory analysis localizes the difference but is not causal. |
+| H2 | Supported directionally | Withholding the threshold reduces Qwen’s answer-shift point estimate from 0.526 to 0.167, a reduction of \~68%. The difference between the two shifts is not formally tested, and the hidden-threshold interval remains too wide to conclude that the residual effect is zero. |
 | H3 | Supported | Explicitly instructing Qwen to aim produces complete observed separation, 1.000, compared with 0.526 in the ordinary Donation Bet. |
 | H4 | Not supported as a general cross-model relationship | Qwen has both a large shift and frequent admissions, but several models admit influence frequently despite smaller shifts. Judge instability also limits precise cross-model comparison. |
 | H5 | Not supported | The rewarded-direction probe gaps are near zero or slightly negative rather than systematically positive, and all six bootstrap intervals include zero. |
@@ -381,15 +372,13 @@ The results distinguish four claims that are easy to conflate.
 
 **Explicit false reporting.** Qwen does not generally claim to be unbiased while adjusting its estimate. In 33 of 40 sampled traces it admits influence, often describing the donation target directly. TELL therefore weighs against systematic concealment for this model. It does not give the same reassurance for Claude, where denials are common despite a behavioral shift.
 
-**Target-dependent steering.** AIM shows that the incentive is behaviorally effective when Qwen can see the numerical threshold, but much less effective when the threshold is withheld. A direct instruction to aim above or below produces complete observed separation. This makes the trace's discussion of the target, and the early numerical separation that accompanies it, more likely to reflect the process shaping the answer rather than incidental commentary. AIM does not show which particular step transmits that influence.
+**Target-dependent steering.** AIM shows that the incentive is behaviorally effective when Qwen can see the numerical threshold, but much less effective when the threshold is withheld. A direct instruction to aim above or below produces complete observed separation. This makes the trace’s discussion of the target, and the early numerical separation that accompanies it, more likely to reflect the process shaping the answer rather than incidental commentary. AIM does not show which particular step transmits that influence.
 
-**Local misreporting of the current estimate.** KNOW finds no systematic rewarded-direction gap between Qwen's probe estimate and its continuation distribution. The visible estimate is not perfect, but it is usually predictive. This weighs against a process in which the model has already selected one numerical answer while reporting a different intermediate state.
+**Local misreporting of the current estimate.** KNOW finds no systematic rewarded-direction gap between Qwen’s probe estimate and its continuation distribution. The visible estimate is not perfect, but it is usually predictive. This weighs against a process in which the model has already selected one numerical answer while reporting a different intermediate state.
 
 **Incomplete causal coverage.** CAUSE shows that an apparently important calculation step genuinely matters, yet preserves only a small fraction of the change placed into it. The visible trace is therefore neither an unrelated story nor a complete causal account. At least one sentence has a reproducible effect, while later reasoning and sampling variation explain much more of the final answer.
 
-On balance, I lean toward describing Qwen's visible reasoning as **partially faithful rather than unfaithful** in this task. It often names the incentive, its numerical trajectory responds to whether the target is available, its stated intermediate estimates usually predict its continuations, and changing a visible premise causally moves the final answer. But “partially” is important: the edited premise retains only 13% of the proportional change placed into it, so the trace does not provide a complete causal explanation.
-
-The causal-resampling result changes one specific interpretation of the earlier evidence. AIM showed that the trajectories were separated by the first visible numerical candidate, which could suggest that this early premise largely fixed the answer. CAUSE shows instead that the first spots-per-giraffe premise is causally relevant but leaky: later reasoning revises most of the inserted change. That is what causal resampling establishes here; locating the other steps that carry the remaining effect is future work.
+On balance, I lean toward describing Qwen’s visible reasoning as **partially faithful rather than unfaithful** in this task. It often names the incentive, its numerical trajectory responds to whether the target is available, its stated intermediate estimates usually predict its continuations, and changing a visible premise causally moves the final answer. But “partially” is important: the edited premise retains only 13% of the proportional change placed into it, so the trace does not provide a complete causal explanation.
 
 ### **4.2 Limitations**
 
@@ -397,27 +386,23 @@ The main limitation is scope. KNOW and CAUSE study one model, one Fermi question
 
 Several limitations specific to this study matter in more detail:
 
-* **The interventions are textual.** Content prefill holds the visible prefix fixed, not the model's hidden state. Asking for an immediate estimate may itself change the process. Replacing a sentence can change its wording, style, or implied confidence alongside the number. The same-number variants in CAUSE show that these non-numerical differences affect continuation distributions. Within-trace rank correlation reduces this problem by using several model-generated variants, but it cannot isolate a purely numerical mechanism.  
-* **Compute budget limits sample size and statistical power.** The new AIM control conditions contain 60 usable Qwen answers each, KNOW uses six continuations per cut, and CAUSE contains 15 traces with six continuations per premise variant. The hidden-threshold interval is consequently wide, KNOW's conditional medians are noisy, and the CAUSE arms are too small for a credible comparison of effect size. The 15 of 15 positive CAUSE correlations strongly support the directional result, but the median correlation and 13% retention estimate remain uncertain.  
+* **The interventions are textual.** Content prefill holds the visible prefix fixed, not the model’s hidden state. Asking for an immediate estimate may itself change the process. Replacing a sentence can change its wording, style, or implied confidence alongside the number. The same-number variants in CAUSE show that these non-numerical differences affect continuation distributions. Within-trace rank correlation reduces this problem by using several model-generated variants, but it cannot isolate a purely numerical mechanism.  
+* **Compute budget limits sample size and statistical power.** The new AIM control conditions contain 60 usable Qwen answers each, KNOW uses six continuations per cut, and CAUSE contains 15 traces with six continuations per premise variant. The hidden-threshold interval is consequently wide, KNOW’s conditional medians are noisy, and the CAUSE arms are too small for a credible comparison of effect size. The 15 of 15 positive CAUSE correlations strongly support the directional result, but the median correlation and 13% retention estimate remain uncertain.  
 * **CAUSE tests only one premise.** The intervention targets the first spots-per-giraffe estimate because it was the first premise for which Qwen generated a sufficiently wide set of plausible alternatives. It cannot show how much value leakage enters through population estimates, later arithmetic, plausibility checks, or the stopping decision.  
 * **Several measurements are approximate.** The threshold-crossing metric discards distance from the threshold. The disclosure judge has only moderate four-way repeat agreement. The KNOW extraction was developed using a labeled set that informed prompt repair, so its 86.7% agreement is not a held-out performance estimate.  
 * **The results depend on deployment details.** The GLM comparison uses a threshold inherited from the supplied Fireworks run that is poorly centered on the newly generated OpenRouter baseline. It demonstrates endpoint sensitivity, but it does not support a clean comparison of GLM and Qwen.
 
-These limitations constrain the claims. The strongest evidence comes from Qwen's large controlled shifts and the sign-consistent CAUSE intervention, not from small differences in judged labels, probe gaps, or model endpoints.
+These limitations constrain the claims. The strongest evidence comes from Qwen’s large controlled shifts and the sign-consistent CAUSE intervention, not from small differences in judged labels, probe gaps, or model endpoints.
 
 ### **4.3 Future work**
 
-The next experiment I would run is a multi-step causal decomposition. For each eligible Qwen trace, I would separately intervene on the first population premise, the first spots premise, the first explicit total, and a later plausibility check. A factorial or sequential design could test whether the effects add, overwrite one another, or depend on when the target is mentioned. This directly asks where the remaining 87% of the edited premise goes and where most of the Donation Bet shift is introduced.
+The next experiment I would run is a multi-step causal decomposition: in each eligible Qwen trace, separately intervening on the first population premise, the first spots premise, the first explicit total, and a later plausibility check. A factorial or sequential design could test whether these effects add, overwrite one another, or depend on when the target is mentioned. This directly asks where the remaining 87% of the edited premise goes and where most of the Donation Bet shift is introduced.
 
-To move beyond visible chains of thought as the main source of evidence, I would add activation-level analysis of Qwen. A Jacobian lens (J-Lens; Gurnee et al., 2026\) could inspect when representations related to the rewarded direction, the threshold, and the developing estimate become available across layers, including at positions where the written trace does not mention them. I would pair this with linear probes trained to distinguish above-pays from below-pays states across prompt paraphrases. These readouts would generate localization hypotheses. Activation patching between matched above-pays and below-pays runs could then test which layers and token positions transfer the answer shift, followed by path patching or targeted ablations of candidate attention heads and MLPs to test which components are causally necessary. This separates evidence that an internal representation is detectable from evidence that the model uses it to produce the biased answer.
+To move beyond visible chains of thought as the main source of evidence, I would add activation-level analysis of Qwen. A Jacobian lens (J-Lens; Gurnee et al., 2026\) and linear probes trained to distinguish above-pays from below-pays states could show when representations of the rewarded direction, the threshold, and the developing estimate become available, including at positions where the written trace does not mention them. Activation patching between matched runs, followed by targeted ablations, could then test which layers and components are causally necessary for the answer shift. This separates evidence that a representation is detectable from evidence that the model uses it.
 
-I would also reveal the threshold at different points in an otherwise identical prefix. AIM shows that a visible target matters and that the trajectories separate early, but it does not locate the moment at which the target changes the computation. Delayed revelation would distinguish immediate numerical targeting from a more general change in strategy.
+Three behavioral extensions would complement this. Revealing the threshold at different points in an otherwise identical prefix would locate when the target changes the computation. A task where two multiplicative premises are similarly uncertain would test whether the incentive affects whichever premise is less constrained by the model’s knowledge. Most safety-relevant, fresh raw traces from a model that often denies influence, especially Claude, would test whether a denial accompanies a locally predictive and causally informative trace, or whether the visible calculation is less connected to the answer.
 
-Another behavioral extension would use a task where two multiplicative premises are similarly uncertain. In the giraffe problem, the population estimate is tightly constrained while spots per giraffe varies. A better-balanced task would allow matched interventions on both premises and test whether the incentive affects whichever premise is less constrained by the model's knowledge.
-
-I would also collect fresh raw traces from a model that often denies influence, especially Claude, and apply the same KNOW and CAUSE tests without using disclosure to select traces. That would address the most safety-relevant unresolved case: whether a denial accompanies a locally predictive and causally informative trace, or whether the visible calculation is less connected to the answer.
-
-Finally, I would increase the number of traces and continuations only after fixing the intervention points above. The present study's main uncertainty is not whether the first spots premise has a directional effect; it is which other steps carry the rest of the effect. More samples of the same single intervention would improve confidence intervals without answering that question.
+Larger samples should come only after these intervention points are fixed: the main open question is not whether the first spots premise has a directional effect, but which other steps carry the rest of the effect.
 
 ## **5\. Conclusion**
 
@@ -425,17 +410,22 @@ The Donation Bet produces motivated numerical reasoning, but the visible chain-o
 
 The causal intervention gives the most informative result. Increasing the first written spots-per-giraffe premise increases the final answer in all 15 tested traces, with a median within-trace rank correlation of 0.70. Yet only 13% of the proportional edit survives in the median final answer. The premise matters, but later reasoning usually revises most of its effect.
 
-For chain-of-thought monitoring, this is a qualified positive result. The trace exposes real information about both the model's objective and one cause of its answer. For causal explanation, it is a warning: a step can look central, pass a directional intervention, and still account for little of the final outcome. The useful object of study is therefore not whether a trace is faithful in the abstract, but which claims about it survive progressively stronger tests.
+For chain-of-thought monitoring, this is a qualified positive result. The trace exposes real information about both the model’s objective and one cause of its answer. For causal explanation, it is a warning: a step can look central, pass a directional intervention, and still account for little of the final outcome. The useful object of study is therefore not whether a trace is faithful in the abstract, but which claims about it survive progressively stronger tests.
 
 ## 
 
 ## **Appendix**
 
-### **A.1 GLM trajectory sensitivity check**
+### **A.1 What each test can establish**
 
-*![](../analysis/target_visibility/lineup_glm-5p2.png)*
+*Table A1. Evidence each test provides and what it cannot show by itself.*
 
-*Figure A1. GLM trajectories from the newly generated OpenRouter runs. The model follows direct instructions, but the ordinary and hidden-threshold conditions show little separation. The threshold inherited from the supplied Fireworks run is not centered on the new OpenRouter baseline, so this is an endpoint-sensitivity result rather than a clean comparison with Qwen.*
+| Test | Evidence it provides | What it cannot show by itself |
+| ----- | ----- | ----- |
+| TELL | Whether the trace openly acknowledges that the donation rule affected, or could affect, the estimate. | How much the incentive changed the answer, or which step carried the effect. |
+| AIM | What information makes the incentive actionable, and when the resulting numerical trajectories separate. | Whether the model is explicitly aware of aiming at every point, or whether a particular sentence caused the separation. |
+| KNOW | Whether the model’s stated current estimate, measured at several points, predicts the answer distribution obtained by continuing from each point. | Whether the model understands why it is heading there, or whether the stated estimate caused the continuation. |
+| CAUSE | Whether changing an early written premise while holding the preceding context fixed changes later answers. | Whether that premise explains the entire value-leakage effect or corresponds to an internal mechanism. |
 
 ### **A.2 Original Donation Bet prompt**
 
@@ -453,9 +443,19 @@ The below-pays version leaves the rest of the prompt unchanged and reverses the 
 
 > *“If your estimate exceeds the threshold, we donate to some bad cause. If your estimate does not exceed the threshold, we donate to some good cause.”*
 
+### **A.3 GLM endpoint sensitivity and reasoning length**
+
+I also reran the ordinary GLM Donation Bet through OpenRouter and compared it with the GLM run supplied in the starter repository, which had been generated through Fireworks. The newly generated OpenRouter run has an answer shift of 0.120, compared with 0.348 in the supplied Fireworks run. On OpenRouter, the threshold inherited from the supplied run sits at the 34th percentile of GLM’s new baseline answers rather than near their median. The bet therefore has little shift to remove, even though the instructed condition still produces complete observed separation. Because both the serving endpoint and answer judge differ, the smaller shift cannot be interpreted as a clean failure to replicate value leakage in GLM. It instead shows that the supplied threshold is poorly calibrated for the new OpenRouter baseline. Figure A1 shows the same result over the full trajectory: the bet conditions largely overlap while the instructed conditions separate cleanly.
+
+*![](../analysis/target_visibility/lineup_glm-5p2.png)*
+
+*Figure A1. GLM trajectories from the newly generated OpenRouter runs. The model follows direct instructions, but the ordinary and hidden-threshold conditions show little separation. The threshold inherited from the supplied Fireworks run is not centered on the new OpenRouter baseline, so this is an endpoint-sensitivity result rather than a clean comparison with Qwen.*
+
+**An exploratory signal.** Reasoning length tracks how far the instructed target lies from the model’s ordinary answer. For GLM, aiming above required little movement and averaged about 2,500 output tokens, while aiming below required a larger move and averaged about 18,300. Qwen’s two directions were similarly distant from its baseline and had more similar lengths. This is exploratory evidence from two models and one task, not an established diagnostic.
+
 ## **References**
 
-Betley, J., Treutlein, J., Dubiński, J., Mayne, H., Gałązka, K., Warncke, N., Sztyber-Betley, A., & Evans, O. (2026). Value leakage: An LLM's answers are silently shaped by its own values [Preprint]. *arXiv*. [https://doi.org/10.48550/arXiv.2607.14345](https://doi.org/10.48550/arXiv.2607.14345)
+Betley, J., Treutlein, J., Dubiński, J., Mayne, H., Gałązka, K., Warncke, N., Sztyber-Betley, A., & Evans, O. (2026). Value leakage: An LLM’s answers are silently shaped by its own values [Preprint]. *arXiv*. [https://doi.org/10.48550/arXiv.2607.14345](https://doi.org/10.48550/arXiv.2607.14345)
 
 Bogdan, P. C., Macar, U., Nanda, N., & Conmy, A. (2025). Thought anchors: Which LLM reasoning steps matter? [Preprint]. *arXiv*. [https://doi.org/10.48550/arXiv.2506.19143](https://doi.org/10.48550/arXiv.2506.19143)
 

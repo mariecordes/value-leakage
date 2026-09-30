@@ -14,3 +14,9 @@ analysis/**/cache/
 # Pre-palette-change figure snapshots. Kept locally so the earlier versions are
 # still comparable; not part of the published record.
 analysis/_figures_v1/
+
+# Word lock files
+~$*
+
+# Local scratch files
+tmp/
