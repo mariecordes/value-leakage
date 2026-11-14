@@ -166,7 +166,7 @@ def main(model: str = "qwen3.5-122b-a10b", tail: int = 78):
                    label="estimate when stopped at the cut"),
         plt.Line2D([], [], marker="o", linestyle="none", markersize=11,
                    markerfacecolor=PAL.BET, markeredgecolor="white",
-                   label="estimate after continuation"),
+                   label="median of six continuations from the cut"),
         plt.Line2D([], [], marker="D", linestyle="none", markersize=10,
                    markerfacecolor=PAL.BET, markeredgecolor="white",
                    label="answer the uninterrupted trace reached"),
