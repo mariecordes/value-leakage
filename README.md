@@ -79,7 +79,7 @@ Everything under `analysis/` and `docs/` is new.
 
 ```
 docs/
-  research_report.pdf    the report (with its Word and Markdown sources)
+  research_report.pdf    the report (with its Word source)
 analysis/                follow-up experiments (new), see analysis/README.md
   disclosure/            TELL: do traces acknowledge the incentive?
   target_visibility/     AIM: does the effect need a visible threshold?
